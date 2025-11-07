@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Feature name -->
+    <TextView
+        android:id="@+id/tvFeatureName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Feature"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+    <!-- Pro column -->
+    <FrameLayout
+        android:id="@+id/layoutPro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_column_pro_gradient"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/icPro"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+
+
+    <!-- Basic column -->
+    <ImageView
+        android:id="@+id/icBasic"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="centerInside"/>
+</LinearLayout>

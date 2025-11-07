@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#CC222222">
+
+    <TextView
+        android:id="@+id/action_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cut"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp" />
+
+    <TextView
+        android:id="@+id/action_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp" />
+
+    <TextView
+        android:id="@+id/action_paste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paste"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp" />
+
+</LinearLayout>
+

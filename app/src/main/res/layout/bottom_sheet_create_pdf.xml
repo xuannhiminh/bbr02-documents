@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/_16sdp">
+
+    <FrameLayout
+        android:id="@+id/layout_native"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frNativeAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="@dimen/_12sdp"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert_to_pdf"
+        android:textAlignment="center"
+        android:textColor="@color/text1"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="700"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintTop_toBottomOf="@id/layout_native" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pdf_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/pdf_file_name"
+        android:textColor="@color/text1"
+        android:textFontWeight="700"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_file_name_layout"
+        app:layout_constraintTop_toBottomOf="@id/tv_pdf_name"
+        android:layout_width="match_parent"
+        app:placeholderText=""
+        app:endIconMode="clear_text"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_file_name"
+            android:layout_width="match_parent"
+            android:radius="8dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500"
+
+            android:background="@drawable/edit_text_border"
+            android:backgroundTint="@null"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_pdf_name"
+            android:layout_marginBottom="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/password"
+        android:textColor="@color/text1"
+        android:textFontWeight="700"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_file_name_layout" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_password" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_password_layout"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_password"
+        android:layout_width="match_parent"
+        app:passwordToggleEnabled="true"
+        app:placeholderText=""
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:radius="8dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500"
+            android:hint="@string/password"
+            android:background="@drawable/edit_text_border"
+            android:backgroundTint="@null"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_password"
+            android:layout_marginBottom="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tiêu đề Page Size -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_page_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/size"
+        android:textColor="@color/text1"
+        android:textFontWeight="700"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_password_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinner_page_size_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/tv_page_size">
+
+        <Spinner
+            android:id="@+id/spinner_page_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/edit_text_border_dropdown"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:entries="@array/page_size_options"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="textStart"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_cancel"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0"
+        android:paddingStart="@dimen/_35sdp"
+        android:paddingEnd="@dimen/_35sdp"
+        android:stateListAnimator="@null"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/text1"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:theme="@style/Theme.PDFReaderProNegative"
+        app:layout_constraintEnd_toStartOf="@id/button_convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_page_size_layout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_convert"
+        android:layout_width="wrap_content"
+        android:text="@string/convert"
+        android:background="@drawable/button_background_radius_max"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_35sdp"
+        android:paddingEnd="@dimen/_35sdp"
+        app:layout_constraintStart_toEndOf="@id/button_cancel"
+        app:layout_constraintTop_toTopOf="@id/button_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

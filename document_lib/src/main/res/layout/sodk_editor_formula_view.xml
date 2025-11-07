@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <office.file.ui.editor.SOTextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/formula" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/sodk_editor_font_formula_text_box_style" />
+        <office.file.ui.editor.SOTextView android:textSize="14.0sp" android:id="@id/description" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/sodk_editor_font_formula_text_box_style" />
+    </LinearLayout>
+</LinearLayout>

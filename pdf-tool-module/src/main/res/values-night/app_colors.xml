@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_text_default">@color/tokenWhite100</color>
+    <color name="color_background_dialog">@color/color_3C3D4E</color>
+    <color name="color_background">#383838</color>
+    <color name="color_icon">@color/tokenWhite100</color>
+    <color name="color_shape_count">@color/tokenWhite100</color>
+</resources>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="intent_label_doc_pdf">Chuyển Doc sang PDF</string>
+    <string name="intent_label_doc_reader">Trình đọc Doc</string>
+    <string name="intent_label_pdf_doc">Trình chỉnh sửa Doc</string>
+    <string name="intent_label_doc_smart_editor">Trình chỉnh sửa thông minh Doc</string>
+    <string name="intent_label_doc_print">In Doc</string>
+
+    <string name="intent_label_excel_pdf">Chuyển Excel sang PDF</string>
+    <string name="intent_label_excel_reader">Trình đọc Excel</string>
+    <string name="intent_label_pdf_excel">Trình chỉnh sửa Excel</string>
+    <string name="intent_label_excel_smart_editor">Trình chỉnh sửa thông minh Excel</string>
+    <string name="intent_label_excel_print">In Excel</string>
+
+    <string name="intent_label_ppt_pdf">Chuyển PPT sang PDF</string>
+    <string name="intent_label_ppt_reader">Trình đọc PPT</string>
+    <string name="intent_label_pdf_ppt">Trình chỉnh sửa PPT</string>
+    <string name="intent_label_ppt_smart_editor">Trình chỉnh sửa thông minh PPT</string>
+    <string name="intent_label_ppt_print">In PPT</string>
+
+    <string name="read">Đọc</string>
+    <string name="your_recent_PDF_files_are_waiting">Các tệp PDF gần đây của bạn đang chờ</string>
+
+    <string name="add_in_fav">Thêm yêu thích</string>
+    <string name="saving_content">Đang lưu nội dung</string>
+    <string name="you_have_unfinished_file">Bạn có một tệp chưa hoàn thành</string>
+    <string name="click_to_see_more">Nhấn để xem thêm.</string>
+
+    <string name="app_name">All Document</string>
+
+    <string name="browse_more_files">Duyệt các tệp khác</string>
+
+    <string name="cancel">Hủy bỏ</string>
+
+    <string name="change_language">Thay đổi ngôn ngữ</string>
+
+    <string name="sort_by">Sắp xếp theo</string>
+
+    <string name="sort_by_date">Ngày tạo (cũ đến mới)</string>
+
+    <string name="sort_by_name_asc">Tên từ A-Z</string>
+
+    <string name="sort_by_name_desc">Tên từ Z-A</string>
+
+    <string name="sort_by_size_asc">Kích thước tăng dần</string>
+
+    <string name="sort_by_size_desc">Kích thước giảm dần</string>
+
+    <string name="change_language_description">Bạn có thể thay đổi ngôn ngữ từ đây.</string>
+
+    <string name="clear_fav_message">Bạn có chắc chắn muốn xóa danh sách các tệp yêu thích, nhưng chúng sẽ không bị xóa vĩnh viễn?</string>
+
+    <string name="clear_favourite">Xóa yêu thích</string>
+
+    <string name="clear_recent">Xóa gần đây</string>
+
+    <string name="clear_recent_message">Bạn có chắc chắn muốn xóa danh sách các tệp gần đây, nhưng chúng sẽ không bị xóa vĩnh viễn?</string>
+
+    <string name="cont_pages">Các trang liên tục</string>
+
+    <string name="continuee">Tiếp tục</string>
+
+    <string name="copy">Sao chép</string>
+
+    <string name="date">Ngày</string>
+
+    <string name="day_mode">Chế độ ngày</string>
+
+    <string name="del_message">Bạn có chắc chắn muốn xóa \"%s.pdf\" ?</string>
+
+    <string name="del_sel_message">Bạn có chắc chắn muốn xóa các mục đã chọn?</string>
+
+    <string name="delete">Xóa</string>
+
+    <string name="delete_successfully">đã xóa thành công!</string>
+
+    <string name="done">Làm xong</string>
+
+    <string name="duplicate">Nhân đôi</string>
+
+    <string name="duplicate_successfully">nhân đôi thành công!</string>
+
+    <string name="duplicate_unsuccessful">\"Sao y không thành công, khu vực lưu trữ thiết bị có thể không thể ghi được!\"</string>
+
+    <string name="enter_file_name">Nhập tên cho tệp</string>
+
+    <string name="recent_add">Thêm gần đây</string>
+
+    <string name="all">Tất cả</string>
+
+    <string name="pdf">PDF</string>
+    <string name="word">Word</string>
+    <string name="excel">Excel</string>
+    <string name="ppt">PPT</string>
+
+    <string name="default_select">Chọn 0</string>
+
+    <string name="enter_page_no">Nhập số trang</string>
+
+    <string name="enter_password">Nhập mật khẩu để mở</string>
+
+    <string name="exit">Thoát</string>
+
+    <string name="title_access">Quyền truy cập tệp tin</string>
+
+    <string name="pdf_reader">Trình đọc PDF nâng cao</string>
+
+    <string name="allow_permission">Cấp quyền</string>
+
+    <string name="content_access">Vui lòng chấp nhận quyền truy cập tệp trên thiết bị của bạn.</string>
+
+    <string name="button_permission">Đến mục cài đặt</string>
+
+    <string name="delete_content">Bạn có chắc chắn xóa vĩnh viễn?</string>
+    <string name="delete_all">Bạn chắc chắn muốn xóa toàn bộ tệp tin?</string>
+
+    <string name="please_choose_file">Vui lòng chọn ít nhất một file!</string>
+
+    <string name="exit_message">" Ứng dụng sẽ được thoát! "</string>
+
+    <string name="expand_button_title">Nâng cao</string>
+
+    <string name="feedback">Phản hồi</string>
+
+    <string name="feedback_title">Hãy cho chúng tôi biết vấn đề bạn gặp phải</string>
+    <string name="feedback_option1">Không thể mở tệp</string>
+    <string name="feedback_option2">Đề xuất</string>
+    <string name="feedback_option3">Chậm</string>
+    <string name="feedback_option4">Lỗi và sự cố</string>
+    <string name="choose_option">Vui lòng chọn một tùy chọn phản hồi</string>
+    <string name="feedback_warning">Vui lòng nhập ít nhất 6 ký tự</string>
+
+
+    <string name="file_already_exists">Tệp có tên %s.pdf đã tồn tại, vui lòng chọn tên khác!</string>
+
+    <string name="files_selected">%d Tập tin được chọn</string>
+
+    <string name="get_pro_now">Tính năng cao cấp</string>
+
+    <string name="go_to_page">Đi tới trang</string>
+
+    <string name="more">Thêm</string>
+
+    <string name="more_description">Bằng cách nhấp vào nút này, bạn có thể chọn tất cả các mục cùng một lúc, sau đó thực hiện thao tác trên nhiều tệp.</string>
+
+    <string name="more_open_pdf_description">Bạn có thể thưởng thức thêm một số công cụ như chế độ ban đêm và trực tiếp thêm vào danh sách yêu thích.</string>
+
+    <string name="more_open_pdf_title">Công cụ khác</string>
+
+    <string name="more_title">Chọn tất cả</string>
+
+    <string name="name">Tên</string>
+
+    <string name="nav_app_bar_navigate_up_description">Di chuyển lên</string>
+
+    <string name="nav_app_bar_open_drawer_description">Mở ngăn điều hướng</string>
+
+    <string name="next">Kế tiếp</string>
+
+    <string name="night_mode">Chế độ ban đêm (Thử nghiệm)</string>
+
+    <string name="no">Không</string>
+
+    <string name="no_fav">Thêm một tệp trong danh mục yêu thích để dễ dàng tìm thấy nó ở đây sau.</string>
+
+    <string name="no_pdf_file">Không thể tìm thấy bất kỳ tập tin PDF trong thiết bị di động của bạn.</string>
+
+    <string name="no_recent">Mọi tệp PDF bạn đã đọc gần đây sẽ xuất hiện ở đây.</string>
+
+    <string name="not_set">Chưa đặt</string>
+
+    <string name="page_by_page">Từng trang</string>
+
+    <string name="permission_deny_positive_text">cho phép</string>
+
+    <string name="permission_deny_text">Để xem tất cả các tệp, hãy cho phép truy cập bộ nhớ vào ứng dụng đọc PDF.</string>
+
+    <string name="permission_deny_title">Cho phép quyền</string>
+
+    <string name="preference_copied">Đã sao chép \"%1$s\" vào khay nhớ tạm.</string>
+
+    <string name="print">In</string>
+
+    <string name="print_description">Bằng cách sử dụng tính năng này, bạn có thể in tài liệu của mình trực tiếp từ đây.</string>
+
+    <string name="print_title">Tài liệu in</string>
+
+    <string name="privacy_policy">Chính sách bảo mật</string>
+
+    <string name="pro_description">Bằng cách mua, bạn có thể xóa tất cả quảng cáo vĩnh viễn.</string>
+
+    <string name="pro_title">Xóa quảng cáo</string>
+
+    <string name="purchased_success">Đã mua thành công</string>
+
+    <string name="rate_us">Đánh giá chúng tôi</string>
+
+    <string name="rate_us_message">"Bạn có muốn xếp hạng ứng dụng này không?Hỗ trợ của bạn sẽ giúp chúng tôi cải thiện ứng dụng này."</string>
+
+    <string name="rating_message">Đánh giá tốt của bạn là rất có giá trị đối với chúng tôi.</string>
+
+    <string name="remove_ads">Xóa quảng cáo</string>
+
+    <string name="remove_fav_message">Bạn có chắc chắn muốn xóa các tệp đã chọn khỏi mục yêu thích, nhưng chúng sẽ không bị xóa vĩnh viễn?</string>
+
+    <string name="remove_files">Xóa tệp</string>
+
+    <string name="remove_from_fav">Xóa khỏi yêu thích</string>
+
+    <string name="remove_recent">Xóa khỏi gần đây</string>
+
+    <string name="remove_sel_recent_message">Các tệp đã chọn sẽ bị xóa khỏi danh sách Gần đây của bạn, nhưng chúng sẽ không bị xóa vĩnh viễn.</string>
+
+    <string name="rename">Đổi tên</string>
+
+    <string name="rename_unsuccessful">\"Đổi tên không thành công, tệp có thể không được ghi!\"</string>
+
+    <string name="save">Lưu</string>
+
+    <string name="search_doc">Tìm kiếm tài liệu</string>
+
+    <string name="search_menu_title">Tìm kiếm</string>
+
+    <string name="selected">" đã chọn"</string>
+
+    <string name="send_feedback">Gửi phản hồi</string>
+
+    <string name="share">Chia sẻ</string>
+
+    <string name="share_app">Chia sẻ ứng dụng này</string>
+
+    <string name="share_description">Chia sẻ tài liệu với người khác.</string>
+
+    <string name="share_title">Chia sẻ tài liệu</string>
+
+    <string name="size">Kích thước</string>
+
+    <string name="sort">Sắp xếp</string>
+
+    <string name="status_bar_notification_info_overflow">999+</string>
+
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+
+    <string name="thumbnail">hình thu nhỏ pdf</string>
+
+    <string name="title_fav">Yêu thích</string>
+
+    <string name="title_files">Tập tin</string>
+
+    <string name="title_recent">Gần đây</string>
+
+    <string name="yes">Vâng</string>
+    <string name="select">Chọn</string>
+    <string name="get_start_content">Để cung cấp cho bạn các dịch vụ tốt hơn và hiểu rõ hơn về cách chúng tôi xử lý và bảo vệ dữ liệu của bạn, chúng tôi đã cập nhật Chính sách quyền riêng tư</string>
+    <string name="agree_us">Bằng cách nhấn vào nút \"ĐỒNG Ý\", bạn đồng ý với \"Chính sách bảo mật\" của chúng tôi</string>
+    <string name="agree">Đồng ý</string>
+    <string name="app_version">Phiên bản %s</string>
+    <string name="file_not_found">Không tìm thấy tệp !!!</string>
+    <string name="rate_now">Bình chọn bây giờ</string>
+    <string name="remind_later">Nhắc tôi sau</string>
+    <string name="please_rate">Vui lòng chọn xếp hạng !!!</string>
+    <string name="thank_for_rate">Cảm ơn bạn!!!</string>
+    <string name="replace_old_file">Thay thế tệp cũ?</string>
+    <string name="ok">Đồng ý</string>
+    <string name="convert_to_pdf">Chuyển đổi sang PDF</string>
+    <string name="pdf_file_name">Tên tệp PDF</string>
+    <string name="password">Mật khẩu</string>
+    <string name="convert">Đổi</string>
+    <string name="file_name_invalid">Tên tệp không hợp lệ</string>
+    <string name="convert_success">Đã chuyển đổi thành công sang PDF!</string>
+    <string name="open">Mở</string>
+
+    <string name="detail">Chi tiết</string>
+    <string name="properties">Thuộc tính</string>
+    <string name="app_error">Đã xảy ra lỗi. Vui lòng thử lại</string>
+    <string name="notification_title">Trình đọc PDF số 1 trên Android</string>
+    <string name="notification_content">Đọc mọi định dạng PDF</string>
+    <string name="create_shortcut">Tạo lối tắt</string>
+    <string name="premium">Cao cấp</string>
+    <string name="privilege">Đặc quyền</string>
+    <string name="normal">Bình thường</string>
+    <string name="basic_reading_operation">Thao tác đọc cơ bản</string>
+    <string name="powerful_editing">Công cụ chỉnh sửa mạnh mẽ</string>
+    <string name="cam_scanner">Máy quét</string>
+    <string name="signature">Chữ ký</string>
+    <string name="forever">Mãi mãi</string>
+    <string name="_3_months">%s tháng</string>
+    <string name="free_for_days">Miễn phí trong %s ngày</string>
+    <string name="hot">Nóng</string>
+    <string name="premium_des">Xóa quảng cáo và Mở khóa mọi tính năng</string>
+    <string name="no_ads">Không có quảng cáo</string>
+    <string name="create_all_file">Tạo tất cả tập tin</string>
+    <string name="edit_all_files">Chỉnh sửa tất cả tệp</string>
+    <string name="cancel_anytime">Hủy bất cứ lúc nào</string>
+    <string name="free_7_day">3 ngày miễn phí</string>
+    <string name="premium_then_after_trial">Sau đấy %s/năm</string>
+    <string name="premium_detail">Khoản thanh toán sẽ được tính vào tài khoản Google Play của bạn khi kết thúc quá trình dùng thử xác nhận mua hàng nếu bạn không bắt đầu dùng thử. Đăng ký tự động gia hạn trước khi kết thúc thời gian dùng thử, trừ khi bị hủy trước 24 giờ. Bạn có thể quản lý đăng ký của mình và tắt tính năng tự động gia hạn từ cửa hàng Google Play của mình.</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="_1_year">%s năm</string>
+    <string name="permission_required">Yêu cầu quyền truy cập</string>
+    <string name="set_pdf_reader_as_your_default_pdf_file_viewer">Đặt <b>%s</b> làm ứng dụng đọc PDF mặc định</string>
+    <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">Chọn tùy chọn này để mở tệp nhanh chóng và giúp việc đọc trở nên thật dễ dàng và thú vị!</string>
+    <string name="set_as_default">Đặt làm mặc định</string>
+    <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default">Chọn biểu tượng <b>%s</b> và nhấn <b>%s</b> để đặt làm mặc định!</string>
+    <string name="always">Luôn chọn</string>
+    <string name="select_this_pdf_reader_icon_in_the_app_list">Chọn biểu tượng <b>%s</b> trong danh sách ứng dụng.</string>
+    <string name="click_always_to_set_it_as_the_default_reader">Nhấn <b>%s</b> để đặt làm trình đọc mặc định.</string>
+    <string name="choose_default_app">Vui lòng chọn %s làm ứng dụng mặc định để đọc PDF</string>
+    <string name="auto_scroll">Tự động cun</string>
+    <string name="title_pdf_reader">Chào mừng đến với\n%s</string>
+    <string name="permission_graphic_desc">Yêu cầu quyền truy cập</string>
+    <string name="allow">Cho phép</string>
+    <string name="later">Để sau</string>
+    <string name="permission_explanation">Để đọc và chỉnh sửa tệp của bạn, vui lòng cho phép <b>%s</b> truy cập tất cả tệp của bạn.</string>
+    <string name="add_to_home_screen">Thêm vào màn hình chính?</string>
+    <string name="tap_add_or_hold_the_widget_to_add_it_to_your_home_screen_instantly_choose_an_option_below">Chạm vào %s hoặc giữ widget để thêm ngay vào màn hình chính. Vui lòng chọn một tùy chọn bên dưới:</string>
+    <string name="add">Thêm</string>
+    <string name="cannot_widget">Thiết bị không hỗ trợ ghim tiện ích</string>
+    <string name="search">Tìm kiếm tệp</string>
+    <string name="home">Trang chủ</string>
+    <string name="intent_label_pdf">Trình xem tài liệu tất cả trong một</string>
+    <string name="intent_label_pdf_sign">Ký PDF</string>
+    <string name="intent_label_pdf_editor">Trình sửa Document thông minh</string>
+    <string name="intent_label_pdf_reader">Trình đọc Document thông minh</string>
+    <string name="intent_label_pdf_convert_to_images">PDF thành ảnh</string>
+    <string name="intent_label_pdf_long_image">PDF thành ảnh dài</string>
+    <string name="intent_label_pdf_word">PDF thành Word</string>
+    <string name="clear_text">Xóa</string>
+    <string name="search_icon">Tìm kiếm</string>
+    <string name="open_now">Mở ngay</string>
+    <string name="unfinished_reading">📌 Bạn vẫn chưa đọc xong %s.</string>
+    <string name="forgotten_file_content_notification">Đừng để những tệp quan trọng bị bỏ qua nhé! 😊</string>
+    <string name="new_file_content_notification">📂 Bạn vừa nhận được một tệp mới</string>
+    <string name="daily_call_open_app_content">Có thể bạn muốn xem lại các tệp PDF của mình! 📚</string>
+    <string name="title_intro_1">Trình xem tài liệu tất cả trong một</string>
+    <string name="open_read_and_edit">mở, đọc và sửa</string>
+    <string name="title_intro_2">Trình chuyển đổi PDF nâng cao:</string>
+    <string name="title_description_2">Nhanh chóng chuyển đổi hình ảnh, tệp Word, Excel và PPT thành tệp PDF chất lượng cao.</string>
+    <string name="title_intro_3">Trình chỉnh sửa PDF thông minh</string>
+    <string name="title_description_3">Tô sáng, gạch chân và gạch ngang văn bản. Thêm chữ ký điện tử dễ dàng.</string>
+    <string name="start">Bắt đầu</string>
+    <string name="language_subtitle">Vui lòng chọn ngôn ngữ của bạn. Bạn có thể thay đổi ngôn ngữ trong phần cài đặt sau.</string>
+    <string name="splash_text">Hành động này có thể chứa quảng cáo</string>
+    <string name="sort_by_date_desc">Ngày tạo (mới đến cũ)</string>
+    <string name="ads_message">Đang tải quảng cáo</string>
+    <string name="add_widget">Thêm tiện ích</string>
+    <string name="push_notifications">Bật thông báo</string>
+    <string name="keep_screen_on">Giữ màn hình luôn bật</string>
+    <string name="terms_and_conditions">Điều khoản và điều kiện</string>
+    <string name="about_us">Về chúng tôi</string>
+    <string name="noti_title">Cho phép %s gửi thông báo?</string>
+    <string name="noti_content">Vì sự tiện lợi của bạn, vui lòng cho phép ứng dụng truy cập quyền thông báo. Đừng bỏ lỡ các cập nhật tài liệu quan trọng và nhắc nhở công việc.</string>
+    <string name="noti_allow">Cho phép thông báo</string>
+    <string name="noti_title1">Bạn có một tệp PDF mới</string>
+    <string name="open_file">Mở tệp</string>
+    <string name="notice">Thông báo</string>
+    <string name="notice_content">Bật thông báo để cập nhật trạng thái tệp</string>
+
+    <string name="notification_title_5">✅ Tải xuống hoàn tất!</string>
+    <string name="notification_description_5">📂 %s đã sẵn sàng. Nhấn để mở.</string>
+    <string name="notification_button_5">Mở tệp</string>
+    <string name="notification_title_11">✨ %s</string>
+    <string name="notification_description_11">🚀 Đã lưu ảnh chụp màn hình! Nhấn vào đây để xem ngay!</string>
+    <string name="notification_button_11">Mở ngay</string>
+
+    <string-array name="notification_title1">
+        <item name="notification_title_0">⚙️ Hoàn tất thiết lập?</item>
+        <item name="notification_title_1">📂 Cấp quyền truy cập tệp</item>
+        <item name="notification_title_2">🎉 Có nhiều PDF bị lãng quên trong điện thoại?</item>
+        <item name="notification_title_3">👋 Mở bất kỳ tài liệu nào!</item>
+        <item name="notification_title_4">🧭 Có tệp mới được cập nhật</item>
+    </string-array>
+    <string-array name="notification_title2">
+        <item name="notification_title_6">📖 Tiếp tục đọc nơi bạn đã dừng?</item>
+        <item name="notification_title_7">🔍 Tìm văn bản nhanh chóng!</item>
+        <item name="notification_title_8">🎉 Có nhiều PDF bị lãng quên trong điện thoại?</item>
+        <item name="notification_title_9">👋 Mở bất kỳ tài liệu nào!</item>
+        <item name="notification_title_10">🧭 Có tệp mới được cập nhật</item>
+    </string-array>
+    <string-array name="notification_message1">
+        <item name="notification_description_0">✨ Chỉ còn vài bước nữa để mở khóa toàn bộ tính năng của %s!</item>
+        <item name="notification_description_1">👍 Để mở, đọc và quản lý PDF, vui lòng cấp quyền truy cập.</item>
+        <item name="notification_description_2">🚀 Nhấn vào đây để đọc và chỉnh sửa tài liệu của bạn.</item>
+        <item name="notification_description_3">✨ Hỗ trợ PDF, Word, Excel và nhiều hơn nữa!</item>
+        <item name="notification_description_4">✨ Thư viện tài liệu của bạn đã được cập nhật!</item>
+    </string-array>
+    <string-array name="notification_message2">
+        <item name="notification_description_6">🤓 Vẫn còn trang chưa đọc trong %s. Tiếp tục ngay!</item>
+        <item name="notification_description_7">💡 Dùng công cụ tìm kiếm mạnh mẽ để tra cứu nhanh trong tài liệu của bạn.</item>
+        <item name="notification_description_8">🚀 Nhấn vào đây để đọc và chỉnh sửa tài liệu của bạn.</item>
+        <item name="notification_description_9">✨ Hỗ trợ PDF, Word, Excel và nhiều hơn nữa!</item>
+        <item name="notification_description_10">✨ Thư viện tài liệu của bạn đã được cập nhật!</item>
+    </string-array>
+    <string-array name="notification_button1">
+        <item name="notification_button_0">Thiết lập</item>
+        <item name="notification_button_1">Cấp quyền</item>
+        <item name="notification_button_2">Mở ngay</item>
+        <item name="notification_button_3">Mở ngay</item>
+        <item name="notification_button_4">Xem ngay</item>
+    </string-array>
+    <string-array name="notification_button2">
+        <item name="notification_button_6">Tiếp tục</item>
+        <item name="notification_button_7">Tìm kiếm</item>
+        <item name="notification_button_8">Mở ngay</item>
+        <item name="notification_button_9">Mở ngay</item>
+        <item name="notification_button_10">Xem ngay</item>
+    </string-array>
+
+    <string name="uninstall">Gỡ cài đặt</string>
+    <string name="uninstall_reason_2">Quá nhiều quảng cáo</string>
+    <string name="uninstall_reason_3">Tôi không còn cần ứng dụng này nữa</string>
+    <string name="other">Khác</string>
+    <string name="uninstall_reason_1">Tính năng không hoạt động</string>
+    <string name="uninstall_reason_title">Gặp vấn đề khi sử dụng ứng dụng?</string>
+    <string name="uninstall_title">Gỡ cài đặt ứng dụng có thể dẫn đến %s. Bạn có chắc muốn tiếp tục không?</string>
+    <string name="uninstall_highlight">mất tài liệu đã lưu hoặc các tệp gần đây</string>
+    <string name="uninstall_content">Vui lòng thử kích hoạt lại ứng dụng và cho chúng tôi biết lý do.</string>
+    <string name="uninstall_confirm">Vẫn muốn gỡ cài đặt?</string>
+    <string name="feedback_content">Nhập phản hồi của bạn</string>
+
+    <string name="default_reader_uninstall_description1">Có vẻ như bạn đã đặt một ứng dụng khác làm trình đọc mặc định.</string>
+    <string name="default_reader_uninstall_description2">Bạn có thể nhấn "Đặt lại" để thay đổi điều đó.</string>
+    <string name="reset">Đặt lại</string>
+    <string name="clear_default_reader">Xóa trình đọc mặc định</string>
+    <string name="select_set_as_default">Chọn Đặt làm mặc định</string>
+    <string name="set_default">Đặt làm mặc định</string>
+    <string name="click_clear_default">Sau đó nhấn Xóa mặc định</string>
+    <string name="clear_default">Xóa mặc định</string>
+    <string name="alway">Luôn luôn</string>
+    <string name="set_pdf_reader_as_your_default_title">Chọn <b>%s</b> và nhấn Luôn luôn để đặt làm mặc định</string>
+    <string name="select_pdf_reader">Chọn <b>%s</b></string>
+    <string name="click_always_to_set">Sau đó nhấn Luôn luôn để đặt thành công</string>
+    <string name="click_back_to_app">Sau đó nhấn &lt; để trở về ứng dụng</string>
+    <string name="update_desc">Nhấn Cập nhật để trải nghiệm phiên bản mới. 👇</string>
+    <string name="update_desc_replace">Khám phá hiệu suất cải thiện và độ ổn định cao hơn với phiên bản mới nhất. Nhấn để cập nhật ngay. 👇</string>
+    <string name="update_title">Cùng với hơn %s người dùng, trải nghiệm hiệu suất vượt trội! 🚀</string>
+    <string name="new_version">🎉 Phiên bản mới</string>
+    <string name="update_note">Bạn vẫn có thể tiếp tục sử dụng ứng dụng trong quá trình cập nhật 😊</string>
+    <string name="update">Cập nhật</string>
+    <string name="set_app_default">Đặt làm ứng dụng mặc định</string>
+    <string name="update_available_title">✨ Phiên bản mới %1$s đã sẵn sàng!</string>
+    <string name="update_now">Cập nhật ngay</string>
+    <string name="update_available_description">Phiên bản %1$s đã sẵn sàng với nhiều tính năng hấp dẫn và cải tiến hiệu suất. Cập nhật ngay để trải nghiệm!</string>
+    <string name="open_intro">mở</string>
+    <string name="edit_intro">chỉnh sửa</string>
+    <string name="read_intro">xem</string>
+    <string name="title_description_1">Dễ dàng mở, xem và chỉnh sửa các loại tài liệu</string>
+    <string name="restart">Khởi động lại</string>
+    <string name="skip_language_activity">Bỏ qua</string>
+    <string name="install">Cài đặt</string>
+    <string name="app_update_install">Bản cập nhật đã được tải xuống. Cài đặt ngay!</string>
+    <string name="app_update_downloaded">🎉Bản cập nhật đã được tải xuống</string>
+    <string name="app_update_critical">🔔 Đây là bản cập nhật quan trọng, vui lòng cập nhật để tiếp tục!</string>
+    <string name="are_you_satisfied">Bạn có hài lòng với ứng dụng của chúng tôi không?</string>
+    <string name="not_really">😞\n Không hẳn</string>
+    <string name="love_it">🥰\n Rất thích</string>
+    <string name="thank_for_support">Cảm ơn bạn đã ủng hộ!</string>
+    <string name="rate_us_content">Chúng tôi sẽ rất biết ơn nếu bạn đánh giá ứng dụng</string>
+    <string name="rate">Đánh giá</string>
+    <string name="rate_on_google">Đánh giá trên Google Play</string>
+    <string name="best_we_can">Điều tuyệt vời nhất chúng tôi có thể nhận được</string>
+    <string name="we_sorry">Ôi, chúng tôi rất tiếc...</string>
+    <string name="your_feedback_is_welcome">Chúng tôi luôn sẵn sàng nhận phản hồi từ bạn</string>
+    <string name="much_appreciated">Rất cảm kích!</string>
+    <string name="your_support_is_motivation">Sự ủng hộ của bạn là động lực lớn nhất của chúng tôi!</string>
+    <string name="thank_for_feedback">Cảm ơn bạn vì phản hồi</string>
+    <string name="we_will_bring_better_user_ex">Chúng tôi sẽ nỗ lực để mang lại trải nghiệm tốt hơn</string>
+
+    <string name="done_language_activity">Hoàn tất</string>
+    <string name="feedback_placeholder">Vui lòng cung cấp thêm chi tiết để chúng tôi có thể xác định và giải quyết vấn đề của bạn nhanh hơn</string>
+    <string name="feedback_option6">Quá nhiều thông báo</string>
+
+    <string name="please_specify">Vui lòng chỉ rõ lý do của bạn</string>
+    <string name="please_input_reason">Vui lòng nhập lý do của bạn</string>
+    <string name="select_reason_first">Vui lòng chọn lý do trước khi gỡ cài đặt</string>
+
+    <string name="uninstall_reason_4">Quá nhiều thông báo</string>
+    <string name="result_not_found">Không tìm thấy kết quả!!!</string>
+    <string name="search_language_hint">Tìm kiếm tại đây...</string>
+    <string name="user_guide_title">Chào mừng bạn đến với %s</string>
+    <string name="press_button">Nhấn nút này để tạo tệp PDF</string>
+    <string name="exit_app_content">Bạn có chắc chắn muốn thoát ứng dụng không?</string>
+    <string name="exit_app">😢\nThoát ứng dụng</string>
+    <string name="not_exit">🥰\nQuay lại</string>
+
+    <string name="uprange_to_premium">Nâng cấp lên Premium</string>
+    <string name="full_premium_features">Hưởng tất cả tính năng premium</string>
+    <string name="see_full_offer">Xem tất cả ưu đãi độc quyền!</string>
+
+    <string name="app_name_iap">Trình Đọc tài liệu Tốt Nhất</string>
+    <string name="tagline">Cải Thiện Hiệu Quả Làm Việc Đáng Kể</string>
+    <string name="feature_title">Tính năng</string>
+    <string name="feature_remove_ads">Xóa Tất Cả Quảng Cáo</string>
+    <string name="feature_edit_pdf">Chỉnh Sửa PDF</string>
+    <string name="feature_sign_documents">Ký Tài Liệu</string>
+    <string name="feature_add_images">Thêm Ảnh vào PDF</string>
+    <string name="feature_scan_pdf">Quét thành PDF</string>
+    <string name="feature_mark_annotate">Đánh Dấu hoặc Ghi Chú</string>
+    <string name="feature_read_all_format">Đọc Mọi Định Dạng</string>
+    <string name="plan_pro">Pro</string>
+    <string name="plan_basic">Cơ bản</string>
+    <string name="subscribe_annually">Đăng ký Hàng Năm</string>
+    <string name="free_trial">DÙNG THỬ MIỄN PHÍ 3 NGÀY</string>
+    <string name="price_annual">%s/Tháng</string>
+    <string name="price_annual_note">Phí hàng năm %s</string>
+    <string name="discount_label">GIẢM 50%</string>
+    <string name="subscribe_monthly">Đăng ký Hàng Tháng</string>
+    <string name="price_monthly">%s/Tháng</string>
+    <string name="price_month">%s tháng</string>
+    <string name="button_free_trial">Dùng thử miễn phí 3 ngày</string>
+    <string name="cancel_note">Hủy bất cứ lúc nào - 24 giờ trước khi kết thúc dùng thử hoặc trước khi gia hạn</string>
+    <string name="term_of_use">Điều khoản sử dụng</string>
+    <string name="restore_purchase">Khôi phục giao dịch mua</string>
+    <string name="restore_button">Khôi phục</string>
+    <string name="get_free_trial">Nhận dùng thử miễn phí 3 ngày</string>
+    <string name="unlocked_premium_features">🔓 Đã mở khóa tất cả tính năng cao cấp</string>
+    <string name="unlocked">Đã mở khóa</string>
+    <string name="exclusive_tools_to_enhance">👑 Công cụ độc quyền nâng cao trải nghiệm của bạn</string>
+    <string name="exclusive_tools">Công cụ độc quyền</string>
+    <string name="no_payment_cancel_refund">✨ Không cần thanh toán bây giờ, có thể hủy bất cứ lúc nào, hoàn tiền 100% nếu không hài lòng!</string>
+    <string name="no_payment">Không cần thanh toán bây giờ</string>
+    <string name="refund">hoàn tiền 100%</string>
+    <string name="trial_conditions">DÙNG THỬ MIỄN PHÍ 3 NGÀY, sau đó %s/Tháng (tương đương %s/Năm), tự động gia hạn, có thể hủy bất kỳ lúc nào</string>
+    <string name="pay_for_renewal">%s/Tháng</string>
+    <string name="start_free_trial_now">Bắt đầu dùng thử miễn phí ngay</string>
+    <string name="_3_days_free_trial">Dùng thử miễn phí 3 ngày!</string>
+    <string name="day_free_trial">3 ngày</string>
+    <string name="expand_content">Mở rộng nội dung</string>
+
+    <string name="daily_call_open_app_title">Chúc bạn một ngày vui vẻ</string>
+    <string name="you_premium">Bạn là người dùng Premium!</string>
+    <string name="restore_success">Mua hàng của bạn đã được khôi phục!</string>
+    <string name="restore_fail">Không thể khôi phục mua hàng. Vui lòng kiểm tra kết nối và thử lại.</string>
+
+    <string name="payment_successful">Bạn đã thanh toán thành công gói Premium!</string>
+    <string name="please_update_store">Không thể mua hàng. Vui lòng cập nhật Play Store và đăng nhập Google</string>
+    <string name="not_confirm_purchase">Không thể xác nhận giao dịch. Vui lòng mở lại ứng dụng sau.</string>
+
+    <string name="reload_file_successful">Lấy file thành công</string>
+    <string name="swipe_refresh_guide">Vuốt xuống để tải lại file mới</string>
+    <string name="scanning_file">Đang quét tệp</string>
+    <string name="wait_for_scanning_file">Vui lòng đợi trong khi tệp đang được quét</string>
+    <string name="feature_request">Yêu cầu tính năng</string>
+    <string name="request">Yêu cầu</string>
+    <string name="we_add_new_feature">Chúng tôi sẽ thêm các tính năng mới để đáp ứng nhu cầu của bạn.</string>
+    <string name="have_any_other_feature_requests">Bạn có yêu cầu tính năng nào khác không?</string>
+    <string name="smart_tools">Công cụ thông minh</string>
+    <string name="edit_files">Chỉnh sửa tệp</string>
+    <string name="merge_and_split">Gộp &amp; Tách</string>
+    <string name="convert_files">Chuyển đổi tệp</string>
+    <string name="compress_files">Nén tệp</string>
+    <string name="view_setting">Cài đặt xem</string>
+    <string name="ai_tools">Công cụ AI</string>
+    <string name="chat_with_document">Trò chuyện với tài liệu</string>
+    <string name="ai_document_summary">Tóm tắt tài liệu bằng AI</string>
+    <string name="translate_document">Dịch tài liệu</string>
+    <string name="others">Khác</string>
+    <string name="submit">Gửi</string>
+    <string name="other_features_that_you_want_to_have">Các tính năng khác mà bạn muốn có</string>
+    <string name="thanks_for_feedback">Cảm ơn phản hồi của bạn!</string>
+    <string name="deliver_better_experience">Chúng tôi nỗ lực mang đến trải nghiệm tốt hơn.</string>
+    <string name="account">Tài khoản</string>
+    <string name="app">Ứng dụng</string>
+    <string name="display">Hiển thị</string>
+    <string name="support">Hỗ trợ</string>
+    <string name="free_and_premium">Miễn phí &amp; Premium</string>
+    <string name="terms_privacy_text">Bằng cách đặt hàng này, bạn đồng ý với Điều khoản dịch vụ và Chính sách bảo mật. Gói đăng ký sẽ tự động gia hạn trừ khi bạn tắt tự động gia hạn ít nhất 24 giờ trước khi kết thúc chu kỳ hiện tại.</string>
+    <string name="discount">Tiết kiệm 33%</string>
+    <string name="terms_and_service">Điều khoản dịch vụ</string>
+    <string name="price">%s/Week after FREE 3-days Trial</string>
+    <string name="start_free_trial">Start Free Trial</string>
+    <string name="start_like_a_pro">Bắt đầu như một Pro</string>
+    <string name="unlock_all_features">Mở khóa tất cả tính năng</string>
+    <string name="note_free_trial">Hủy bất cứ lúc nào. Gói đăng ký sẽ tự động gia hạn</string>
+    <string name="feature_image_pdf">Ảnh sang PDF</string>
+    <string name="feature_edit_doc">Chỉnh sửa tài liệu</string>
+    <string name="feature_add_images_doc">Thêm ảnh vào tài liệu</string>
+    <string name="total">Tổng:</string>
+    <string name="not_have_file">Ôi! Không tìm thấy tệp nào.</string>
+    <string name="check_for_more_files">Vui lòng kiểm tra bộ nhớ hoặc thử lại.</string>
+    <string name="date_created">Ngày tạo</string>
+    <string name="successfully">Thành công!</string>
+    <string name="rename_success">Tên tệp đã được đổi thành công.</string>
+    <string name="delete_file">Xóa tệp</string>
+    <string name="set_pdf_reader_as_your_default_all_file_viewer">Đặt <b>%s</b> làm trình xem %s mặc định của bạn</string>
+    <string name="all_file">Tất cả tệp</string>
+    <string name="allow_for_quick_easy_access">Cho phép "%s" để truy cập nhanh chóng, dễ dàng!</string>
+    <string name="home_screen_shortcuts">Lối tắt màn hình chính</string>
+    <string name="enable">Bật</string>
+    <string name="leave_the_app">Thoát ứng dụng?</string>
+    <string name="exit_content">Bạn có chắc chắn muốn thoát ứng dụng không?</string>
+    <string name="refresh_files">Kéo xuống để làm mới tệp</string>
+    <string name="update_required">Phiên bản này đã quá cũ. Vui lòng cập nhật ứng dụng</string>
+    <string name="select_from_recent">Chọn từ Gần đây</string>
+    <string name="select_from_mark">Chọn từ Đánh dấu</string>
+    <string name="remove_mark">Xóa Đánh dấu</string>
+    <string name="are_you_sure">Bạn có chắc không?</string>
+    <string name="remove_mark_content">Bạn có chắc muốn xóa đánh dấu khỏi tệp này không?</string>
+    <string name="splash_content">Đọc tất cả tài liệu của bạn ở một nơi</string>
+    <string name="feature_request_limit">Bạn chỉ có thể gửi lại sau 1 giờ</string>
+    <string name="fix_your_issue">Thông tin để chúng tôi có thể khắc phục sự cố của bạn nhanh hơn</string>
+    <string name="your_feedback">Phản hồi của bạn</string>
+    <string name="feedback_disclaimer">Bằng cách gửi email này, bạn đồng ý chia sẻ thông tin trên với chúng tôi để giúp cải thiện ứng dụng.</string>
+    <string name="subscribe_weekly">Đăng ký hàng tuần</string>
+    <string name="price_weekly">%s/Tuần</string>
+    <string name="go_setting">Đồng ý, đi đến cài đặt</string>
+    <string name="allow_access">Cho phép truy cập tệp của bạn</string>
+
+</resources>

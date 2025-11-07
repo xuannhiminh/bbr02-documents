@@ -1,0 +1,96 @@
+<resources>
+    <string-array name="fontStyles" translatable="false">
+        <item>NORMAAL</item>
+        <item>VET</item>
+        <item>CURSIEF</item>
+        <item>ONDERSTREEPT</item>
+        <item>DOORGESTREEPT</item>
+        <item>VETCURSIEF</item>
+    </string-array>
+    <string name="merge_pdf">PDF\'s samenvoegen</string>
+    <string name="split_pdf">PDF splitsen</string>
+    <string name="invert_pdf">Omkeren</string>
+    <string name="merge">Samenvoegen</string>
+    <string name="split">Splitsen</string>
+    <string name="invert">Omkeren</string>
+    <string name="remove_duplicate_page">Dubbele pagina\'s verwijderen</string>
+    <string name="add_password">Wachtwoord toevoegen</string>
+    <string name="remove_password">Wachtwoord verwijderen</string>
+    <string name="rotate_pages">Pagina\'s draaien</string>
+    <string name="add_watermark">Watermerk toevoegen</string>
+    <string name="add_image">Afbeelding toevoegen</string>
+    <string name="add_image_2">AfbeeldingToevoegen</string>
+    <string name="text_to_pdf">Tekst naar PDF</string>
+    <string name="image_to_pdf">Afbeelding naar PDF</string>
+    <string name="pdf_to_image">PDF naar afbeelding</string>
+    <string name="manage">Beheren</string>
+    <string name="delete_content">Weet u zeker dat u deze pagina wilt verwijderen?</string>
+    <string name="insert_page">Pagina invoegen</string>
+    <string name="blank_page">Lege pagina\'s</string>
+    <string name="image">Afbeeldingen</string>
+    <string name="page_size">Paginagrootte</string>
+    <string name="follow_previous">Volg vorige</string>
+    <string name="letter">Letter</string>
+    <string name="legal">Legal</string>
+    <string name="page_placeholder">Voer paginanummer in...</string>
+    <string name="storage_path" translatable="false">Opslagpad</string>
+    <string name="last_view">Laatst bekeken</string>
+    <string name="file_size">Bestandsgrootte</string>
+    <string name="insert">Invoegen</string>
+    <string name="extract">Extract</string>
+    <string name="image_to_pdf_2">AfbeeldingNaarPdf</string>
+    <string name="search_file">Bestand zoeken</string>
+    <string name="choose_at_least">U moet minstens 1 item kiezen</string>
+    <string name="delete">Verwijderen</string>
+    <string name="duplicate">Dupliceren</string>
+    <string name="enter_file_name">Voer bestandsnaam in</string>
+    <string name="password">Wachtwoord</string>
+    <string name="enter_password">Voer wachtwoord in</string>
+    <string name="ok">Oké</string>
+    <string name="invalid_value">Ongeldige waarde</string>
+    <string name="save">Opslaan</string>
+    <string name="cancel">Annuleren</string>
+    <string name="no_repetition_found">Geen herhaling gevonden</string>
+    <string name="split_suggest">De PDF wordt gesplitst in meerdere PDF\'s.\n Formaatvoorbeeld: 1-5,6-7,8,9</string>
+    <string name="error_page_number">Ongeldig paginanummer</string>
+    <string name="error_page_range">Ongeldige bereik invoer</string>
+    <string name="error_invalid_input">Ongeldige invoer</string>
+    <string name="enter_page_split">Voer pagina split in</string>
+    <string name="encryption">Versleuteling</string>
+    <string name="decryption">Ontsleuteling</string>
+    <string name="remove">Verwijderen</string>
+    <string name="add">Toevoegen</string>
+    <string name="remove_password_error">Kan wachtwoord niet verwijderen</string>
+    <string name="rotate">Draaien</string>
+    <string name="angle_90">90</string>
+    <string name="angle_180">180</string>
+    <string name="angle_270">270</string>
+    <string name="watermark">Watermerk</string>
+    <string name="enter_text">Voer tekst in</string>
+    <string name="enter_angle">Voer hoek in</string>
+    <string name="choose_color">Kies kleur</string>
+    <string name="enter_font_size">Voer lettergrootte in</string>
+    <string name="choose_font_family">Kies lettertype</string>
+    <string name="choose_style">Kies stijl</string>
+    <string name="add_image_step_1">1. Selecteer PDF-bestand</string>
+    <string name="add_image_step_2">2. Selecteer afbeeldingen</string>
+    <string name="select_image">Selecteer afbeeldingen</string>
+    <string name="select">Selecteren</string>
+    <string name="please_select_pdf_file">Selecteer een pdf-bestand.</string>
+    <string name="please_select_image">Selecteer een foto</string>
+    <string name="organize_pages">Pagina\'s ordenen</string>
+    <string name="extract_image">Afbeeldingen extraheren</string>
+    <string name="tool_done">Klaar</string>
+    <string name="file_is_protected">Bestand is beveiligd</string>
+    <string name="file_not_protected">Bestand is niet beveiligd</string>
+    <string name="info_add_image">U kunt vasthouden en slepen om de afbeeldingen te verplaatsen</string>
+    <string name="info_merge">U kunt naar links vegen om het bestand te verwijderen of te dupliceren</string>
+    <string name="info_organize">Sleep om pagina\'s te ordenen.\nKlik op een pagina om te verwijderen</string>
+    <string name="info_extract">Klik op een pagina om te selecteren</string>
+    <string name="done_2">Klaar!</string>
+    <string name="open">Openen</string>
+    <string name="close">Sluiten</string>
+    <string name="file_created_at">Bestand is aangemaakt op</string>
+    <string name="success">Succes</string>
+    <string name="sort">Sorteren</string>
+</resources> 

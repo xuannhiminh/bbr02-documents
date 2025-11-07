@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_77CEFF">#77CEFF</color>
+    <color name="color_C7F3A4">#C7F3A4</color>
+    <color name="color_FDA7FF">#FDA7FF</color>
+    <color name="color_FF9898">#FF9898</color>
+    <color name="color_8DE8D2">#8DE8D2</color>
+    <color name="color_FFC759">#FFC759</color>
+
+    <color name="color_FFAD32">#FFAD32</color>
+    <color name="color_858585">#858585</color>
+    <color name="color_3C3D4E">#3C3D4E</color>
+
+    <color name="color_1D1E2C">#1D1E2C</color>
+    <color name="toolbar_color">#FFFFFF</color>
+</resources>

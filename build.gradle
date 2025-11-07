@@ -1,0 +1,103 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '2.1.20'
+    ext.koin_version = '4.1.0'
+
+    repositories {
+        google()
+        mavenCentral()
+//        maven { url 'https://artifacts.applovin.com/android' }
+        maven {
+            url 'https://dl.google.com/dl/android/maven2'
+        }
+        maven { url = 'https://dl.bintray.com/ekito/koin' }
+        maven {
+            url "https://jitpack.io"
+
+        }
+        maven {
+            url = uri("https://company/com/maven2")
+        }
+//        mavenLocal()
+//        flatDir {
+//            dirs "libs"
+//        }
+//        gradlePluginPortal()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.12.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+//        classpath "com.applovin.quality:AppLovinQualityServiceGradlePlugin:4.9.1"
+
+        classpath 'com.google.gms:google-services:4.4.3'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.6'
+
+//        classpath "com.applovin.quality:AppLovinQualityServiceGradlePlugin:+"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id("com.google.devtools.ksp") version "2.1.20-2.0.0" apply false
+}
+
+allprojects {
+    repositories {
+        google()
+//        jcenter()
+        mavenCentral()
+        maven {
+            url 'https://android-sdk.is.com/'
+        }
+        maven {
+            url 'https://unity3ddist.jfrog.io/artifactory/unity-mediation-mvn-prod-local/'
+        }
+        maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" }
+        maven { url "https://artifact.bytedance.com/repository/pangle" }
+        maven {
+            url 'https://dl.google.com/dl/android/maven2'
+        }
+        maven { url = 'https://dl.bintray.com/ekito/koin' }
+        maven {
+            url "https://jitpack.io"
+        }
+        maven { url "https://maven.scijava.org/content/repositories/public/" }
+        maven { url "https://maven.scijava.org/content/repositories/public/" }
+
+//        maven { url ' https://artifacts.applovin.com/android ' }
+//        maven { url " https://android-sdk.is.com " }
+//        maven {
+//            url = uri("https://company/com/maven2")
+//        }
+//        mavenLocal()
+//        flatDir {
+//            dirs "libs"
+//        }
+//        gradlePluginPortal()
+
+    }
+}
+
+subprojects {
+    afterEvaluate { project ->
+        if (project.plugins.hasPlugin("com.android.application") ||
+                project.plugins.hasPlugin("com.android.library")) {
+            dependencies {
+                implementation 'com.github.heaven-std:ads-advance-lib:1.8.9'
+            }
+        }
+        tasks.configureEach { task ->
+            if (task.name.contains("AndroidTest") || task.name.contains("Test")) {
+                task.enabled = false
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

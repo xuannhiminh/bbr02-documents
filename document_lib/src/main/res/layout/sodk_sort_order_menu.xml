@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/sodk_sort_menu" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sort_tab" android:background="@drawable/sodk_sort_tab" android:layout_width="30.0dip" android:layout_height="fill_parent" android:contentDescription="@string/sodk_editor_sort_menu">
+        <View android:background="@drawable/sodk_sort_tab_decoration" android:layout_width="5.0dip" android:layout_height="35.0dip" android:translationX="9.0dip" />
+        <View android:background="@drawable/sodk_sort_tab_decoration" android:layout_width="5.0dip" android:layout_height="35.0dip" android:translationX="17.0dip" />
+    </RelativeLayout>
+    <office.file.ui.editor.ToolbarButton android:id="@id/sort_name_button" android:drawableTop="@drawable/sodk_icon_sort_by_name_asc" android:foregroundTint="@color/sodk_sort_button_normal" style="@style/sodk_sort_button" />
+    <office.file.ui.editor.ToolbarButton android:id="@id/sort_date_button" android:drawableTop="@drawable/sodk_icon_sort_by_date_asc" style="@style/sodk_sort_button" />
+    <office.file.ui.editor.ToolbarButton android:id="@id/sort_type_button" android:drawableTop="@drawable/sodk_icon_sort_by_type_asc" style="@style/sodk_sort_button" />
+    <office.file.ui.editor.ToolbarButton android:id="@id/sort_size_button" android:drawableTop="@drawable/sodk_icon_sort_by_size_asc" style="@style/sodk_sort_button" />
+</LinearLayout>

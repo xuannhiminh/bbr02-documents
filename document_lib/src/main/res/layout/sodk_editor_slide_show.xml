@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sodk_editor_slide_show_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <office.file.ui.editor.SlideShowView android:id="@id/sodk_editor_slide_show_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/sodk_editor_mask" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

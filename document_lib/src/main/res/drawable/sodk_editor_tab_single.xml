@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/sodk_editor_palette_tufts_blue" />
+            <corners
+                android:bottomLeftRadius="0.100000024dip"
+                android:bottomRightRadius="0.100000024dip"
+                android:topLeftRadius="@dimen/sodk_editor_tab_radius"
+                android:topRightRadius="@dimen/sodk_editor_tab_radius" />
+        </shape>
+    </item>
+    <item android:id="@id/tab_bg_color">
+        <shape>
+            <solid />
+            <corners
+                android:bottomLeftRadius="0.100000024dip"
+                android:bottomRightRadius="0.100000024dip"
+                android:topLeftRadius="@dimen/sodk_editor_tab_radius"
+                android:topRightRadius="@dimen/sodk_editor_tab_radius" />
+        </shape>
+    </item>
+</layer-list>

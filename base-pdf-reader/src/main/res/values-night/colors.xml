@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#FFFFFF</color>
+    <color name="sub_text_color">#FFFFFF</color>
+    <color name="background_color">#383838</color>
+    <color name="toolbar_color">#262626</color>
+    <color name="page_color">#383838</color>
+    <color name="icon_color">#FFFFFF</color>
+</resources>

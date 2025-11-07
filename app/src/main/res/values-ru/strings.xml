@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="intent_label_doc_pdf">Doc в PDF</string>
+    <string name="intent_label_doc_reader">Читалка Doc</string>
+    <string name="intent_label_pdf_doc">Редактор Doc</string>
+    <string name="intent_label_doc_smart_editor">Умный редактор Doc</string>
+    <string name="intent_label_doc_print">Печать Doc</string>
+
+    <string name="intent_label_excel_pdf">Excel в PDF</string>
+    <string name="intent_label_excel_reader">Читалка Excel</string>
+    <string name="intent_label_pdf_excel">Редактор Excel</string>
+    <string name="intent_label_excel_smart_editor">Умный редактор Excel</string>
+    <string name="intent_label_excel_print">Печать Excel</string>
+
+    <string name="intent_label_ppt_pdf">PPT в PDF</string>
+    <string name="intent_label_ppt_reader">Читалка PPT</string>
+    <string name="intent_label_pdf_ppt">Редактор PPT</string>
+    <string name="intent_label_ppt_smart_editor">Умный редактор PPT</string>
+    <string name="intent_label_ppt_print">Печать PPT</string>
+    <string name="click_back_to_app">Затем нажмите &lt; для возврата в приложение</string>
+    <string name="read">Читать</string>
+    <string name="your_recent_PDF_files_are_waiting">Ваши последние PDF-файлы ждут вас</string>
+    <string name="fix_your_issue">Информация, которая поможет нам быстрее решить вашу проблему</string>
+    <string name="your_feedback">Ваш отзыв</string>
+    <string name="feedback_disclaimer">Отправляя это письмо, вы соглашаетесь поделиться указанной выше информацией, чтобы помочь улучшить приложение.</string>
+    <string name="feature_request_limit">Вы можете отправить повторно только через 1 час.</string>
+    <string name="saving_content">Сохранение содержимого</string>
+    <string name="you_have_unfinished_file">У вас есть незавершенный файл</string>
+    <string name="click_to_see_more">Нажмите, чтобы увидеть больше.</string>
+
+
+    <string name="add_in_fav">Добавить в избранное</string>
+
+    <string name="app_name">All Document</string>
+
+    <string name="browse_more_files">Просмотреть другие файлы</string>
+
+    <string name="cancel">Отменить</string>
+
+    <string name="change_language">Изменить язык</string>
+
+    <string name="change_language_description">Вы можете изменить язык здесь.</string>
+
+    <string name="clear_fav_message">Вы действительно хотите очистить список избранных файлов, но они не будут удалены навсегда?</string>
+
+    <string name="clear_favourite">Очистить Избранное</string>
+
+    <string name="clear_recent">Очистить Недавние</string>
+
+    <string name="clear_recent_message">Вы действительно хотите очистить список последних файлов, но они не будут удалены навсегда?</string>
+
+    <string name="cont_pages">Непрерывные страницы</string>
+
+    <string name="continuee">Продолжать</string>
+
+    <string name="copy">Копировать</string>
+
+    <string name="date">Дата</string>
+
+    <string name="default_select">Выбрать 0</string>
+    <string name="day_mode">Дневной режим</string>
+
+    <string name="del_message">Вы уверены, что хотите удалить \"%s.pdf\" ?</string>
+
+    <string name="del_sel_message">Вы уверены, что хотите удалить выбранные элементы?</string>
+
+    <string name="delete">удалять</string>
+
+    <string name="delete_successfully">успешно удалено!</string>
+
+    <string name="done">Выполнено</string>
+
+    <string name="duplicate">Дублированный</string>
+
+    <string name="duplicate_successfully">успешно продублировать!</string>
+
+    <string name="duplicate_unsuccessful">\"Дублирование не выполнено, область памяти устройства может быть недоступна для записи!\"</string>
+
+    <string name="enter_file_name">Введите имя файла</string>
+
+    <string name="enter_page_no">Введите номер страницы</string>
+
+    <string name="enter_password">Введите пароль, чтобы открыть</string>
+
+    <string name="exit">Выход</string>
+
+    <string name="exit_message">" Приложение будет выходным! "</string>
+
+    <string name="expand_button_title">Дополнительно</string>
+
+    <string name="feedback">Обратная связь</string>
+
+    <string name="feedback_title">Расскажите нам о возникшей проблеме</string>
+    <string name="feedback_option1">Файл не открывается</string>
+    <string name="feedback_option2">Предложения</string>
+    <string name="feedback_option3">Медленно работает</string>
+    <string name="feedback_option4">Сбои и ошибки</string>
+    <string name="choose_option">Пожалуйста, выберите вариант отзыва</string>
+    <string name="feedback_warning">Пожалуйста, введите не менее 6 символов</string>
+
+
+    <string name="file_already_exists">Файл с именем %s.pdf уже существует, выберите другое имя!</string>
+
+    <string name="files_selected">%d выбрано файлов</string>
+
+    <string name="get_pro_now">Премиум-функции</string>
+
+    <string name="go_to_page">Перейти на страницу</string>
+
+    <string name="more">Подробнее</string>
+
+    <string name="more_description">Нажав на эту кнопку, вы можете выбрать все элементы сразу, а затем выполнить операцию над несколькими файлами.</string>
+
+    <string name="more_open_pdf_description">Вы можете пользоваться еще некоторыми инструментами, такими как ночной режим, и добавлять их в список избранных.</string>
+
+    <string name="more_open_pdf_title">Дополнительные инструменты</string>
+
+    <string name="more_title">Выбрать все</string>
+
+    <string name="name">имя</string>
+
+    <string name="nav_app_bar_navigate_up_description">Перейти вверх</string>
+
+    <string name="nav_app_bar_open_drawer_description">Открыть панель навигации</string>
+
+    <string name="next">следующий</string>
+
+    <string name="night_mode">Ночной режим</string>
+
+    <string name="no">Нет</string>
+
+    <string name="no_fav">Добавить файл в избранную категорию, чтобы легко найти его здесь позже.</string>
+
+    <string name="no_pdf_file">Не удалось найти файл PDF в вашем мобильном устройстве.</string>
+
+    <string name="no_recent">Любые PDF-файлы, которые вы недавно прочитали, появятся здесь.</string>
+
+    <string name="not_set">Не указано</string>
+
+    <string name="page_by_page">Постранично</string>
+
+    <string name="permission_deny_positive_text">позволять</string>
+
+    <string name="permission_deny_text">Чтобы просмотреть все файлы, разрешите доступ к хранилищу приложению для чтения PDF-файлов.</string>
+
+    <string name="permission_deny_title">Разрешить разрешение</string>
+
+    <string name="preference_copied">Текст \"%1$s\" скопирован в буфер обмена</string>
+
+    <string name="print">Печать</string>
+
+    <string name="print_description">С помощью этой функции вы можете распечатать свой документ прямо отсюда.</string>
+
+    <string name="print_title">Распечатать документ</string>
+
+    <string name="privacy_policy">Политика конфиденциальности</string>
+
+    <string name="pro_description">При покупке вы можете удалить все объявления навсегда.</string>
+
+    <string name="pro_title">Скрыть рекламу</string>
+
+    <string name="purchased_success">Куплено успешно</string>
+
+    <string name="rate_us">Оцените нас</string>
+
+    <string name="rate_us_message">"Хотите оценить это приложение? Ваша поддержка поможет нам улучшить его."</string>
+
+    <string name="rating_message">Ваша хорошая оценка очень важна для нас.</string>
+
+    <string name="remove_ads">Скрыть рекламу</string>
+
+    <string name="remove_fav_message">Вы действительно хотите удалить выбранные файлы из избранного, но они не будут удалены навсегда?</string>
+
+    <string name="remove_files">Удалить файлы</string>
+
+    <string name="remove_from_fav">Удалить из избранного</string>
+
+    <string name="remove_recent">Удалить из недавних</string>
+
+    <string name="remove_sel_recent_message">Выбранные файлы будут удалены из списка Недавние, но они не будут удалены навсегда.</string>
+
+    <string name="rename">переименование</string>
+
+    <string name="rename_unsuccessful">\"Переименовать не удалось, файл может быть недоступен для записи!\"</string>
+
+    <string name="save">Сохранить</string>
+
+    <string name="search_doc">Искать в документе</string>
+
+    <string name="search_menu_title">Поиск</string>
+
+    <string name="selected">" выбрано"</string>
+
+    <string name="send_feedback">Отправить отзыв</string>
+
+    <string name="share">Поделиться</string>
+
+    <string name="share_app">Поделись этим приложением</string>
+
+    <string name="share_description">Поделиться документом с другими.</string>
+
+    <string name="share_title">Поделиться документом</string>
+
+    <string name="size">Размер</string>
+
+    <string name="sort">Сортировать</string>
+
+    <string name="status_bar_notification_info_overflow">>999</string>
+
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+
+    <string name="thumbnail">PDF миниатюра</string>
+
+    <string name="title_fav">Избранные</string>
+
+    <string name="title_files">Файлы</string>
+
+    <string name="title_recent">Последние</string>
+
+    <string name="yes">Да</string>
+    <string name="select">Выбрано</string>
+    <string name="get_start_content">Чтобы предоставить вам более качественные услуги и более четкое представление о том, как мы обрабатываем и защищаем ваши данные, мы обновили Политику конфиденциальности.</string>
+    <string name="agree_us">Нажимая кнопку «ПРИНЯТЬ», вы соглашаетесь с нашей «Политикой конфиденциальности».</string>
+    <string name="agree">Дать согласие</string>
+    <string name="app_version">Версия %s</string>
+    <string name="file_not_found">Файл не найден!!!</string>
+    <string name="rate_now">Оценить сейчас</string>
+    <string name="recent_add">Недавно добавлено</string>
+    <string name="all">Все</string>
+    <string name="pdf">PDF</string>
+    <string name="word">Word</string>
+    <string name="excel">Excel</string>
+    <string name="ppt">PPT</string>
+    <string name="remind_later">Напомни мне позже</string>
+    <string name="please_rate">Пожалуйста, выберите рейтинг !!!</string>
+    <string name="thank_for_rate">Спасибо!!!</string>
+    <string name="sort_by">Сортировать по</string>
+    <string name="replace_old_file">Заменить старый файл?</string>
+    <string name="ok">ОК</string>
+    <string name="convert_to_pdf">Конвертировать в PDF</string>
+    <string name="pdf_file_name">Имя файла PDF</string>
+    <string name="password">Пароль</string>
+    <string name="convert">Перерабатывать</string>
+    <string name="file_name_invalid">Имя файла недействительно</string>
+    <string name="convert_success">Преобразован в PDF успешно!</string>
+    <string name="open">Открыть</string>
+
+    <string name="detail">Подробнее</string>
+    <string name="properties">Свойства</string>
+    <string name="app_error">Произошла ошибка. Пожалуйста, попробуйте еще раз</string>
+    <string name="notification_title">Средство чтения PDF №1 на Android</string>
+    <string name="notification_content">Чтение всех форматов PDF</string>
+    <string name="create_shortcut">Создать ярлык</string>
+    <string name="premium">Премиум</string>
+    <string name="privilege">Привилегия</string>
+    <string name="normal">Обычный</string>
+    <string name="basic_reading_operation">Основная операция чтения</string>
+    <string name="powerful_editing">Мощный инструмент редактирования</string>
+    <string name="cam_scanner">Сканер камеры</string>
+    <string name="signature">Подпись</string>
+    <string name="forever">Навсегда</string>
+    <string name="_3_months">%s месяцев</string>
+    <string name="free_for_days">Бесплатно в течение %s дней</string>
+    <string name="hot">Горячий</string>
+    <string name="premium_des">Удалить рекламу и разблокировать все функции</string>
+    <string name="no_ads">Без рекламы</string>
+    <string name="create_all_file">Создать весь файл</string>
+    <string name="edit_all_files">Редактировать все файлы</string>
+    <string name="cancel_anytime">Отменить в любое время</string>
+    <string name="free_7_day">3 дней бесплатно</string>
+    <string name="premium_then_after_trial">Затем %s/год</string>
+    <string name="premium_detail">Платеж будет списан с вашей учетной записи Google Play в конце пробного периода после подтверждения покупки, если вы не начинаете пробный период. Подписка автоматически продлевается до окончания пробного периода, если ее не отменить до 24 часов. Вы можете управлять своей подпиской и отключить автоматическое продление в магазине Google Play.</string>
+    <string name="language">Язык</string>
+    <string name="_1_year">%s год</string>
+    <string name="sort_by_date">Дата создания: По возрастанию</string>
+    <string name="sort_by_name_asc">Имя: от А до Я</string>
+    <string name="sort_by_name_desc">Имя: от Я до А</string>
+    <string name="sort_by_size_asc">Размер файла: по возрастанию</string>
+    <string name="sort_by_size_desc">Размер файла: по убыванию</string>
+    <string name="please_choose_file">Пожалуйста, выберите хотя бы один файл!</string>
+    <string name="delete_content">Вы уверены, что хотите удалить навсегда?</string>
+    <string name="delete_all">Вы уверены, что хотите удалить все выбранные файлы?</string>
+    <string name="title_access">Доступ ко всем файлам</string>
+    <string name="pdf_reader">PDF-просмотрщик</string>
+    <string name="allow_permission">Разрешить доступ</string>
+    <string name="content_access">Пожалуйста, предоставьте разрешение для доступа к файлам на вашем устройстве.</string>
+    <string name="button_permission">Открыть настройки</string>
+    <string name="permission_required">Требуется разрешение</string>
+    <string name="set_pdf_reader_as_your_default_pdf_file_viewer">Установите <b>%s</b> в качестве просмотрщика PDF-файлов по умолчанию</string>
+    <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">Выберите этот вариант, чтобы быстро открывать файлы и сделать чтение лёгким и приятным!</string>
+    <string name="set_as_default">Установить по умолчанию</string>
+    <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default">Выберите значок <b>%s</b> и нажмите <b>%s</b>, чтобы установить по умолчанию!</string>
+    <string name="always">Всегда</string>
+    <string name="select_this_pdf_reader_icon_in_the_app_list">Выберите этот значок <b>%s</b> в списке приложений.</string>
+    <string name="click_always_to_set_it_as_the_default_reader">Нажмите <b>%s</b>, чтобы установить как просмотрщик по умолчанию.</string>
+    <string name="choose_default_app">Пожалуйста, выберите %s как приложение по умолчанию для PDF</string>
+    <string name="auto_scroll">Автопрокрутка</string>
+    <string name="title_pdf_reader">Добро пожаловать в\n%s</string>
+    <string name="permission_graphic_desc">Запрос разрешений</string>
+    <string name="allow">Разрешить</string>
+    <string name="later">Позже</string>
+    <string name="permission_explanation">Чтобы просматривать и редактировать файлы, разрешите <b>%s</b> доступ ко всем файлам.</string>
+    <string name="add_to_home_screen">Добавить на главный экран?</string>
+    <string name="tap_add_or_hold_the_widget_to_add_it_to_your_home_screen_instantly_choose_an_option_below">Нажмите %s или удерживайте виджет, чтобы мгновенно добавить его на главный экран. Выберите один из вариантов ниже:</string>
+    <string name="add">Добавить</string>
+    <string name="cannot_widget">Ваше устройство не поддерживает закрепление виджетов.</string>
+    <string name="search">Искать файлы здесь</string>
+    <string name="home">Главная</string>
+    <string name="intent_label_pdf">Универсальный просмотрщик документов</string>
+    <string name="intent_label_pdf_sign">Подпись PDF</string>
+    <string name="intent_label_pdf_editor">Умный редактор документов</string>
+    <string name="intent_label_pdf_convert_to_images">PDF в изображения</string>
+    <string name="intent_label_pdf_reader">Умный просмотрщик документов</string>
+    <string name="intent_label_pdf_long_image">PDF в длинное изображение</string>
+    <string name="intent_label_pdf_word">PDF в Word</string>
+    <string name="clear_text">Очистить текст</string>
+    <string name="search_icon">поиск</string>
+    <string name="open_now">Открыть сейчас</string>
+    <string name="unfinished_reading">📌 Вы ещё не закончили читать %s.</string>
+    <string name="expand_content">Развернуть содержимое</string>
+    <string name="forgotten_file_content_notification">Не забывайте о важных файлах! 😊</string>
+    <string name="new_file_content_notification">📂 Вы только что получили новый файл</string>
+    <string name="daily_call_open_app_title">Хорошего дня!</string>
+    <string name="daily_call_open_app_content">Возможно, вы захотите открыть свои PDF-файлы! 📚</string>
+    <string name="title_intro_1">Универсальный просмотрщик документов</string>
+    <string name="open_read_and_edit">открыть, читать и редактировать</string>
+    <string name="title_intro_2">Продвинутый PDF-конвертер</string>
+    <string name="title_description_2">Быстро конвертируйте изображения, Word, Excel и PPT в высококачественные PDF.</string>
+    <string name="title_intro_3">Умный редактор PDF</string>
+    <string name="title_description_3">Выделяйте, подчеркивайте и зачеркивайте текст. Добавляйте электронные подписи с лёгкостью.</string>
+    <string name="start">Начать</string>
+    <string name="language_subtitle">Пожалуйста, выберите свой родной язык. Вы сможете изменить его позже в настройках.</string>
+    <string name="splash_text">Это действие может содержать рекламу</string>
+    <string name="sort_by_date_desc">Дата создания: По убыванию</string>
+    <string name="ads_message">Пожалуйста, подождите, пока загрузится реклама...</string>
+    <string name="add_widget">Добавить виджет</string>
+    <string name="push_notifications">Включить уведомления</string>
+    <string name="keep_screen_on">Не выключать экран</string>
+    <string name="terms_and_conditions">Условия и положения</string>
+    <string name="about_us">О нас</string>
+    <string name="noti_title">Разрешить %s отправлять уведомления?</string>
+    <string name="noti_content">Для вашего удобства разрешите приложению доступ к уведомлениям. Не пропустите важные обновления документов и напоминания о задачах.</string>
+    <string name="noti_allow">Разрешить уведомления</string>
+    <string name="noti_title1">У вас новый PDF-файл</string>
+    <string name="open_file">Открыть файл</string>
+    <string name="notice">Уведомление</string>
+    <string name="notice_content">Включите уведомления, чтобы быть в курсе статуса файла</string>
+
+    <string name="notification_title_5">✅ Загрузка завершена!</string>
+    <string name="notification_description_5">📂 %s готов. Нажмите, чтобы открыть.</string>
+    <string name="notification_button_5">Открыть файл</string>
+    <string name="notification_title_11">✨ %s</string>
+    <string name="notification_description_11">🚀 Скриншот сохранён! Нажмите здесь, чтобы просмотреть!</string>
+    <string name="notification_button_11">Открыть сейчас</string>
+
+    <string-array name="notification_title1">
+        <item name="notification_title_0">⚙️ Завершите настройку?</item>
+        <item name="notification_title_1">📂 Разрешить доступ к файлам</item>
+        <item name="notification_title_2">🎉 Много забытых PDF на вашем телефоне?</item>
+        <item name="notification_title_3">👋 Откройте любой документ!</item>
+        <item name="notification_title_4">🧭 Доступны обновлённые файлы</item>
+    </string-array>
+    <string-array name="notification_title2">
+        <item name="notification_title_6">📖 Продолжить с места остановки?</item>
+        <item name="notification_title_7">🔍 Быстрый поиск текста!</item>
+        <item name="notification_title_8">🎉 Много забытых PDF на вашем телефоне?</item>
+        <item name="notification_title_9">👋 Откройте любой документ!</item>
+        <item name="notification_title_10">🧭 Доступны обновлённые файлы</item>
+    </string-array>
+    <string-array name="notification_message1">
+        <item name="notification_description_0">✨ Осталось всего несколько шагов, чтобы раскрыть весь потенциал %s!</item>
+        <item name="notification_description_1">👍 Для открытия, чтения и управления PDF разрешите доступ.</item>
+        <item name="notification_description_2">🚀 Нажмите здесь, чтобы читать и редактировать документы.</item>
+        <item name="notification_description_3">✨ PDF, Word, Excel и другое!</item>
+        <item name="notification_description_4">✨ Ваша библиотека документов обновлена!</item>
+    </string-array>
+    <string-array name="notification_message2">
+        <item name="notification_description_6">🤓 В %s ещё остались непрочитанные страницы. Продолжите чтение!</item>
+        <item name="notification_description_7">💡 Используйте мощный инструмент поиска для быстрого поиска по документу.</item>
+        <item name="notification_description_8">🚀 Нажмите здесь, чтобы читать и редактировать документы.</item>
+        <item name="notification_description_9">✨ PDF, Word, Excel и другое!</item>
+        <item name="notification_description_10">✨ Ваша библиотека документов обновлена!</item>
+    </string-array>
+    <string-array name="notification_button1">
+        <item name="notification_button_0">Продолжить настройку</item>
+        <item name="notification_button_1">Разрешить доступ</item>
+        <item name="notification_button_2">Открыть сейчас</item>
+        <item name="notification_button_3">Открыть приложение</item>
+        <item name="notification_button_4">Просмотреть сейчас</item>
+    </string-array>
+    <string-array name="notification_button2">
+        <item name="notification_button_6">Продолжить</item>
+        <item name="notification_button_7">Попробовать поиск</item>
+        <item name="notification_button_8">Открыть сейчас</item>
+        <item name="notification_button_9">Открыть приложение</item>
+        <item name="notification_button_10">Просмотреть сейчас</item>
+    </string-array>
+
+    <string name="uninstall">Удалить</string>
+    <string name="uninstall_reason_2">Слишком много рекламы</string>
+    <string name="uninstall_reason_3">Мне больше не нужно это приложение</string>
+    <string name="other">Другое</string>
+    <string name="uninstall_reason_1">Функция не работает</string>
+    <string name="uninstall_reason_title">Были проблемы при использовании приложения?</string>
+    <string name="uninstall_title">Удаление приложения может привести к %s. Вы уверены, что хотите продолжить?</string>
+    <string name="uninstall_highlight">потере сохранённых документов или недавних файлов</string>
+    <string name="uninstall_content">Пожалуйста, попробуйте снова активировать приложение и сообщите нам причину.</string>
+    <string name="uninstall_confirm">Всё ещё хотите удалить?</string>
+    <string name="feedback_content">Введите свой отзыв</string>
+
+    <string name="default_reader_uninstall_description1">Похоже, вы установили другое приложение в качестве приложения по умолчанию.</string>
+    <string name="default_reader_uninstall_description2">Вы можете нажать «Сброс», чтобы изменить это.</string>
+    <string name="reset">Сбросить</string>
+    <string name="clear_default_reader">Очистить приложение по умолчанию</string>
+    <string name="select_set_as_default">Выбрать Установить по умолчанию</string>
+    <string name="set_default">Установить по умолчанию</string>
+    <string name="click_clear_default">Затем нажмите Очистить настройки по умолчанию</string>
+    <string name="clear_default">Очистить настройки по умолчанию</string>
+    <string name="alway">Всегда</string>
+    <string name="set_pdf_reader_as_your_default_title">Выберите <b>%s</b> и нажмите «Всегда», чтобы установить по умолчанию</string>
+    <string name="select_pdf_reader">Выберите <b>%s</b></string>
+    <string name="click_always_to_set">Затем нажмите «Всегда» для подтверждения</string>
+    <string name="update_desc">Нажмите «Обновить», чтобы воспользоваться новой версией. 👇</string>
+    <string name="update_desc_replace">Оцените улучшенную производительность и стабильность в нашей последней версии. Нажмите, чтобы обновить. 👇</string>
+    <string name="update_title">Присоединяйтесь к более чем %s пользователям и испытайте превосходную производительность! 🚀</string>
+    <string name="new_version">🎉 Доступна новая</string>
+    <string name="update_note">Вы можете продолжать использовать приложение во время обновления 😊</string>
+
+    <string name="update">Обновить</string>
+    <string name="set_app_default">Установить как приложение по умолчанию</string>
+    <string name="update_available_title">✨ Новая версия %1$s готова!</string>
+    <string name="update_now">Обновить сейчас</string>
+    <string name="update_available_description">Версия %1$s доступна с новыми функциями и улучшенной производительностью. Обновите сейчас, чтобы попробовать!</string>
+    <string name="open_intro">Открывайте</string>
+    <string name="edit_intro">редактируйте</string>
+    <string name="read_intro">просматривайте</string>
+    <string name="title_description_1">Легко открывайте, просматривайте и редактируйте все типы документов</string>
+    <string name="restart">Перезагрузить</string>
+    <string name="skip_language_activity">Пропустить</string>
+    <string name="install">Установить</string>
+    <string name="app_update_install">Обновление загружено. Установите его сейчас!</string>
+    <string name="app_update_downloaded">🎉Обновление загружено</string>
+    <string name="app_update_critical">🔔 Это критическое обновление, пожалуйста, обновитесь, чтобы продолжить!</string>
+    <string name="are_you_satisfied">Вы довольны нашим приложением?</string>
+    <string name="not_really">😞\n Не очень</string>
+    <string name="love_it">🥰\n Понравилось</string>
+    <string name="thank_for_support">Спасибо за вашу поддержку!</string>
+    <string name="rate_us_content">Мы будем очень благодарны, если вы нас оцените</string>
+    <string name="rate">Оценить</string>
+    <string name="rate_on_google">Оценить в Google Play</string>
+    <string name="best_we_can">Лучшее, что мы можем получить</string>
+    <string name="we_sorry">Ой, нам жаль...</string>
+    <string name="your_feedback_is_welcome">Ваш отзыв очень важен для нас</string>
+    <string name="much_appreciated">Очень признательны!</string>
+    <string name="your_support_is_motivation">Ваша поддержка — наша главная мотивация!</string>
+    <string name="thank_for_feedback">Спасибо за ваш отзыв</string>
+    <string name="we_will_bring_better_user_ex">Мы сделаем всё возможное для улучшения</string>
+
+    <string name="done_language_activity">Готово</string>
+    <string name="feedback_placeholder">Пожалуйста, расскажите больше подробностей, чтобы мы могли быстрее найти и решить вашу проблему</string>
+    <string name="feedback_option6">Слишком много уведомлений</string>
+
+    <string name="please_specify">Пожалуйста, укажите причину</string>
+    <string name="please_input_reason">Пожалуйста, введите вашу причину</string>
+    <string name="select_reason_first">Пожалуйста, выберите причину перед удалением</string>
+
+    <string name="uninstall_reason_4">Слишком много уведомлений</string>
+    <string name="result_not_found">Результат не найден!!!</string>
+    <string name="search_language_hint">Искать здесь...</string>
+    <string name="user_guide_title">Добро пожаловать в %s</string>
+    <string name="press_button">Нажмите эту кнопку, чтобы создать PDF-файл</string>
+    <string name="exit_app_content">Вы уверены, что хотите выйти из приложения?</string>
+    <string name="exit_app">😢\nВыйти из приложения</string>
+    <string name="not_exit">🥰\nВернуться</string>
+
+    <string name="uprange_to_premium">Перейти на Premium</string>
+    <string name="full_premium_features">Наслаждайтесь всеми премиум-функциями</string>
+    <string name="see_full_offer">Смотрите все эксклюзивные предложения!</string>
+
+    <string name="app_name_iap">Лучший универсальный PDF-чтение</string>
+    <string name="tagline">Значительно повысьте эффективность работы</string>
+    <string name="feature_title">Функции</string>
+    <string name="feature_remove_ads">Удалить всю рекламу</string>
+    <string name="feature_edit_pdf">Редактировать PDF</string>
+    <string name="feature_sign_documents">Подписывать документы</string>
+    <string name="feature_add_images">Добавить изображения в PDF</string>
+    <string name="feature_scan_pdf">Сканировать в PDF</string>
+    <string name="feature_mark_annotate">Выделять и комментировать</string>
+    <string name="feature_read_all_format">Читать все форматы</string>
+    <string name="plan_pro">Премиум</string>
+    <string name="plan_basic">Базовый</string>
+    <string name="subscribe_annually">Годовая подписка</string>
+    <string name="free_trial">3 ДНЯ БЕСПЛАТНОЙ ПРОБНОЙ ВЕРСИИ</string>
+    <string name="price_annual">%s/месяц</string>
+    <string name="price_annual_note">Ежегодная оплата %s</string>
+    <string name="discount_label">СКИДКА 50%</string>
+    <string name="subscribe_monthly">Месячная подписка</string>
+    <string name="price_monthly">%s/месяц</string>
+    <string name="price_month">%s месяц</string>
+    <string name="button_free_trial">Бесплатная проба на 3 дня</string>
+    <string name="cancel_note">Отменить в любое время — за 24 часа до окончания пробного периода или продления</string>
+    <string name="term_of_use">Условия использования</string>
+    <string name="restore_purchase">Восстановить покупку</string>
+    <string name="restore_button">Восстановить</string>
+    <string name="get_free_trial">Получить 3-дневную пробную версию</string>
+    <string name="_3_days_free_trial">3-дневная бесплатная пробная версия!</string>
+    <string name="day_free_trial">3-дневную</string>
+    <string name="unlocked_premium_features">🔓 Все премиум-функции разблокированы</string>
+    <string name="unlocked">разблокированы</string>
+    <string name="exclusive_tools_to_enhance">👑 Эксклюзивные инструменты для улучшения вашего опыта</string>
+    <string name="exclusive_tools">Эксклюзивные инструменты</string>
+    <string name="no_payment_cancel_refund">✨ Без оплаты сейчас, отмена в любое время, 100% возврат, если не удовлетворены!</string>
+    <string name="no_payment">Без оплаты сейчас</string>
+    <string name="refund">100% возврат</string>
+    <string name="trial_conditions">3 ДНЯ БЕСПЛАТНО, затем %s/месяц (что эквивалентно %s/год), автоматическое продление, отмена в любое время</string>
+    <string name="pay_for_renewal">%s/месяц</string>
+    <string name="start_free_trial_now">Начать бесплатную пробную версию сейчас</string>
+
+    <string name="you_premium">Вы — пользователь Premium!</string>
+    <string name="restore_success">Ваши покупки были восстановлены!</string>
+    <string name="restore_fail">Не удалось восстановить покупки. Пожалуйста, проверьте подключение и попробуйте снова.</string>
+
+    <string name="payment_successful">Вы успешно оплатили пакет Premium!</string>
+    <string name="please_update_store">Не удалось совершить покупку. Обновите Play Store и войдите в аккаунт Google</string>
+    <string name="not_confirm_purchase">Не удалось подтвердить покупку. Пожалуйста, откройте приложение позже.</string>
+    <string name="reload_file_successful">Файл успешно получен</string>
+    <string name="swipe_refresh_guide">Проведите вниз, чтобы обновить файлы</string>
+    <string name="scanning_file">Сканирование файла</string>
+    <string name="wait_for_scanning_file">Пожалуйста, подождите, пока файл сканируется</string>
+
+    <string name="feature_request">Запрос функции</string>
+    <string name="request">Запрос</string>
+    <string name="we_add_new_feature">Мы добавим новые функции, чтобы удовлетворить ваши потребности.</string>
+    <string name="have_any_other_feature_requests">Есть ли другие запросы функций?</string>
+    <string name="smart_tools">Умные инструменты</string>
+    <string name="edit_files">Редактировать файлы</string>
+    <string name="merge_and_split">Объединить и разделить</string>
+    <string name="convert_files">Преобразовать файлы</string>
+    <string name="compress_files">Сжать файлы</string>
+    <string name="view_setting">Настройки просмотра</string>
+    <string name="ai_tools">AI инструменты</string>
+    <string name="chat_with_document">Чат с документом</string>
+    <string name="ai_document_summary">AI резюме документа</string>
+    <string name="translate_document">Перевести документ</string>
+    <string name="others">Другое</string>
+    <string name="submit">Отправить</string>
+    <string name="other_features_that_you_want_to_have">Другие функции, которые вы хотите иметь</string>
+    <string name="thanks_for_feedback">Спасибо за ваш отзыв!</string>
+    <string name="deliver_better_experience">Мы стремимся предоставить лучший опыт.</string>
+    <string name="account">Аккаунт</string>
+    <string name="app">Приложение</string>
+    <string name="display">Дисплей</string>
+    <string name="support">Поддержка</string>
+    <string name="free_and_premium">Бесплатно &amp; Премиум</string>
+    <string name="terms_privacy_text">Размещая этот заказ, вы соглашаетесь с Условиями обслуживания и Политика конфиденциальности. Подписка автоматически продлевается, если автопродление не отключено как минимум за 24 часа до окончания текущего периода.</string>
+    <string name="discount">Экономьте 33%</string>
+    <string name="terms_and_service">Условиями обслуживания</string>
+    <string name="price">%s/Week after FREE 3-days Trial</string>
+    <string name="start_free_trial">Start Free Trial</string>
+    <string name="start_like_a_pro">Начни как профи</string>
+    <string name="unlock_all_features">Разблокировать все функции</string>
+    <string name="note_free_trial">Отменить можно в любое время. Подписка будет автоматически продлеваться</string>
+    <string name="feature_image_pdf">Изображение в PDF</string>
+    <string name="feature_edit_doc">Редактировать документы</string>
+    <string name="feature_add_images_doc">Добавить изображения в документы</string>
+    <string name="total">Итого:</string>
+    <string name="not_have_file">Упс! Мы не смогли найти ни одного файла.</string>
+    <string name="check_for_more_files">Пожалуйста, проверьте хранилище или попробуйте снова.</string>
+    <string name="date_created">Дата создания</string>
+    <string name="successfully">Успешно!</string>
+    <string name="rename_success">Имя файла успешно изменено.</string>
+    <string name="delete_file">Удалить файл</string>
+    <string name="set_pdf_reader_as_your_default_all_file_viewer">Установить <b>%s</b> в качестве просмотрщика %s по умолчанию</string>
+    <string name="all_file">Все файлы</string>
+    <string name="allow_for_quick_easy_access">Разрешите "%s" для быстрого и удобного доступа!</string>
+    <string name="home_screen_shortcuts">Ярлыки на главном экране</string>
+    <string name="enable">Включить</string>
+    <string name="leave_the_app">Выйти из приложения?</string>
+    <string name="exit_content">Вы уверены, что хотите выйти из приложения?</string>
+    <string name="refresh_files">Потяните вниз, чтобы обновить файлы</string>
+    <string name="update_required">Эта версия устарела. Пожалуйста, обновите приложение</string>
+    <string name="select_from_recent">Выбрать из Недавних</string>
+    <string name="select_from_mark">Выбрать из Отмеченных</string>
+    <string name="remove_mark">Удалить метку</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="remove_mark_content">Вы уверены, что хотите удалить метку с этого файла?</string>
+    <string name="splash_content">Читайте все свои документы в одном месте</string>
+    <string name="subscribe_weekly">Подписаться на неделю</string>
+    <string name="price_weekly">%s/Неделя</string>
+    <string name="go_setting">Хорошо, перейти в настройки</string>
+    <string name="allow_access">Разрешить доступ к вашим файлам</string>
+
+
+</resources>

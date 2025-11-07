@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sodk_editor_number_format_popup"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <office.file.ui.editor.SOTextView
+        style="@style/sodk_editor_wheel_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:paddingBottom="4.0dip"
+        android:text="@string/sodk_editor_number_format_currency"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <kankan.wheel.widget.WheelViewLib
+            android:id="@id/left_wheel"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip" />
+
+        <kankan.wheel.widget.WheelViewLib
+            android:id="@id/right_wheel"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <office.file.ui.editor.SOTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sodk_editor_two_decimal_places"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:theme="@style/sodk_editor_wheel_checkbox_label_style" />
+
+        <Space
+            android:layout_width="1.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0" />
+
+        <CheckBox
+            android:id="@id/decimal_places_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:theme="@style/sodk_editor_wheel_checkbox_style" />
+    </LinearLayout>
+</LinearLayout>

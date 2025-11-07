@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:layout_margin="@dimen/_3sdp"
+            android:orientation="vertical">
+
+            <office.file.ui.editor.SOTextView
+                android:id="@id/color_dialog_title"
+                style="@style/sodk_editor_dialog_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@id/fontcolors_row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/fontcolors_row2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/fontcolors_row3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    style="@style/sodk_editor_font_color_button"
+                    android:tag="\#000000" />
+
+                <Button
+                    android:id="@id/transparent_color_button"
+                    style="@style/sodk_editor_font_color_button"
+                    android:background="@drawable/sodk_editor_transparent_color_swatch"
+                    android:tag="transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

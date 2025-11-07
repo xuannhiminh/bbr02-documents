@@ -1,0 +1,96 @@
+<resources>
+    <string-array name="fontStyles" translatable="false">
+        <item>ЗВИЧАЙНИЙ</item>
+        <item>ЖИРНИЙ</item>
+        <item>КУРСИВ</item>
+        <item>ПІДКРЕСЛЕНИЙ</item>
+        <item>ПЕРЕКРЕСЛЕНИЙ</item>
+        <item>ЖИРНИЙ КУРСИВ</item>
+    </string-array>
+    <string name="merge_pdf">Об\'єднати PDF</string>
+    <string name="split_pdf">Розділити PDF</string>
+    <string name="invert_pdf">Інвертувати</string>
+    <string name="merge">Об\'єднати</string>
+    <string name="split">Розділити</string>
+    <string name="invert">Інвертувати</string>
+    <string name="remove_duplicate_page">Видалити дублікати сторінок</string>
+    <string name="add_password">Додати пароль</string>
+    <string name="remove_password">Видалити пароль</string>
+    <string name="rotate_pages">Повернути сторінки</string>
+    <string name="add_watermark">Додати водяний знак</string>
+    <string name="add_image">Додати зображення</string>
+    <string name="add_image_2">ДодатиЗображення</string>
+    <string name="text_to_pdf">Текст у PDF</string>
+    <string name="image_to_pdf">Зображення у PDF</string>
+    <string name="pdf_to_image">PDF у зображення</string>
+    <string name="manage">Керувати</string>
+    <string name="delete_content">Ви впевнені, що хочете видалити цю сторінку?</string>
+    <string name="insert_page">Вставити сторінку</string>
+    <string name="blank_page">Порожні сторінки</string>
+    <string name="image">Зображення</string>
+    <string name="page_size">Розмір сторінки</string>
+    <string name="follow_previous">Слідувати попередньому</string>
+    <string name="letter">Лист</string>
+    <string name="legal">Юридичний</string>
+    <string name="page_placeholder">Введіть номер сторінки...</string>
+    <string name="storage_path" translatable="false">Шлях зберігання</string>
+    <string name="last_view">Останній перегляд</string>
+    <string name="file_size">Розмір файлу</string>
+    <string name="insert">Вставити</string>
+    <string name="extract">Витягти</string>
+    <string name="image_to_pdf_2">ЗображенняУPdf</string>
+    <string name="search_file">Пошук файлу</string>
+    <string name="choose_at_least">Ви повинні вибрати принаймні 1 елемент</string>
+    <string name="delete">Видалити</string>
+    <string name="duplicate">Дублювати</string>
+    <string name="enter_file_name">Введіть ім\'я файлу</string>
+    <string name="password">Пароль</string>
+    <string name="enter_password">Введіть пароль</string>
+    <string name="ok">ОК</string>
+    <string name="invalid_value">Недійсне значення</string>
+    <string name="save">Зберегти</string>
+    <string name="cancel">Скасувати</string>
+    <string name="no_repetition_found">Повторень не знайдено</string>
+    <string name="split_suggest">PDF буде розділено на кілька PDF.\n Приклад формату: 1-5,6-7,8,9</string>
+    <string name="error_page_number">Недійсний номер сторінки</string>
+    <string name="error_page_range">Недійсний діапазон</string>
+    <string name="error_invalid_input">Недійсне введення</string>
+    <string name="enter_page_split">Введіть розділення сторінок</string>
+    <string name="encryption">Шифрування</string>
+    <string name="decryption">Дешифрування</string>
+    <string name="remove">Видалити</string>
+    <string name="add">Додати</string>
+    <string name="remove_password_error">Не вдалося видалити пароль</string>
+    <string name="rotate">Повернути</string>
+    <string name="angle_90">90</string>
+    <string name="angle_180">180</string>
+    <string name="angle_270">270</string>
+    <string name="watermark">Водяний знак</string>
+    <string name="enter_text">Введіть текст</string>
+    <string name="enter_angle">Введіть кут</string>
+    <string name="choose_color">Виберіть колір</string>
+    <string name="enter_font_size">Введіть розмір шрифту</string>
+    <string name="choose_font_family">Виберіть шрифт</string>
+    <string name="choose_style">Виберіть стиль</string>
+    <string name="add_image_step_1">1. Виберіть PDF-файл</string>
+    <string name="add_image_step_2">2. Виберіть зображення</string>
+    <string name="select_image">Виберіть зображення</string>
+    <string name="select">Вибрати</string>
+    <string name="please_select_pdf_file">Будь ласка, виберіть PDF-файл.</string>
+    <string name="please_select_image">Будь ласка, виберіть фото</string>
+    <string name="organize_pages">Організувати сторінки</string>
+    <string name="extract_image">Витягти зображення</string>
+    <string name="tool_done">Готово</string>
+    <string name="file_is_protected">Файл захищено</string>
+    <string name="file_not_protected">Файл не захищено</string>
+    <string name="info_add_image">Ви можете утримувати та перетягувати для переміщення зображень</string>
+    <string name="info_merge">Проведіть вліво, щоб видалити або дублювати файл</string>
+    <string name="info_organize">Перетягніть для організації сторінок.\nНатисніть на сторінку, щоб видалити</string>
+    <string name="info_extract">Натисніть на сторінку, щоб вибрати</string>
+    <string name="done_2">Готово!</string>
+    <string name="open">Відкрити</string>
+    <string name="close">Закрити</string>
+    <string name="file_created_at">Файл створено</string>
+    <string name="success">Успіх</string>
+    <string name="sort">Сортувати</string>
+</resources> 

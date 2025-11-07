@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/white" />
+    <corners android:radius="@dimen/sodk_editor_menu_popup_radius" />
+    <padding
+        android:bottom="5.0dip"
+        android:left="10.0dip"
+        android:right="10.0dip"
+        android:top="5.0dip" />
+</shape>

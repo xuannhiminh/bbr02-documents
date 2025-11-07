@@ -1,0 +1,184 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.devtools.ksp'
+
+//    id 'applovin-quality-service'
+}
+
+//applovin {
+//    apiKey "c6A1iFSitmVlIuhTlnunm8a4yA-CFW6s2KDr_2HZuSVzMhSZbMHS4_1zqTneldiz6Jiipza3UAkTOBukN6uGbe"
+//}
+
+//def keystorePropertiesFile = rootProject.file("app/key.properties")
+//def keystoreProperties = new Properties()
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+//    compileSdkVersion 33
+    compileSdkVersion 35
+    defaultConfig {
+        applicationId "officepro.document.reader.viewer.editor"
+        minSdkVersion 28
+        targetSdkVersion 35
+        versionCode 100
+        versionName "1.0.0"
+
+        vectorDrawables.useSupportLibrary = true
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+        def formattedDate = new Date().format('MMM.dd.yyyy')
+        archivesBaseName = "BR02_Document_v${versionName}(${versionCode})_${formattedDate}"
+    }
+
+//    signingConfigs {
+//        customDebug {
+//            storeFile file(keystoreProperties['STORE_FILE'])
+//            storePassword keystoreProperties['STORE_PASSWORD']
+//            keyAlias keystoreProperties['KEY_ALIAS']
+//            keyPassword keystoreProperties['KEY_PASSWORD']
+//        }
+//    }
+
+    buildTypes {
+        debug {
+            debuggable true
+          //  signingConfig signingConfigs.customDebug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "false"]
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "true"]
+            ndk {
+                debugSymbolLevel = "FULL"
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig = true
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    namespace 'officepro.document.reader.viewer.editor'
+
+    // This disables creating test APKs
+//    testVariants.all { it.enabled = false }
+}
+
+dependencies {
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.9.2'
+//    implementation "com.google.firebase:firebase-appcheck-debug"
+
+    implementation 'com.akexorcist:localization:1.2.11'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.16.0'
+    implementation "com.google.android.play:review:2.0.2"
+    implementation "com.google.android.play:review-ktx:2.0.2"
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'nl.dionsegijn:konfetti-xml:2.0.5'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.9.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.9.3'
+    implementation project(path: ':base-module')
+    implementation "com.android.billingclient:billing:7.1.0"
+    implementation 'com.google.android.play:review:2.0.2'
+    implementation("com.squareup.okhttp3:okhttp:5.2.1")
+    implementation("org.jsoup:jsoup:1.21.2")
+
+    implementation 'com.google.android.play:review-ktx:2.0.2'
+
+    implementation 'commons-io:commons-io:2.20.0'
+
+    /*https://github.com/hdodenhof/CircleImageView*/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    /*https://developer.android.com/kotlin/coroutines*/
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2'
+
+    /*https://github.com/intuit/sdp*/
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+
+    /*https://github.com/google/gson*/
+    implementation 'com.google.code.gson:gson:2.13.1'
+
+    /*https://github.com/bumptech/glide*/
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+//    implementation project(path: ':ads-module')
+    implementation project(path: ':base-pdf-reader')
+    implementation project(path: ':pdf-tool-module')
+    implementation 'com.google.firebase:firebase-messaging-ktx:24.1.2'
+    implementation 'com.google.android.play:app-update-ktx:2.1.0'
+    implementation 'com.google.firebase:firebase-firestore:26.0.2'
+    implementation 'com.google.firebase:firebase-appcheck-playintegrity:19.0.0'
+    implementation 'androidx.lifecycle:lifecycle-process:2.9.4'
+// if (file('../pdf-revolution-module/build.gradle').isFile())
+//        api project(':pdf-revolution-module')
+//    else
+//        api 'com.artifex.mupdf:viewer:1.25.5a'
+    annotationProcessor  'com.github.bumptech.glide:compiler:4.16.0'
+
+    /*https://lottiefiles.com/blog/working-with-lottie/getting-started-with-lottie-animations-in-android-app*/
+    implementation "com.airbnb.android:lottie:6.6.7"
+
+    implementation 'androidx.work:work-runtime:2.10.3'
+
+    /*https://github.com/daimajia/AndroidViewAnimations*/
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+    /*https://insert-koin.io/docs/quickstart/kotlin#setup*/
+    implementation "io.insert-koin:koin-core:$koin_version"
+    implementation "io.insert-koin:koin-android:$koin_version"
+    // Koin AndroidX ViewModel features
+//    implementation "io.insert-koin:koin-androidx-viewmodel:2.2.3"
+//    // Koin AndroidX Fragment features
+//    implementation "io.insert-koin:koin-androidx-fragment:2.2.3"
+
+    /*https://developer.android.com /jetpack/androidx/releases/room*/
+    def room_version = "2.7.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    ksp "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.madgag.spongycastle:core:1.58.0.0'
+
+
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'com.google.android.gms:play-services-ads:23.4.0'
+    implementation platform('com.google.firebase:firebase-bom:34.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation project(path: ':document_lib')
+    implementation 'com.facebook.android:facebook-android-sdk:18.1.3'
+    implementation 'com.google.ads.mediation:facebook:6.18.0.0'
+}

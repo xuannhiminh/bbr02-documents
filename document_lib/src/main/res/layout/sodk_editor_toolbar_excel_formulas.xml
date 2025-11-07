@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/_10sdp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/formulas_button"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_30sdp"
+            app:srcCompat="@drawable/ic_lib_formulas"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="@dimen/_30sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            app:srcCompat="@drawable/ic_lib_arrow_down"
+            android:layout_height="@dimen/_20sdp"/>
+    </LinearLayout>
+
+</LinearLayout>

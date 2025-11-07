@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_update_success">New app is ready</string>
+    <string name="install">Install</string>
+    <string name="late">Late</string>
+    <string name="app_update_fail">App Update failed, please try again on the next app launch.</string>
+    <string name="app_being_download">Application is being downloaded</string>
+    <string name="ads">Ads</string>
+</resources>

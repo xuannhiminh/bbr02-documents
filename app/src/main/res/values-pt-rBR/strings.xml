@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intent_label_doc_pdf">Doc para PDF</string>
+    <string name="intent_label_doc_reader">Leitor de Doc</string>
+    <string name="intent_label_pdf_doc">Editor de Doc</string>
+    <string name="intent_label_doc_smart_editor">Editor Inteligente de Doc</string>
+    <string name="intent_label_doc_print">Imprimir Doc</string>
+
+    <string name="intent_label_excel_pdf">Excel para PDF</string>
+    <string name="intent_label_excel_reader">Leitor de Excel</string>
+    <string name="intent_label_pdf_excel">Editor de Excel</string>
+    <string name="intent_label_excel_smart_editor">Editor Inteligente de Excel</string>
+    <string name="intent_label_excel_print">Imprimir Excel</string>
+
+    <string name="intent_label_ppt_pdf">PPT para PDF</string>
+    <string name="intent_label_ppt_reader">Leitor de PPT</string>
+    <string name="intent_label_pdf_ppt">Editor de PPT</string>
+    <string name="intent_label_ppt_smart_editor">Editor Inteligente de PPT</string>
+    <string name="intent_label_ppt_print">Imprimir PPT</string>
+    <string name="click_back_to_app">Depois pressione &lt; para voltar ao aplicativo</string>
+    <string name="read">Ler</string>
+    <string name="your_recent_PDF_files_are_waiting">Seus arquivos PDF recentes estão esperando por você</string>
+    <string name="fix_your_issue">Informações para nos ajudar a resolver seu problema mais rápido</string>
+    <string name="your_feedback">Seu feedback</string>
+    <string name="feedback_disclaimer">Ao enviar este e-mail, você concorda em compartilhar as informações acima para ajudar a melhorar o app.</string>
+    <string name="feature_request_limit">Você só pode reenviar após 1 hora.</string>
+    <string name="saving_content">Salvando conteúdo</string>
+    <string name="you_have_unfinished_file">Você tem um arquivo inacabado</string>
+    <string name="click_to_see_more">Clique para ver mais.</string>
+
+
+    <string name="add_in_fav">Adicionar aos favoritos</string>
+
+    <string name="app_name">All Document</string>
+
+    <string name="browse_more_files">Procurar mais arquivos</string>
+
+    <string name="cancel">Cancelar</string>
+
+    <string name="change_language">Mudar idioma</string>
+
+    <string name="change_language_description">Você pode alterar o idioma a partir daqui.</string>
+
+    <string name="clear_fav_message">Tem certeza de que deseja limpar a lista de arquivos favoritos, mas eles não seriam excluídos permanentemente?</string>
+
+    <string name="clear_favourite">Limpar Favorito</string>
+
+    <string name="clear_recent">Limpar Recente</string>
+
+    <string name="clear_recent_message">Tem certeza de que deseja limpar a lista de arquivos recentes, mas eles não seriam excluídos permanentemente?</string>
+
+    <string name="cont_pages">Páginas contínuas</string>
+
+    <string name="continuee">Continuar</string>
+
+    <string name="copy">Copiar</string>
+
+    <string name="date">Encontro</string>
+
+    <string name="default_select">Selecionar 0</string>
+    <string name="day_mode">Modo diurno</string>
+
+    <string name="del_message">Tem certeza de que deseja excluir \"%s.pdf\" ?</string>
+
+    <string name="del_sel_message">Tem certeza de que deseja excluir os itens selecionados?</string>
+
+    <string name="delete">Excluir</string>
+
+    <string name="delete_successfully">excluído com sucesso!</string>
+
+    <string name="done">Feito</string>
+
+    <string name="duplicate">Duplicar</string>
+
+    <string name="duplicate_successfully">duplicar com sucesso!</string>
+
+    <string name="duplicate_unsuccessful">\"Duplicado sem êxito, a área de armazenamento do dispositivo pode não ser gravável! \"</string>
+
+    <string name="enter_file_name">Insira um nome para o arquivo</string>
+
+    <string name="enter_page_no">Digite o número da página</string>
+
+    <string name="enter_password">Digite a senha para abrir</string>
+
+    <string name="exit">Saída</string>
+
+    <string name="exit_message">" O aplicativo será encerrado! "</string>
+
+    <string name="expand_button_title">Avançado</string>
+
+    <string name="feedback">Comentários</string>
+
+    <string name="feedback_title">Conte-nos o problema que você encontrou</string>
+    <string name="feedback_option1">Arquivo não pode ser aberto</string>
+    <string name="feedback_option2">Sugestões</string>
+    <string name="feedback_option3">Lento</string>
+    <string name="feedback_option4">Falhas e bugs</string>
+    <string name="choose_option">Por favor, selecione uma opção de feedback</string>
+    <string name="feedback_warning">Por favor, insira pelo menos 6 caracteres</string>
+
+
+    <string name="file_already_exists">O arquivo chamado %s.pdf já existe, por favor escolha outro nome!</string>
+
+    <string name="files_selected">%d arquivos selecionados</string>
+
+    <string name="get_pro_now">Recursos Premium</string>
+
+    <string name="go_to_page">Vá para página</string>
+
+    <string name="more">Mais</string>
+
+    <string name="more_description">Ao clicar neste botão, você pode selecionar todos os itens de uma só vez e executar a operação em vários arquivos.</string>
+
+    <string name="more_open_pdf_description">Você pode desfrutar de mais algumas ferramentas, como o modo noturno, e adicionar diretamente na lista de favoritos.</string>
+
+    <string name="more_open_pdf_title">Mais ferramentas</string>
+
+    <string name="more_title">Selecionar Tudo</string>
+
+    <string name="name">Nome</string>
+
+    <string name="nav_app_bar_navigate_up_description">Navegar para cima</string>
+
+    <string name="nav_app_bar_open_drawer_description">Abrir gaveta de navegação</string>
+
+    <string name="next">Próximo</string>
+
+    <string name="night_mode">Modo Noturno</string>
+
+    <string name="no">Não</string>
+
+    <string name="no_fav">Adicione um arquivo na categoria favorita para encontrá-lo facilmente aqui mais tarde.</string>
+
+    <string name="no_pdf_file">Não foi possível encontrar nenhum arquivo PDF no seu dispositivo móvel.</string>
+
+    <string name="no_recent">Todos os arquivos PDF que você leu recentemente aparecerão aqui.</string>
+
+    <string name="not_set">Não definido</string>
+
+    <string name="page_by_page">Página por página</string>
+
+    <string name="permission_deny_positive_text">permitir</string>
+
+    <string name="permission_deny_text">Para ver todos os arquivos, permita o acesso de armazenamento ao aplicativo leitor de PDF.</string>
+
+    <string name="permission_deny_title">Permitir permissão</string>
+
+    <string name="preference_copied">\"%1$s\" copiado para a área de transferência.</string>
+
+    <string name="print">Impressão</string>
+
+    <string name="print_description">Ao usar esse recurso, você pode imprimir seu documento diretamente a partir daqui.</string>
+
+    <string name="print_title">Imprimir documento</string>
+
+    <string name="privacy_policy">Política de Privacidade</string>
+
+    <string name="pro_description">Ao comprar você pode remover todos os anúncios permanentemente.</string>
+
+    <string name="pro_title">Remover anúncios</string>
+
+    <string name="purchased_success">Comprado com sucesso</string>
+
+    <string name="rate_us">Avalie-nos</string>
+
+    <string name="rate_us_message">"Deseja classificar este aplicativo?Seu suporte nos ajudará a melhorá-lo."</string>
+
+    <string name="rating_message">Sua boa classificação é muito valiosa para nós.</string>
+
+    <string name="remove_ads">Remover anúncios</string>
+
+    <string name="remove_fav_message">Tem certeza de que deseja remover os arquivos selecionados dos favoritos, mas eles não seriam excluídos permanentemente?</string>
+
+    <string name="remove_files">Remover Arquivos</string>
+
+    <string name="remove_from_fav">Remover dos favoritos</string>
+
+    <string name="remove_recent">Remover dos mais recentes</string>
+
+    <string name="remove_sel_recent_message">Os arquivos selecionados serão removidos da sua lista Recente, mas não serão excluídos permanentemente.</string>
+
+    <string name="rename">Renomear</string>
+
+    <string name="rename_unsuccessful">\"Renomear sem êxito, o arquivo pode não ser gravável!\"</string>
+
+    <string name="save">Salvar</string>
+
+    <string name="search_doc">Pesquisar Documento</string>
+
+    <string name="search_menu_title">Pesquisar</string>
+
+    <string name="selected">" Selecionado"</string>
+
+    <string name="send_feedback">Enviar feedback</string>
+
+    <string name="share">Compartilhar</string>
+
+    <string name="share_app">Compartilhe esse aplicativo</string>
+
+    <string name="share_description">Compartilhe documentos com outras pessoas.</string>
+
+    <string name="share_title">Compartilhar documento</string>
+
+    <string name="size">Tamanho</string>
+
+    <string name="sort">Ordenar</string>
+
+    <string name="status_bar_notification_info_overflow">999+</string>
+
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+
+    <string name="thumbnail">miniatura do pdf</string>
+
+    <string name="title_fav">Favorito</string>
+
+    <string name="title_files">Arquivos</string>
+
+    <string name="title_recent">Recente</string>
+
+    <string name="yes">Sim</string>
+    <string name="select">Selecionado</string>
+    <string name="get_start_content">Para oferecer a você melhores serviços e uma compreensão mais clara de como tratamos e protegemos seus dados, atualizamos a Política de Privacidade</string>
+    <string name="agree_us">Ao tocar no botão \"CONCORDAR\", você concorda com nossa \"Política de Privacidade\"</string>
+    <string name="agree">Concordar</string>
+    <string name="app_version">Versão %s</string>
+    <string name="file_not_found">Arquivo não encontrado!!!</string>
+    <string name="rate_now">Avalie agora</string>
+    <string name="recent_add">Adicionado recentemente</string>
+    <string name="all">Tudo</string>
+    <string name="pdf">PDF</string>
+    <string name="word">Word</string>
+    <string name="excel">Excel</string>
+    <string name="ppt">PPT</string>
+    <string name="remind_later">Lembre-me mais tarde</string>
+    <string name="thank_for_rate">Selecione uma classificação !!!</string>
+    <string name="sort_by">Ordenar por</string>
+    <string name="replace_old_file">Obrigada!!!</string>
+    <string name="ok">OK</string>
+    <string name="please_rate">Selecione uma classificação !!!</string>
+    <string name="convert_to_pdf">Converter para PDF</string>
+    <string name="pdf_file_name">Nome do arquivo PDF</string>
+    <string name="password">Senha</string>
+    <string name="convert">Converter</string>
+    <string name="file_name_invalid">O nome do arquivo não é válido</string>
+    <string name="convert_success">Convertido para PDF com sucesso!</string>
+    <string name="open">Abrir</string>
+
+    <string name="detail">Detalhe</string>
+    <string name="properties">Propriedades</string>
+    <string name="app_error">Ocorreu um erro. Por favor, tente novamente</string>
+    <string name="notification_title">Leitor de PDF nº 1 no Android</string>
+    <string name="notification_content">Lendo todos os formatos PDF</string>
+    <string name="create_shortcut">Criar atalho</string>
+    <string name="premium">Premium</string>
+    <string name="privilege">Privilégio</string>
+    <string name="normal">Normal</string>
+    <string name="basic_reading_operation">Operação de leitura básica</string>
+    <string name="powerful_editing">Ferramenta de edição poderosa</string>
+    <string name="cam_scanner">Scanner de câmera</string>
+    <string name="signature">Assinatura</string>
+    <string name="forever">Para sempre</string>
+    <string name="_3_months">%s meses</string>
+    <string name="free_for_days">Grátis por %s dias</string>
+    <string name="hot">Quente</string>
+    <string name="premium_des">Remova os anúncios e desbloqueie todos os recursos</string>
+    <string name="no_ads">Sem anúncios</string>
+    <string name="create_all_file">Criar todos os arquivos</string>
+    <string name="edit_all_files">Editar todos os arquivos</string>
+    <string name="cancel_anytime">Cancelar a qualquer momento</string>
+    <string name="free_7_day">3 dias grátis</string>
+    <string name="premium_then_after_trial">Depois %s/ano</string>
+    <string name="premium_detail">O pagamento será cobrado em sua conta do Google Play ao final da avaliação ou confirmação da compra, caso você não esteja iniciando uma avaliação. A assinatura é renovada automaticamente antes do final do período de avaliação, a menos que seja cancelada antes de 24 horas. Você pode gerenciar sua assinatura e desativar a renovação automática na Google Play Store.</string>
+    <string name="language">Idioma</string>
+    <string name="_1_year">%s anos</string>
+    <string name="sort_by_date">Data de criação: Crescente</string>
+    <string name="sort_by_name_asc">Nome: A a Z</string>
+    <string name="sort_by_name_desc">Nome: Z a A</string>
+    <string name="sort_by_size_asc">Tamanho do arquivo: Crescente</string>
+    <string name="sort_by_size_desc">Tamanho do arquivo: Decrescente</string>
+    <string name="please_choose_file">Por favor, selecione pelo menos um arquivo!</string>
+    <string name="delete_content">Tem certeza de que deseja excluir permanentemente?</string>
+    <string name="delete_all">Tem certeza de que deseja excluir todos os arquivos selecionados?</string>
+    <string name="title_access">Acesso a Todos os Arquivos</string>
+    <string name="pdf_reader">Leitor de PDF</string>
+    <string name="allow_permission">Permitir Permissão</string>
+    <string name="content_access">Por favor, conceda permissão para acessar arquivos no seu dispositivo.</string>
+    <string name="button_permission">Ir para Configurações</string>
+    <string name="permission_required">Permissão Necessária</string>
+    <string name="set_pdf_reader_as_your_default_pdf_file_viewer">Defina <b>%s</b> como seu visualizador padrão de arquivos PDF</string>
+    <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">Escolha esta opção para abrir arquivos rapidamente e tornar a leitura super fácil e divertida!</string>
+    <string name="set_as_default">Definir como Padrão</string>
+    <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default">Selecione o ícone <b>%s</b> e clique em <b>%s</b> para defini-lo como padrão!</string>
+    <string name="always">Sempre</string>
+    <string name="select_this_pdf_reader_icon_in_the_app_list">Selecione o ícone <b>%s</b> na lista de aplicativos.</string>
+    <string name="click_always_to_set_it_as_the_default_reader">Clique em <b>%s</b> para defini-lo como leitor padrão.</string>
+    <string name="choose_default_app">Por favor, selecione %s como seu aplicativo PDF padrão</string>
+    <string name="auto_scroll">Rolagem Automática</string>
+    <string name="title_pdf_reader">Bem-vindo ao\n%s</string>
+    <string name="permission_graphic_desc">Solicitar permissões</string>
+    <string name="allow">Permitir</string>
+    <string name="later">Mais tarde</string>
+    <string name="permission_explanation">Para ler e editar seus arquivos, permita que <b>%s</b> acesse todos os seus arquivos.</string>
+    <string name="add_to_home_screen">Adicionar à tela inicial?</string>
+    <string name="tap_add_or_hold_the_widget_to_add_it_to_your_home_screen_instantly_choose_an_option_below">Toque em %s ou mantenha o widget pressionado para adicioná-lo imediatamente à tela inicial. Escolha uma opção abaixo:</string>
+    <string name="add">Adicionar</string>
+    <string name="cannot_widget">Seu dispositivo não suporta widgets fixos.</string>
+    <string name="search">Pesquisar arquivos aqui</string>
+    <string name="home">Início</string>
+    <string name="intent_label_pdf">Visualizador de Documentos Tudo-em-Um</string>
+    <string name="intent_label_pdf_sign">Assinar PDF</string>
+    <string name="intent_label_pdf_editor">Editor inteligente de documentos</string>
+    <string name="intent_label_pdf_convert_to_images">PDF para Imagens</string>
+    <string name="intent_label_pdf_reader">Leitor inteligente de documentos</string>
+    <string name="intent_label_pdf_long_image">PDF para imagem longa</string>
+    <string name="intent_label_pdf_word">PDF para Word</string>
+    <string name="clear_text">Limpar texto</string>
+    <string name="search_icon">pesquisar</string>
+    <string name="open_now">Abrir Agora</string>
+    <string name="unfinished_reading">📌 Você ainda não terminou de ler %s.</string>
+    <string name="expand_content">Expandir conteúdo</string>
+    <string name="forgotten_file_content_notification">Não deixe arquivos importantes passarem despercebidos! 😊</string>
+    <string name="new_file_content_notification">📂 Você acabou de receber um novo arquivo</string>
+    <string name="daily_call_open_app_title">Desejamos um dia feliz</string>
+    <string name="daily_call_open_app_content">Talvez você queira verificar seus arquivos PDF! 📚</string>
+    <string name="title_intro_1">Visualizador de Documentos Tudo-em-Um</string>
+    <string name="open_read_and_edit">abrir, ler e editar</string>
+    <string name="title_intro_2">Conversor de PDF Avançado</string>
+    <string name="title_description_2">Converta rapidamente imagens, Word, Excel e PPT em PDFs de alta qualidade.</string>
+    <string name="title_intro_3">Editor de PDF Inteligente</string>
+    <string name="title_description_3">Realce, sublinhe e risque texto. Adicione assinaturas digitais com facilidade.</string>
+    <string name="start">Iniciar</string>
+    <string name="language_subtitle">Por favor, escolha seu idioma nativo. Você pode alterá-lo nas configurações depois.</string>
+    <string name="splash_text">Esta ação pode conter anúncios</string>
+    <string name="sort_by_date_desc">Data de criação: Decrescente</string>
+    <string name="ads_message">Por favor, aguarde o carregamento do anúncio..</string>
+    <string name="add_widget">Adicionar widget</string>
+    <string name="push_notifications">Ativar notificações</string>
+    <string name="keep_screen_on">Manter a tela ligada</string>
+    <string name="terms_and_conditions">Termos e condições</string>
+    <string name="about_us">Sobre nós</string>
+    <string name="noti_title">Permitir que %s envie notificações?</string>
+    <string name="noti_content">Para sua conveniência, permita que o aplicativo acesse as permissões de notificação. Não perca atualizações importantes de documentos nem lembretes de tarefas.</string>
+    <string name="noti_allow">Permitir notificações</string>
+    <string name="noti_title1">Você tem um novo arquivo PDF</string>
+    <string name="open_file">Abrir arquivo</string>
+    <string name="notice">Aviso</string>
+    <string name="notice_content">Ative as notificações para se manter atualizado sobre o status do arquivo</string>
+
+    <string name="notification_title_5">✅ Download Concluído!</string>
+    <string name="notification_description_5">📂 %s está pronto. Toque para abrir.</string>
+    <string name="notification_button_5">Abrir Arquivo</string>
+    <string name="notification_title_11">✨ %s</string>
+    <string name="notification_description_11">🚀 Captura de tela salva! Toque aqui para ver agora!</string>
+    <string name="notification_button_11">Abrir agora</string>
+
+    <string-array name="notification_title1">
+        <item name="notification_title_0">⚙️ Concluir Configuração?</item>
+        <item name="notification_title_1">📂 Conceder Acesso aos Arquivos</item>
+        <item name="notification_title_2">🎉 Muitos PDFs esquecidos no seu telefone?</item>
+        <item name="notification_title_3">👋 Abra qualquer documento!</item>
+        <item name="notification_title_4">🧭 Arquivos atualizados disponíveis</item>
+    </string-array>
+    <string-array name="notification_title2">
+        <item name="notification_title_6">📖 Continuar de onde parou?</item>
+        <item name="notification_title_7">🔍 Encontre texto rapidamente!</item>
+        <item name="notification_title_8">🎉 Muitos PDFs esquecidos no seu telefone?</item>
+        <item name="notification_title_9">👋 Abra qualquer documento!</item>
+        <item name="notification_title_10">🧭 Arquivos atualizados disponíveis</item>
+    </string-array>
+    <string-array name="notification_message1">
+        <item name="notification_description_0">✨ Mais alguns passos para desbloquear todo o potencial de %s!</item>
+        <item name="notification_description_1">👍 Para abrir, ler e gerenciar seus PDFs, conceda acesso.</item>
+        <item name="notification_description_2">🚀 Toque aqui para ler e editar seus documentos.</item>
+        <item name="notification_description_3">✨ PDF, Word, Excel e muito mais!</item>
+        <item name="notification_description_4">✨ Sua biblioteca de documentos foi atualizada!</item>
+    </string-array>
+    <string-array name="notification_message2">
+        <item name="notification_description_6">🤓 Ainda há páginas para ler em %s. Continue lendo!</item>
+        <item name="notification_description_7">💡 Use a ferramenta de busca poderosa para localizar rapidamente em seus documentos.</item>
+        <item name="notification_description_8">🚀 Toque aqui para ler e editar seus documentos.</item>
+        <item name="notification_description_9">✨ PDF, Word, Excel e muito mais!</item>
+        <item name="notification_description_10">✨ Sua biblioteca de documentos foi atualizada!</item>
+    </string-array>
+    <string-array name="notification_button1">
+        <item name="notification_button_0">Concluir Configuração</item>
+        <item name="notification_button_1">Conceder Acesso</item>
+        <item name="notification_button_2">Abrir Agora</item>
+        <item name="notification_button_3">Abrir App</item>
+        <item name="notification_button_4">Ver Agora</item>
+    </string-array>
+    <string-array name="notification_button2">
+        <item name="notification_button_6">Continuar</item>
+        <item name="notification_button_7">Tentar Buscar</item>
+        <item name="notification_button_8">Abrir Agora</item>
+        <item name="notification_button_9">Abrir App</item>
+        <item name="notification_button_10">Ver Agora</item>
+    </string-array>
+
+    <string name="uninstall">Desinstalar</string>
+    <string name="uninstall_reason_2">Anúncios demais</string>
+    <string name="uninstall_reason_3">Não preciso mais deste app</string>
+    <string name="other">Outro</string>
+    <string name="uninstall_reason_1">O recurso não está funcionando</string>
+    <string name="uninstall_reason_title">Teve algum problema ao usar o app?</string>
+    <string name="uninstall_title">Desinstalar o aplicativo pode resultar em %s. Tem certeza de que deseja continuar?</string>
+    <string name="uninstall_highlight">a perda de documentos salvos ou arquivos recentes</string>
+    <string name="uninstall_content">Tente ativar o aplicativo novamente e nos informe o motivo.</string>
+    <string name="uninstall_confirm">Ainda quer desinstalar?</string>
+    <string name="feedback_content">Insira seu feedback</string>
+
+    <string name="default_reader_uninstall_description1">Parece que você definiu outro aplicativo como leitor padrão.</string>
+    <string name="default_reader_uninstall_description2">Você pode clicar em "Redefinir" para alterá-lo.</string>
+    <string name="reset">Redefinir</string>
+    <string name="clear_default_reader">Limpar leitor padrão</string>
+    <string name="select_set_as_default">Selecionar Definir como padrão</string>
+    <string name="set_default">Definir como padrão</string>
+    <string name="click_clear_default">Em seguida, clique em Limpar padrões</string>
+    <string name="clear_default">Limpar padrões</string>
+    <string name="alway">Sempre</string>
+    <string name="set_pdf_reader_as_your_default_title">Selecione <b>%s</b> e clique em Sempre para definir como padrão</string>
+    <string name="select_pdf_reader">Selecione <b>%s</b></string>
+    <string name="click_always_to_set">Depois clique em Sempre para definir com sucesso</string>
+    <string name="update_desc">Toque em Atualizar para aproveitar a nova versão. 👇</string>
+    <string name="update_desc_replace">Descubra um desempenho melhorado e maior estabilidade com nossa versão mais recente. Clique para atualizar agora. 👇</string>
+    <string name="update_title">Junte-se a mais de %s usuários e experimente um desempenho superior! 🚀</string>
+    <string name="new_version">🎉 Nova versão</string>
+    <string name="update_note">Você pode continuar usando o aplicativo durante a atualização 😊</string>
+
+    <string name="update">Atualizar</string>
+    <string name="set_app_default">Definir como aplicativo padrão</string>
+    <string name="update_available_title">✨ Nova versão %1$s disponível!</string>
+    <string name="update_now">Atualizar agora</string>
+    <string name="update_available_description">A versão %1$s está disponível com novos recursos empolgantes e melhorias de desempenho. Atualize agora para experimentar!</string>
+    <string name="open_intro">Abra</string>
+    <string name="edit_intro">edite</string>
+    <string name="read_intro">visualize</string>
+    <string name="title_description_1">Abra, visualize e edite facilmente todos os tipos de documentos</string>
+    <string name="restart">Reiniciar</string>
+    <string name="skip_language_activity">Pular</string>
+    <string name="install">Instalar</string>
+    <string name="app_update_install">A atualização foi baixada. Instale agora!</string>
+    <string name="app_update_downloaded">🎉A atualização foi baixada</string>
+    <string name="app_update_critical">🔔 Esta atualização é crítica, por favor atualize para continuar!</string>
+    <string name="are_you_satisfied">Você está satisfeito com nosso aplicativo?</string>
+    <string name="not_really">😞\n Não muito</string>
+    <string name="love_it">🥰\n Adorei</string>
+    <string name="thank_for_support">Obrigado pelo seu apoio!</string>
+    <string name="rate_us_content">Ficaríamos muito gratos se você nos avaliasse</string>
+    <string name="rate">Avaliar</string>
+    <string name="rate_on_google">Avaliar no Google Play</string>
+    <string name="best_we_can">O melhor que podemos conseguir</string>
+    <string name="we_sorry">Oh, sentimos muito...</string>
+    <string name="your_feedback_is_welcome">Seu feedback é bem-vindo</string>
+    <string name="much_appreciated">Muito apreciado!</string>
+    <string name="your_support_is_motivation">Seu apoio é nossa maior motivação!</string>
+    <string name="thank_for_feedback">Obrigado pelo seu feedback</string>
+    <string name="we_will_bring_better_user_ex">Faremos o nosso melhor para melhorar a experiência</string>
+
+    <string name="done_language_activity">Concluído</string>
+    <string name="feedback_placeholder">Por favor, forneça mais detalhes para que possamos localizar e resolver seu problema mais rapidamente</string>
+    <string name="feedback_option6">Notificações demais</string>
+
+    <string name="please_specify">Por favor, especifique seu motivo</string>
+    <string name="please_input_reason">Por favor, insira seu motivo</string>
+    <string name="select_reason_first">Por favor, selecione um motivo antes de desinstalar</string>
+
+    <string name="uninstall_reason_4">Notificações demais</string>
+    <string name="result_not_found">Resultado não encontrado!!!</string>
+    <string name="search_language_hint">Pesquise aqui...</string>
+    <string name="user_guide_title">Bem-vindo ao %s</string>
+    <string name="press_button">Pressione este botão para criar um arquivo PDF</string>
+
+    <string name="exit_app_content">Tem certeza de que deseja sair do aplicativo?</string>
+    <string name="exit_app">😢\nSair do App</string>
+    <string name="not_exit">🥰\nVoltar</string>
+
+    <string name="uprange_to_premium">Subir para Premium</string>
+    <string name="full_premium_features">Desfrute de todas as funcionalidades premium</string>
+    <string name="see_full_offer">Veja todas as ofertas exclusivas!</string>
+
+    <string name="app_name_iap">Melhor Leitor de PDF Tudo-em-Um</string>
+    <string name="tagline">Melhore significativamente a eficiência no trabalho</string>
+    <string name="feature_title">Recursos</string>
+    <string name="feature_remove_ads">Remover todos os anúncios</string>
+    <string name="feature_edit_pdf">Editar PDF</string>
+    <string name="feature_sign_documents">Assinar documentos</string>
+    <string name="feature_add_images">Adicionar imagens ao PDF</string>
+    <string name="feature_scan_pdf">Digitalizar para PDF</string>
+    <string name="feature_mark_annotate">Marcar ou anotar</string>
+    <string name="feature_read_all_format">Ler todos os formatos</string>
+    <string name="plan_pro">Pro</string>
+    <string name="plan_basic">Básico</string>
+    <string name="subscribe_annually">Assinatura anual</string>
+    <string name="free_trial">AVALIAÇÃO GRATUITA DE 3 DIAS</string>
+    <string name="price_annual">%s/mês</string>
+    <string name="price_annual_note">Cobrado anualmente: %s</string>
+    <string name="discount_label">50% DE DESCONTO</string>
+    <string name="subscribe_monthly">Assinatura mensal</string>
+    <string name="price_monthly">%s/mês</string>
+    <string name="price_month">%s mês</string>
+    <string name="button_free_trial">Avaliação gratuita de 3 dias</string>
+    <string name="cancel_note">Cancele a qualquer momento – 24 horas antes do fim da avaliação ou da renovação</string>
+    <string name="term_of_use">Termos de uso</string>
+    <string name="restore_purchase">Restaurar compra</string>
+    <string name="restore_button">Restaurar</string>
+    <string name="get_free_trial">Obter avaliação gratuita de 3 dias</string>
+    <string name="_3_days_free_trial">3 dias de teste gratuito!</string>
+    <string name="day_free_trial">3 dias</string>
+    <string name="unlocked_premium_features">🔓 Todos os recursos premium desbloqueados</string>
+    <string name="unlocked">desbloqueados</string>
+    <string name="exclusive_tools_to_enhance">👑 Ferramentas exclusivas para melhorar sua experiência</string>
+    <string name="exclusive_tools">Ferramentas exclusivas</string>
+    <string name="no_payment_cancel_refund">✨ Sem pagamento agora, cancele a qualquer momento, 100% de reembolso se não estiver satisfeito!</string>
+    <string name="no_payment">Sem pagamento agora</string>
+    <string name="refund">100% de reembolso</string>
+    <string name="trial_conditions">TESTE GRATUITO DE 3 DIAS, depois %s/mês (equivalente a %s/ano), renovação automática, cancele a qualquer momento</string>
+    <string name="pay_for_renewal">%s/mês</string>
+    <string name="start_free_trial_now">Comece sua avaliação gratuita agora</string>
+
+    <string name="you_premium">Você é Premium!</string>
+    <string name="restore_success">Suas compras foram restauradas!</string>
+    <string name="restore_fail">Falha ao restaurar compras. Verifique sua conexão e tente novamente.</string>
+
+    <string name="payment_successful">Você pagou com sucesso pelo pacote Premium!</string>
+    <string name="please_update_store">Não foi possível concluir a compra. Atualize a Play Store e faça login na sua conta Google</string>
+    <string name="not_confirm_purchase">Não foi possível confirmar a compra. Reabra o aplicativo mais tarde.</string>
+    <string name="reload_file_successful">Arquivo obtido com sucesso</string>
+    <string name="swipe_refresh_guide">Deslize para baixo para recarregar arquivos</string>
+    <string name="scanning_file">Digitalizando arquivo</string>
+    <string name="wait_for_scanning_file">Por favor, aguarde enquanto o arquivo está sendo digitalizado</string>
+
+    <string name="feature_request">Solicitação de recurso</string>
+    <string name="request">Solicitar</string>
+    <string name="we_add_new_feature">Adicionaremos novos recursos para atender às suas necessidades.</string>
+    <string name="have_any_other_feature_requests">Tem mais solicitações de recursos?</string>
+    <string name="smart_tools">Ferramentas inteligentes</string>
+    <string name="edit_files">Editar arquivos</string>
+    <string name="merge_and_split">Mesclar e dividir</string>
+    <string name="convert_files">Converter arquivos</string>
+    <string name="compress_files">Comprimir arquivos</string>
+    <string name="view_setting">Configuração de visualização</string>
+    <string name="ai_tools">Ferramentas de IA</string>
+    <string name="chat_with_document">Conversar com documento</string>
+    <string name="ai_document_summary">Resumo de documento por IA</string>
+    <string name="translate_document">Traduzir documento</string>
+    <string name="others">Outros</string>
+    <string name="submit">Enviar</string>
+    <string name="other_features_that_you_want_to_have">Outros recursos que você deseja ter</string>
+    <string name="thanks_for_feedback">Obrigado pelo seu feedback!</string>
+    <string name="deliver_better_experience">Nos esforçamos para oferecer uma experiência melhor.</string>
+    <string name="account">Conta</string>
+    <string name="app">Aplicativo</string>
+    <string name="display">Tela</string>
+    <string name="support">Suporte</string>
+    <string name="free_and_premium">Grátis &amp; Premium</string>
+    <string name="terms_privacy_text">Ao fazer este pedido, você concorda com os Termos de Serviço e a Política de Privacidade. A assinatura é renovada automaticamente, a menos que a renovação automática seja desativada pelo menos 24 horas antes do fim do período atual.</string>
+    <string name="discount">Economize 33%</string>
+    <string name="terms_and_service">Termos de serviço</string>
+    <string name="price">%s/Week after FREE 3-days Trial</string>
+    <string name="start_free_trial">Start Free Trial</string>
+    <string name="start_like_a_pro">Comece como um Pro</string>
+    <string name="unlock_all_features">Desbloquear todos os recursos</string>
+    <string name="note_free_trial">Cancele a qualquer momento. A assinatura será renovada automaticamente</string>
+    <string name="feature_image_pdf">Imagem para PDF</string>
+    <string name="feature_edit_doc">Editar documentos</string>
+    <string name="feature_add_images_doc">Adicionar imagens aos documentos</string>
+    <string name="total">Total:</string>
+    <string name="not_have_file">Ops! Não conseguimos encontrar nenhum arquivo.</string>
+    <string name="check_for_more_files">Verifique seu armazenamento ou tente novamente.</string>
+    <string name="date_created">Data de criação</string>
+    <string name="successfully">Com sucesso!</string>
+    <string name="rename_success">O nome do arquivo foi alterado com sucesso.</string>
+    <string name="delete_file">Excluir arquivo</string>
+    <string name="set_pdf_reader_as_your_default_all_file_viewer">Defina <b>%s</b> como seu visualizador %s padrão</string>
+    <string name="all_file">Todos os arquivos</string>
+    <string name="allow_for_quick_easy_access">Permita "%s" para acesso rápido e fácil!</string>
+    <string name="home_screen_shortcuts">Atalhos da tela inicial</string>
+    <string name="enable">Ativar</string>
+    <string name="leave_the_app">Sair do aplicativo?</string>
+    <string name="exit_content">Tem certeza de que deseja sair do aplicativo?</string>
+    <string name="refresh_files">Puxe para baixo para atualizar os arquivos</string>
+    <string name="update_required">Esta versão está desatualizada. Atualize o aplicativo</string>
+    <string name="select_from_recent">Selecionar dos Recentes</string>
+    <string name="select_from_mark">Selecionar da Marca</string>
+    <string name="remove_mark">Remover Marca</string>
+    <string name="are_you_sure">Você tem certeza?</string>
+    <string name="remove_mark_content">Tem certeza de que deseja remover a marca deste arquivo?</string>
+    <string name="splash_content">Leia todos os seus documentos em um só lugar</string>
+    <string name="subscribe_weekly">Assinar semanalmente</string>
+    <string name="price_weekly">%s/Semana</string>
+    <string name="go_setting">Claro, ir para as configurações</string>
+    <string name="allow_access">Permitir acesso aos seus arquivos</string>
+
+
+</resources>

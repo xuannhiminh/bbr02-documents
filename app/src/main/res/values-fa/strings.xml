@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">All Document</string>
+    <string name="select">انتخاب شده</string>
+    <string name="get_start_content">برای ارائه خدمات بهتر و توضیح واضح‌تر درباره نحوه محافظت و مدیریت اطلاعات شما، سیاست حفظ حریم خصوصی به‌روزرسانی شده است.</string>
+    <string name="agree_us">با لمس دکمه "موافقم"، با "سیاست حفظ حریم خصوصی" ما موافقت می‌کنید.</string>
+    <string name="agree">موافقم</string>
+    <string name="app_version">نسخه %s</string>
+    <string name="file_not_found">فایل پیدا نشد!!!</string>
+    <string name="rate_now">هم‌اکنون امتیاز دهید</string>
+    <string name="recent_add">اخیراً اضافه شده</string>
+    <string name="all">همه</string>
+    <string name="pdf">PDF</string>
+    <string name="word">Word</string>
+    <string name="excel">Excel</string>
+    <string name="ppt">PPT</string>
+    <string name="remind_later">بعداً یادآوری کن</string>
+    <string name="please_rate">لطفاً یک امتیاز انتخاب کنید!!!</string>
+    <string name="thank_for_rate">متشکریم!!!</string>
+    <string name="sort_by">مرتب‌سازی بر اساس</string>
+    <string name="sort_by_date">تاریخ ایجاد: صعودی</string>
+    <string name="sort_by_date_desc">تاریخ ایجاد: نزولی</string>
+    <string name="sort_by_name_asc">نام: الف تا ی</string>
+    <string name="sort_by_name_desc">نام: ی تا الف</string>
+    <string name="read">خواندن</string>
+    <string name="your_recent_PDF_files_are_waiting">فایل‌های PDF اخیر شما در انتظار هستند</string>
+    <string name="feature_request_limit">فقط پس از ۱ ساعت می‌توانید دوباره ارسال کنید.</string>
+    <string name="saving_content">در حال ذخیره محتوا</string>
+    <string name="you_have_unfinished_file">شما یک فایل ناتمام دارید</string>
+    <string name="click_to_see_more">برای دیدن بیشتر کلیک کنید.</string>
+
+
+    <string name="fix_your_issue">اطلاعاتی که به ما کمک می‌کند مشکل شما را سریع‌تر رفع کنیم</string>
+    <string name="your_feedback">بازخورد شما</string>
+    <string name="feedback_disclaimer">با ارسال این ایمیل، شما موافقت می‌کنید اطلاعات فوق را با ما به اشتراک بگذارید تا به بهبود برنامه کمک کند.</string>
+    <string name="sort_by_size_asc">اندازه فایل: صعودی</string>
+    <string name="sort_by_size_desc">اندازه فایل: نزولی</string>
+    <string name="replace_old_file">آیا فایل قبلی جایگزین شود؟</string>
+    <string name="ok">تأیید</string>
+    <string name="convert_to_pdf">تبدیل به PDF</string>
+    <string name="pdf_file_name">نام فایل PDF</string>
+    <string name="password">رمز عبور</string>
+    <string name="convert">تبدیل</string>
+    <string name="file_name_invalid">نام فایل معتبر نیست</string>
+    <string name="convert_success">با موفقیت به PDF تبدیل شد!</string>
+    <string name="open">باز کردن</string>
+    <string name="add_in_fav">افزودن به علاقه‌مندی‌ها</string>
+    <string name="browse_more_files">مرور فایل‌های بیشتر</string>
+    <string name="cancel">لغو</string>
+    <string name="change_language">تغییر زبان</string>
+    <string name="change_language_description">از اینجا می‌توانید زبان را تغییر دهید.</string>
+    <string name="clear_fav_message">آیا مطمئن هستید که می‌خواهید لیست فایل‌های علاقه‌مندی را پاک کنید؟ فایل‌ها به صورت دائمی حذف نمی‌شوند.</string>
+    <string name="clear_favourite">پاک‌سازی علاقه‌مندی‌ها</string>
+    <string name="clear_recent">پاک‌سازی اخیرها</string>
+    <string name="clear_recent_message">آیا مطمئن هستید که می‌خواهید لیست فایل‌های اخیر را پاک کنید؟ فایل‌ها به صورت دائمی حذف نمی‌شوند.</string>
+    <string name="cont_pages">صفحات پیوسته</string>
+    <string name="continuee">ادامه</string>
+    <string name="copy">کپی</string>
+    <string name="date">تاریخ</string>
+    <string name="default_select">۰ انتخاب شده</string>
+    <string name="day_mode">حالت روز</string>
+    <string name="del_message">آیا مطمئن هستید که می‌خواهید "%s.pdf" را حذف کنید؟</string>
+    <string name="del_sel_message">آیا مطمئن هستید که می‌خواهید موارد انتخاب‌شده را حذف کنید؟</string>
+    <string name="delete">حذف</string>
+    <string name="delete_successfully">با موفقیت حذف شد!</string>
+    <string name="done">انجام شد</string>
+    <string name="duplicate">کپی</string>
+    <string name="duplicate_successfully">کپی با موفقیت انجام شد!</string>
+    <string name="duplicate_unsuccessful">کپی ناموفق بود، ممکن است فضای ذخیره‌سازی دستگاه قابل نوشتن نباشد!</string>
+    <string name="enter_file_name">در اینجا وارد کنید..</string>
+    <string name="enter_page_no">شماره صفحه را وارد کنید</string>
+    <string name="enter_password">برای باز کردن، رمز عبور وارد کنید</string>
+    <string name="exit">خروج</string>
+    <string name="exit_message">برنامه در حال خروج است!</string>
+    <string name="expand_button_title">پیشرفته</string>
+    <string name="feedback">بازخورد</string>
+    <string name="feedback_title">مشکل خود را با ما در میان بگذارید</string>
+    <string name="feedback_option1">فایل باز نمی‌شود</string>
+    <string name="feedback_option2">پیشنهادات</string>
+    <string name="feedback_option3">کند است</string>
+    <string name="feedback_option4">خرابی‌ها و اشکالات</string>
+    <string name="feedback_placeholder">لطفاً اطلاعات بیشتری وارد کنید تا بتوانیم سریع‌تر مشکل شما را پیدا و حل کنیم</string>
+    <string name="choose_option">لطفاً یک گزینه بازخورد انتخاب کنید</string>
+    <string name="feedback_warning">لطفاً حداقل ۶ کاراکتر وارد کنید</string>
+    <string name="feedback_option6">اعلان‌های زیاد</string>
+    <string name="feedback_content">بازخورد خود را وارد کنید</string>
+    <string name="file_already_exists">فایلی با نام %s.pdf وجود دارد، لطفاً نام دیگری انتخاب کنید!</string>
+    <string name="files_selected">%d انتخاب شده</string>
+    <string name="please_choose_file">لطفاً حداقل یک فایل انتخاب کنید!</string>
+    <string name="get_pro_now">اکنون نسخه Pro را دریافت کنید</string>
+    <string name="go_to_page">برو به صفحه</string>
+    <string name="more">بیشتر</string>
+    <string name="more_description">با کلیک روی این دکمه می‌توانید همه موارد را به‌طور هم‌زمان انتخاب کرده و روی فایل‌های متعدد عملیات انجام دهید.</string>
+    <string name="more_open_pdf_description">می‌توانید از ابزارهای بیشتری مانند افزودن مستقیم به علاقه‌مندی‌ها استفاده کنید.</string>
+    <string name="more_open_pdf_title">ابزارهای بیشتر</string>
+    <string name="more_title">انتخاب همه</string>
+    <string name="name">نام</string>
+    <string name="nav_app_bar_navigate_up_description">بازگشت</string>
+    <string name="nav_app_bar_open_drawer_description">باز کردن منوی ناوبری</string>
+    <string name="next">بعدی</string>
+    <string name="night_mode">حالت شب (آزمایشی)</string>
+    <string name="no">خیر</string>
+    <string name="no_fav">یک فایل را به علاقه‌مندی‌ها اضافه کنید تا بعداً راحت‌تر آن را پیدا کنید.</string>
+    <string name="no_pdf_file">هیچ فایل PDF در دستگاه شما یافت نشد.</string>
+    <string name="no_recent">فایل‌هایی که اخیراً خوانده‌اید در اینجا نمایش داده می‌شوند.</string>
+    <string name="not_set">تنظیم نشده</string>
+    <string name="page_by_page">صفحه به صفحه</string>
+    <string name="permission_deny_positive_text">اجازه بده</string>
+    <string name="permission_deny_text">برای مشاهده تمام فایل‌ها، دسترسی حافظه را به برنامه PDF Reader بدهید.</string>
+    <string name="permission_deny_title">اجازه دسترسی بدهید</string>
+    <string name="preference_copied">"%1$s" در کلیپ‌بورد کپی شد.</string>
+    <string name="print">چاپ</string>
+    <string name="print_description">با استفاده از این ویژگی می‌توانید فایل را مستقیماً چاپ کنید.</string>
+    <string name="print_title">چاپ سند</string>
+    <string name="privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="pro_description">با خرید این نسخه، همه تبلیغات به طور دائمی حذف می‌شوند.</string>
+    <string name="pro_title">حذف تبلیغات</string>
+    <string name="purchased_success">خرید با موفقیت انجام شد</string>
+    <string name="rate_us">به ما امتیاز دهید</string>
+    <string name="search_doc">جستجوی سند</string>
+    <string name="add_widget">افزودن ویجت</string>
+    <string name="push_notifications">اعلان‌های فشاری</string>
+    <string name="keep_screen_on">روشن نگه داشتن صفحه</string>
+    <string name="terms_and_conditions">شرایط و ضوابط</string>
+    <string name="about_us">درباره ما</string>
+    <string name="rate_us_message">آیا مایلید این برنامه را ارزیابی کنید؟ حمایت شما به ما کمک خواهد کرد تا آن را بهبود دهیم.</string>
+    <string name="rating_message">امتیاز خوب شما برای ما بسیار ارزشمند است.</string>
+    <string name="remove_ads">حذف تبلیغات</string>
+    <string name="remove_fav_message">آیا مطمئن هستید که می‌خواهید فایل‌های انتخاب‌شده را از علاقه‌مندی‌ها حذف کنید؟ فایل‌ها به صورت دائمی حذف نمی‌شوند.</string>
+    <string name="remove_files">حذف فایل‌ها</string>
+    <string name="remove_from_fav">حذف از علاقه‌مندی‌ها</string>
+    <string name="remove_recent">حذف از اخیرها</string>
+    <string name="remove_sel_recent_message">فایل‌های انتخاب‌شده از لیست اخیر حذف می‌شوند، اما به صورت دائمی حذف نخواهند شد.</string>
+    <string name="rename">تغییر نام</string>
+    <string name="rename_unsuccessful">تغییر نام انجام نشد. ممکن است فایل قابل نوشتن نباشد!</string>
+    <string name="save">ذخیره</string>
+    <string name="delete_content">آیا مطمئن هستید که می‌خواهید برای همیشه حذف شود؟</string>
+    <string name="delete_all">آیا مطمئن هستید که می‌خواهید همه فایل‌های انتخاب‌شده را حذف کنید؟</string>
+    <string name="title_access">دسترسی به تمام فایل‌ها</string>
+    <string name="pdf_reader">PDF Reader</string>
+    <string name="allow_permission">اجازه دسترسی بده</string>
+    <string name="content_access">لطفاً برای دسترسی به فایل‌های دستگاه، مجوز را بپذیرید.</string>
+    <string name="button_permission">برو به تنظیمات</string>
+    <string name="search_menu_title">جستجو</string>
+    <string name="selected"> انتخاب شده</string>
+    <string name="send_feedback">ارسال بازخورد</string>
+    <string name="share">اشتراک‌گذاری</string>
+    <string name="share_app">اشتراک‌گذاری این برنامه</string>
+    <string name="share_description">اشتراک‌گذاری سند با دیگران.</string>
+    <string name="share_title">اشتراک‌گذاری سند</string>
+    <string name="size">اندازه</string>
+    <string name="sort">مرتب‌سازی</string>
+    <string name="status_bar_notification_info_overflow">۹۹۹+</string>
+    <string name="summary_collapsed_preference_list">%1$s، %2$s</string>
+    <string name="thumbnail">پیش‌نمایش PDF</string>
+    <string name="title_fav">نشانک‌ها</string>
+    <string name="title_files">خانه</string>
+    <string name="title_recent">اخیر</string>
+    <string name="yes">بله</string>
+    <string name="detail">جزئیات</string>
+    <string name="properties">ویژگی‌ها</string>
+    <string name="app_error">خطایی رخ داد. لطفاً دوباره تلاش کنید</string>
+    <string name="notification_title">برترین PDF Reader در اندروید</string>
+    <string name="notification_content">خواندن همه فرمت‌های PDF</string>
+    <string name="create_shortcut">ایجاد میانبر</string>
+    <string name="premium">پرمیوم</string>
+    <string name="privilege">امتیاز ویژه</string>
+    <string name="normal">معمولی</string>
+    <string name="basic_reading_operation">عملیات پایه‌ای خواندن</string>
+    <string name="powerful_editing">ابزار قدرتمند ویرایش</string>
+    <string name="cam_scanner">اسکنر دوربین</string>
+    <string name="signature">امضا</string>
+    <string name="forever">برای همیشه</string>
+    <string name="_3_months">%s ماه</string>
+    <string name="_1_year">%s سال</string>
+    <string name="free_for_days">%s روز رایگان</string>
+    <string name="hot">پرطرفدار</string>
+    <string name="premium_des">حذف تبلیغات و باز کردن همه امکانات</string>
+    <string name="no_ads">بدون تبلیغات</string>
+    <string name="create_all_file">ایجاد همه فایل‌ها</string>
+    <string name="edit_all_files">ویرایش همه فایل‌ها</string>
+    <string name="cancel_anytime">قابل لغو در هر زمان</string>
+    <string name="free_7_day">۳ روز رایگان</string>
+    <string name="premium_then_after_trial">سپس %s/سال</string>
+    <string name="premium_detail">پس از پایان دوره آزمایشی یا تأیید خرید، هزینه از حساب Google Play شما کسر خواهد شد. اشتراک به‌طور خودکار قبل از پایان دوره آزمایشی تمدید می‌شود، مگر اینکه ۲۴ ساعت قبل لغو شود. می‌توانید اشتراک را از فروشگاه Google Play مدیریت کنید و تمدید خودکار را خاموش کنید.</string>
+    <string name="language">زبان</string>
+    <string name="permission_required">نیاز به دسترسی</string>
+    <string name="set_pdf_reader_as_your_default_pdf_file_viewer">تنظیم <b>%s</b> به‌عنوان نماشگر پیش‌فرض PDF</string>
+    <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">این گزینه را برای باز کردن سریع فایل‌ها و آسان و لذت‌بخش‌تر کردن مطالعه انتخاب کنید!</string>
+    <string name="set_as_default">تنظیم به‌عنوان پیش‌فرض</string>
+    <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default">آیکون <b>%s</b> را انتخاب و روی <b>%s</b> کلیک کنید تا به‌عنوان پیش‌فرض تنظیم شود!</string>
+    <string name="always">همیشه</string>
+    <string name="select_this_pdf_reader_icon_in_the_app_list">آیکون <b>%s</b> را در لیست برنامه‌ها انتخاب کنید.</string>
+    <string name="click_always_to_set_it_as_the_default_reader">برای تنظیم به‌عنوان خواننده پیش‌فرض، روی <b>%s</b> کلیک کنید.</string>
+    <string name="choose_default_app">لطفاً %s را به‌عنوان برنامه پیش‌فرض PDF انتخاب کنید</string>
+    <string name="auto_scroll">پیمایش خودکار</string>
+    <string name="title_pdf_reader">خوش‌آمدید\n%s</string>
+    <string name="permission_graphic_desc">درخواست دسترسی ها</string>
+    <string name="allow">اجازه</string>
+    <string name="later">بعداً</string>
+    <string name="permission_explanation">برای خواندن و ویرایش فایل‌ها، لطفاً به <b>%s</b> اجازه دسترسی به تمام فایل‌هایتان را بدهید.</string>
+    <string name="add_to_home_screen">اضافه کردن به صفحه اصلی؟</string>
+    <string name="tap_add_or_hold_the_widget_to_add_it_to_your_home_screen_instantly_choose_an_option_below">برای افزودن فوری به صفحه اصلی، روی %s ضربه بزنید یا ویجت را نگه دارید. یک گزینه را انتخاب کنید:</string>
+    <string name="add">اضافه</string>
+    <string name="recent_desc" />
+    <string name="bookmarks_desc" />
+    <string name="pdf_desc" />
+    <string name="word_desc" />
+    <string name="excel_desc" />
+    <string name="ppt_desc" />
+    <string name="cannot_widget">دستگاه شما از ویجت‌های پین‌شده پشتیبانی نمی‌کند.</string>
+    <string name="ads_message">لطفاً تا بارگذاری تبلیغ صبر کنید...</string>
+    <string name="search">جستجوی فایل‌ها اینجا</string>
+    <string name="home">خانه</string>
+    <string name="intent_label_pdf">نمایشگر اسناد یکپارچه</string>
+    <string name="intent_label_pdf_sign">امضای PDF</string>
+    <string name="intent_label_pdf_editor">ویرایشگر هوشمند اسناد</string>
+    <string name="intent_label_pdf_convert_to_images">PDF به تصاویر</string>
+    <string name="intent_label_pdf_reader">خواننده هوشمند اسناد</string>
+    <string name="intent_label_pdf_long_image">PDF به تصویر بلند</string>
+    <string name="intent_label_pdf_word">PDF به Word</string>
+
+    <string name="intent_label_doc_pdf">Doc به PDF</string>
+    <string name="intent_label_doc_reader">خواننده Doc</string>
+    <string name="intent_label_pdf_doc">ویرایشگر Doc</string>
+    <string name="intent_label_doc_smart_editor">ویرایشگر هوشمند Doc</string>
+    <string name="intent_label_doc_print">پرینت Doc</string>
+
+    <string name="intent_label_excel_pdf">Excel به PDF</string>
+    <string name="intent_label_excel_reader">خواننده Excel</string>
+    <string name="intent_label_pdf_excel">ویرایشگر Excel</string>
+    <string name="intent_label_excel_smart_editor">ویرایشگر هوشمند Excel</string>
+    <string name="intent_label_excel_print">پرینت Excel</string>
+
+    <string name="intent_label_ppt_pdf">PPT به PDF</string>
+    <string name="intent_label_ppt_reader">خواننده PPT</string>
+    <string name="intent_label_pdf_ppt">ویرایشگر PPT</string>
+    <string name="intent_label_ppt_smart_editor">ویرایشگر هوشمند PPT</string>
+    <string name="intent_label_ppt_print">پرینت PPT</string>
+
+    <string name="are_you_satisfied">آیا از اپ ما راضی هستید؟</string>
+    <string name="not_really">😞\n واقعاً نه</string>
+    <string name="love_it">🥰\n خیلی دوستش دارم</string>
+    <string name="thank_for_support">از حمایت‌تان متشکریم!</string>
+    <string name="rate_us_content">اگر بتوانید امتیاز دهید، ممنون می‌شویم</string>
+    <string name="rate">امتیاز دادن</string>
+    <string name="rate_on_google">امتیاز در Google Play</string>
+    <string name="best_we_can">بهترین چیزی که می‌توانیم</string>
+    <string name="we_sorry">اوه، متاسفیم...</string>
+    <string name="your_feedback_is_welcome">بازخورد شما خوشحالمان می‌کند</string>
+    <string name="much_appreciated">خیلی ممنون!</string>
+    <string name="your_support_is_motivation">حمایت شما بزرگ‌ترین انگیزه ماست!</string>
+    <string name="thank_for_feedback">از بازخوردتان سپاسگزاریم</string>
+    <string name="we_will_bring_better_user_ex">برای ارائه تجربه کاربری بهتر تلاش می‌کنیم</string>
+
+    <string name="clear_text">پاک‌کردن متن</string>
+    <string name="search_icon">جستجو</string>
+    <string name="open_now">همین حالا باز کن</string>
+    <string name="unfinished_reading">📌 هنوز %s را تمام نکرده‌اید.</string>
+    <string name="expand_content">گسترش محتوا</string>
+    <string name="forgotten_file_content_notification">اجازه ندهید فایل‌های مهم از دیدتان پنهان بمانند! 😊</string>
+    <string name="new_file_content_notification">📂 فایل جدیدی دریافت کرده‌اید</string>
+    <string name="daily_call_open_app_title">روز خوبی داشته باشید</string>
+    <string name="daily_call_open_app_content">شاید بخواهید PDF هایتان را چک کنید! 📚</string>
+    <string name="title_intro_1">نمایشگر همه‌کاره اسناد</string>
+    <string name="title_description_1">به‌راحتی همه نوع سند را باز، مشاهده و ویرایش کنید</string>
+    <string name="open_read_and_edit">باز، بخوان</string>
+    <string name="open_intro">باز</string>
+    <string name="edit_intro">ویرایش</string>
+    <string name="read_intro">مشاهده</string>
+    <string name="title_intro_2">مبدل پیشرفته PDF</string>
+    <string name="title_description_2">سریع تصاویر، Word، Excel و PPT را به PDF با کیفیت بالا تبدیل کنید.</string>
+    <string name="title_intro_3">ویرایشگر هوشمند PDF</string>
+    <string name="title_description_3">متن را هایلایت، زیرخط یا خط‌خورده کنید. به‌راحتی امضای الکترونیکی اضافه کنید.</string>
+    <string name="start">شروع</string>
+    <string name="language_subtitle">لطفاً زبان مادری‌تان را انتخاب کنید. بعداً می‌توانید از تنظیمات تغییر دهید.</string>
+    <string name="splash_text">این عمل ممکن است شامل تبلیغات باشد</string>
+
+    <string name="noti_title">آیا اجازه ارسال اعلان توسط %s را می‌دهید؟</string>
+    <string name="noti_content">برای راحتی، اجازه دسترسی اعلان به برنامه بدهید. به‌روزرسانی‌های مهم و یادآور‌ها را از دست ندهید.</string>
+    <string name="noti_allow">اجازه اعلان</string>
+    <string name="noti_title1">یک فایل PDF جدید دارید</string>
+    <string name="open_file">باز کردن فایل</string>
+    <string name="notice">اعلان</string>
+    <string name="notice_content">برای دریافت وضعیت فایل، اعلان‌ها را فعال کنید</string>
+
+    <string name="uninstall_title">حذف این برنامه ممکن است منجر به %s شود. آیا مطمئنید ادامه می‌دهید؟</string>
+    <string name="uninstall_highlight">از بین رفتن اسناد ذخیره‌شده یا فایل‌های اخیر</string>
+    <string name="uninstall_content">لطفاً یک بار دیگر برنامه را راه‌اندازی مجدد کرده و دلیلتان را اطلاع دهید.</string>
+    <string name="uninstall_confirm">باز هم حذف شود؟</string>
+    <string name="uninstall">حذف</string>
+    <string name="uninstall_reason_2">تبلیغات بیش‌از حد</string>
+    <string name="uninstall_reason_3">دیگر به این برنامه نیاز ندارم</string>
+    <string name="other">سایر</string>
+    <string name="uninstall_reason_1">ویژگی کار نمی‌کند</string>
+    <string name="uninstall_reason_title">هنگام استفاده مشکلی داشتید؟</string>
+
+    <string name="notification_title_5">✅ دانلود کامل شد!</string>
+    <string name="notification_description_5">📂 %s آماده است. برای باز کردن ضربه بزنید.</string>
+    <string name="notification_button_5">باز کردن فایل</string>
+    <string name="notification_title_11">✨%s</string>
+    <string name="notification_description_11">🚀 اسکرین‌شات ذخیره شد! برای مشاهده آن ضربه بزنید!</string>
+    <string name="notification_button_11">همین حالا باز کن</string>
+
+    <string-array name="notification_title1">
+        <item name="notification_title_0">⚙️ نصب تمام شد؟</item>
+        <item name="notification_title_1">📂 اجازه دسترسی فایل را بدهید</item>
+        <item name="notification_title_2">🎉 چند PDF فراموش‌شده روی گوشی دارید؟</item>
+        <item name="notification_title_3">👋 هر سندی را باز کنید!</item>
+        <item name="notification_title_4">🧭 به‌روزرسانی فایل موجود است</item>
+    </string-array>
+    <string-array name="notification_title2">
+        <item name="notification_title_6">📖 ادامه از جایی که مانده بودید؟</item>
+        <item name="notification_title_7">🔍 متن را سریع پیدا کنید!</item>
+        <item name="notification_title_8">🎉 چند PDF فراموش‌شده روی گوشی دارید؟</item>
+        <item name="notification_title_9">👋 هر سندی را باز کنید!</item>
+        <item name="notification_title_10">🧭 به‌روزرسانی فایل موجود است</item>
+    </string-array>
+    <string-array name="notification_message1">
+        <item name="notification_description_0">✨ چند مرحله تا باز کردن همه ویژگی‌های %s باقی است!</item>
+        <item name="notification_description_1">👍 برای باز، خواندن و مدیریت PDF‌ها دسترسی بدهید.</item>
+        <item name="notification_description_2">🚀 برای خواندن و ویرایش فایل‌ها اینجا را بزنید.</item>
+        <item name="notification_description_3">✨ PDF، Word، Excel , بیشتر!</item>
+        <item name="notification_description_4">✨ کتابخانه اسناد شما به‌روز شد!</item>
+    </string-array>
+    <string-array name="notification_message2">
+        <item name="notification_description_6">🤓 هنوز صفحه‌هایی در %s مانده است. ادامه دهید!</item>
+        <item name="notification_description_7">💡 از ابزار جستجوی قدرتمند برای یافتن سریع سند استفاده کنید.</item>
+        <item name="notification_description_8">🚀 برای خواندن و ویرایش فایل‌ها اینجا را بزنید.</item>
+        <item name="notification_description_9">✨ PDF، Word، Excel , بیشتر!</item>
+        <item name="notification_description_10">✨ کتابخانه اسناد شما به‌روز شد!</item>
+    </string-array>
+    <string-array name="notification_button1">
+        <item name="notification_button_0">ادامه نصب</item>
+        <item name="notification_button_1">دادن دسترسی</item>
+        <item name="notification_button_2">همین حالا باز کن</item>
+        <item name="notification_button_3">باز کردن برنامه</item>
+        <item name="notification_button_4">مشاهده اکنون</item>
+    </string-array>
+    <string-array name="notification_button2">
+        <item name="notification_button_6">ادامه</item>
+        <item name="notification_button_7">آزمایش جستجو</item>
+        <item name="notification_button_8">همین حالا باز کن</item>
+        <item name="notification_button_9">باز کردن برنامه</item>
+        <item name="notification_button_10">مشاهده اکنون</item>
+    </string-array>
+
+    <string name="default_reader_uninstall_description1">به نظر می‌رسد برنامه دیگری به‌عنوان خواننده پیش‌فرض تنظیم شده است.</string>
+    <string name="default_reader_uninstall_description2">می‌توانید با “بازنشانی” آن را تغییر دهید.</string>
+    <string name="reset">بازنشانی</string>
+    <string name="clear_default_reader">پاک‌کردن خواننده پیش‌فرض</string>
+    <string name="select_set_as_default">“تنظیم به‌عنوان پیش‌فرض” را انتخاب کنید</string>
+    <string name="set_default">تنظیم به‌عنوان پیش‌فرض</string>
+    <string name="click_clear_default">سپس روی “پاک‌کردن پیش‌فرض‌ها” کلیک کنید</string>
+    <string name="clear_default">پاک‌کردن پیش‌فرض‌ها</string>
+
+    <string name="alway">همیشه</string>
+    <string name="set_pdf_reader_as_your_default_title">انتخاب <b>%s</b> و کلیک روی همیشه برای تنظیم پیش‌فرض</string>
+    <string name="select_pdf_reader">انتخاب <b>%s</b></string>
+    <string name="click_always_to_set">سپس روی همیشه کلیک کنید تا با موفقیت تنظیم شود</string>
+    <string name="click_back_to_app">سپس &lt; را فشار دهید تا به برنامه بازگردید</string>
+
+    <string name="update_desc">برای لذت بردن از نسخه جدید، بروزرسانی را لمس کنید 👇</string>
+    <string name="update_desc_replace">عملکرد و پایداری بهبود یافته را در جدیدترین نسخه کشف کنید. الآن کلیک کنید 👇</string>
+    <string name="update_title">به بیش از %s کاربر بپیوندید، بهره‌وری بیشتری تجربه کنید! 🚀</string>
+    <string name="update">بروزرسانی</string>
+    <string name="new_version">🎉 نسخه جدید</string>
+    <string name="update_note">می‌توانید در حین بروزرسانی از اپ استفاده کنید 😊</string>
+    <string name="set_app_default">تنظیم به‌عنوان برنامه پیش‌فرض</string>
+
+    <string name="update_available_title">✨ نسخه جدید %1$s آماده است!</string>
+    <string name="update_now">اکنون بروزرسانی کنید</string>
+    <string name="update_available_description">نسخه %1$s با ویژگی‌های جذاب و بهبود عملکرد منتشر شده است. برای تجربه آن، اکنون بروزرسانی کنید!</string>
+    <string name="app_update_downloaded">🎉 بروزرسانی با موفقیت دانلود شد</string>
+    <string name="restart">راه‌اندازی مجدد</string>
+    <string name="app_update_install">بروزرسانی دانلود شد. آیا الآن نصب شود؟</string>
+    <string name="app_update_critical">🔔 این بروزرسانی ضروری است، لطفاً برای ادامه آن را انجام دهید!</string>
+    <string name="done_language_activity">انجام شد</string>
+    <string name="skip_language_activity">رد کردن</string>
+
+    <string name="please_specify">لطفاً دلیل خود را مشخص کنید</string>
+    <string name="please_input_reason">لطفاً دلیل را وارد کنید</string>
+    <string name="select_reason_first">قبل از حذف، لطفاً یک دلیل انتخاب کنید</string>
+    <string name="uninstall_reason_4">اعلان‌های زیادی دارم</string>
+
+    <string name="result_not_found">نتیجه‌ای یافت نشد!!!</string>
+    <string name="search_language_hint">اینجا جستجو کنید...</string>
+    <string name="user_guide_title">به %s خوش آمدید</string>
+    <string name="press_button">برای ایجاد فایل PDF این دکمه را فشار دهید</string>
+    <string name="exit_app_content">آیا مطمئن هستید که می‌خواهید از برنامه خارج شوید؟</string>
+    <string name="exit_app">😢\nخروج از برنامه</string>
+    <string name="not_exit">🥰\nبازگشت</string>
+
+    <string name="uprange_to_premium">ترقی به پریمیوم</string>
+    <string name="full_premium_features">از تمام ویژگی‌های پریمیوم لذت ببرید</string>
+    <string name="see_full_offer">تمام پیشنهادات ویژه را مشاهده کنید!</string>
+
+    <string name="app_name_iap">بهترین خواننده PDF همه‌کاره</string>
+    <string name="tagline">افزایش چشمگیر بهره‌وری در کار</string>
+    <string name="feature_title">ویژگی‌ها</string>
+    <string name="feature_remove_ads">حذف تمام تبلیغات</string>
+    <string name="feature_edit_pdf">ویرایش PDF</string>
+    <string name="feature_sign_documents">امضای اسناد</string>
+    <string name="feature_add_images">افزودن تصویر به PDF</string>
+    <string name="feature_scan_pdf">اسکن به PDF</string>
+    <string name="feature_mark_annotate">علامت‌گذاری یا یادداشت‌نویسی</string>
+    <string name="feature_read_all_format">خواندن تمام فرمت‌ها</string>
+    <string name="plan_pro">پیشرفته</string>
+    <string name="plan_basic">پایه</string>
+    <string name="subscribe_annually">اشتراک سالانه</string>
+    <string name="free_trial">۳ روز آزمایش رایگان</string>
+    <string name="price_annual">%sدلار /ماه</string>
+    <string name="price_annual_note">صورتحساب سالانه %s</string>
+    <string name="discount_label">٪۵۰ تخفیف</string>
+    <string name="subscribe_monthly">اشتراک ماهانه</string>
+    <string name="price_monthly">%sدلار /ماه</string>
+    <string name="price_month">%s دلار </string>
+    <string name="button_free_trial">۳ روز آزمایش رایگان</string>
+    <string name="cancel_note">لغو در هر زمان - تا ۲۴ ساعت قبل از پایان دوره آزمایشی یا تمدید</string>
+    <string name="term_of_use">شرایط استفاده</string>
+    <string name="restore_purchase">بازیابی خرید</string>
+    <string name="restore_button">بازیابی</string>
+    <string name="get_free_trial">دریافت آزمایش رایگان ۳ روزه</string>
+    <string name="_3_days_free_trial">۳ روز آزمایشی رایگان!</string>
+    <string name="day_free_trial"> ۳ روز</string>
+    <string name="unlocked_premium_features">تمام ویژگی‌های پریمیوم آنلاک شد 🔓</string>
+    <string name="unlocked">آنلاک</string>
+    <string name="exclusive_tools_to_enhance">ابزارهای اختصاصی برای بهبود تجربه شما 👑</string>
+    <string name="exclusive_tools">ابزارهای اختصاصی</string>
+    <string name="no_payment_cancel_refund">فعلاً پرداخت نکنید، در هر زمان لغو کنید، در صورت نارضایتی ۱۰۰٪ بازپرداخت! ✨</string>
+    <string name="no_payment">فعلاً پرداخت نکنید،</string>
+    <string name="refund">ضایتی ۱۰۰٪</string>
+    <string name="trial_conditions">۳ روز آزمایشی رایگان، سپس %s/ماه (معادل %s/سال)، تمدید خودکار، لغو در هر زمان</string>
+    <string name="pay_for_renewal">س %s/ماه</string>
+    <string name="start_free_trial_now">اکنون آزمایش رایگان را شروع کنید</string>
+    <string name="install">نصب</string>
+
+    <string name="you_premium">شما کاربر Premium هستید!</string>
+    <string name="restore_success">خریدهای شما با موفقیت بازیابی شد!</string>
+    <string name="restore_fail">بازیابی خریدها ناموفق بود. لطفاً اتصال را بررسی کرده و دوباره تلاش کنید.</string>
+
+    <string name="payment_successful">شما با موفقیت بسته Premium را خریداری کردید!</string>
+    <string name="please_update_store">خرید انجام نشد. لطفاً فروشگاه Play را به‌روزرسانی کرده و وارد حساب Google خود شوید</string>
+    <string name="not_confirm_purchase">امکان تأیید خرید وجود ندارد. لطفاً بعداً برنامه را دوباره باز کنید.</string>
+    <string name="reload_file_successful">دریافت فایل با موفقیت انجام شد</string>
+    <string name="swipe_refresh_guide">برای بارگذاری مجدد فایل‌ها به پایین بکشید</string>
+    <string name="scanning_file">در حال اسکن فایل</string>
+    <string name="wait_for_scanning_file">لطفاً منتظر بمانید تا فایل اسکن شود</string>
+
+    <string name="feature_request">درخواست ویژگی</string>
+    <string name="request">درخواست</string>
+    <string name="we_add_new_feature">ما ویژگی‌های جدیدی اضافه خواهیم کرد تا نیازهای شما را برآورده کنیم.</string>
+    <string name="have_any_other_feature_requests">آیا درخواست ویژگی دیگری دارید؟</string>
+    <string name="smart_tools">ابزارهای هوشمند</string>
+    <string name="edit_files">ویرایش فایل‌ها</string>
+    <string name="merge_and_split">ادغام و تقسیم</string>
+    <string name="convert_files">تبدیل فایل‌ها</string>
+    <string name="compress_files">فشرده‌سازی فایل‌ها</string>
+    <string name="view_setting">تنظیمات نمایش</string>
+    <string name="ai_tools">ابزارهای هوش مصنوعی</string>
+    <string name="chat_with_document">گفتگو با سند</string>
+    <string name="ai_document_summary">خلاصه سند با هوش مصنوعی</string>
+    <string name="translate_document">ترجمه سند</string>
+    <string name="others">سایر</string>
+    <string name="submit">ارسال</string>
+    <string name="other_features_that_you_want_to_have">سایر ویژگی‌هایی که می‌خواهید داشته باشید</string>
+    <string name="thanks_for_feedback">از بازخورد شما متشکریم!</string>
+    <string name="deliver_better_experience">ما تلاش می‌کنیم تجربه بهتری ارائه دهیم.</string>
+    <string name="account">حساب</string>
+    <string name="app">برنامه</string>
+    <string name="display">نمایش</string>
+    <string name="support">پشتیبانی</string>
+    <string name="free_and_premium">رایگان &amp; پرمیوم</string>
+    <string name="terms_privacy_text">با ثبت این سفارش، شما با شرایط خدمات و سیاست حفظ حریم خصوصی موافقت می‌کنید. اشتراک به‌طور خودکار تمدید می‌شود مگر اینکه تمدید خودکار حداقل ۲۴ ساعت قبل از پایان دوره فعلی غیرفعال شود.</string>
+    <string name="discount">۳۳٪ صرفه‌جویی کنید</string>
+    <string name="terms_and_service">شرایط خدمات</string>
+    <string name="price">%s/Week after FREE 3-days Trial</string>
+    <string name="start_free_trial">Start Free Trial</string>
+    <string name="start_like_a_pro">مثل یک حرفه‌ای شروع کنید</string>
+    <string name="unlock_all_features">باز کردن همه قابلیت‌ها</string>
+    <string name="note_free_trial">لغو در هر زمان. اشتراک به‌طور خودکار تمدید می‌شود</string>
+    <string name="feature_image_pdf">تصویر به PDF</string>
+    <string name="feature_edit_doc">ویرایش اسناد</string>
+    <string name="feature_add_images_doc">افزودن تصاویر به اسناد</string>
+    <string name="total">مجموع:</string>
+    <string name="not_have_file">اوه! نتوانستیم هیچ فایلی پیدا کنیم.</string>
+    <string name="check_for_more_files">لطفاً فضای ذخیره‌سازی خود را بررسی کنید یا دوباره امتحان کنید.</string>
+    <string name="date_created">تاریخ ایجاد</string>
+    <string name="successfully">با موفقیت!</string>
+    <string name="rename_success">نام فایل با موفقیت تغییر یافت.</string>
+    <string name="delete_file">حذف فایل</string>
+    <string name="set_pdf_reader_as_your_default_all_file_viewer">تنظیم <b>%s</b> به‌عنوان مشاهده‌گر پیش‌فرض %s شما</string>
+    <string name="all_file">همه فایل‌ها</string>
+    <string name="allow_for_quick_easy_access">اجازه دهید "%s" برای دسترسی سریع و آسان!</string>
+    <string name="home_screen_shortcuts">میانبرهای صفحه اصلی</string>
+    <string name="enable">فعال‌سازی</string>
+    <string name="leave_the_app">خروج از برنامه؟</string>
+    <string name="exit_content">آیا مطمئن هستید که می‌خواهید از برنامه خارج شوید؟</string>
+    <string name="refresh_files">برای به‌روزرسانی فایل‌ها به پایین بکشید</string>
+    <string name="update_required">این نسخه قدیمی است. لطفاً برنامه را به‌روزرسانی کنید</string>
+    <string name="select_from_recent">انتخاب از اخیر</string>
+    <string name="select_from_mark">انتخاب از علامت‌گذاری‌شده</string>
+    <string name="remove_mark">حذف علامت</string>
+    <string name="are_you_sure">مطمئن هستید؟</string>
+    <string name="remove_mark_content">آیا مطمئن هستید که می‌خواهید علامت این فایل را حذف کنید؟</string>
+    <string name="splash_content">همه اسناد خود را در یک مکان بخوانید</string>
+    <string name="subscribe_weekly">اشتراک هفتگی</string>
+    <string name="price_weekly">%s/هفته</string>
+    <string name="go_setting">بله، به تنظیمات برو</string>
+    <string name="allow_access">اجازه دسترسی به فایل‌هایت را بده</string>
+
+
+</resources> 

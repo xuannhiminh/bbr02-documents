@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="intent_label_doc_pdf">Doc\'tan PDF\'ye</string>
+    <string name="intent_label_doc_reader">Doc Okuyucu</string>
+    <string name="intent_label_pdf_doc">Doc Düzenleyici</string>
+    <string name="intent_label_doc_smart_editor">Akıllı Doc Düzenleyici</string>
+    <string name="intent_label_doc_print">Doc Yazdır</string>
+
+    <string name="intent_label_excel_pdf">Excel\'den PDF\'ye</string>
+    <string name="intent_label_excel_reader">Excel Okuyucu</string>
+    <string name="intent_label_pdf_excel">Excel Düzenleyici</string>
+    <string name="intent_label_excel_smart_editor">Akıllı Excel Düzenleyici</string>
+    <string name="intent_label_excel_print">Excel Yazdır</string>
+    <string name="fix_your_issue">Sorununuzu daha hızlı çözmemiz için bilgi</string>
+    <string name="your_feedback">Geri bildiriminiz</string>
+    <string name="feedback_disclaimer">Bu e-postayı göndererek, uygulamayı geliştirmemize yardımcı olmak için yukarıdaki bilgileri bizimle paylaşmayı kabul edersiniz.</string>
+    <string name="feature_request_limit">Yeniden göndermek için 1 saat bekleyebilirsiniz.</string>
+
+    <string name="intent_label_ppt_pdf">PPT\'den PDF\'ye</string>
+    <string name="intent_label_ppt_reader">PPT Okuyucu</string>
+    <string name="intent_label_pdf_ppt">PPT Düzenleyici</string>
+    <string name="intent_label_ppt_smart_editor">Akıllı PPT Düzenleyici</string>
+    <string name="intent_label_ppt_print">PPT Yazdır</string>
+
+    <string name="click_back_to_app">Ardından uygulamaya dönmek için &lt; tuşuna basın</string>
+    <string name="read">Oku</string>
+    <string name="your_recent_PDF_files_are_waiting">Son PDF dosyalarınız sizi bekliyor</string>
+
+    <string name="saving_content">İçerik kaydediliyor</string>
+    <string name="you_have_unfinished_file">Bitmemiş bir dosyanız var</string>
+    <string name="click_to_see_more">Daha fazlasını görmek için tıklayın.</string>
+
+    <string name="add_in_fav">Favorilere ekle</string>
+
+    <string name="app_name">All Document</string>
+
+    <string name="browse_more_files">Daha Fazla Dosyaya Göz Atın</string>
+
+    <string name="cancel">İptal</string>
+
+    <string name="change_language">Dili değiştir</string>
+
+    <string name="change_language_description">Dili buradan değiştirebilirsiniz.</string>
+
+    <string name="clear_fav_message">Sık kullanılan dosyaların listesini silmek istediğinizden emin misiniz, ancak kalıcı olarak silinmeyecekler mi?</string>
+
+    <string name="clear_favourite">Sık Kullanılanları Temizle</string>
+
+    <string name="clear_recent">Clear Recent</string>
+
+    <string name="clear_recent_message">Son kullanılan dosyaların listesini silmek istediğinizden emin misiniz, ancak bunlar kalıcı olarak silinmeyecek mi?</string>
+
+    <string name="cont_pages">Sürekli Sayfalar</string>
+
+    <string name="continuee">Devam et</string>
+
+    <string name="copy">Kopyala</string>
+
+    <string name="date">Tarih</string>
+
+    <string name="default_select">0 Seç</string>
+    <string name="day_mode">Gündüz Modu</string>
+
+    <string name="del_message">dosyasını silmek istediğinizden emin misiniz \"%s.pdf\" ?</string>
+
+    <string name="del_sel_message">Seçilen öğeleri silmek istediğinizden emin misiniz?</string>
+
+    <string name="delete">Sil</string>
+
+    <string name="delete_successfully">başarıyla silindi!</string>
+
+    <string name="done">Bitti</string>
+
+    <string name="duplicate">Yinelenen</string>
+
+    <string name="duplicate_successfully">başarıyla kopyala!</string>
+
+    <string name="duplicate_unsuccessful">\"Kopyalama başarısız, cihaz depolama alanı yazılamayabilir! \"</string>
+
+    <string name="enter_file_name">Dosya için bir isim girin</string>
+
+    <string name="enter_page_no">Sayfa numarasını girin</string>
+
+    <string name="enter_password">Açmak için Şifre Girin</string>
+
+    <string name="exit">Çık</string>
+
+    <string name="exit_message">" Uygulamadan çıkılacak! "</string>
+
+    <string name="expand_button_title">Gelişmiş</string>
+
+    <string name="feedback">Geri Bildirim</string>
+
+    <string name="feedback_title">Karşılaştığınız sorunu bize bildirin</string>
+    <string name="feedback_option1">Dosya açılamıyor</string>
+    <string name="feedback_option2">Öneriler</string>
+    <string name="feedback_option3">Yavaş</string>
+    <string name="feedback_option4">Çökme ve hatalar</string>
+    <string name="choose_option">Lütfen bir geri bildirim seçeneği seçin</string>
+    <string name="feedback_warning">Lütfen en az 6 karakter girin</string>
+
+
+    <string name="file_already_exists">%s.pdf isimli dosya zaten var, lütfen başka bir isim seçin!</string>
+
+    <string name="files_selected">%d Dosya Seçildi</string>
+
+    <string name="get_pro_now">Ayrıcalıklı özellikler</string>
+
+    <string name="go_to_page">Sayfaya git</string>
+
+    <string name="more">Daha</string>
+
+    <string name="more_description">Bu düğmeye tıklayarak tüm öğeleri bir kerede seçebilir, ardından birden fazla dosya üzerinde işlem yapabilirsiniz.</string>
+
+    <string name="more_open_pdf_description">Gece modu gibi bazı araçların keyfini çıkarabilir ve doğrudan favori listesine ekleyebilirsiniz.</string>
+
+    <string name="more_open_pdf_title">Diğer Araçlar</string>
+
+    <string name="more_title">Tümünü Seç</string>
+
+    <string name="name">İsim</string>
+
+    <string name="nav_app_bar_navigate_up_description">Yukarı git</string>
+
+    <string name="nav_app_bar_open_drawer_description">Gezinme çekmecesini aç</string>
+
+    <string name="next">Sonraki</string>
+
+    <string name="night_mode">Gece Modu</string>
+
+    <string name="no">Hayır</string>
+
+    <string name="no_fav">Daha sonra kolayca bulmak için favori kategoriye bir dosya ekleyin.</string>
+
+    <string name="no_pdf_file">Mobil cihazınızda herhangi bir PDF dosyası bulunamadı.</string>
+
+    <string name="no_recent">Son zamanlarda okuduğunuz PDF dosyaları burada görünecektir.</string>
+
+    <string name="not_set">Ayarlanmadı</string>
+
+    <string name="page_by_page">Sayfa Sayfa</string>
+
+    <string name="permission_deny_positive_text">izin vermek</string>
+
+    <string name="permission_deny_text">Tüm dosyaları görüntülemek için, PDF okuyucu uygulamasına depolama erişimine izin verin.</string>
+
+    <string name="permission_deny_title">İzin ver</string>
+
+    <string name="preference_copied">\"%1$s\" panoya kopyalandı.</string>
+
+    <string name="print">Baskı</string>
+
+    <string name="print_description">Bu özelliği kullanarak belgenizi doğrudan buradan yazdırabilirsiniz.</string>
+
+    <string name="print_title">Belgeyi Yazdır</string>
+
+    <string name="privacy_policy">Gizlilik Politikası</string>
+
+    <string name="pro_description">Satın alarak tüm reklamları kalıcı olarak kaldırabilirsiniz.</string>
+
+    <string name="pro_title">Reklamları Kaldır</string>
+
+    <string name="purchased_success">başarıyla satın</string>
+
+    <string name="rate_us">Bize puan verin</string>
+
+    <string name="rate_us_message">"Bu uygulamayı değerlendirmek ister misiniz?Desteğiniz, geliştirmemize yardımcı olacaktır."</string>
+
+    <string name="rating_message">İyi puanınız bizim için çok değerlidir.</string>
+
+    <string name="remove_ads">Reklamları Kaldır</string>
+
+    <string name="remove_fav_message">Seçilen dosyaları sık kullanılanlardan kaldırmak istediğinizden emin misiniz, ancak kalıcı olarak silinmeyecekler mi?</string>
+
+    <string name="remove_files">Dosyaları Kaldır</string>
+
+    <string name="remove_from_fav">Favorilere Ekle</string>
+
+    <string name="remove_recent">Sonlardan Kaldır</string>
+
+    <string name="remove_sel_recent_message">Seçilen dosyalar Son listenizden kaldırılacak, ancak kalıcı olarak silinmeyecekler.</string>
+
+    <string name="rename">Yeniden Adlandırma</string>
+
+    <string name="rename_unsuccessful">\"Yeniden adlandırma başarısız, dosya yazılamayabilir! \"</string>
+
+    <string name="save">Kaydet</string>
+
+    <string name="search_doc">Belge Ara</string>
+
+    <string name="search_menu_title">Ara</string>
+
+    <string name="selected">" Seçilen"</string>
+
+    <string name="send_feedback">Geri Bildirim Gönder</string>
+
+    <string name="share">Paylaş</string>
+
+    <string name="share_app">Bu uygulamayı paylaş</string>
+
+    <string name="share_description">Belgeyi başkalarıyla paylaşın.</string>
+
+    <string name="share_title">Belgeyi Paylaşın</string>
+
+    <string name="size">Boyut</string>
+
+    <string name="sort">Çeşit</string>
+
+    <string name="status_bar_notification_info_overflow">999+</string>
+
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+
+    <string name="thumbnail">pdf küçük resmi</string>
+
+    <string name="title_fav">Favori</string>
+
+    <string name="title_files">Dosyalar</string>
+
+    <string name="title_recent">Son</string>
+
+    <string name="yes">Evet</string>
+    <string name="select">Seçildi</string>
+    <string name="get_start_content">Size daha iyi hizmetler sunmak ve verilerinizi nasıl işlediğimizi ve koruduğumuzu daha net anlamak için Gizlilik Politikasını güncelledik.</string>
+    <string name="agree_us">KABUL ET\" düğmesine dokunarak, \"Gizlilik Politikamızı\" kabul etmiş olursunuz</string>
+    <string name="agree">Katılıyorum</string>
+    <string name="app_version">Sürüm %s</string>
+    <string name="file_not_found">Dosya bulunamadı!!!</string>
+    <string name="rate_now">Şimdi oyla</string>
+    <string name="recent_add">Son zamanlarda eklendi</string>
+    <string name="all">Hepsi</string>
+    <string name="pdf">PDF</string>
+    <string name="word">Word</string>
+    <string name="excel">Excel</string>
+    <string name="ppt">PPT</string>
+    <string name="remind_later">Bana daha sonra hatırlat</string>
+    <string name="please_rate">Lütfen bir değerlendirme seçin !!!</string>
+    <string name="thank_for_rate">Teşekkür ederim!!!</string>
+    <string name="sort_by">Sırala</string>
+    <string name="replace_old_file">Eski dosya değiştirilsin mi?</string>
+    <string name="ok">Tamam mı</string>
+    <string name="convert_to_pdf">PDF\'ye dönüştür</string>
+    <string name="pdf_file_name">PDF Dosya Adı</string>
+    <string name="password">Parola</string>
+    <string name="convert">Dönüştürmek</string>
+    <string name="file_name_invalid">Dosya adı geçerli değil</string>
+    <string name="convert_success">Başarıyla PDF\'ye dönüştürüldü!</string>
+    <string name="open">Açık</string>
+
+    <string name="detail">Ayrıntı</string>
+    <string name="properties">Özellikler</string>
+    <string name="app_error">Bir hata oluştu. Lütfen tekrar deneyin</string>
+    <string name="notification_title">Android\'de 1 Numaralı PDF Okuyucu</string>
+    <string name="notification_content">Tüm PDF formatlarını okuma</string>
+    <string name="create_shortcut">Kısayol oluştur</string>
+    <string name="premium">Premium</string>
+    <string name="privilege">Ayrıcalık</string>
+    <string name="normal">Normal</string>
+    <string name="basic_reading_operation">Temel Okuma İşlemi</string>
+    <string name="powerful_editing">Güçlü Düzenleme Aracı</string>
+    <string name="cam_scanner">Kamera Tarayıcı</string>
+    <string name="signature">İmza</string>
+    <string name="forever">Sonsuza kadar</string>
+    <string name="_3_months">%s ay</string>
+    <string name="free_for_days">%s gün boyunca ücretsiz</string>
+    <string name="hot">Sıcak</string>
+    <string name="premium_des">Reklamları kaldırın ve tüm özelliklerin kilidini açın</string>
+    <string name="no_ads">Reklam yok</string>
+    <string name="create_all_file">Tüm Dosyayı Oluştur</string>
+    <string name="edit_all_files">Tüm Dosyaları Düzenle</string>
+    <string name="cancel_anytime">İstediğin zaman iptal et</string>
+    <string name="free_7_day">3 gün ücretsiz</string>
+    <string name="premium_then_after_trial">Sonra %s/yıl</string>
+    <string name="premium_detail">Bir deneme başlatmıyorsanız, satın alma onayı denemenizin sonunda Google Play hesabınızdan ödeme alınacaktır. Abonelik, 24 saatten önce iptal edilmediği sürece, deneme süresinin bitiminden önce otomatik olarak yenilenir. Google Play mağazanızdan aboneliğinizi yönetebilir ve otomatik yenilemeyi kapatabilirsiniz.</string>
+    <string name="language">Dil</string>
+    <string name="_1_year">%s yıl</string>
+    <string name="sort_by_date">Oluşturulma tarihi: Artan</string>
+    <string name="sort_by_name_asc">İsim: A dan Z ye</string>
+    <string name="sort_by_name_desc">İsim: Z den A ya</string>
+    <string name="sort_by_size_asc">Dosya boyutu: Artan</string>
+    <string name="sort_by_size_desc">Dosya boyutu: Azalan</string>
+    <string name="please_choose_file">Lütfen en az bir dosya seçin!</string>
+    <string name="delete_content">Tamamen silmek istediğinizden emin misiniz?</string>
+    <string name="delete_all">Tüm seçilen dosyaları silmek istediğinizden emin misiniz?</string>
+    <string name="title_access">Tüm Dosya Erişimi</string>
+    <string name="pdf_reader">PDF Okuyucu</string>
+    <string name="allow_permission">İzin Ver</string>
+    <string name="content_access">Lütfen cihazınızdaki dosyalara erişim izni verin.</string>
+    <string name="button_permission">Ayarlar a Git</string>
+    <string name="permission_required">İzin Gerekiyor</string>
+    <string name="set_pdf_reader_as_your_default_pdf_file_viewer">Varsayılan PDF Dosya Görüntüleyiciniz olarak <b>%s</b>\'yi ayarlayın</string>
+    <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">Dosyaları hızlıca açmak ve okumayı çok kolay ve eğlenceli hale getirmek için bu seçeneği seçin!</string>
+    <string name="set_as_default">Varsayılan Olarak Ayarla</string>
+    <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default"><b>%s</b> simgesini seçin ve varsayılan olarak ayarlamak için <b>%s</b>\'ya tıklayın!</string>
+    <string name="always">Her Zaman</string>
+    <string name="select_this_pdf_reader_icon_in_the_app_list">Bu <b>%s</b> simgesini uygulama listesinde seçin.</string>
+    <string name="click_always_to_set_it_as_the_default_reader">Varsayılan okuyucu olarak ayarlamak için <b>%s</b>\'ya tıklayın.</string>
+    <string name="choose_default_app">Lütfen %s yi PDF varsayılan uygulamanız olarak seçin</string>
+    <string name="auto_scroll">Otomatik Kaydırma</string>
+    <string name="title_pdf_reader">Hoş geldiniz\n%s</string>
+    <string name="permission_graphic_desc">İzinleri İsteyin</string>
+    <string name="allow">İzin Ver</string>
+    <string name="later">Sonra</string>
+    <string name="permission_explanation">Dosyalarınızı okumak ve düzenlemek için lütfen <b>%s</b>\'nin tüm dosyalarınıza erişmesine izin verin.</string>
+    <string name="add_to_home_screen">Ana Ekrana Ekle?</string>
+    <string name="tap_add_or_hold_the_widget_to_add_it_to_your_home_screen_instantly_choose_an_option_below">%s ye tıklayın veya widget ı ana ekranınıza hemen eklemek için tutun. Aşağıdaki seçeneklerden birini seçin:</string>
+    <string name="add">Ekle</string>
+    <string name="cannot_widget">Cihazınız sabitlenmiş widget ları desteklemiyor.</string>
+    <string name="search">Burada dosyaları arayın</string>
+    <string name="home">Ana Sayfa</string>
+    <string name="intent_label_pdf">Hepsi Bir Arada Belge Görüntüleyici</string>
+    <string name="intent_label_pdf_sign">PDF İmzası</string>
+    <string name="intent_label_pdf_editor">Akıllı Belge Düzenleyici</string>
+    <string name="intent_label_pdf_convert_to_images">PDF den Görsellere</string>
+    <string name="intent_label_pdf_reader">Akıllı Belge Okuyucu</string>
+    <string name="intent_label_pdf_long_image">PDF yi uzun bir görsele dönüştür</string>
+    <string name="intent_label_pdf_word">PDF den Word e</string>
+    <string name="clear_text">Metni Temizle</string>
+    <string name="search_icon">ara</string>
+    <string name="open_now">Şimdi Aç</string>
+    <string name="unfinished_reading">📌 Henüz %s okumayı bitirmediniz.</string>
+    <string name="expand_content">İçeriği Genişlet</string>
+    <string name="forgotten_file_content_notification">Önemli dosyaların gözden kaçmamasını sağlayın! 😊</string>
+    <string name="new_file_content_notification">📂 Yeni bir dosyası aldınız</string>
+    <string name="daily_call_open_app_title">Güzel bir gün dilerim</string>
+    <string name="daily_call_open_app_content">Belki PDF dosyalarınızı kontrol etmek istersiniz! 📚</string>
+    <string name="title_intro_1">Hepsi Bir Arada Belge Görüntüleyici</string>
+    <string name="open_read_and_edit">aç, oku ve düzenle</string>
+    <string name="title_intro_2">Gelişmiş PDF Dönüştürücü</string>
+    <string name="title_description_2">Resimleri, Word, Excel ve PPT dosyalarını yüksek kaliteli PDF lere dönüştürün.</string>
+    <string name="title_intro_3">Akıllı PDF Düzenleyici</string>
+    <string name="title_description_3">Metni vurgulayın, altını çizin ve üstünü çizin. Elektronik imzaları kolayca ekleyin.</string>
+    <string name="start">Başla</string>
+    <string name="language_subtitle">Lütfen ana dilinizi seçin. Dilinizi daha sonra ayarlardan değiştirebilirsiniz.</string>
+    <string name="splash_text">Bu işlem reklam içerebilir</string>
+    <string name="sort_by_date_desc">Oluşturulma tarihi: Azalan</string>
+    <string name="ads_message">Lütfen reklamın yüklenmesini bekleyin...</string>
+    <string name="add_widget">Widget ekle</string>
+    <string name="push_notifications">Bildirimleri etkinleştir</string>
+    <string name="keep_screen_on">Ekranı açık tut</string>
+    <string name="terms_and_conditions">Şartlar ve koşullar</string>
+    <string name="about_us">Hakkımızda</string>
+    <string name="noti_title">%s’in bildirim göndermesine izin verilsin mi?</string>
+    <string name="noti_content">Kolaylık sağlaması için uygulamanın bildirim izinlerine erişmesine lütfen izin verin. Önemli belge güncellemelerini ve görev hatırlatıcılarını kaçırmayın.</string>
+    <string name="noti_allow">Bildirimlere izin ver</string>
+    <string name="noti_title1">Yeni bir PDF dosyanız var</string>
+    <string name="open_file">Dosyayı aç</string>
+    <string name="notice">Bildirim</string>
+    <string name="notice_content">Dosya durumu hakkında güncel kalmak için bildirimleri etkinleştirin</string>
+
+    <string name="notification_title_5">✅ İndirme Tamamlandı!</string>
+    <string name="notification_description_5">📂 %s hazır. Açmak için dokunun.</string>
+    <string name="notification_button_5">Dosyayı Aç</string>
+    <string name="notification_title_11">✨ %s</string>
+    <string name="notification_description_11">🚀 Ekran görüntüsü kaydedildi! Görüntülemek için buraya dokunun!</string>
+    <string name="notification_button_11">Şimdi Aç</string>
+
+    <string-array name="notification_title1">
+        <item name="notification_title_0">⚙️ Kurulumu Tamamlayın?</item>
+        <item name="notification_title_1">📂 Dosya Erişimine İzin Verin</item>
+        <item name="notification_title_2">🎉 Telefonunuzda unutulmuş birçok PDF mi var?</item>
+        <item name="notification_title_3">👋 Herhangi bir belgeyi açın!</item>
+        <item name="notification_title_4">🧭 Güncellenmiş dosyalar mevcut</item>
+    </string-array>
+    <string-array name="notification_title2">
+        <item name="notification_title_6">📖 Kaldığınız yerden devam etmek ister misiniz?</item>
+        <item name="notification_title_7">🔍 Metni Hızla Bulun!</item>
+        <item name="notification_title_8">🎉 Telefonunuzda unutulmuş birçok PDF mi var?</item>
+        <item name="notification_title_9">👋 Herhangi bir belgeyi açın!</item>
+        <item name="notification_title_10">🧭 Güncellenmiş dosyalar mevcut</item>
+    </string-array>
+    <string-array name="notification_message1">
+        <item name="notification_description_0">✨ %s\'nin tüm potansiyelini açmak için birkaç adım kaldı!</item>
+        <item name="notification_description_1">👍 PDF\'leri açmak, okumak ve yönetmek için lütfen erişim izni verin.</item>
+        <item name="notification_description_2">🚀 Belgelerinizi okumak ve düzenlemek için buraya dokunun.</item>
+        <item name="notification_description_3">✨ PDF, Word, Excel ve daha fazlası!</item>
+        <item name="notification_description_4">✨ Belge kitaplığınız güncellendi!</item>
+    </string-array>
+    <string-array name="notification_message2">
+        <item name="notification_description_6">🤓 %s içinde hâlâ okunacak sayfalar var. Kaldığınız yerden devam edin!</item>
+        <item name="notification_description_7">💡 Belgelerinizde hızlıca arama yapmak için güçlü arama aracını kullanın.</item>
+        <item name="notification_description_8">🚀 Belgelerinizi okumak ve düzenlemek için buraya dokunun.</item>
+        <item name="notification_description_9">✨ PDF, Word, Excel ve daha fazlası!</item>
+        <item name="notification_description_10">✨ Belge kitaplığınız güncellendi!</item>
+    </string-array>
+    <string-array name="notification_button1">
+        <item name="notification_button_0">Kuruluma</item>
+        <item name="notification_button_1">Erişim</item>
+        <item name="notification_button_2">Şimdi Aç</item>
+        <item name="notification_button_3">Uygulamayı Aç</item>
+        <item name="notification_button_4">Şimdi Görüntüle</item>
+    </string-array>
+    <string-array name="notification_button2">
+        <item name="notification_button_6">Devam Et</item>
+        <item name="notification_button_7">Aramayı Dene</item>
+        <item name="notification_button_8">Şimdi Aç</item>
+        <item name="notification_button_9">Uygulamayı Aç</item>
+        <item name="notification_button_10">Şimdi Görüntüle</item>
+    </string-array>
+
+    <string name="uninstall">Kaldır</string>
+    <string name="uninstall_reason_2">Çok fazla reklam var</string>
+    <string name="uninstall_reason_3">Bu uygulamaya artık ihtiyacım yok</string>
+    <string name="other">Diğer</string>
+    <string name="uninstall_reason_1">Özellik çalışmıyor</string>
+    <string name="uninstall_reason_title">Uygulamayı kullanırken herhangi bir sorun yaşadınız mı?</string>
+    <string name="uninstall_title">Uygulamayı kaldırmak %s ile sonuçlanabilir. Devam etmek istediğinizden emin misiniz?</string>
+    <string name="uninstall_highlight">kaydedilmiş belgelerin veya son dosyaların kaybı</string>
+    <string name="uninstall_content">Lütfen uygulamayı tekrar etkinleştirmeyi deneyin ve nedeni bizimle paylaşın.</string>
+    <string name="uninstall_confirm">Hâlâ kaldırmak istiyor musunuz?</string>
+    <string name="feedback_content">Geri bildiriminizi girin</string>
+
+    <string name="default_reader_uninstall_description1">Görünüşe göre başka bir uygulamayı varsayılan okuyucu olarak ayarladınız.</string>
+    <string name="default_reader_uninstall_description2">Bunu değiştirmek için "Sıfırla"ya tıklayabilirsiniz.</string>
+    <string name="reset">Sıfırla</string>
+    <string name="clear_default_reader">Varsayılan okuyucuyu temizle</string>
+    <string name="select_set_as_default">Varsayılan olarak ayarla\'yı seçin</string>
+    <string name="set_default">Varsayılan olarak ayarla</string>
+    <string name="click_clear_default">Ardından Varsayılanları Temizle\'ye tıklayın</string>
+    <string name="clear_default">Varsayılanları Temizle</string>
+    <string name="alway">Her zaman</string>
+    <string name="set_pdf_reader_as_your_default_title"><b>%s</b> seçin ve varsayılan olarak ayarlamak için Her zaman\'a tıklayın</string>
+    <string name="select_pdf_reader"><b>%s</b>\'i seçin</string>
+    <string name="click_always_to_set">Başarıyla ayarlamak için ardından Her zaman\'a tıklayın</string>
+    <string name="update_desc">Yeni sürümün keyfini çıkarmak için Güncelle\'ye dokunun. 👇</string>
+    <string name="update_desc_replace">Yeni sürümümüzde gelişmiş performans ve artan kararlılığı keşfedin. Şimdi güncellemek için tıklayın. 👇</string>
+    <string name="update_title">%s\'den fazla kullanıcıya katılın, üstün performansı deneyimleyin! 🚀</string>
+    <string name="new_version">🎉 Yeni Sürüm</string>
+    <string name="update_note">Güncelleme sırasında uygulamayı kullanmaya devam edebilirsiniz 😊</string>
+
+
+    <string name="update">Güncelle</string>
+    <string name="set_app_default">Varsayılan uygulama olarak ayarla</string>
+    <string name="update_available_title">✨ Yeni sürüm %1$s hazır!</string>
+    <string name="update_now">Şimdi güncelle</string>
+    <string name="update_available_description">%1$s sürümü heyecan verici özellikler ve performans iyileştirmeleri ile hazır. Denemek için hemen güncelleyin!</string>
+    <string name="open_intro">açın</string>
+    <string name="edit_intro">düzenleyin</string>
+    <string name="read_intro">görüntüleyin</string>
+    <string name="title_description_1">Tüm belge türlerini kolayca açın, görüntüleyin ve düzenleyin</string>
+    <string name="restart">Yeniden Başlat</string>
+    <string name="skip_language_activity">Atla</string>
+    <string name="install">Yükle</string>
+    <string name="app_update_install">Güncelleme indirildi. Şimdi yükleyin!</string>
+    <string name="app_update_downloaded">🎉Güncelleme indirildi</string>
+    <string name="app_update_critical">🔔 Bu güncelleme kritiktir, devam etmek için lütfen güncelleyin!</string>
+    <string name="are_you_satisfied">Uygulamamızdan memnun musunuz?</string>
+    <string name="not_really">😞\n Pek sayılmaz</string>
+    <string name="love_it">🥰\n Bayıldım</string>
+    <string name="thank_for_support">Desteğiniz için teşekkürler!</string>
+    <string name="rate_us_content">Bizi değerlendirirseniz çok memnun oluruz</string>
+    <string name="rate">Puanla</string>
+    <string name="rate_on_google">Google Play’de puanla</string>
+    <string name="best_we_can">Alabileceğimiz en iyi puan</string>
+    <string name="we_sorry">Üzgünüz...</string>
+    <string name="your_feedback_is_welcome">Geri bildiriminiz bizim için değerlidir</string>
+    <string name="much_appreciated">Çok teşekkür ederiz!</string>
+    <string name="your_support_is_motivation">Desteğiniz en büyük motivasyonumuz!</string>
+    <string name="thank_for_feedback">Geri bildiriminiz için teşekkürler</string>
+    <string name="we_will_bring_better_user_ex">Daha iyi bir deneyim sunmak için çalışacağız</string>
+
+
+    <string name="done_language_activity">Tamam</string>
+    <string name="feedback_placeholder">Lütfen daha fazla ayrıntı verin ki sorununuzu daha hızlı bulup çözebilelim</string>
+    <string name="feedback_option6">Çok fazla bildirim var</string>
+
+    <string name="please_specify">Lütfen nedeninizi belirtin</string>
+    <string name="please_input_reason">Lütfen nedeninizi girin</string>
+    <string name="select_reason_first">Lütfen kaldırmadan önce bir neden seçin</string>
+
+    <string name="uninstall_reason_4">Çok fazla bildirim var</string>
+    <string name="result_not_found">Sonuç bulunamadı!!!</string>
+    <string name="search_language_hint">Burada ara...</string>
+    <string name="user_guide_title">%s\'ye hoş geldiniz</string>
+    <string name="press_button">PDF dosyası oluşturmak için bu düğmeye basın</string>
+    <string name="exit_app_content">Uygulamadan çıkmak istediğinizden emin misiniz?</string>
+    <string name="exit_app">😢\nUygulamadan Çık</string>
+    <string name="not_exit">🥰\nGeri Dön</string>
+
+    <string name="uprange_to_premium">Premium\'a Yükselt</string>
+    <string name="full_premium_features">Tüm premium özelliklerin tadını çıkarın</string>
+    <string name="see_full_offer">Tüm özel teklifleri görün!</string>
+
+    <string name="app_name_iap">En İyi Hepsi Bir Arada PDF Okuyucu</string>
+    <string name="tagline">İş verimliliğinizi önemli ölçüde artırın</string>
+    <string name="feature_title">Özellikler</string>
+    <string name="feature_remove_ads">Tüm reklamları kaldır</string>
+    <string name="feature_edit_pdf">PDF düzenle</string>
+    <string name="feature_sign_documents">Belgeleri imzala</string>
+    <string name="feature_add_images">PDF\'ye görsel ekle</string>
+    <string name="feature_scan_pdf">PDF\'ye tara</string>
+    <string name="feature_mark_annotate">Vurgula veya not ekle</string>
+    <string name="feature_read_all_format">Tüm formatları oku</string>
+    <string name="plan_pro">Pro</string>
+    <string name="plan_basic">Temel</string>
+    <string name="subscribe_annually">Yıllık Abonelik</string>
+    <string name="free_trial">3 GÜNLÜK ÜCRETSİZ DENEME</string>
+    <string name="price_annual">%s/Ay</string>
+    <string name="price_annual_note">Yıllık faturalandırılır: %s</string>
+    <string name="discount_label">%50 İNDİRİM</string>
+    <string name="subscribe_monthly">Aylık Abonelik</string>
+    <string name="price_monthly">%s/Ay</string>
+    <string name="price_month">%s ay</string>
+    <string name="button_free_trial">3 Günlük Ücretsiz Deneme</string>
+    <string name="cancel_note">İstediğiniz zaman iptal edin – deneme süresi veya yenilemeden 24 saat önce</string>
+    <string name="term_of_use">Kullanım Şartları</string>
+    <string name="restore_purchase">Satın Almayı Geri Yükle</string>
+    <string name="restore_button">Geri Yükle</string>
+    <string name="get_free_trial">3 Günlük Ücretsiz Deneme Al</string>
+    <string name="_3_days_free_trial">3 Günlük Ücretsiz Deneme!</string>
+    <string name="day_free_trial">3 Günlük</string>
+    <string name="unlocked_premium_features">🔓 Tüm premium özelliklerin kilidi açıldı</string>
+    <string name="unlocked">kilidi açıldı</string>
+    <string name="exclusive_tools_to_enhance">👑 Deneyiminizi geliştirmek için özel araçlar</string>
+    <string name="exclusive_tools">özel araçlar</string>
+    <string name="no_payment_cancel_refund">✨ Şimdi ödeme yok, istediğiniz zaman iptal edin, memnun kalmazsanız %100 geri ödeme!</string>
+    <string name="no_payment">Şimdi ödeme yok</string>
+    <string name="refund">%100 geri ödeme</string>
+    <string name="trial_conditions">3 GÜNLÜK ÜCRETSİZ DENEME, ardından %s/Ay (yıllık %s), otomatik yenileme, istediğiniz zaman iptal edin</string>
+    <string name="pay_for_renewal">%s/Ay</string>
+    <string name="start_free_trial_now">Ücretsiz Denemeye Şimdi Başla</string>
+
+    <string name="you_premium">Artık bir Premium kullanıcısınız!</string>
+    <string name="restore_success">Satın almalarınız geri yüklendi!</string>
+    <string name="restore_fail">Satın almalar geri yüklenemedi. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.</string>
+
+    <string name="payment_successful">Premium paket için başarıyla ödeme yaptınız!</string>
+    <string name="please_update_store">Satın alma başarısız oldu. Lütfen Play Store\'u güncelleyin ve Google hesabınıza giriş yapın</string>
+    <string name="not_confirm_purchase">Satın alma onaylanamıyor. Lütfen uygulamayı daha sonra yeniden açın.</string>
+    <string name="reload_file_successful">Dosya başarıyla alındı</string>
+    <string name="swipe_refresh_guide">Dosyaları yenilemek için aşağı kaydırın</string>
+    <string name="scanning_file">Dosya taranıyor</string>
+    <string name="wait_for_scanning_file">Lütfen dosya taranırken bekleyin</string>
+
+    <string name="feature_request">Özellik Talebi</string>
+    <string name="request">Talep</string>
+    <string name="we_add_new_feature">İhtiyaçlarınızı karşılamak için yeni özellikler ekleyeceğiz.</string>
+    <string name="have_any_other_feature_requests">Başka özellik talepleriniz var mı?</string>
+    <string name="smart_tools">Akıllı Araçlar</string>
+    <string name="edit_files">Dosyaları Düzenle</string>
+    <string name="merge_and_split">Birleştir ve Ayır</string>
+    <string name="convert_files">Dosyaları Dönüştür</string>
+    <string name="compress_files">Dosyaları Sıkıştır</string>
+    <string name="view_setting">Görünüm Ayarı</string>
+    <string name="ai_tools">Yapay Zeka Araçları</string>
+    <string name="chat_with_document">Belge ile Sohbet</string>
+    <string name="ai_document_summary">Yapay Zeka Belge Özeti</string>
+    <string name="translate_document">Belgeyi Çevir</string>
+    <string name="others">Diğerleri</string>
+    <string name="submit">Gönder</string>
+    <string name="other_features_that_you_want_to_have">Sahip olmak istediğiniz diğer özellikler</string>
+    <string name="thanks_for_feedback">Geri bildiriminiz için teşekkürler!</string>
+    <string name="deliver_better_experience">Daha iyi bir deneyim sunmaya çalışıyoruz.</string>
+    <string name="account">Hesap</string>
+    <string name="app">Uygulama</string>
+    <string name="display">Görüntü</string>
+    <string name="support">Destek</string>
+    <string name="free_and_premium">Ücretsiz &amp; Premium</string>
+    <string name="terms_privacy_text">Bu siparişi vererek, Hizmet Şartları ve Gizlilik Politikası kabul etmiş olursunuz. Mevcut dönem bitiminden en az 24 saat önce otomatik yenileme kapatılmadıkça abonelik otomatik olarak yenilenir.</string>
+    <string name="discount">%33 tasarruf edin</string>
+    <string name="terms_and_service">Hizmet Şartları</string>
+    <string name="price">%s/Week after FREE 3-days Trial</string>
+    <string name="start_free_trial">Start Free Trial</string>
+    <string name="start_like_a_pro">Bir profesyonel gibi başla</string>
+    <string name="unlock_all_features">Tüm özelliklerin kilidini aç</string>
+    <string name="note_free_trial">İstediğiniz zaman iptal edin. Abonelik otomatik olarak yenilenecektir</string>
+    <string name="feature_image_pdf">Resimden PDF</string>
+    <string name="feature_edit_doc">Belgeleri düzenle</string>
+    <string name="feature_add_images_doc">Belgelere resim ekle</string>
+    <string name="total">Toplam:</string>
+    <string name="not_have_file">Hata! Hiçbir dosya bulunamadı.</string>
+    <string name="check_for_more_files">Lütfen depolamanızı kontrol edin veya tekrar deneyin.</string>
+    <string name="date_created">Oluşturulma tarihi</string>
+    <string name="successfully">Başarıyla!</string>
+    <string name="rename_success">Dosya adı başarıyla değiştirildi.</string>
+    <string name="delete_file">Dosyayı Sil</string>
+    <string name="set_pdf_reader_as_your_default_all_file_viewer"><b>%s</b>’i varsayılan %s görüntüleyiciniz olarak ayarlayın</string>
+    <string name="all_file">Tüm Dosyalar</string>
+    <string name="allow_for_quick_easy_access">Hızlı ve kolay erişim için "%s"e izin verin!</string>
+    <string name="home_screen_shortcuts">Ana ekran kısayolları</string>
+    <string name="enable">Etkinleştir</string>
+    <string name="leave_the_app">Uygulamadan çıkılsın mı?</string>
+    <string name="exit_content">Uygulamadan çıkmak istediğinizden emin misiniz?</string>
+    <string name="refresh_files">Dosyaları yenilemek için aşağı çekin</string>
+    <string name="update_required">Bu sürüm eski. Lütfen uygulamayı güncelleyin</string>
+    <string name="select_from_recent">Son Kullanılanlardan Seç</string>
+    <string name="select_from_mark">İşaretlilerden Seç</string>
+    <string name="remove_mark">İşareti Kaldır</string>
+    <string name="are_you_sure">Emin misiniz?</string>
+    <string name="remove_mark_content">Bu dosyadaki işareti kaldırmak istediğinizden emin misiniz?</string>
+    <string name="splash_content">Tüm belgelerinizi tek bir yerde okuyun</string>
+    <string name="subscribe_weekly">Haftalık abone ol</string>
+    <string name="price_weekly">%s/Hafta</string>
+    <string name="go_setting">Tamam, ayarlara git</string>
+    <string name="allow_access">Dosyalarına erişime izin ver</string>
+
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_minus8sdp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/file_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:padding="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_pdf_custom" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@id/tv_create_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/file_icon"
+            app:layout_constraintTop_toTopOf="@id/file_icon"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="EllipsizeMaxLines"
+            tools:text="Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_create_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/file_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="Create on" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/line_color"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/func_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/item_view">
+
+        <FrameLayout
+            android:id="@+id/layout_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frNativeAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <com.ezteam.ezpdflib.widget.ItemFuncView
+            android:id="@+id/func_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fvIcon="@drawable/lib_ic_note"
+            app:fvTitle="@string/note" />
+
+        <com.ezteam.ezpdflib.widget.ItemFuncView
+            android:id="@+id/func_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fvIcon="@drawable/lib_ic_sign"
+            app:fvTitle="@string/signature_pdf" />
+
+        <com.ezteam.ezpdflib.widget.ItemFuncView
+            android:id="@+id/func_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fvIcon="@drawable/ic_add_image"
+            app:fvTitle="@string/add_image" />
+
+        <com.ezteam.ezpdflib.widget.ItemFuncView
+            android:id="@+id/func_add_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fvIcon="@drawable/ic_add_text"
+            app:fvTitle="@string/add_text" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

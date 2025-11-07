@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:padding="0dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <!-- Image bên trái -->
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="40dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_main_pdf"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/app_name"
+        android:layout_marginEnd="12dp" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image_icon"
+        android:layout_toStartOf="@id/button_open"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:fontFamily="sans-serif"
+            android:ellipsize="end"
+            android:textColor="@color/text1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_call_open_app_content"
+            android:textColor="@color/text1"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="400"
+            android:maxLines="1"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_open"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_background_red"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="1dp"
+        android:text="@string/open"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textFontWeight="700"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

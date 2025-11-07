@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:background="@drawable/top_dialog_background"
+        android:padding="@dimen/_16sdp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_default_reader"
+            android:textSize="18sp"
+            android:textColor="@color/text1"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_16sdp" />
+
+        <!-- Instruction Box with overlay -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Background Box -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_instruction_box"
+                android:padding="24dp">
+
+                <!-- Step 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_step_circle"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/step1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textFontWeight="500"
+                        android:text="@string/select_set_as_default"
+                        android:textColor="@color/text1"
+                        android:textSize="14sp"  />
+
+                </LinearLayout>
+
+                <!-- Step 2 -->
+                <LinearLayout
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_step_circle"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/step2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textFontWeight="500"
+                        android:text="@string/click_clear_default"
+                        android:textColor="@color/text1"
+                        android:textSize="14sp"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_step_circle"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/step3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textFontWeight="500"
+                        android:text="@string/click_back_to_app"
+                        android:textColor="@color/text1"
+                        android:textSize="14sp"  />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Gradient overlay -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/gradient_bottom" />
+        </FrameLayout>
+
+        <!-- OK Button -->
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/btn_background_red"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:elevation="0dp"
+            android:stateListAnimator="@null" />
+    </LinearLayout>
+</FrameLayout>

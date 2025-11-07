@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_background"
+        android:elevation="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_32sdp">
+
+        <FrameLayout
+            android:id="@+id/layout_native"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frNativeAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_remove_mark"
+            android:layout_marginBottom="@dimen/_24sdp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="0dp"
+            android:text="@string/are_you_sure"
+            android:textColor="@color/text1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500" />
+
+        <!-- Nội dung -->
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="0dp"
+            android:textFontWeight="400"
+            android:gravity="center"
+            android:text="@string/remove_mark_content"
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="@dimen/_20sdp">
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background_red"
+                android:elevation="0dp"
+                android:letterSpacing="0"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/yes"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:textColor="@color/white"
+                android:layout_marginEnd="32dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:theme="@style/Theme.PDFReaderProNegative"
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textColor="@color/text1"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:stateListAnimator="@null"
+                android:elevation="0dp"
+                android:letterSpacing="0"
+                android:background="@drawable/button_cancel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

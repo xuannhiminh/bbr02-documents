@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/sodk_editor_number_format_popup"
+    android:orientation="vertical">
+
+    <office.file.ui.editor.SOTextView
+        style="@style/sodk_editor_wheel_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="@string/sodk_editor_number_format_date_and_time" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <kankan.wheel.widget.WheelViewLib
+            android:id="@id/country_wheel"
+            android:layout_width="300.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip" />
+
+        <kankan.wheel.widget.WheelViewLib
+            android:id="@id/format_wheel"
+            android:layout_width="300.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_banner_ad"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="@dimen/_3sdp"
+    android:padding="@dimen/_3sdp"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/loading_banner"
+        android:visibility="visible" />
+
+</LinearLayout>

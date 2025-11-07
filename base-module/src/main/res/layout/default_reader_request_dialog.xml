@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_dialog_background"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_48sdp">
+
+        <FrameLayout
+            android:id="@+id/layout_native"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frNativeAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24sdp">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/icon_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="0dp"
+            android:text="@string/set_pdf_reader_as_your_default_all_file_viewer"
+            android:textColor="@color/text1"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0"
+            android:textFontWeight="400"
+            android:lineSpacingExtra="0dp"
+            android:text="@string/pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun"
+            android:textColor="@color/textSecondary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSetDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/bg_btn_share"
+            android:elevation="0dp"
+            android:letterSpacing="0"
+            android:shadowColor="@android:color/transparent"
+            android:text="@string/set_as_default"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:stateListAnimator="@null"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textFontWeight="500" />
+
+    </LinearLayout>
+</FrameLayout>

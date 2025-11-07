@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sodk_editor_toc_bg_color"
+        android:orientation="horizontal">
+
+        <office.file.ui.editor.SOTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bookmarks"
+            android:textColor="@color/sodk_editor_toc_title_textcolor"
+            android:textSize="28.0sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sodk_editor_toc_link"
+            android:text="@string/sodk_editor_cancel"
+            android:textColor="@color/sodk_editor_toc_cancel_textcolor"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/List"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/sodk_editor_toc_divider_color"
+        android:dividerHeight="1.0dip" />
+</LinearLayout>

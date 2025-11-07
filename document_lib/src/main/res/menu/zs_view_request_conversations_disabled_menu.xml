@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/request_conversations_disabled_menu_ic_add_attachments"
+        android:title="@string/request_menu_button_label_add_attachments"
+        android:visible="true"
+        app:actionViewClass="office.support.request.ViewCellAttachmentMenuItem" />
+    <item
+        android:id="@id/request_conversations_disabled_menu_ic_send"
+        android:icon="@drawable/zs_request_conversations_disabled_menu_ic_send"
+        android:title="@string/request_menu_button_label_send"
+        android:visible="true" />
+</menu>

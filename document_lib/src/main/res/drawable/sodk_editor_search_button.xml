@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape>
+                    <padding android:left="1.0dip" android:top="2.0dip" android:right="1.0dip" android:bottom="0.0dip" />
+                    <solid android:color="@color/sodk_editor_icon_search_stroke" />
+                    <corners android:topLeftRadius="12.0dip" android:topRightRadius="12.0dip" android:bottomLeftRadius="0.100000024dip" android:bottomRightRadius="0.100000024dip" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/sodk_editor_toolbar" />
+                    <corners android:topLeftRadius="12.0dip" android:topRightRadius="12.0dip" android:bottomLeftRadius="0.100000024dip" android:bottomRightRadius="0.100000024dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

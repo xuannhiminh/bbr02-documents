@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/button_small_bg_b"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="scale" android:animation="@anim/anim_scale" />
+    <target android:name="ripple" android:animation="@anim/anim_ripple" />
+</animated-vector>

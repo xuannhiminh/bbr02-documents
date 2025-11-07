@@ -1,0 +1,148 @@
+package com.ezstudio.pdftoolmodule.dialog
+
+import android.annotation.SuppressLint
+import android.content.Context
+import android.text.Editable
+import android.text.TextUtils
+import android.text.TextWatcher
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.WindowManager
+import android.widget.TextView
+import android.widget.Toast
+import com.ezstudio.pdftoolmodule.R
+import com.ezstudio.pdftoolmodule.databinding.DialogToolCreateFileBinding
+import com.ezstudio.pdftoolmodule.databinding.DialogToolPasswordBinding
+import com.ezteam.baseproject.dialog.BaseDialog
+import com.ezteam.baseproject.dialog.BuilderDialog
+
+class PasswordDialog(
+    context: Context, builder: ExtendBuilder
+) : BaseDialog<DialogToolPasswordBinding, PasswordDialog.ExtendBuilder>(builder, context) {
+
+    companion object {
+        const val KEY_PASSWORD = "KEY_PASSWORD"
+        const val KEY_FILE_NAME = "KEY_FILE_NAME"
+    }
+
+    class ExtendBuilder(context: Context) : BuilderDialog(context) {
+
+        var fileNameDefault = "Pfd_created_${System.currentTimeMillis()}"
+        var displayPassword = true
+        var hint = context.getString(R.string.enter_file_name)
+
+        override fun build(): BaseDialog<*, *> {
+            return PasswordDialog(context, this)
+        }
+
+        fun setHint(hint: String): ExtendBuilder {
+            this.hint = hint
+            return this
+        }
+
+        fun setFileName(fileName: String): ExtendBuilder {
+            this.fileNameDefault = fileName
+            return this
+        }
+
+        fun setDisplayPassword(allowDisplay: Boolean): ExtendBuilder {
+            this.displayPassword = allowDisplay
+            return this
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    override fun initView() {
+        super.initView()
+
+        window?.attributes?.softInputMode =
+            WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE
+        binding.edtFileName.setText(builder.fileNameDefault)
+
+        binding.edtFileName.hint = builder.hint
+        binding.inputFileNameView.hint = builder.hint
+
+        binding.tvDescription.visibility = if (TextUtils.isEmpty(builder.message)) {
+            View.GONE
+        } else {
+            View.VISIBLE
+        }
+
+        binding.edtFileName.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.inputFileNameView.isErrorEnabled = false
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+        })
+
+        binding.edtPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.edtPasswordLayout.isErrorEnabled = false
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+        })
+    }
+
+    override fun handleClickNegativeButton(view: View) {
+        super.handleClickNegativeButton(view)
+        dismiss()
+    }
+
+    override fun handleClickPositiveButton(data: HashMap<String?, Any?>) {
+        val fileName = binding.edtFileName.text.toString().trim()
+        val password = binding.edtPassword.text.toString().trim()
+
+        Log.e("TAG", "handleClickPositiveButton: ____"+ password+"____" +password.isEmpty())
+        if (fileName.isEmpty()) {
+            binding.inputFileNameView.error =
+                context.resources.getString(R.string.invalid_value)
+        } else if (password.isEmpty()) {
+            binding.edtPasswordLayout.error =
+                context.resources.getString(R.string.invalid_value)
+        } else {
+            data[KEY_FILE_NAME] = fileName
+            data[KEY_PASSWORD] = if (TextUtils.isEmpty(password)) {
+                null
+            } else {
+                password
+            }
+            super.handleClickPositiveButton(data)
+            dismiss()
+        }
+    }
+
+    override val positiveButton: TextView
+        get() = binding.tvPositive
+
+    override val negativeButton: TextView
+        get() = binding.tvNegative
+
+    override val title: TextView
+        get() = binding.tvTitle
+
+    override val message: TextView
+        get() = binding.tvDescription
+
+    override val container: View
+        get() = binding.container
+
+    override fun initListener() {
+
+    }
+
+    override val viewBinding: DialogToolPasswordBinding
+        get() = DialogToolPasswordBinding.inflate(LayoutInflater.from(context))
+}

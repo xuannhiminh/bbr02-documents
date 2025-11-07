@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/document_background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/sodk_editor_toolbar_title" />
+
+        <include layout="@layout/sodk_editor_pdf_tab_layout" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ln_top_tool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_file"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/file" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_typo"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="@string/typo"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_edit"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="@string/edit"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_insert"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insert"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/ln_menu_annotate"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/annotate" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_page"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="@string/lib_page" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_format"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/format"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_formulas"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formulas"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_slide"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slide"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_loading_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@id/page_and_list_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="@integer/sodk_editor_page_width_percentage"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <RelativeLayout
+                            android:id="@id/doc_inner_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:clipChildren="false">
+
+                            <LinearLayout
+                                android:id="@id/doc_cover"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@color/sodk_editor_transparent"
+                                android:orientation="vertical"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@id/doc_note_editor"
+                                android:layout_width="@dimen/sodk_editor_note_editor_width"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sodk_editor_pdf_note_color"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <office.file.ui.editor.SOTextView
+                                    android:id="@id/doc_note_editor_author"
+                                    style="@style/sodk_editor_note_editor_textview_style"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textSize="20.0sp"
+                                    android:textStyle="bold" />
+
+                                <office.file.ui.editor.SOTextView
+                                    android:id="@id/doc_note_editor_date"
+                                    style="@style/sodk_editor_note_editor_textview_style"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textSize="16.0sp" />
+
+                                <office.file.ui.editor.SOEditText
+                                    android:id="@id/doc_note_editor_text"
+                                    style="@style/sodk_editor_note_editor_textview_style"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="top"
+                                    android:imeOptions="flagNoFullscreen"
+                                    android:minLines="6"
+                                    android:text="" />
+                            </LinearLayout>
+
+                            <office.file.ui.editor.PDFFormTextEditor
+                                android:id="@id/pdf_form_text_editor_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clipChildren="false"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <office.file.ui.editor.SOEditText
+                                    android:id="@id/pdf_text_editor"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@color/sodk_editor_transparent"
+                                    android:cursorVisible="false"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="top"
+                                    android:imeOptions="flagNoFullscreen"
+                                    android:text=""
+                                    android:textColor="@color/sodk_editor_transparent"
+                                    android:textColorHighlight="@color/sodk_editor_transparent_01" />
+
+                                <office.file.ui.editor.SelectionHandle
+                                    android:id="@id/pdf_form_text_editor_handle_upper"
+                                    android:layout_width="40.0dip"
+                                    android:layout_height="40.0dip"
+                                    android:tag="1"
+                                    android:visibility="gone" />
+
+                                <office.file.ui.editor.SelectionHandle
+                                    android:id="@id/pdf_form_text_editor_handle_lower"
+                                    android:layout_width="40.0dip"
+                                    android:layout_height="40.0dip"
+                                    android:tag="2"
+                                    android:visibility="gone" />
+                            </office.file.ui.editor.PDFFormTextEditor>
+
+                            <office.file.ui.editor.PDFFormCheckboxEditor
+                                android:id="@id/pdf_form_checkbox_editor_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <office.file.ui.editor.SOEditText
+                                    android:id="@id/pdf_checkbox_editor"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@color/sodk_editor_transparent"
+                                    android:cursorVisible="false"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="top"
+                                    android:imeOptions="flagNoFullscreen"
+                                    android:text=""
+                                    android:textColor="@color/sodk_editor_transparent"
+                                    android:textColorHighlight="@color/sodk_editor_transparent_01" />
+                            </office.file.ui.editor.PDFFormCheckboxEditor>
+
+                            <office.file.ui.editor.SOTextView
+                                android:id="@id/footer_page_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/r4_black"
+                                android:padding="@dimen/_5sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@id/pages_container"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="@integer/sodk_editor_pagelist_width_percentage"
+                    android:background="@color/sodk_editor_pdf_pages_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bannerAd"
+            android:visibility="gone"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/footer">
+
+        <include
+            android:id="@+id/fileTab"
+            layout="@layout/sodk_editor_toolbar_file"
+            android:visibility="gone" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ln_menu_editor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_35sdp"
+                android:orientation="horizontal">
+
+                <include
+                    layout="@layout/sodk_editor_toolbar_roolback"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/annotateTab"
+                    layout="@layout/sodk_editor_toolbar_pdf_annotate" />
+
+                <include
+                    android:id="@+id/pagesTab"
+                    layout="@layout/sodk_editor_toolbar_pdf_page" />
+
+                <include
+                    android:id="@id/searchTab"
+                    layout="@layout/sodk_editor_search_toolbar" />
+
+                <include
+                    android:id="@+id/redactTab"
+                    layout="@layout/sodk_editor_redact_toolbar"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

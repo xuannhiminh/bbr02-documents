@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_12sdp"
+    android:paddingHorizontal="@dimen/_20sdp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/icon_setting_back_black"
+        android:contentDescription="@string/search_icon" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_40sdp">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_border_blue"
+            android:hint="@string/search_icon"
+            android:textColorHint="@color/textInput"
+            android:textColor="@color/text1"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="400"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_40sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:src="@drawable/icon_main_find"
+            android:contentDescription="@string/clear_text"
+            android:tint="@color/textInput" />
+    </RelativeLayout>
+
+</LinearLayout>

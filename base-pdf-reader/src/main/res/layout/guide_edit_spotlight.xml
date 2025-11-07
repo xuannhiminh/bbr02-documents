@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ezteam.ezpdflib.guide.SpotlightOverlayViewPdf xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spotlight_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/arrow_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/icon_point_hand"
+        android:rotation="270"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="540dp" />
+
+    <LinearLayout
+        android:id="@+id/content_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="400dp"
+        android:elevation="10dp"
+        android:maxWidth="280dp">
+
+        <TextView
+            android:id="@+id/tv_guide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Click double in a word in dôcument"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2. Clcik button Edit or click in this to edit text"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btn_got_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_background_red"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</com.ezteam.ezpdflib.guide.SpotlightOverlayViewPdf>

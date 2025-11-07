@@ -1,0 +1,1494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"  />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"  />
+<!--    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />-->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+<!--    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="officepro.document.reader.viewer.editor.PdfApplication"
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PDFReaderPro"
+        tools:replace="android:theme">
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            tools:node="merge" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.start.RequestNotificationPermissionActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            tools:node="merge" />
+
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+            <!-- Launcher Intent -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- PDF Viewing Intent -->
+            <intent-filter android:label="@string/intent_label_pdf">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file"/>
+                <data android:scheme="content" />
+                <data android:mimeType="application/pdf" />
+                <data android:pathPattern=".*\\.pdf" />
+            </intent-filter>
+
+            <!-- Intent filter for handling .pdf files over HTTP -->
+            <intent-filter android:label="@string/intent_label_pdf">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.pdf" />
+            </intent-filter>
+
+            <!-- Intent filter for handling .pdf files over HTTPS -->
+            <intent-filter android:label="@string/intent_label_pdf">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.pdf" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/intent_label_pdf" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/msexcel" />
+                <data android:mimeType="application/ms-excel" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />
+                <data android:mimeType="application/mspowerpoint" />
+                <data android:mimeType="application/ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/ms-word" />
+                <data android:mimeType="application/vnd.ms-word" />
+                <data android:mimeType="application/vnd.ms-works" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="application/log" />
+                <data android:mimeType="application/kswps" />
+                <data android:mimeType="application/kset" />
+                <data android:mimeType="application/ksdps" />
+                <data android:mimeType="application/wps" />
+                <data android:mimeType="application/wpss" />
+                <data android:mimeType="application/et" />
+                <data android:mimeType="application/ets" />
+                <data android:mimeType="application/dps" />
+                <data android:mimeType="application/dpss" />
+                <data android:mimeType="application/dpt" />
+                <data android:mimeType="application/wpt" />
+                <data android:mimeType="application/ett" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/xlsb" />
+                <data android:mimeType="application/rtf" />
+                <data android:mimeType="application/pptm" />
+                <data android:mimeType="application/ppsm" />
+                <data android:mimeType="application/potm" />
+                <data android:mimeType="application/mht" />
+                <data android:mimeType="multipart/related" />
+                <data android:mimeType="message/rfc822" />
+                <data android:mimeType="text/richtext" />
+                <data android:mimeType="text/rtf" />
+                <data android:mimeType="text/comma-separated-values" />
+                <data android:mimeType="text/csv" />
+                <data android:mimeType="text/xml" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="application/vnd.oasis.opendocument.text" />
+                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />
+                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_pdf">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\.log" />
+                <data android:pathPattern=".*\\.lrc" />
+                
+                
+                <data android:pathPattern=".*\\.h" />
+                
+                <data android:pathPattern=".*\\.s" />
+                <data android:pathPattern=".*\\.java" />
+                
+                
+                
+                <data android:pathPattern=".*\\.prg" />
+                
+                <data android:pathPattern=".*\\.ppt" />
+                <data android:pathPattern=".*\\.pot" />
+                <data android:pathPattern=".*\\.pps" />
+
+                <data android:pathPattern=".*\\.pptx" />
+                <data android:pathPattern=".*\\.potx" />
+                <data android:pathPattern=".*\\.ppsx" />
+                <data android:pathPattern=".*\\.pptm" />
+                <data android:pathPattern=".*\\.potm" />
+                <data android:pathPattern=".*\\.ppsm" />
+                <data android:pathPattern=".*\\.doc" />
+                <data android:pathPattern=".*\\.dot" />
+                <data android:pathPattern=".*\\.wps" />
+                <data android:pathPattern=".*\\.wpss" />
+                <data android:pathPattern=".*\\.wpt" />
+
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.xls" />
+                <data android:pathPattern=".*\\.xlt" />
+
+
+                <data android:pathPattern=".*\\.xlsx" />
+                <data android:pathPattern=".*\\.xltx" />
+                
+                <data android:pathPattern=".*\\.xlsb" />
+                <data android:pathPattern=".*\\.xlsm" />
+                <data android:pathPattern=".*\\.xltm" />
+                <data android:pathPattern=".*\\.xml" />
+                <data android:pathPattern=".*\\.htm" />
+                <data android:pathPattern=".*\\.mht" />
+                <data android:pathPattern=".*\\.mhtm" />
+                <data android:pathPattern=".*\\.mhtml" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:pathPattern=".*\\.odt" />
+                <data android:pathPattern=".*\\.odp" />
+                <data android:pathPattern=".*\\.ods" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.start.IntroActivity"
+            android:launchMode="singleTop"
+            android:exported="true">
+        </activity>
+
+
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.overlay.ClearDefaultReaderOverlayActivity"
+            android:theme="@style/Theme.App.TransparentOverlay"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"/>
+
+        <activity-alias
+            android:name=".PdfAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/msexcel" />
+                <data android:mimeType="application/ms-excel" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />
+                <data android:mimeType="application/mspowerpoint" />
+                <data android:mimeType="application/ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/ms-word" />
+                <data android:mimeType="application/vnd.ms-word" />
+                <data android:mimeType="application/vnd.ms-works" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="application/log" />
+                <data android:mimeType="application/kswps" />
+                <data android:mimeType="application/kset" />
+                <data android:mimeType="application/ksdps" />
+                <data android:mimeType="application/wps" />
+                <data android:mimeType="application/wpss" />
+                <data android:mimeType="application/et" />
+                <data android:mimeType="application/ets" />
+                <data android:mimeType="application/dps" />
+                <data android:mimeType="application/dpss" />
+                <data android:mimeType="application/dpt" />
+                <data android:mimeType="application/wpt" />
+                <data android:mimeType="application/ett" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/xlsb" />
+                <data android:mimeType="application/rtf" />
+                <data android:mimeType="application/pptm" />
+                <data android:mimeType="application/ppsm" />
+                <data android:mimeType="application/potm" />
+                <data android:mimeType="application/mht" />
+                <data android:mimeType="multipart/related" />
+                <data android:mimeType="message/rfc822" />
+                <data android:mimeType="text/richtext" />
+                <data android:mimeType="text/rtf" />
+                <data android:mimeType="text/comma-separated-values" />
+                <data android:mimeType="text/csv" />
+                <data android:mimeType="text/xml" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="application/vnd.oasis.opendocument.text" />
+                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />
+                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\.log" />
+                <data android:pathPattern=".*\\.lrc" />
+                
+                
+                <data android:pathPattern=".*\\.h" />
+                
+                <data android:pathPattern=".*\\.s" />
+                <data android:pathPattern=".*\\.java" />
+                
+                
+                
+                <data android:pathPattern=".*\\.prg" />
+                
+                <data android:pathPattern=".*\\.ppt" />
+                <data android:pathPattern=".*\\.pot" />
+                <data android:pathPattern=".*\\.pps" />
+
+                <data android:pathPattern=".*\\.pptx" />
+                <data android:pathPattern=".*\\.potx" />
+                <data android:pathPattern=".*\\.ppsx" />
+                <data android:pathPattern=".*\\.pptm" />
+                <data android:pathPattern=".*\\.potm" />
+                <data android:pathPattern=".*\\.ppsm" />
+                <data android:pathPattern=".*\\.doc" />
+                <data android:pathPattern=".*\\.dot" />
+                <data android:pathPattern=".*\\.wps" />
+                <data android:pathPattern=".*\\.wpss" />
+                <data android:pathPattern=".*\\.wpt" />
+
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.xls" />
+                <data android:pathPattern=".*\\.xlt" />
+
+
+                <data android:pathPattern=".*\\.xlsx" />
+                <data android:pathPattern=".*\\.xltx" />
+                
+                <data android:pathPattern=".*\\.xlsb" />
+                <data android:pathPattern=".*\\.xlsm" />
+                <data android:pathPattern=".*\\.xltm" />
+                <data android:pathPattern=".*\\.xml" />
+                <data android:pathPattern=".*\\.htm" />
+                <data android:pathPattern=".*\\.mht" />
+                <data android:pathPattern=".*\\.mhtm" />
+                <data android:pathPattern=".*\\.mhtml" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:pathPattern=".*\\.odt" />
+                <data android:pathPattern=".*\\.odp" />
+                <data android:pathPattern=".*\\.ods" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".PdfReaderAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_reader">
+
+            <intent-filter  android:label="@string/intent_label_pdf_reader" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/msexcel" />
+                <data android:mimeType="application/ms-excel" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />
+                <data android:mimeType="application/mspowerpoint" />
+                <data android:mimeType="application/ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/ms-word" />
+                <data android:mimeType="application/vnd.ms-word" />
+                <data android:mimeType="application/vnd.ms-works" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="application/log" />
+                <data android:mimeType="application/kswps" />
+                <data android:mimeType="application/kset" />
+                <data android:mimeType="application/ksdps" />
+                <data android:mimeType="application/wps" />
+                <data android:mimeType="application/wpss" />
+                <data android:mimeType="application/et" />
+                <data android:mimeType="application/ets" />
+                <data android:mimeType="application/dps" />
+                <data android:mimeType="application/dpss" />
+                <data android:mimeType="application/dpt" />
+                <data android:mimeType="application/wpt" />
+                <data android:mimeType="application/ett" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/xlsb" />
+                <data android:mimeType="application/rtf" />
+                <data android:mimeType="application/pptm" />
+                <data android:mimeType="application/ppsm" />
+                <data android:mimeType="application/potm" />
+                <data android:mimeType="application/mht" />
+                <data android:mimeType="multipart/related" />
+                <data android:mimeType="message/rfc822" />
+                <data android:mimeType="text/richtext" />
+                <data android:mimeType="text/rtf" />
+                <data android:mimeType="text/comma-separated-values" />
+                <data android:mimeType="text/csv" />
+                <data android:mimeType="text/xml" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="application/vnd.oasis.opendocument.text" />
+                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />
+                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />
+            </intent-filter>
+            <intent-filter  android:label="@string/intent_label_pdf_reader">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\.log" />
+                <data android:pathPattern=".*\\.lrc" />
+                
+                
+                <data android:pathPattern=".*\\.h" />
+                
+                <data android:pathPattern=".*\\.s" />
+                <data android:pathPattern=".*\\.java" />
+                
+                
+                
+                <data android:pathPattern=".*\\.prg" />
+                
+                <data android:pathPattern=".*\\.ppt" />
+                <data android:pathPattern=".*\\.pot" />
+                <data android:pathPattern=".*\\.pps" />
+
+                <data android:pathPattern=".*\\.pptx" />
+                <data android:pathPattern=".*\\.potx" />
+                <data android:pathPattern=".*\\.ppsx" />
+                <data android:pathPattern=".*\\.pptm" />
+                <data android:pathPattern=".*\\.potm" />
+                <data android:pathPattern=".*\\.ppsm" />
+                <data android:pathPattern=".*\\.doc" />
+                <data android:pathPattern=".*\\.dot" />
+                <data android:pathPattern=".*\\.wps" />
+                <data android:pathPattern=".*\\.wpss" />
+                <data android:pathPattern=".*\\.wpt" />
+
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.xls" />
+                <data android:pathPattern=".*\\.xlt" />
+
+
+                <data android:pathPattern=".*\\.xlsx" />
+                <data android:pathPattern=".*\\.xltx" />
+                
+                <data android:pathPattern=".*\\.xlsb" />
+                <data android:pathPattern=".*\\.xlsm" />
+                <data android:pathPattern=".*\\.xltm" />
+                <data android:pathPattern=".*\\.xml" />
+                <data android:pathPattern=".*\\.htm" />
+                <data android:pathPattern=".*\\.mht" />
+                <data android:pathPattern=".*\\.mhtm" />
+                <data android:pathPattern=".*\\.mhtml" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:pathPattern=".*\\.odt" />
+                <data android:pathPattern=".*\\.odp" />
+                <data android:pathPattern=".*\\.ods" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".EditPdfAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_editor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/pdf" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:pathPattern=".*\\.pdf" />
+            </intent-filter>
+        </activity-alias>
+
+
+        <!-- DOC related -->
+        <activity-alias
+            android:name=".DocReaderAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_doc_reader">
+            <intent-filter android:label="@string/intent_label_doc_reader" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/ms-word" />
+                <data android:mimeType="application/vnd.ms-word" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+                <data android:mimeType="application/rtf" />
+                <data android:mimeType="application/vnd.oasis.opendocument.text" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_doc_reader">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.doc" />
+                <data android:pathPattern=".*\\.dot" />
+                <data android:pathPattern=".*\\.wps" />
+                <data android:pathPattern=".*\\.wpss" />
+                <data android:pathPattern=".*\\.wpt" />
+
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.odt" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".DocPdfAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_doc_pdf">
+            <intent-filter android:label="@string/intent_label_doc_pdf" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/ms-word" />
+                <data android:mimeType="application/vnd.ms-word" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+                <data android:mimeType="application/rtf" />
+                <data android:mimeType="application/vnd.oasis.opendocument.text" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_doc_pdf">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.doc" />
+                <data android:pathPattern=".*\\.dot" />
+                <data android:pathPattern=".*\\.wps" />
+                <data android:pathPattern=".*\\.wpss" />
+                <data android:pathPattern=".*\\.wpt" />
+
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.odt" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".PdfDocAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_doc">
+            <intent-filter android:label="@string/intent_label_pdf_doc" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/ms-word" />
+                <data android:mimeType="application/vnd.ms-word" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+                <data android:mimeType="application/rtf" />
+                <data android:mimeType="application/vnd.oasis.opendocument.text" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_pdf_doc">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.doc" />
+                <data android:pathPattern=".*\\.dot" />
+                <data android:pathPattern=".*\\.wps" />
+                <data android:pathPattern=".*\\.wpss" />
+                <data android:pathPattern=".*\\.wpt" />
+
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.odt" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".DocSmartEditorAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_doc_smart_editor">
+            <intent-filter android:label="@string/intent_label_doc_smart_editor" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/ms-word" />
+                <data android:mimeType="application/vnd.ms-word" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+                <data android:mimeType="application/rtf" />
+                <data android:mimeType="application/vnd.oasis.opendocument.text" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_doc_smart_editor">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.doc" />
+                <data android:pathPattern=".*\\.dot" />
+                <data android:pathPattern=".*\\.wps" />
+                <data android:pathPattern=".*\\.wpss" />
+                <data android:pathPattern=".*\\.wpt" />
+
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.odt" />
+            </intent-filter>
+        </activity-alias>
+
+<!--        <activity-alias-->
+<!--            android:name=".DocPrintAlias"-->
+<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/intent_label_doc_print">-->
+<!--            <intent-filter android:label="@string/intent_label_doc_print" tools:ignore="AppLinkUrlError">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:mimeType="application/msword" />-->
+<!--                <data android:mimeType="application/ms-word" />-->
+<!--                <data android:mimeType="application/vnd.ms-word" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />-->
+<!--                <data android:mimeType="application/rtf" />-->
+<!--                <data android:mimeType="application/vnd.oasis.opendocument.text" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter android:label="@string/intent_label_doc_print">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:scheme="content" />-->
+<!--                <data android:scheme="file" />-->
+<!--                <data android:host="*" />-->
+
+<!--                <data android:pathPattern=".*\\.doc" />-->
+<!--                <data android:pathPattern=".*\\.dot" />-->
+<!--                <data android:pathPattern=".*\\.wps" />-->
+<!--                <data android:pathPattern=".*\\.wpss" />-->
+<!--                <data android:pathPattern=".*\\.wpt" />-->
+<!--                <data android:pathPattern=".*\\.docx" />-->
+<!--                <data android:pathPattern=".*\\.dotx" />-->
+<!--                <data android:pathPattern=".*\\.docm" />-->
+<!--                <data android:pathPattern=".*\\.dotm" />-->
+<!--                <data android:pathPattern=".*\\.rtf" />-->
+<!--                <data android:pathPattern=".*\\.odt" />-->
+<!--            </intent-filter>-->
+<!--        </activity-alias>-->
+
+        <!-- EXCEL related -->
+        <activity-alias
+            android:name=".XlsmFileHandler"
+            android:targetActivity=".screen.start.SplashActivity"
+            android:exported="true"
+            android:label="Excel Macro Handler">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"
+                    android:scheme="file" />
+                <data
+                    android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"
+                    android:scheme="content" />
+                <data android:pathPattern=".*\\.xlsm" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".ExcelReaderAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_excel_reader">
+            <intent-filter android:label="@string/intent_label_excel_reader" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/msexcel" />
+                <data android:mimeType="application/ms-excel" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />
+                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_excel_reader">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.xls" />
+                <data android:pathPattern=".*\\.xlt" />
+
+
+                <data android:pathPattern=".*\\.xlsx" />
+                <data android:pathPattern=".*\\.xltx" />
+                <data android:pathPattern=".*\\.xlsb" />
+                <data android:pathPattern=".*\\.xlsm" />
+                <data android:pathPattern=".*\\.xltm" />
+                
+                <data android:pathPattern=".*\\.ods" />
+            </intent-filter>
+
+        </activity-alias>
+
+<!--        <activity-alias-->
+<!--            android:name=".ExcelPdfAlias"-->
+<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/intent_label_excel_pdf">-->
+<!--            <intent-filter android:label="@string/intent_label_excel_pdf" tools:ignore="AppLinkUrlError">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:mimeType="application/msexcel" />-->
+<!--                <data android:mimeType="application/ms-excel" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" android:scheme="file" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />-->
+<!--                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter android:label="@string/intent_label_excel_pdf">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:scheme="content" />-->
+<!--                <data android:scheme="file" />-->
+<!--                <data android:host="*" />-->
+
+<!--                <data android:pathPattern=".*\\.xls" />-->
+<!--                <data android:pathPattern=".*\\.xlt" />-->
+<!--                <data android:pathPattern=".*\\.et" />-->
+<!--                <data android:pathPattern=".*\\.ets" />-->
+<!--                -->
+<!--                <data android:pathPattern=".*\\.xlsx" />-->
+<!--                <data android:pathPattern=".*\\.xltx" />-->
+<!--                <data android:pathPattern=".*\\.xlsb" />-->
+<!--                <data android:pathPattern=".*\\.xlsm" />-->
+<!--                <data android:pathPattern=".*\\.xltm" />-->
+<!--                -->
+<!--                <data android:pathPattern=".*\\.ods" />-->
+<!--            </intent-filter>-->
+<!--        </activity-alias>-->
+
+        <activity-alias
+            android:name=".PdfExcelAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_excel">
+            <intent-filter android:label="@string/intent_label_pdf_excel" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/msexcel" />
+                <data android:mimeType="application/ms-excel" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />
+                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_pdf_excel">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.xls" />
+                <data android:pathPattern=".*\\.xlt" />
+
+
+                <data android:pathPattern=".*\\.xlsx" />
+                <data android:pathPattern=".*\\.xltx" />
+                <data android:pathPattern=".*\\.xlsb" />
+                <data android:pathPattern=".*\\.xlsm" />
+                <data android:pathPattern=".*\\.xltm" />
+                
+                <data android:pathPattern=".*\\.ods" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".ExcelSmartEditorAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_excel_smart_editor">
+            <intent-filter android:label="@string/intent_label_excel_smart_editor" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/msexcel" />
+                <data android:mimeType="application/ms-excel" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />
+                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_excel_smart_editor">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.xls" />
+                <data android:pathPattern=".*\\.xlt" />
+
+
+                <data android:pathPattern=".*\\.xlsx" />
+                <data android:pathPattern=".*\\.xltx" />
+                <data android:pathPattern=".*\\.xlsb" />
+                <data android:pathPattern=".*\\.xlsm" />
+                <data android:pathPattern=".*\\.xltm" />
+                
+                <data android:pathPattern=".*\\.ods" />
+            </intent-filter>
+        </activity-alias>
+
+<!--        <activity-alias-->
+<!--            android:name=".ExcelPrintAlias"-->
+<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/intent_label_excel_print">-->
+<!--            <intent-filter android:label="@string/intent_label_excel_print" tools:ignore="AppLinkUrlError">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:mimeType="application/msexcel" />-->
+<!--                <data android:mimeType="application/ms-excel" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.sheet.binary.macroenabled.12" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12" />-->
+<!--                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12" />-->
+<!--                <data android:mimeType="application/vnd.oasis.opendocument.spreadsheet" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter android:label="@string/intent_label_excel_print">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:scheme="content" />-->
+<!--                <data android:scheme="file" />-->
+<!--                <data android:host="*" />-->
+
+<!--                <data android:pathPattern=".*\\.xls" />-->
+<!--                <data android:pathPattern=".*\\.xlt" />-->
+<!--                <data android:pathPattern=".*\\.et" />-->
+<!--                <data android:pathPattern=".*\\.ets" />-->
+<!--                -->
+<!--                <data android:pathPattern=".*\\.xlsx" />-->
+<!--                <data android:pathPattern=".*\\.xltx" />-->
+<!--                <data android:pathPattern=".*\\.xlsb" />-->
+<!--                <data android:pathPattern=".*\\.xlsm" />-->
+<!--                <data android:pathPattern=".*\\.xltm" />-->
+<!--                -->
+<!--                <data android:pathPattern=".*\\.ods" />-->
+<!--            </intent-filter>-->
+<!--        </activity-alias>-->
+
+        <!-- PPT related -->
+        <activity-alias
+            android:name=".PptReaderAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_ppt_reader">
+            <intent-filter android:label="@string/intent_label_ppt_reader" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/mspowerpoint" />
+                <data android:mimeType="application/ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />
+                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_ppt_reader">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.ppt" />
+                <data android:pathPattern=".*\\.pot" />
+                <data android:pathPattern=".*\\.pps" />
+
+                <data android:pathPattern=".*\\.pptx" />
+                <data android:pathPattern=".*\\.potx" />
+                <data android:pathPattern=".*\\.ppsx" />
+                <data android:pathPattern=".*\\.pptm" />
+                <data android:pathPattern=".*\\.potm" />
+                <data android:pathPattern=".*\\.ppsm" />
+                <data android:pathPattern=".*\\.xml" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".PptPdfAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_ppt_pdf">
+            <intent-filter android:label="@string/intent_label_ppt_pdf" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/mspowerpoint" />
+                <data android:mimeType="application/ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />
+                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_ppt_pdf">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.ppt" />
+                <data android:pathPattern=".*\\.pot" />
+                <data android:pathPattern=".*\\.pps" />
+
+                <data android:pathPattern=".*\\.pptx" />
+                <data android:pathPattern=".*\\.potx" />
+                <data android:pathPattern=".*\\.ppsx" />
+                <data android:pathPattern=".*\\.pptm" />
+                <data android:pathPattern=".*\\.potm" />
+                <data android:pathPattern=".*\\.ppsm" />
+                <data android:pathPattern=".*\\.xml" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".PdfPptAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_ppt">
+            <intent-filter android:label="@string/intent_label_pdf_ppt" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/mspowerpoint" />
+                <data android:mimeType="application/ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />
+                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_pdf_ppt">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.ppt" />
+                <data android:pathPattern=".*\\.pot" />
+                <data android:pathPattern=".*\\.pps" />
+
+                <data android:pathPattern=".*\\.pptx" />
+                <data android:pathPattern=".*\\.potx" />
+                <data android:pathPattern=".*\\.ppsx" />
+                <data android:pathPattern=".*\\.pptm" />
+                <data android:pathPattern=".*\\.potm" />
+                <data android:pathPattern=".*\\.ppsm" />
+                <data android:pathPattern=".*\\.xml" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".PptSmartEditorAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_ppt_smart_editor">
+            <intent-filter android:label="@string/intent_label_ppt_smart_editor" tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/mspowerpoint" />
+                <data android:mimeType="application/ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />
+                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />
+            </intent-filter>
+            <intent-filter android:label="@string/intent_label_ppt_smart_editor">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.ppt" />
+                <data android:pathPattern=".*\\.pot" />
+                <data android:pathPattern=".*\\.pps" />
+
+                <data android:pathPattern=".*\\.pptx" />
+                <data android:pathPattern=".*\\.potx" />
+                <data android:pathPattern=".*\\.ppsx" />
+                <data android:pathPattern=".*\\.pptm" />
+                <data android:pathPattern=".*\\.potm" />
+                <data android:pathPattern=".*\\.ppsm" />
+                <data android:pathPattern=".*\\.xml" />
+            </intent-filter>
+        </activity-alias>
+
+<!--        <activity-alias-->
+<!--            android:name=".PptPrintAlias"-->
+<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/intent_label_ppt_print">-->
+<!--            <intent-filter android:label="@string/intent_label_ppt_print" tools:ignore="AppLinkUrlError">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:mimeType="application/mspowerpoint" />-->
+<!--                <data android:mimeType="application/ms-powerpoint" />-->
+<!--                <data android:mimeType="application/vnd.ms-powerpoint" />-->
+<!--                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12" />-->
+<!--                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template" />-->
+<!--                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow" />-->
+<!--                <data android:mimeType="application/vnd.oasis.opendocument.presentation" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter android:label="@string/intent_label_ppt_print">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <action android:name="android.intent.action.EDIT" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data android:scheme="content" />-->
+<!--                <data android:scheme="file" />-->
+<!--                <data android:host="*" />-->
+
+<!--                <data android:pathPattern=".*\\.ppt" />-->
+<!--                <data android:pathPattern=".*\\.pot" />-->
+<!--                <data android:pathPattern=".*\\.pps" />-->
+<!--                <data android:pathPattern=".*\\.dps" />-->
+<!--                <data android:pathPattern=".*\\.dpss" />-->
+<!--                <data android:pathPattern=".*\\.dpt" />-->
+<!--                <data android:pathPattern=".*\\.pptx" />-->
+<!--                <data android:pathPattern=".*\\.potx" />-->
+<!--                <data android:pathPattern=".*\\.ppsx" />-->
+<!--                <data android:pathPattern=".*\\.pptm" />-->
+<!--                <data android:pathPattern=".*\\.potm" />-->
+<!--                <data android:pathPattern=".*\\.ppsm" />-->
+<!--                <data android:pathPattern=".*\\.xml" />-->
+<!--            </intent-filter>-->
+<!--        </activity-alias>-->
+
+
+
+
+        <activity-alias
+            android:name=".PdfToImagesAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_convert_to_images">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/pdf" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:pathPattern=".*\\.pdf" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".PdfToLongImages"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_long_image">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/pdf" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:pathPattern=".*\\.pdf" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".PdfToWordAlias"
+            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_word">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/pdf" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:pathPattern=".*\\.pdf" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.main.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.main.ListFileTypeActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.uninstall.UninstallActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.reloadfile.ReloadFileSuccessActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.reloadfile.FeatureRequestActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.reloadfile.ReloadLoadingActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.uninstall.UninstallSurveyActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.search.SearchFileActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.search.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.iap.IapActivityV2"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.iap.IapActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.iap.IapRegistrationSuccessfulActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.search.FeedBackActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.search.SelectMultipleFilesActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.image.ImageActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.PolicyActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.TermAndConditionsActivity"
+            android:exported="true" />
+        <activity
+            android:name="officepro.document.reader.viewer.editor.screen.create.CreateSuccessActivity"
+            android:exported="true" />
+
+        <activity android:name="officepro.document.reader.viewer.editor.screen.language.LanguageActivity" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:theme="@style/AdInspectorActivityTheme"
+            tools:replace="android:theme" />
+
+        <!--        <activity android:name=".screen.premium.PremiumActivityJava" />-->
+
+<!--        <provider-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:authorities="${applicationId}.provider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true"-->
+<!--            android:readPermission="true">-->
+
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/provider_paths" />-->
+<!--            <meta-data-->
+<!--                android:name="viewapp.sp.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/provider_paths" />-->
+<!--        </provider>-->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:readPermission="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+            <meta-data
+                android:name="viewapp.sp.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <receiver
+            android:name="officepro.document.reader.viewer.editor.widgets.Widget1"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_1" />
+        </receiver>
+
+        <receiver
+            android:exported="false"
+        android:name="officepro.document.reader.viewer.editor.widgets.Widget2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_2" />
+        </receiver>
+
+        <receiver
+            android:exported="false"
+            android:name="officepro.document.reader.viewer.editor.widgets.Widget3">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_3" />
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <receiver
+            android:name="officepro.document.reader.viewer.editor.notification.NotificationReceiver"
+            android:enabled="false"
+            android:exported="false" />
+        <receiver
+            android:name="officepro.document.reader.viewer.editor.notification.NotificationDismissReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="officepro.document.reader.viewer.editor.receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </receiver>
+
+        <service
+            android:name="officepro.document.reader.viewer.editor.service.NotificationForegroundService"
+            android:foregroundServiceType="specialUse"
+            android:exported="false" />
+
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="${crashlyticsCollectionEnabled}" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notitication" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <queries>
+        <!-- Allow querying activities that can view .doc files -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:mimeType="application/pdf" />
+        </intent>
+    </queries>
+
+</manifest>

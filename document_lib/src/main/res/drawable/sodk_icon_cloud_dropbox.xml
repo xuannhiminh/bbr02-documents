@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50.0dip"
+    android:height="50.0dip"
+    android:tint="@color/sodk_so_ui_cloud_dropbox_tint_colour"
+    android:viewportWidth="50.0"
+    android:viewportHeight="50.0">
+    <path
+        android:fillColor="#ff397bbe"
+        android:pathData="M18.765,9.245 L9.121,15.541 L15.787,20.879 L25.511,14.875 Z" />
+    <path
+        android:fillColor="#ff397bbe"
+        android:pathData="M9.121,26.222 L18.765,32.519 L25.514,26.884 L15.788,20.88 Z" />
+    <path
+        android:fillColor="#ff397bbe"
+        android:pathData="M25.514,26.884 L32.259,32.519 L41.902,26.218 L35.236,20.88 Z" />
+    <path
+        android:fillColor="#ff397bbe"
+        android:pathData="M41.902,15.541 L32.258,9.241 L25.514,14.875 L35.236,20.879 Z" />
+    <path
+        android:fillColor="#ff397bbe"
+        android:pathData="M25.532,28.097 L18.764,33.712 L15.869,31.823 L15.869,33.94 L25.532,39.735 L35.195,33.94 L35.195,31.823 L32.3,33.712 Z" />
+</vector>

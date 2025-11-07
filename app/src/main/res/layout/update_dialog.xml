@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_dialog_background"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_gravity="top|end"
+            android:src="@drawable/icon_close_insert"
+            android:padding="4dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <LinearLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_version"
+                    android:textColor="@color/text1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_8sdp" />
+                <TextView
+                    android:id="@+id/tvVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="v 1.8.5"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/bg_btn_share"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textSize="12sp"
+                    android:shadowColor="@android:color/transparent"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivIllustration"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:scaleX="-1"
+                android:src="@drawable/icon_rocket" />
+        </LinearLayout>
+
+            <!-- Sub Title -->
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_title"
+                android:textFontWeight="500"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/_8sdp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_desc"
+                android:textColor="@color/text1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_12sdp" />
+
+            <!-- Feature List -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_12sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feature1"
+                    android:text="✔ Add Compress PDF feature based on user feedback"
+                    android:textFontWeight="500"
+                    android:textColor="@color/text1"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feature2"
+                    android:text="✔ Optimize performance and interaction"
+                    android:textFontWeight="500"
+                    android:textColor="@color/text1"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="500"
+                    android:id="@+id/feature3"
+                    android:text="✔ Fix minor bugs"
+                    android:textColor="@color/text1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_note"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_8sdp" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_share"
+                android:elevation="0dp"
+                android:letterSpacing="0"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:stateListAnimator="@null"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+</FrameLayout>
+

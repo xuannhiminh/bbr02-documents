@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activity.PdfDetailActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.outline.OutlineActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.thubnail.ThumbnailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.bookmask.BookmaskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.thubnail.InserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.thubnail.OptionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.signature.SignatureActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_sign"
+            android:screenOrientation="portrait" />
+
+        <activity-alias
+            android:name=".PdfSignAlias"
+            android:targetActivity=".activity.signature.SignatureActivity"
+            android:exported="true"
+            android:label="@string/intent_label_pdf_sign">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <data android:mimeType="application/pdf" />-->
+<!--                <data android:scheme="file" />-->
+<!--                <data android:scheme="content" />-->
+<!--                <data android:pathPattern=".*\\.pdf" />-->
+<!--            </intent-filter>-->
+        </activity-alias>
+
+        <activity android:name=".activity.signature.CreateSignatureActivity" />
+        <receiver
+            android:name=".listener.BroadcastSubmodule"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="action favorite"/>
+                <action android:name="action delete"/>
+                <action android:name="action recent"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

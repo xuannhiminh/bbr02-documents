@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<viewx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@id/dismiss_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:id="@id/bottom_sheet"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="50dp"
+        android:visibility="gone">
+
+        <viewx.recyclerview.widget.RecyclerView
+            android:id="@id/image_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:background="#ffffffff"
+            android:clipToPadding="false"
+            android:paddingStart="4.0dip"
+            android:paddingTop="8.0dip"
+            android:paddingEnd="4.0dip"
+            android:paddingBottom="8.0dip" />
+    </FrameLayout>
+
+    <office.belvedere.FloatingActionMenu
+        android:id="@id/floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom|center"
+        android:layout_marginEnd="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/image_stream_toolbar_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <viewx.appcompat.widget.Toolbar
+            android:id="@id/image_stream_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="?colorPrimary"
+            android:elevation="4.0dip"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <View
+            android:id="@id/image_stream_compat_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="4.0dip"
+            android:background="@drawable/belvedere_toolbar_shadow"
+            android:visibility="invisible" />
+    </LinearLayout>
+</viewx.coordinatorlayout.widget.CoordinatorLayout>

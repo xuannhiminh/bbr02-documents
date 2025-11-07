@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ToolTextDefault">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/color_text_default</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="ToolTextDefaultMedium">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/color_text_default</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/_10sdp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/insert_row_above_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_insert_row_above"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/insert_row_below_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_insert_row_below"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/insert_column_left_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_insert_column_left"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/insert_column_right_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_insert_column_right"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_marginTop="@dimen/lib_toolbar_button_padding"
+        android:layout_marginBottom="@dimen/lib_toolbar_button_padding"
+        android:background="@color/line"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/delete_row_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_remove_row"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delete_column_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_remove_column"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

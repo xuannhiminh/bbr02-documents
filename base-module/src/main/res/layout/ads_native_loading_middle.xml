@@ -1,0 +1,49 @@
+<com.facebook.shimmer.ShimmerFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shimmer_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Skeleton Icon -->
+            <View
+                android:layout_marginStart="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_skeleton"/>
+
+            <!-- Text Block -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Headline Skeleton -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/bg_skeleton"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:background="@drawable/bg_skeleton"/>
+                <!-- CTA Button -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

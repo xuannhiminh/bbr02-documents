@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <office.file.ui.editor.SOTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/sodk_explorer_link"
+        android:clickable="true"
+        android:onClick="onClickSupport"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="6.0dip"
+        android:paddingBottom="6.0dip"
+        android:text="@string/sodk_editor_support"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/sodk_so_ui_explorer_option_textcolor"
+        android:textSize="28.0sp" />
+</merge>

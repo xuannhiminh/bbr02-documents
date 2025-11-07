@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdkVersion 35
+
+    defaultConfig {
+        minSdk 28
+        targetSdk 35
+
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.ezstudio.pdftoolmodule'
+}
+
+dependencies {
+
+    implementation 'com.akexorcist:localization:1.2.11'
+    implementation 'androidx.core:core-ktx:1.16.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation project(path: ':base-module')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'commons-io:commons-io:2.20.0'
+
+    /*https://insert-koin.io/docs/quickstart/kotlin#setup*/
+    implementation "io.insert-koin:koin-core:$koin_version"
+    implementation "io.insert-koin:koin-android:$koin_version"
+//    // Koin AndroidX ViewModel features
+//    implementation "io.insert-koin:koin-androidx-viewmodel:2.2.3"
+//    // Koin AndroidX Fragment features
+//    implementation "io.insert-koin:koin-androidx-fragment:2.2.3"
+
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+
+    /*https://github.com/intuit/sdp*/
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+
+    /*https://github.com/bumptech/glide*/
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+//    implementation project(path: ':ads-module')
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    /*https://github.com/hdodenhof/CircleImageView*/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    /*https://github.com/vinc3m1/RoundedImageView*/
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    /*https://github.com/rambler-digital-solutions/swipe-layout-android*/
+    implementation 'com.github.rambler-digital-solutions:swipe-layout-android:1.0.15'
+
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.madgag.spongycastle:core:1.58.0.0'
+
+    /*https://github.com/danielnilsson9/color-picker-view*/
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+    implementation 'com.github.chthai64:SwipeRevealLayout:1.4.0'
+
+    /*https://github.com/airbnb/lottie-android*/
+    implementation 'com.airbnb.android:lottie:6.6.7'
+
+
+}

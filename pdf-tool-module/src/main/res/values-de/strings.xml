@@ -1,0 +1,97 @@
+<resources>
+
+    <string-array name="fontStyles" translatable="false">
+        <item>NORMAL</item>
+        <item>FETT</item>
+        <item>KURSIV</item>
+        <item>UNTERSTRICHEN</item>
+        <item>DURCHGESTRICHEN</item>
+        <item>FETTKURSIV</item>
+    </string-array>
+    <string name="merge_pdf">PDF zusammenführen</string>
+    <string name="split_pdf">PDF teilen</string>
+    <string name="invert_pdf">Invertieren</string>
+    <string name="merge">Zusammenführen</string>
+    <string name="split">Teilen</string>
+    <string name="invert">Invertieren</string>
+    <string name="remove_duplicate_page">Doppelte Seiten entfernen</string>
+    <string name="add_password">Passwort hinzufügen</string>
+    <string name="remove_password">Passwort entfernen</string>
+    <string name="rotate_pages">Seiten drehen</string>
+    <string name="add_watermark">Wasserzeichen hinzufügen</string>
+    <string name="add_image">Bild hinzufügen</string>
+    <string name="add_image_2">BildHinzufügen</string>
+    <string name="text_to_pdf">Text zu PDF</string>
+    <string name="image_to_pdf">Bild zu PDF</string>
+    <string name="pdf_to_image">PDF zu Bild</string>
+    <string name="manage">Verwalten</string>
+    <string name="delete_content">Möchten Sie diese Seite wirklich löschen?</string>
+    <string name="insert_page">Seite einfügen</string>
+    <string name="blank_page">Leere Seiten</string>
+    <string name="image">Bilder</string>
+    <string name="page_size">Seitengröße</string>
+    <string name="follow_previous">Vorherigem folgen</string>
+    <string name="letter">Brief</string>
+    <string name="legal">Legal</string>
+    <string name="page_placeholder">Seitennummer eingeben...</string>
+    <string name="storage_path" translatable="false">Speicherpfad</string>
+    <string name="last_view">Zuletzt angesehen</string>
+    <string name="file_size">Dateigröße</string>
+    <string name="insert">Einfügen</string>
+    <string name="extract">Extrahieren</string>
+    <string name="image_to_pdf_2">BildZuPdf</string>
+    <string name="search_file">Datei suchen</string>
+    <string name="choose_at_least">Sie müssen mindestens 1 Element auswählen</string>
+    <string name="delete">Löschen</string>
+    <string name="duplicate">Duplizieren</string>
+    <string name="enter_file_name">Dateinamen eingeben</string>
+    <string name="password">Passwort</string>
+    <string name="enter_password">Passwort eingeben</string>
+    <string name="ok">OK</string>
+    <string name="invalid_value">Ungültiger Wert</string>
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="no_repetition_found">Keine Wiederholung gefunden</string>
+    <string name="split_suggest">Die PDF wird in mehrere PDFs aufgeteilt.\n Formatbeispiel: 1-5,6-7,8,9</string>
+    <string name="error_page_number">Ungültige Seitennummer</string>
+    <string name="error_page_range">Ungültiger Bereich</string>
+    <string name="error_invalid_input">Ungültige Eingabe</string>
+    <string name="enter_page_split">Seitenteilung eingeben</string>
+    <string name="encryption">Verschlüsselung</string>
+    <string name="decryption">Entschlüsselung</string>
+    <string name="remove">Entfernen</string>
+    <string name="add">Hinzufügen</string>
+    <string name="remove_password_error">Passwort kann nicht entfernt werden</string>
+    <string name="rotate">Drehen</string>
+    <string name="angle_90">90</string>
+    <string name="angle_180">180</string>
+    <string name="angle_270">270</string>
+    <string name="watermark">Wasserzeichen</string>
+    <string name="enter_text">Text eingeben</string>
+    <string name="enter_angle">Winkel eingeben</string>
+    <string name="choose_color">Farbe wählen</string>
+    <string name="enter_font_size">Schriftgröße eingeben</string>
+    <string name="choose_font_family">Schriftfamilie wählen</string>
+    <string name="choose_style">Stil wählen</string>
+    <string name="add_image_step_1">1. PDF-Datei auswählen</string>
+    <string name="add_image_step_2">2. Bilder auswählen</string>
+    <string name="select_image">Bilder auswählen</string>
+    <string name="select">Auswählen</string>
+    <string name="please_select_pdf_file">Bitte wählen Sie eine PDF-Datei aus.</string>
+    <string name="please_select_image">Bitte wählen Sie ein Foto aus</string>
+    <string name="organize_pages">Seiten organisieren</string>
+    <string name="extract_image">Bilder extrahieren</string>
+    <string name="tool_done">Fertig</string>
+    <string name="file_is_protected">Datei ist geschützt</string>
+    <string name="file_not_protected">Datei ist nicht geschützt</string>
+    <string name="info_add_image">Sie können halten und ziehen, um die Bilder neu zu positionieren</string>
+    <string name="info_merge">Sie können nach links wischen, um die Datei zu löschen oder zu duplizieren</string>
+    <string name="info_organize">Ziehen zum Organisieren der Seiten.\nKlicken Sie auf eine Seite, um sie zu löschen</string>
+    <string name="info_extract">Klicken Sie auf eine Seite, um sie auszuwählen</string>
+    <string name="done_2">Fertig!</string>
+    <string name="open">Öffnen</string>
+    <string name="close">Schließen</string>
+    <string name="file_created_at">Datei erstellt am</string>
+    <string name="success">Erfolg</string>
+    <string name="sort">Sortieren</string>
+</resources> 

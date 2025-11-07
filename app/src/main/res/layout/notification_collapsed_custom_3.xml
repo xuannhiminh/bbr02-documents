@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/container"
+    android:background="@drawable/bg_gradiant_notification_card"
+    android:layout_width="match_parent"
+    android:paddingVertical="@dimen/_4sdp"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/ic_pdf"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/app_name"
+        android:layout_marginEnd="12dp"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_recent_PDF_files_are_waiting"
+            android:maxLines="3"
+            android:textFontWeight="500"
+            android:fontFamily="sans-serif"
+            android:ellipsize="end"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_open"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:background="@drawable/bg_notification_card"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="1dp"
+        android:text="@string/read"
+        android:textAllCaps="false"
+        android:textColor="#FF1F44"
+        android:textFontWeight="700"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

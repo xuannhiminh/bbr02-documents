@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/redact_toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/document_background_color"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/sodk_editor_toolbar_v_padding"
+    android:weightSum="4">
+
+    <office.file.ui.editor.ToolbarButton
+        android:id="@id/redact_button_mark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:drawableTop="@drawable/sodk_editor_icon_redact_mark"
+        android:text="@string/sodk_editor_redact_mark_upper"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <office.file.ui.editor.ToolbarButton
+        android:id="@id/redact_button_mark_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:drawableTop="@drawable/sodk_editor_icon_redact_mark"
+        android:text="@string/sodk_editor_redact_mark_area_upper"
+        android:textAllCaps="false" />
+
+    <office.file.ui.editor.ToolbarButton
+        android:id="@id/redact_button_remove"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:drawableTop="@drawable/sodk_editor_icon_redact_remove"
+        android:text="@string/sodk_editor_redact_remove_upper"
+        android:textAllCaps="false" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@color/line_view" />
+
+    <office.file.ui.editor.ToolbarButton
+        android:id="@id/redact_button_apply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:drawableTop="@drawable/sodk_editor_icon_redact_apply"
+        android:text="@string/sodk_editor_redact_apply_upper"
+        android:textAllCaps="false" />
+</LinearLayout>

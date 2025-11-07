@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704385456519",
+    "project_id": "document-reader---rikatech",
+    "storage_bucket": "document-reader---rikatech.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704385456519:android:5c8ce79cdafc0c81b81b22",
+        "android_client_info": {
+          "package_name": "officepro.document.reader.viewer.editor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMROgGx4T6ImFTysUx3ItOdqAxFLzK1eM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<resources>
+    <string-array name="fontStyles" translatable="false">
+        <item>عادی</item>
+        <item>پررنگ</item>
+        <item>کج</item>
+        <item>زیرخط‌دار</item>
+        <item>خط خورده</item>
+        <item>پررنگ کج</item>
+    </string-array>
+    <string name="merge_pdf">ادغام PDF</string>
+    <string name="split_pdf">تقسیم PDF</string>
+    <string name="invert_pdf">معکوس</string>
+    <string name="merge">ادغام</string>
+    <string name="split">تقسیم</string>
+    <string name="invert">معکوس</string>
+    <string name="remove_duplicate_page">حذف صفحات تکراری</string>
+    <string name="add_password">افزودن رمز عبور</string>
+    <string name="remove_password">حذف رمز عبور</string>
+    <string name="rotate_pages">چرخش صفحات</string>
+    <string name="add_watermark">افزودن واترمارک</string>
+    <string name="add_image">افزودن تصویر</string>
+    <string name="add_image_2">افزودن تصویر</string>
+    <string name="text_to_pdf">تبدیل متن به PDF</string>
+    <string name="image_to_pdf">تبدیل تصویر به PDF</string>
+    <string name="pdf_to_image">تبدیل PDF به تصویر</string>
+    <string name="manage">مدیریت</string>
+    <string name="delete_content">آیا مطمئن هستید که می‌خواهید این صفحه را حذف کنید؟</string>
+    <string name="insert_page">درج صفحه</string>
+    <string name="blank_page">صفحات خالی</string>
+    <string name="image">تصاویر</string>
+    <string name="page_size">اندازه صفحه</string>
+    <string name="follow_previous">دنبال قبلی</string>
+    <string name="letter">نامه</string>
+    <string name="legal">قانونی</string>
+    <string name="page_placeholder">شماره صفحه را وارد کنید...</string>
+    <string name="storage_path" translatable="false">مسیر ذخیره‌سازی</string>
+    <string name="last_view">آخرین مشاهده</string>
+    <string name="file_size">اندازه فایل</string>
+    <string name="insert">درج</string>
+    <string name="extract">استخراج</string>
+    <string name="image_to_pdf_2">تبدیل تصویر به PDF</string>
+    <string name="search_file">جستجوی فایل</string>
+    <string name="choose_at_least">باید حداقل ۱ مورد را انتخاب کنید</string>
+    <string name="delete">حذف</string>
+    <string name="duplicate">تکراری</string>
+    <string name="enter_file_name">نام فایل را وارد کنید</string>
+    <string name="password">رمز عبور</string>
+    <string name="enter_password">رمز عبور را وارد کنید</string>
+    <string name="ok">تأیید</string>
+    <string name="invalid_value">مقدار نامعتبر</string>
+    <string name="save">ذخیره</string>
+    <string name="cancel">لغو</string>
+    <string name="no_repetition_found">تکراری یافت نشد</string>
+    <string name="split_suggest">PDF به چندین PDF تقسیم خواهد شد.\n مثال قالب: 1-5,6-7,8,9</string>
+    <string name="error_page_number">شماره صفحه نامعتبر</string>
+    <string name="error_page_range">ورودی بازه نامعتبر</string>
+    <string name="error_invalid_input">ورودی نامعتبر</string>
+    <string name="enter_page_split">صفحه تقسیم را وارد کنید</string>
+    <string name="encryption">رمزگذاری</string>
+    <string name="decryption">رمزگشایی</string>
+    <string name="remove">حذف</string>
+    <string name="add">افزودن</string>
+    <string name="remove_password_error">امکان حذف رمز عبور وجود ندارد</string>
+    <string name="rotate">چرخش</string>
+    <string name="angle_90">۹۰</string>
+    <string name="angle_180">۱۸۰</string>
+    <string name="angle_270">۲۷۰</string>
+    <string name="watermark">واترمارک</string>
+    <string name="enter_text">متن را وارد کنید</string>
+    <string name="enter_angle">زاویه را وارد کنید</string>
+    <string name="choose_color">انتخاب رنگ</string>
+    <string name="enter_font_size">اندازه فونت را وارد کنید</string>
+    <string name="choose_font_family">انتخاب خانواده فونت</string>
+    <string name="choose_style">انتخاب سبک</string>
+    <string name="add_image_step_1">۱. فایل PDF را انتخاب کنید</string>
+    <string name="add_image_step_2">۲. تصاویر را انتخاب کنید</string>
+    <string name="select_image">انتخاب تصاویر</string>
+    <string name="select">انتخاب</string>
+    <string name="please_select_pdf_file">لطفاً فایل PDF را انتخاب کنید.</string>
+    <string name="please_select_image">لطفاً عکس را انتخاب کنید</string>
+    <string name="organize_pages">سازماندهی صفحات</string>
+    <string name="extract_image">استخراج تصاویر</string>
+    <string name="tool_done">انجام شد</string>
+    <string name="file_is_protected">فایل محافظت شده است</string>
+    <string name="file_not_protected">فایل محافظت نشده است</string>
+    <string name="info_add_image">می‌توانید نگه دارید و بکشید تا تصاویر را جابجا کنید</string>
+    <string name="info_merge">می‌توانید به چپ بکشید تا فایل را حذف یا تکراری کنید</string>
+    <string name="info_organize">برای سازماندهی صفحات بکشید و رها کنید.\nروی یک صفحه کلیک کنید تا حذف شود</string>
+    <string name="info_extract">روی یک صفحه کلیک کنید تا انتخاب شود</string>
+    <string name="done_2">انجام شد!</string>
+    <string name="open">باز کردن</string>
+    <string name="close">بستن</string>
+    <string name="file_created_at">فایل ایجاد شده در</string>
+    <string name="success">موفقیت</string>
+    <string name="sort">مرتب‌سازی</string>
+</resources> 

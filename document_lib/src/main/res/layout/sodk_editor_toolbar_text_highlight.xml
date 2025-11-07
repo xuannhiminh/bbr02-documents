@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/shadow_top"
+        android:layout_height="@dimen/_3sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/document_background_color"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="@string/highlight"
+            android:layout_margin="@dimen/_15sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/document_text_color"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_red"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="@color/color_text_red" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_orange"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="@color/color_text_orange" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_yellow"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="@color/color_text_yellow" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_green"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="@color/color_text_green" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_blue"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="@color/blue" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_purple"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="@color/color_text_purple" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_black"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="#333333" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_highlight_white"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_white_circle"
+                android:tint="#F2F2F2" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

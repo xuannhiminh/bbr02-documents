@@ -1,0 +1,12 @@
+[submodule "base-module"]
+	path = base-module
+url=https://gitlab.com/ezmedia/base-module.git
+[submodule "ads-module"]
+	path = ads-module
+	url = https://gitlab.com/ezmedia/ads-module.git
+[submodule "base-pdf-reader"]
+	path = base-pdf-reader
+	url = https://gitlab.com/ezmedia/base-pdf-reader.git
+[submodule "pdf-tool-module"]
+	path = pdf-tool-module
+	url = https://gitlab.com/ezmedia/pdf-tool-module.git

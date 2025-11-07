@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/sodk_editor_number_format_popup"
+    android:orientation="vertical">
+
+    <office.file.ui.editor.SOTextView
+        style="@style/sodk_editor_wheel_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/sodk_editor_number_format_number" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <kankan.wheel.widget.WheelViewLib
+            android:id="@id/left_wheel"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip" />
+
+        <kankan.wheel.widget.WheelViewLib
+            android:id="@id/right_wheel"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:orientation="horizontal">
+
+        <office.file.ui.editor.SOTextView
+            style="@style/sodk_editor_wheel_checkbox_label_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sodk_editor_thousand_separator" />
+
+        <Space
+            android:layout_width="1.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0" />
+
+        <CheckBox
+            android:id="@id/thousand_sep_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:theme="@style/sodk_editor_wheel_checkbox_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:orientation="horizontal">
+
+        <office.file.ui.editor.SOTextView
+            style="@style/sodk_editor_wheel_checkbox_label_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sodk_editor_scientific" />
+
+        <Space
+            android:layout_width="1.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0" />
+
+        <CheckBox
+            android:id="@id/scientific_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:theme="@style/sodk_editor_wheel_checkbox_style" />
+    </LinearLayout>
+</LinearLayout>

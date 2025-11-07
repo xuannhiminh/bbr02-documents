@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <office.file.ui.editor.SOTextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:text="@string/sodk_certificates" android:layout_marginStart="10.0dip" style="@style/sodk_cert_detail_title" />
+        <View style="@style/sodk_dialog_separator" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/sodk_certificate_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <viewx.recyclerview.widget.RecyclerView android:id="@id/certificate_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" style="@style/sodk_dialog_panel_border" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/sodk_dialog_panel">
+                <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_details" style="@style/sodk_cert_detail_heading" />
+                <View android:paddingStart="10.0dip" android:paddingEnd="10.0dip" style="@style/sodk_dialog_separator" />
+                <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_issued_to" style="@style/sodk_cert_detail_heading" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_common_name" style="@style/sodk_cert_detail_subheading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_cn" android:text="" style="@style/sodk_cert_detail_description" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_org" style="@style/sodk_cert_detail_subheading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_o" android:text="" style="@style/sodk_cert_detail_description" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_org_unit" style="@style/sodk_cert_detail_subheading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_ou" android:text="" style="@style/sodk_cert_detail_description" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_email" style="@style/sodk_cert_detail_subheading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_email" android:text="" style="@style/sodk_cert_detail_description" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_country" style="@style/sodk_cert_detail_subheading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_c" android:text="" style="@style/sodk_cert_detail_description" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_keyusage" style="@style/sodk_cert_detail_heading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_keyusage" android:text="" style="@style/sodk_cert_detail_description" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_extended_keyusage" style="@style/sodk_cert_detail_heading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_extended_keyusage" android:text="" style="@style/sodk_cert_detail_description" />
+                        <office.file.ui.editor.SOTextView android:text="@string/sodk_certificate_expiry" style="@style/sodk_cert_detail_heading" />
+                        <office.file.ui.editor.SOTextView android:id="@id/certificate_expiry" android:text="" style="@style/sodk_cert_detail_description" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/sodk_certificate_none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <office.file.ui.editor.SOTextView android:text="@string/sodk_no_certificates" style="@style/sodk_cert_detail_heading" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/sodk_choose_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sodk_certificate_sign" android:layout_alignParentBottom="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" style="@style/sodk_dialog_button" />
+</RelativeLayout>

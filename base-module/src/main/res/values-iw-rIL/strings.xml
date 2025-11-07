@@ -1,0 +1,52 @@
+<resources>
+    <string name="ellipsis">…</string>
+    <string name="no_app_response">אין יישום לביצוע פעולה זו</string>
+    <string name="share">שתף</string>
+
+    <string name="just_now_time">הרגע</string>
+    <string name="minute_ago">לפני %s דקות</string>
+    <string name="hour_ago">לפני %s שעות</string>
+    <string name="day_ago">לפני %s ימים</string>
+    <string name="cant_open_file">לא ניתן לפתוח את הקובץ הזה</string>
+    <string name="rate_us">דרג אותנו</string>
+    <string name="rate_us_message">האם ברצונך לדרג את היישום הזה? התמיכה שלך תעזור לנו להשתפר.</string>
+    <string name="rate_now">דרג עכשיו</string>
+    <string name="remind_later">הזכר לי מאוחר יותר</string>
+
+    <string name="app_update_success">האפליקציה החדשה מוכנה</string>
+    <string name="install">התקן עכשיו</string>
+    <string name="late">מאוחר</string>
+    <string name="app_update_fail">עדכון האפליקציה נכשל, אנא נסה שוב בהפעלה הבאה.</string>
+    <string name="app_being_download">האפליקציה מורדת כעת</string>
+    <string name="all_image">כל התמונות</string>
+    <string name="images">תמונות</string>
+    <string name="done">בוצע</string>
+    <string name="limit_image">הגבלת תמונות</string>
+    <string name="min_photo">תמונה מינימלית</string>
+
+    <string name="pick_image_intent_chooser_title">בחר מקור</string>
+    <string name="crop_image_activity_title">חתוך</string>
+    <string name="crop_image_activity_no_permissions">מבוטל, ההרשאות הנדרשות לא הוענקו</string>
+    <string name="reset_all">איפוס הכל</string>
+    <string name="free">חינם</string>
+    <string name="custom">מותאם אישית</string>
+    <string name="crop_11">1:1</string>
+    <string name="crop_45">4:5</string>
+    <string name="crop_916">9:16</string>
+    <string name="crop_43">4:3</string>
+    <string name="crop_54">5:4</string>
+    <string name="crop_74">7:4</string>
+    <string name="crop_31">3:1</string>
+    <string name="crop_21">2:1</string>
+    <string name="crop_32">3:2</string>
+    <string name="crop_23">2:3</string>
+    <string name="crop_a4">A4</string>
+    <string name="crop_34">3:4</string>
+
+    <string name="discard_edit">האם ברצונך לבטל את השינויים?</string>
+    <string name="cancel">ביטול</string>
+    <string name="discard">בטל</string>
+    <string name="app_error">אירעה שגיאה. אנא נסה שוב</string>
+    <string name="update_required">גרסה זו מיושנת. אנא עדכן את האפליקציה</string>
+
+</resources>

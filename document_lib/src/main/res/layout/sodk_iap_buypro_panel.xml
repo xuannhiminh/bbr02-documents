@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@id/buy_pro_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/menu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginBottom="-20.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sodk_icon_menu" />
+
+        <LinearLayout
+            android:id="@id/buy_pro_container"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="80.0"
+            android:background="@color/sodk_palette_grey"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@id/buy_pro_web"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="20.0"
+            android:background="@color/sodk_palette_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/trialText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@color/sodk_palette_white"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@id/ButtonMonth"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/sodk_iap_buy_button_bg"
+                        android:onClick="onClickSubscribeMonth"
+                        android:text="£2.99/month"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/sodk_palette_white" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.0dip"
+                        android:layout_gravity="right"
+                        android:layout_weight="1.0"
+                        android:background="?android:selectableItemBackgroundBorderless"
+                        android:onClick="onClickRestorePurchase"
+                        android:text="Restore purchases"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@color/sodk_palette_white"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@id/ButtonYear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/sodk_iap_buy_button_bg"
+                        android:onClick="onClickSubscribeYear"
+                        android:text="£14.99/year"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/sodk_palette_white" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.0dip"
+                        android:layout_gravity="end"
+                        android:layout_weight="1.0"
+                        android:adjustViewBounds="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

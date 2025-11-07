@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/document_background_color"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/doc_tab_layout"
+        android:layout_width="match_parent"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="scrollable"
+        android:background="@color/document_background_color"
+        app:tabIndicatorColor="@color/color_doc_toolbar"
+        app:tabTextColor="@color/document_text_color"
+        app:tabSelectedTextColor="@color/document_text_color"
+        app:tabTextAppearance="@style/TextAppearance.App.Button"
+        android:layout_height="@dimen/_30sdp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insert" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lib_page" />
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

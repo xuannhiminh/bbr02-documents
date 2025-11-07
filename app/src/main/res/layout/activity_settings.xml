@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/icon_setting_back_black" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setting"
+            android:textColor="@color/text1"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500"
+            android:layout_marginStart="@dimen/_15sdp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/func_rate_us"-->
+<!--            android:layout_width="@dimen/_24sdp"-->
+<!--            android:layout_height="@dimen/_24sdp"-->
+<!--            android:src="@drawable/icon_favourite"/>-->
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_iap_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/bg_iap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_setting_iap"/>
+
+    <LinearLayout
+        android:id="@+id/layout_iap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_28sdp"
+        android:paddingTop="@dimen/_28sdp"
+        android:paddingBottom="@dimen/_16sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_iap_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uprange_to_premium"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_iap_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_premium_features"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="400"
+                android:layout_marginBottom="@dimen/_4sdp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_iap_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img_offer_icon"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/icon_diamond_iap"
+                    android:layout_marginEnd="@dimen/_6sdp"/>
+
+                <TextView
+                    android:id="@+id/tv_iap_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_full_offer"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_go_premium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go_premium"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textColor="#235FED"
+                android:textStyle="bold"
+                android:background="@drawable/bg_btn_premium"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_6sdp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_24sdp"
+            android:paddingHorizontal="@dimen/_20sdp">
+
+            <!-- Account Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text1"
+                android:layout_marginBottom="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_section_container">
+
+                <LinearLayout
+                    android:id="@+id/func_change_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="@drawable/bg_setting_item">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:id="@+id/text_change_language"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" 
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        app:fvTitle="@string/change_language"
+                        app:fvIcon="@drawable/icon_setting_language2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"/>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <LinearLayout
+                    android:id="@+id/func_add_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/add_widget"
+                        app:fvIcon="@drawable/icon_setting_widget" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"/>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <!-- Set Default App -->
+                <LinearLayout
+                    android:id="@+id/func_set_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/set_app_default"
+                        app:fvIcon="@drawable/icon_setting_set_app_default" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- App Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text1"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_section_container">
+
+
+                <LinearLayout
+                    android:id="@+id/func_feature_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        app:fvTitle="@string/feature_request"
+                        app:fvIcon="@drawable/icon_setting_feature_request" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <!-- Privacy -->
+                <LinearLayout
+                    android:id="@+id/func_browse_more_files"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        app:fvTitle="@string/browse_more_files"
+                        app:fvIcon="@drawable/icon_setting_more_files" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <LinearLayout
+                    android:id="@+id/func_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/share_app"
+                        app:fvIcon="@drawable/icon_share_app" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <LinearLayout
+                    android:id="@+id/func_send_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/send_feedback"
+                        app:fvIcon="@drawable/icon_setting_feedback" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Display Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/display"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text1"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_section_container">
+
+                <!-- Dark Mode -->
+                <LinearLayout
+                    android:id="@+id/func_keep_screen_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        app:fvTitle="@string/keep_screen_on"
+                        app:fvIcon="@drawable/icon_setting_keep_screen" />
+
+                    <Switch
+                        android:id="@+id/switch_keep_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <LinearLayout
+                    android:id="@+id/func_night_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:singleLine="false"
+                        android:ellipsize="none"
+                        android:scrollHorizontally="false"
+                        android:lines="2"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/pdf_night_mode"
+                        app:fvIcon="@drawable/icon_setting_night_mode_2" />
+
+                    <Switch
+                        android:id="@+id/switch_night_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:id="@+id/func_notification_line" android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <LinearLayout
+                    android:id="@+id/func_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/push_notifications"
+                        app:fvIcon="@drawable/icon_setting_notification" />
+
+                    <Switch
+                        android:id="@+id/switch_notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Support Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text1"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_section_container">
+
+                <LinearLayout
+                    android:id="@+id/func_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/privacy_policy"
+                        app:fvIcon="@drawable/icon_setting_privacy" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <LinearLayout
+                    android:id="@+id/func_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/terms_and_conditions"
+                        app:fvIcon="@drawable/icon_setting_terms" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/input3"/>
+
+                <LinearLayout
+                    android:id="@+id/func_about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="?attr/selectableItemBackground">
+
+                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textFontWeight="400"
+                        app:fvTextColor="@color/text1"
+                        android:layout_height="wrap_content"
+                        app:fvTitle="@string/about_us"
+                        app:fvIcon="@drawable/icon_setting_about_us" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_setting_more" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+    <FrameLayout
+    android:id="@+id/layout_native"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/frNativeAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+</LinearLayout>

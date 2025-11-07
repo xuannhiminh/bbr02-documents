@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/search_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@id/search_input_wrapper"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sodk_editor_search_input_wrapper"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp">
+
+        <Space
+            android:layout_width="5.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="0.0" />
+
+        <ImageView
+            android:id="@id/search_icon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_weight="0.0"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_lib_search" />
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="0.0"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <office.file.ui.editor.SOEditText
+            android:id="@id/search_text_input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/sodk_editor_search_text_input"
+            android:hint="@string/sodk_editor_find"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/document_text_color"
+            android:textColorHint="@color/sodk_editor_search_text_hint"
+            android:textSize="@dimen/_12ssp" />
+
+        <Space
+            android:layout_width="5.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="0.0" />
+
+        <ImageView
+            android:id="@id/search_text_clear"
+            android:layout_width="@dimen/sodk_editor_search_clear_button_size"
+            android:layout_height="@dimen/sodk_editor_search_clear_button_size"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="0.0"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close_white"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="5.0dip"
+        android:layout_height="1.0dip"
+        android:layout_weight="0.0" />
+
+    <LinearLayout
+        android:id="@id/search_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_next_link"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/document_text_color"
+            android:textSize="@dimen/_9ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/search_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_previous_link"
+            android:gravity="center"
+            android:text="@string/previous"
+            android:textColor="@color/document_text_color"
+            android:textSize="@dimen/_9ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_lib_close_round"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textColor="@color/document_text_color"
+            android:textSize="@dimen/_9ssp" />
+    </LinearLayout>
+</LinearLayout>

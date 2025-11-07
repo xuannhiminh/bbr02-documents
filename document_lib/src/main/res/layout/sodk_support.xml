@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <office.file.ui.editor.SOTextView android:textStyle="bold" android:text="@string/sodk_support_support" android:layout_centerInParent="true" style="@style/sodk_support_text" />
+            <Button android:id="@id/done_button" android:text="@string/sodk_support_done" android:layout_alignParentRight="true" style="@style/sodk_support_button" />
+        </RelativeLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/faq_button" android:text="@string/sodk_support_faq" android:layout_centerInParent="true" style="@style/sodk_support_button" />
+            <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/view_button" android:text="@string/sodk_support_view_my_requests" android:layout_centerInParent="true" style="@style/sodk_support_button" />
+            <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/contact_button" android:text="@string/sodk_support_contact_us" android:layout_centerInParent="true" style="@style/sodk_support_button" />
+            <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/subscriptions_button" android:text="@string/sodk_support_manage_subscriptions" android:layout_centerInParent="true" style="@style/sodk_support_button" />
+            <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/terms_button" android:text="@string/sodk_support_terms_of_use" android:layout_centerInParent="true" style="@style/sodk_support_button" />
+            <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/privacy_button" android:text="@string/sodk_support_privacy_policy" android:layout_centerInParent="true" style="@style/sodk_support_button" />
+            <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/email_wrapper" android:background="@drawable/sodk_support_email_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <office.file.ui.editor.SOTextView android:textSize="14.0sp" android:gravity="center" android:id="@id/email_text" android:text="" android:layout_centerInParent="true" style="@style/sodk_support_text" />
+            <Button android:id="@id/email_button" android:text="@string/sodk_support_change_email" android:layout_centerInParent="true" style="@style/sodk_support_button" />
+        </LinearLayout>
+        <office.file.ui.editor.SOTextView android:textSize="14.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/version_text" android:paddingTop="20.0dip" android:text="" style="@style/sodk_support_text" />
+    </LinearLayout>
+</ScrollView>

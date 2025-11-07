@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_explorer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/sodk_main_bg_color"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@id/menu_panel"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:background="@color/sodk_so_ui_menu_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sodk_so_ui_menu_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@id/buyProLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="20.0dip"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@id/icon"
+                        android:layout_width="0.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_weight="1.0"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sodk_ic_so_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:paddingStart="2.0dip"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip" />
+                </LinearLayout>
+
+                <office.file.ui.editor.SOTextView
+                    style="@style/sodk_sidebar_section_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sodk_editor_explore"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/sodk_so_ui_explorer_heading_textcolor" />
+
+                <office.file.ui.editor.SOTextView
+                    android:id="@id/storage"
+                    style="@style/sodk_sidebar_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sodk_explorer_tab_bg"
+                    android:clickable="true"
+                    android:onClick="onClickStorage"
+                    android:text="@string/sodk_editor_storage"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@drawable/sodk_explorer_tab_selector" />
+
+                <office.file.ui.editor.SOTextView
+                    android:id="@id/recent"
+                    style="@style/sodk_sidebar_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sodk_explorer_tab_bg"
+                    android:clickable="true"
+                    android:onClick="onClickRecent"
+                    android:text="@string/sodk_editor_recent"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@drawable/sodk_explorer_tab_selector" />
+
+                <office.file.ui.editor.SOTextView
+                    android:id="@id/create_new"
+                    style="@style/sodk_sidebar_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sodk_explorer_tab_bg"
+                    android:clickable="true"
+                    android:onClick="onClickCreateNew"
+                    android:text="@string/sodk_editor_create_new"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@drawable/sodk_explorer_tab_selector" />
+
+                <ImageButton
+                    android:id="@id/buyProButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/sodk_explorer_tab_bg"
+                    android:onClick="onClickBuyPro"
+                    android:scaleType="fitXY"/>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="60.0dip" />
+
+                <office.file.ui.editor.SOTextView
+                    android:id="@id/more"
+                    style="@style/sodk_sidebar_section_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sodk_editor_more"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/sodk_so_ui_explorer_heading_textcolor"
+                    android:visibility="gone" />
+
+                <office.file.ui.editor.SOTextView
+                    android:id="@id/gettingStarted"
+                    style="@style/sodk_sidebar_text"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/sodk_explorer_link"
+                    android:clickable="true"
+                    android:onClick="onClickGettingStarted"
+                    android:text="@string/sodk_editor_getting_started"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/sodk_so_ui_explorer_option_textcolor"
+                    android:visibility="gone" />
+
+                <office.file.ui.editor.SOTextView
+                    android:id="@id/userGuide"
+                    style="@style/sodk_sidebar_text"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/sodk_explorer_link"
+                    android:clickable="true"
+                    android:onClick="onClickUserGuide"
+                    android:text="@string/sodk_editor_user_guide"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/sodk_so_ui_explorer_option_textcolor"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/sodk_explorer_support"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/sodk_rounded_button"
+                    android:paddingTop="6.0dip"
+                    android:paddingBottom="6.0dip"
+                    android:text="@string/sodk_editor_upgrade"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@id/right_panel"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@id/storage_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/sodk_main_bg_color"
+                android:orientation="vertical"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingBottom="0.0dip">
+
+                <LinearLayout
+                    android:id="@id/menu_and_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@id/menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/sodk_editor_menu"
+                        android:gravity="center_vertical"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sodk_icon_menu" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/sodk_editor_search_input_wrapper"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <Space
+                            android:layout_width="10.0dip"
+                            android:layout_height="1.0dip"
+                            android:layout_weight="0.0" />
+
+                        <ImageView
+                            android:id="@id/search_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0"
+                            android:contentDescription="@string/sodk_editor_search"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sodk_icon_find" />
+
+                        <office.file.ui.editor.SOEditText
+                            android:id="@id/explorer_search_text_input"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/sodk_editor_search_text_input"
+                            android:hint="@string/sodk_editor_search"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/sodk_editor_search_text"
+                            android:textColorHint="@color/sodk_editor_search_text_hint"
+                            android:textSize="20.0sp" />
+
+                        <ImageView
+                            android:id="@id/search_text_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_weight="0.0"
+                            android:contentDescription="@string/sodk_editor_clear_text"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sodk_editor_clear_text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/device_files_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/sodk_explorer_my_documents"
+                    android:orientation="vertical"
+                    android:padding="2.0dip">
+
+                    <LinearLayout
+                        android:id="@id/device_files_header"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/sodk_explorer_header_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/sodk_device_files_bg"
+                            android:paddingTop="5.0dip"
+                            android:paddingBottom="5.0dip"
+                            android:text="@string/sodk_editor_device_files"
+                            android:textColor="#ffffffff"
+                            android:textSize="24.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/sodk_breadcrumb" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <office.file.ui.ExplorerListView
+                                android:id="@id/fileListView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/sodk_so_ui_explorer_tab_background_color"
+                                android:choiceMode="singleChoice"
+                                android:divider="@color/sodk_so_ui_explorer_divider_color"
+                                android:dividerHeight="0.5sp"
+                                android:splitMotionEvents="false" />
+
+                            <office.file.ui.editor.SOTextView
+                                android:id="@id/explorer_no_documents_found"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="6.0dip"
+                                android:paddingBottom="6.0dip"
+                                android:text="@string/sodk_editor_no_documents_found"
+                                android:textColor="@color/sodk_so_ui_default_text_color_light"
+                                android:textSize="24.0sp"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@id/enumerate_progress"
+                                android:layout_width="60.0dip"
+                                android:layout_height="60.0dip"
+                                android:layout_centerHorizontal="true"
+                                android:paddingTop="20.0dip"
+                                android:paddingBottom="6.0dip"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/sodk_preview_panel" />
+
+            <include layout="@layout/sodk_iap_buypro_panel" />
+
+            <LinearLayout
+                android:id="@id/recent_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@id/menu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginBottom="-20.0dip"
+                    android:contentDescription="@string/sodk_editor_menu"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sodk_icon_menu" />
+
+                <LinearLayout
+                    android:id="@id/recent_file_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/sodk_explorer_my_documents"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@id/recent_files_header"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/sodk_explorer_header_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/sodk_recent_header_bg"
+                            android:paddingTop="5.0dip"
+                            android:paddingBottom="5.0dip"
+                            android:text="@string/sodk_editor_recent_documents"
+                            android:textColor="#ffffffff" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@id/recent_file_grid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sodk_explorer_recent_file_grid_wrapper"
+                        android:orientation="vertical"
+                        android:paddingTop="10.0dip">
+
+                        <office.file.ui.SOFileGrid
+                            android:id="@id/recent_grid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginStart="5.0dip"
+                            android:layout_marginLeft="5.0dip"
+                            android:columnWidth="120.0dip"
+                            android:gravity="center"
+                            android:horizontalSpacing="5.0dip"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="5.0dip" />
+
+                        <office.file.ui.editor.SOTextView
+                            android:id="@id/no_recent_documents_found"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="6.0dip"
+                            android:paddingBottom="6.0dip"
+                            android:text="@string/sodk_editor_no_documents_found"
+                            android:textColor="@color/sodk_so_ui_default_text_color_light"
+                            android:textSize="24.0sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/create_new_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@id/menu3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginBottom="-20.0dip"
+                    android:contentDescription="@string/sodk_editor_menu"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sodk_icon_menu" />
+
+                <LinearLayout
+                    android:id="@id/create_new_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/sodk_explorer_create_panel_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@id/create_new_header"
+                            style="@style/sodk_explorer_header_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/sodk_create_new_header_bg"
+                            android:onClick="onClickCreateHeader"
+                            android:paddingTop="5.0dip"
+                            android:paddingBottom="5.0dip"
+                            android:text="@string/sodk_editor_create_new"
+                            android:textColor="@drawable/sodk_explorer_template_selector" />
+
+                        <Button
+                            android:id="@id/templates_header"
+                            style="@style/sodk_explorer_header_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/sodk_templates_header_bg"
+                            android:onClick="onClickTemplatesHeader"
+                            android:paddingTop="5.0dip"
+                            android:paddingBottom="5.0dip"
+                            android:text="@string/sodk_editor_templates"
+                            android:textColor="@drawable/sodk_explorer_template_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/create_new_sub_panel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sodk_explorer_file_grid_wrapper"
+                        android:orientation="vertical"
+                        android:paddingTop="10.0dip"
+                        android:textColor="@color/sodk_so_ui_template_button_text_color">
+
+                        <office.file.ui.SOFileGrid
+                            android:id="@id/create_new_grid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginStart="10.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:columnWidth="120.0dip"
+                            android:gravity="center"
+                            android:horizontalSpacing="10.0dip"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/templates_sub_panel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sodk_explorer_file_grid_wrapper"
+                        android:orientation="vertical"
+                        android:paddingTop="10.0dip"
+                        android:textColor="@color/sodk_so_ui_template_button_text_color">
+
+                        <office.file.ui.SOFileGrid
+                            android:id="@id/templates_grid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginStart="10.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:columnWidth="120.0dip"
+                            android:gravity="center"
+                            android:horizontalSpacing="10.0dip"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <office.file.ui.SortOrderMenu
+                android:id="@id/sort_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <LinearLayout
+                android:id="@id/menu_cover"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#55000000"
+                android:onClick="onClickMenuCover"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

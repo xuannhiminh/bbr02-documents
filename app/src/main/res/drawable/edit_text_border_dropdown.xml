@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Nền + viền bo góc -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_22sdp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/grey_light1" />
+            <solid android:color="@color/grey_light1" />
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/ic_base_dropdown"
+        android:gravity="end|center_vertical"
+        android:right="12dp"/>
+</layer-list>

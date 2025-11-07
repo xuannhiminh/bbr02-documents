@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/sodk_editor_font_inc_dec_color" android:height="25.0dip" android:width="25.0dip" android:viewportWidth="25.0" android:viewportHeight="25.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff000000" android:pathData="M1.83151,11.0535 L22.904,11.0535 L22.904,14.7646 L1.83151,14.7646 L1.83151,11.0535 Z" android:strokeWidth="1.0" />
+</vector>

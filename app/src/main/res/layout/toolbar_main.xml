@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_20sdp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_10sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/icon_setting_back_black"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:src="@drawable/icon_app" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="#397FF8"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/icon_main_find" />
+
+        <ImageView
+            android:id="@+id/iv_filter"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:visibility="gone"
+            android:src="@drawable/icon_main_check" />
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:visibility="gone"
+            android:src="@drawable/icon_main_filter" />
+        <ImageView
+            android:id="@+id/iv_iap"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:src="@drawable/icon_diamond_iap" />
+    </LinearLayout>
+
+    <!-- Danh sách loại file -->
+    <GridLayout
+        android:id="@+id/file_type_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:gravity="center">
+
+        <!-- ALL -->
+        <LinearLayout
+            android:id="@+id/tv_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_59sdp"
+                android:layout_height="@dimen/_59sdp"
+                android:background="@drawable/bg_circle_all"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:src="@drawable/icon_main_all"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/word"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- PDF -->
+        <LinearLayout
+            android:id="@+id/tv_pdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_59sdp"
+                android:layout_height="@dimen/_59sdp"
+                android:background="@drawable/bg_circle_all"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:src="@drawable/icon_main_pdf"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pdf"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/pdf"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- WORD -->
+        <LinearLayout
+            android:id="@+id/tv_word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_59sdp"
+                android:layout_height="@dimen/_59sdp"
+                android:background="@drawable/bg_circle_all"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:src="@drawable/icon_main_word"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/word"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- EXCEL -->
+        <LinearLayout
+            android:id="@+id/tv_excel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_59sdp"
+                android:layout_height="@dimen/_59sdp"
+                android:background="@drawable/bg_circle_all"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:src="@drawable/icon_main_excel"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/excel"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/excel"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- PPT -->
+        <LinearLayout
+            android:id="@+id/tv_ppt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_59sdp"
+                android:layout_height="@dimen/_59sdp"
+                android:background="@drawable/bg_circle_all"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:src="@drawable/icon_main_ppt"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ppt"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/ppt"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- TXT -->
+        <LinearLayout
+            android:id="@+id/tv_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_59sdp"
+                android:layout_height="@dimen/_59sdp"
+                android:background="@drawable/bg_circle_all"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:src="@drawable/icon_main_txt"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/txt"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

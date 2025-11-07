@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@id/bar"
+        android:layout_width="200.0dip"
+        android:layout_height="1.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:background="@color/sodk_editor_line_width_item_textcolor" />
+
+    <office.file.ui.editor.SOTextView
+        android:id="@id/value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10.0dip"
+        android:textColor="@color/sodk_editor_line_width_item_textcolor"
+        android:textSize="20.0sp" />
+</LinearLayout>

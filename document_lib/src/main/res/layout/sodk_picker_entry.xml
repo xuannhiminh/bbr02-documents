@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<office.file.ui.ChooseDocListItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@id/icon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_1sdp" />
+
+        <office.file.ui.editor.SOTextView
+            android:id="@id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/document_text_color"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/controls"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/document_background_color"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <View
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/sodk_control_gradient" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/document_background_color"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@id/control_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:onClick="onClickControlDelete"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="@dimen/sodk_editor_control_icon_width"
+                    android:layout_height="@dimen/sodk_editor_control_icon_height"
+                    android:layout_marginLeft="@dimen/sodk_editor_control_icon_margin"
+                    android:layout_marginRight="@dimen/sodk_editor_control_icon_margin"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:padding="@dimen/sodk_editor_control_icon_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sodk_icon_delete_doc" />
+
+                <office.file.ui.editor.SOTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/sodk_editor_delete"
+                    android:textColor="@color/document_text_color"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/control_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:onClick="onClickControlCopy"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="@dimen/sodk_editor_control_icon_width"
+                    android:layout_height="@dimen/sodk_editor_control_icon_height"
+                    android:layout_marginLeft="@dimen/sodk_editor_control_icon_margin"
+                    android:layout_marginRight="@dimen/sodk_editor_control_icon_margin"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:padding="@dimen/sodk_editor_control_icon_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sodk_icon_duplicate_doc" />
+
+                <office.file.ui.editor.SOTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/sodk_editor_copy"
+                    android:textColor="@color/document_text_color"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/control_rename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:onClick="onClickControlRename"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="@dimen/sodk_editor_control_icon_width"
+                    android:layout_height="@dimen/sodk_editor_control_icon_height"
+                    android:layout_marginLeft="@dimen/sodk_editor_control_icon_margin"
+                    android:layout_marginRight="@dimen/sodk_editor_control_icon_margin"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:padding="@dimen/sodk_editor_control_icon_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sodk_icon_rename_doc" />
+
+                <office.file.ui.editor.SOTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/sodk_editor_rename"
+                    android:textColor="@color/document_text_color"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/control_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:onClick="onClickControlShare"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="@dimen/sodk_editor_control_icon_width"
+                    android:layout_height="@dimen/sodk_editor_control_icon_height"
+                    android:layout_marginLeft="@dimen/sodk_editor_control_icon_margin"
+                    android:layout_marginRight="@dimen/sodk_editor_control_icon_margin"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:padding="@dimen/sodk_editor_control_icon_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sodk_icon_share" />
+
+                <office.file.ui.editor.SOTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/sodk_editor_share"
+                    android:textColor="@color/document_text_color"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/control_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:onClick="onClickControlLogout"
+                android:orientation="vertical">
+
+                <office.file.ui.editor.SOTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:paddingRight="20.0dip"
+                    android:text="Log out"
+                    android:textColor="@color/sodk_explorer_blue"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</office.file.ui.ChooseDocListItemView>

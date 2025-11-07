@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="intent_label_doc_pdf">Doc ke PDF</string>
+    <string name="intent_label_doc_reader">Pembaca Dokumen</string>
+    <string name="intent_label_pdf_doc">Editor Dokumen</string>
+    <string name="intent_label_doc_smart_editor">Editor Cerdas Dokumen</string>
+    <string name="intent_label_doc_print">Cetak Dokumen</string>
+
+    <string name="intent_label_excel_pdf">Excel ke PDF</string>
+    <string name="intent_label_excel_reader">Pembaca Excel</string>
+    <string name="intent_label_pdf_excel">Editor Excel</string>
+    <string name="intent_label_excel_smart_editor">Editor Cerdas Excel</string>
+    <string name="intent_label_excel_print">Cetak Excel</string>
+
+    <string name="intent_label_ppt_pdf">PPT ke PDF</string>
+    <string name="intent_label_ppt_reader">Pembaca PPT</string>
+    <string name="intent_label_pdf_ppt">Editor PPT</string>
+    <string name="intent_label_ppt_smart_editor">Editor Cerdas PPT</string>
+    <string name="intent_label_ppt_print">Cetak PPT</string>
+    <string name="read">Baca</string>
+    <string name="your_recent_PDF_files_are_waiting">File PDF terbaru Anda sedang menunggu</string>
+    <string name="fix_your_issue">Informasi untuk membantu kami memperbaiki masalah Anda lebih cepat</string>
+    <string name="your_feedback">Masukan Anda</string>
+    <string name="feedback_disclaimer">Dengan mengirim email ini, Anda setuju untuk membagikan informasi di atas kepada kami guna membantu meningkatkan aplikasi.</string>
+    <string name="feature_request_limit">Anda hanya dapat mengirim ulang setelah 1 jam.</string>
+    <string name="saving_content">Menyimpan konten</string>
+    <string name="you_have_unfinished_file">Anda memiliki file yang belum selesai</string>
+    <string name="click_to_see_more">Klik untuk melihat lebih banyak.</string>
+
+
+    <string name="app_name">All Document</string>
+
+    <string name="add_in_fav">Tambahkan dalam favorit</string>
+
+    <string name="browse_more_files">Jelajahi Lebih Banyak File</string>
+
+    <string name="cancel">Batalkan</string>
+
+    <string name="change_language">Ganti BAHASA</string>
+
+    <string name="change_language_description">Anda dapat mengubah Bahasa dari sini.</string>
+
+    <string name="clear_fav_message">Apakah Anda yakin ingin menghapus daftar file favorit, tetapi mereka tidak akan dihapus secara permanen?</string>
+
+    <string name="clear_favourite">Hapus Favorit</string>
+
+    <string name="clear_recent">Hapus Terbaru</string>
+
+    <string name="clear_recent_message">Apakah Anda yakin ingin menghapus daftar file terbaru, tetapi mereka tidak akan dihapus secara permanen?</string>
+
+    <string name="cont_pages">Halaman Berkelanjutan</string>
+
+    <string name="continuee">Terus</string>
+
+    <string name="copy">Salin</string>
+
+    <string name="date">Tanggal</string>
+
+    <string name="default_select">Pilih 0</string>
+    <string name="day_mode">Mode Hari</string>
+
+    <string name="del_message">Anda yakin ingin menghapus \"%s.pdf\" ?</string>
+
+    <string name="del_sel_message">Apakah Anda yakin ingin menghapus item yang dipilih?</string>
+
+    <string name="delete">Hapus</string>
+
+    <string name="delete_successfully">berhasil dihapus!</string>
+
+    <string name="done">Selesai</string>
+
+    <string name="duplicate">Gandakan</string>
+
+    <string name="duplicate_successfully">berhasil digandakan!</string>
+
+    <string name="duplicate_unsuccessful">\"Gandakan tidak berhasil, area penyimpanan perangkat mungkin tidak dapat ditulisi! \"</string>
+
+    <string name="enter_file_name">Masukkan nama untuk file tersebut</string>
+
+    <string name="enter_page_no">Masukkan nomor halaman</string>
+
+    <string name="enter_password">Masukkan Kata Sandi untuk Dibuka</string>
+
+    <string name="exit">Keluar</string>
+
+    <string name="exit_message">" Aplikasi akan keluar! "</string>
+
+    <string name="expand_button_title">Lanjutan</string>
+
+    <string name="feedback">Tanggapan</string>
+
+    <string name="feedback_title">Beri tahu kami masalah yang Anda temui</string>
+    <string name="feedback_option1">File tidak bisa dibuka</string>
+    <string name="feedback_option2">Saran</string>
+    <string name="feedback_option3">Lambat</string>
+    <string name="feedback_option4">Crash &amp; Bug</string>
+    <string name="choose_option">Silakan pilih opsi masukan</string>
+    <string name="feedback_warning">Harap masukkan minimal 6 karakter</string>
+
+
+    <string name="file_already_exists">File bernama %s.pdf sudah ada, silakan pilih nama lain!</string>
+
+    <string name="files_selected">%d File Dipilih</string>
+
+    <string name="get_pro_now">Fitur premium</string>
+
+    <string name="go_to_page">Buka halaman</string>
+
+    <string name="more">Lebih Banyak</string>
+
+    <string name="more_description">Dengan mengklik tombol ini Anda dapat memilih semua item sekaligus, kemudian melakukan operasi pada banyak file.</string>
+
+    <string name="more_open_pdf_description">Anda dapat menikmati beberapa alat lainnya seperti mode malam dan langsung menambahkan dalam daftar favorit.</string>
+
+    <string name="more_open_pdf_title">Alat Lainnya</string>
+
+    <string name="more_title">Pilih Semua</string>
+
+    <string name="name">Nama</string>
+
+    <string name="nav_app_bar_navigate_up_description">Kembali ke atas</string>
+
+    <string name="nav_app_bar_open_drawer_description">Buka panel navigasi</string>
+
+    <string name="next">Lanjut</string>
+
+    <string name="night_mode">Mode Malam</string>
+
+    <string name="no">Tidak</string>
+
+    <string name="no_fav">Tambahkan file dalam kategori favorit untuk dengan mudah menemukannya di sini nanti.</string>
+
+    <string name="no_pdf_file">Tidak dapat menemukan file PDF di perangkat seluler Anda.</string>
+
+    <string name="no_recent">File PDF yang Anda baca baru-baru ini akan muncul di sini.</string>
+
+    <string name="not_set">Belum disetel</string>
+
+    <string name="page_by_page">Halaman demi Halaman</string>
+
+    <string name="permission_deny_positive_text">mengizinkan</string>
+
+    <string name="permission_deny_text">Untuk melihat semua file, izinkan akses penyimpanan ke aplikasi pembaca PDF.</string>
+
+    <string name="permission_deny_title">Berikan izin</string>
+
+    <string name="preference_copied">\"%1$s\" disalin ke papan klip.</string>
+
+    <string name="print">Cetak</string>
+
+    <string name="print_description">Dengan menggunakan fitur ini Anda dapat mencetak dokumen Anda langsung dari sini.</string>
+
+    <string name="print_title">Cetak Dokumen</string>
+
+    <string name="privacy_policy">Kebijakan Privasi</string>
+
+    <string name="pro_description">Dengan membeli Anda dapat menghapus semua iklan secara permanen.</string>
+
+    <string name="pro_title">Hapus Iklan</string>
+
+    <string name="purchased_success">Dibeli Berhasil</string>
+
+    <string name="rate_us">Nilai kami</string>
+
+    <string name="rate_us_message">"Apakah Anda ingin memberi peringkat aplikasi ini?Dukungan Anda akan membantu kami untuk meningkatkannya."</string>
+
+    <string name="rating_message">Peringkat bagus Anda sangat berharga bagi kami.</string>
+
+    <string name="remove_ads">Hapus Iklan</string>
+
+    <string name="remove_fav_message">Apakah Anda yakin ingin menghapus file yang dipilih dari favorit, tetapi mereka tidak akan dihapus secara permanen?</string>
+
+    <string name="remove_files">Hapus File</string>
+
+    <string name="remove_from_fav">Hapus dari Favorit</string>
+
+    <string name="remove_recent">Hapus Dari Terbaru</string>
+
+    <string name="remove_sel_recent_message">File yang dipilih akan dihapus dari daftar Terbaru Anda, tetapi tidak akan dihapus secara permanen.</string>
+
+    <string name="rename">Ganti nama</string>
+
+    <string name="rename_unsuccessful">\"Ganti nama tidak berhasil, file mungkin tidak dapat ditulisi! \"</string>
+
+    <string name="save">Simpan</string>
+
+    <string name="search_doc">Cari Dokumen</string>
+
+    <string name="search_menu_title">Telusuri</string>
+
+    <string name="selected">" Dipilih"</string>
+
+    <string name="send_feedback">Kirim Tanggapan</string>
+
+    <string name="share">Bagikan</string>
+
+    <string name="share_app">Bagikan aplikasi ini</string>
+
+    <string name="share_description">Bagikan dokumen dengan yang lain.</string>
+
+    <string name="share_title">Bagikan Dokumen</string>
+
+    <string name="size">Ukuran</string>
+
+    <string name="sort">Menyortir</string>
+
+    <string name="status_bar_notification_info_overflow">999+</string>
+
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+
+    <string name="thumbnail">thumbnail pdf</string>
+
+    <string name="title_fav">Favorit</string>
+
+    <string name="title_files">File</string>
+
+    <string name="title_recent">Terbaru</string>
+
+    <string name="yes">Ya</string>
+
+    <string name="select">Dipilih</string>
+    <string name="get_start_content">"Untuk memberi Anda layanan yang lebih baik dan pemahaman yang lebih jelas tentang bagaimana kami menangani dan melindungi data Anda, kami telah memperbarui Kebijakan Privasi. "</string>
+
+    <string name="agree_us">Dengan Mengetuk tombol \"SETUJU \", Anda menyetujui \"Kebijakan Privasi \" kami</string>
+
+    <string name="agree">Setuju</string>
+
+    <string name="app_version">Versi %s</string>
+    <string name="file_not_found">Berkas tidak ditemukan!!!</string>
+
+    <string name="rate_now">Beri peringkat sekarang</string>
+
+    <string name="recent_add">Baru saja ditambahkan</string>
+    <string name="all">Semua</string>
+    <string name="pdf">PDF</string>
+    <string name="word">Word</string>
+    <string name="excel">Excel</string>
+    <string name="ppt">PPT</string>
+    <string name="remind_later">Ingatkan aku nanti</string>
+
+    <string name="please_rate">Silakan pilih peringkat !!!</string>
+
+    <string name="thank_for_rate">Terima kasih!!!</string>
+
+    <string name="sort_by">Urutkan berdasarkan</string>
+    <string name="replace_old_file">Ganti file lama?</string>
+
+    <string name="ok">Baik</string>
+    <string name="convert_to_pdf">Konversikan ke PDF</string>
+    <string name="pdf_file_name">Nama File PDF</string>
+    <string name="open">Buka</string>
+    <string name="convert_success">Berhasil dikonversi ke PDF!</string>
+    <string name="file_name_invalid">Nama file tidak valid</string>
+    <string name="convert">Mengubah</string>
+    <string name="password">Kata sandi</string>
+
+    <string name="detail">Detail</string>
+    <string name="properties">Properti</string>
+    <string name="app_error">Terjadi kesalahan. Silakan coba lagi</string>
+    <string name="notification_title">Pembaca PDF #1 di Android</string>
+    <string name="notification_content">Membaca semua format PDF</string>
+    <string name="create_shortcut">Buat pintasan</string>
+    <string name="premium">Premium</string>
+    <string name="privilege">Hak istimewa</string>
+    <string name="normal">Normal</string>
+    <string name="basic_reading_operation">Operasi Membaca Dasar</string>
+    <string name="powerful_editing">Alat Pengeditan yang Canggih</string>
+    <string name="cam_scanner">Pemindai Kamera</string>
+    <string name="signature">Tanda tangan</string>
+    <string name="forever">Selamanya</string>
+    <string name="_3_months">%s bulan</string>
+    <string name="free_for_days">Gratis selama %s hari</string>
+    <string name="hot">Panas</string>
+    <string name="premium_des">Hapus iklan dan Buka kunci semua fitur</string>
+    <string name="no_ads">Tidak ada iklan</string>
+    <string name="create_all_file">Buat Semua Berkas</string>
+    <string name="edit_all_files">Edit Semua Berkas</string>
+    <string name="cancel_anytime">Batalkan kapan saja</string>
+    <string name="free_7_day">Gratis 3 hari</string>
+    <string name="premium_then_after_trial">Kemudian %s/tahun</string>
+    <string name="premium_detail">Pembayaran akan dibebankan ke akun Google Play Anda di akhir uji coba konfirmasi pembelian jika Anda tidak memulai uji coba. Langganan diperpanjang secara otomatis sebelum akhir masa uji coba, kecuali dibatalkan sebelum 24 jam. Anda dapat mengelola langganan Anda dan menonaktifkan perpanjangan otomatis dari toko Google Play Anda.</string>
+    <string name="language">Bahasa</string>
+    <string name="_1_year">%s tahun</string>
+    <string name="sort_by_date">Tanggal dibuat: Naik</string>
+    <string name="sort_by_name_asc">Nama: A ke Z</string>
+    <string name="sort_by_name_desc">Nama: Z ke A</string>
+    <string name="sort_by_size_asc">Ukuran file: Naik</string>
+    <string name="sort_by_size_desc">Ukuran file: Turun</string>
+    <string name="please_choose_file">Silakan pilih setidaknya satu file!</string>
+    <string name="delete_content">Apakah Anda yakin ingin menghapus secara permanen?</string>
+    <string name="delete_all">Apakah Anda yakin ingin menghapus semua file yang dipilih?</string>
+    <string name="title_access">Akses Semua File</string>
+    <string name="pdf_reader">Pembaca PDF</string>
+    <string name="allow_permission">Izinkan Izin</string>
+    <string name="content_access">Silakan izinkan akses untuk mengakses file di perangkat Anda.</string>
+    <string name="button_permission">Buka Pengaturan</string>
+    <string name="permission_required">Izin Diperlukan</string>
+    <string name="set_pdf_reader_as_your_default_pdf_file_viewer">Atur <b>%s</b> sebagai Penampil File PDF default Anda</string>
+    <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">Pilih opsi ini untuk membuka file dengan cepat dan membuat membaca jadi mudah dan menyenangkan!</string>
+    <string name="set_as_default">Atur sebagai Default</string>
+    <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default">Pilih ikon <b>%s</b> dan klik <b>%s</b> untuk mengaturnya sebagai default!</string>
+    <string name="always">Selalu</string>
+    <string name="select_this_pdf_reader_icon_in_the_app_list">Pilih ikon <b>%s</b> ini di daftar aplikasi.</string>
+    <string name="click_always_to_set_it_as_the_default_reader">Klik <b>%s</b> untuk mengaturnya sebagai pembaca default.</string>
+    <string name="choose_default_app">Silakan pilih %s sebagai aplikasi PDF default Anda</string>
+    <string name="auto_scroll">Gulir Otomatis</string>
+    <string name="title_pdf_reader">Selamat datang di\n%s</string>
+    <string name="permission_graphic_desc">Meminta izin</string>
+    <string name="allow">Izinkan</string>
+    <string name="later">Nanti</string>
+    <string name="permission_explanation">Untuk membaca dan mengedit file Anda, silakan izinkan <b>%s</b> mengakses semua file Anda.</string>
+    <string name="add_to_home_screen">Tambahkan ke layar utama?</string>
+    <string name="tap_add_or_hold_the_widget_to_add_it_to_your_home_screen_instantly_choose_an_option_below">Ketuk %s atau tahan widget untuk langsung menambahkannya ke layar utama Anda. Pilih opsi di bawah:</string>
+    <string name="add">Tambahkan</string>
+    <string name="cannot_widget">Perangkat Anda tidak mendukung widget yang disematkan.</string>
+    <string name="search">Cari file di sini</string>
+    <string name="home">Beranda</string>
+    <string name="intent_label_pdf">Penampil Dokumen All-in-One</string>
+    <string name="intent_label_pdf_sign">Tanda Tangan PDF</string>
+    <string name="intent_label_pdf_editor">Editor Dokumen Pintar</string>
+    <string name="intent_label_pdf_convert_to_images">PDF ke Gambar</string>
+    <string name="intent_label_pdf_reader">Pembaca Dokumen Pintar</string>
+    <string name="intent_label_pdf_long_image">PDF ke gambar panjang</string>
+    <string name="intent_label_pdf_word">PDF ke Word</string>
+    <string name="clear_text">Hapus teks</string>
+    <string name="search_icon">cari</string>
+    <string name="open_now">Buka Sekarang</string>
+    <string name="unfinished_reading">📌 Anda belum menyelesaikan membaca %s.</string>
+    <string name="expand_content">Perluas konten</string>
+    <string name="forgotten_file_content_notification">Jangan biarkan file penting tidak diperhatikan! 😊</string>
+    <string name="new_file_content_notification">📂 Anda baru saja menerima file baru</string>
+    <string name="daily_call_open_app_title">Semoga harimu menyenangkan</string>
+    <string name="daily_call_open_app_content">Mungkin kamu ingin membuka file PDF-mu! 📚</string>
+    <string name="title_intro_1">Penampil Dokumen All-in-One</string>
+    <string name="open_read_and_edit">buka, baca, dan edit</string>
+    <string name="title_intro_2">Konverter PDF Canggih</string>
+    <string name="title_description_2">Ubah gambar, Word, Excel, dan PPT menjadi PDF berkualitas tinggi dengan cepat.</string>
+    <string name="title_intro_3">Editor PDF Pintar</string>
+    <string name="title_description_3">Sorot, garis bawahi, dan coret teks. Tambahkan tanda tangan digital dengan mudah.</string>
+    <string name="start">Mulai</string>
+    <string name="language_subtitle">Silakan pilih bahasa asli Anda. Anda dapat mengubahnya nanti di pengaturan.</string>
+    <string name="splash_text">Tindakan ini mungkin mengandung iklan</string>
+    <string name="sort_by_date_desc">Tanggal dibuat: Menurun</string>
+    <string name="ads_message">Harap tunggu hingga iklan dimuat...</string>
+    <string name="add_widget">Tambahkan widget</string>
+    <string name="push_notifications">Aktifkan notifikasi</string>
+    <string name="keep_screen_on">Tetap nyalakan layar</string>
+    <string name="terms_and_conditions">Syarat dan ketentuan</string>
+    <string name="about_us">Tentang kami</string>
+    <string name="noti_title">Izinkan %s mengirim notifikasi?</string>
+    <string name="noti_content">Demi kenyamanan Anda, izinkan aplikasi untuk mengakses izin notifikasi. Jangan lewatkan pembaruan dokumen penting dan pengingat tugas.</string>
+    <string name="noti_allow">Izinkan notifikasi</string>
+    <string name="noti_title1">Anda memiliki file PDF baru</string>
+    <string name="open_file">Buka file</string>
+    <string name="notice">Pemberitahuan</string>
+    <string name="notice_content">Aktifkan notifikasi untuk tetap mendapatkan informasi status file</string>
+
+    <string name="notification_title_5">✅ Unduhan Selesai!</string>
+    <string name="notification_description_5">📂 %s siap. Ketuk untuk membuka.</string>
+    <string name="notification_button_5">Buka File</string>
+    <string name="notification_title_11">✨ %s</string>
+    <string name="notification_description_11">🚀 Tangkapan layar disimpan! Ketuk di sini untuk melihatnya sekarang!</string>
+    <string name="notification_button_11">Buka Sekarang</string>
+
+    <string-array name="notification_title1">
+        <item name="notification_title_0">⚙️ Selesaikan Pengaturan Anda?</item>
+        <item name="notification_title_1">📂 Izinkan Akses File</item>
+        <item name="notification_title_2">🎉 Banyak PDF terlupakan di ponsel Anda?</item>
+        <item name="notification_title_3">👋 Buka dokumen apa pun!</item>
+        <item name="notification_title_4">🧭 File pembaruan tersedia</item>
+    </string-array>
+    <string-array name="notification_title2">
+        <item name="notification_title_6">📖 Lanjutkan Membaca?</item>
+        <item name="notification_title_7">🔍 Temukan Teks dengan Cepat!</item>
+        <item name="notification_title_8">🎉 Banyak PDF terlupakan di ponsel Anda?</item>
+        <item name="notification_title_9">👋 Buka dokumen apa pun!</item>
+        <item name="notification_title_10">🧭 File pembaruan tersedia</item>
+    </string-array>
+    <string-array name="notification_message1">
+        <item name="notification_description_0">✨ Beberapa langkah lagi untuk membuka potensi penuh %s!</item>
+        <item name="notification_description_1">👍 Untuk membuka, membaca &amp; mengelola PDF Anda, izinkan akses.</item>
+        <item name="notification_description_2">🚀 Ketuk di sini untuk membaca dan mengedit dokumen Anda.</item>
+        <item name="notification_description_3">✨ PDF, Word, Excel &amp; lainnya!</item>
+        <item name="notification_description_4">✨ Perpustakaan dokumen Anda telah diperbarui!</item>
+    </string-array>
+    <string-array name="notification_message2">
+        <item name="notification_description_6">🤓 Masih ada halaman yang belum dibaca di %s. Lanjutkan membaca!</item>
+        <item name="notification_description_7">💡 Gunakan alat pencarian yang kuat untuk mencari dokumen Anda dengan cepat.</item>
+        <item name="notification_description_8">🚀 Ketuk di sini untuk membaca dan mengedit dokumen Anda.</item>
+        <item name="notification_description_9">✨ PDF, Word, Excel &amp; lainnya!</item>
+        <item name="notification_description_10">✨ Perpustakaan dokumen Anda telah diperbarui!</item>
+    </string-array>
+    <string-array name="notification_button1">
+        <item name="notification_button_0">Lanjutkan Pengaturan</item>
+        <item name="notification_button_1">Izinkan Akses</item>
+        <item name="notification_button_2">Buka Sekarang</item>
+        <item name="notification_button_3">Buka Aplikasi</item>
+        <item name="notification_button_4">Lihat Sekarang</item>
+    </string-array>
+    <string-array name="notification_button2">
+        <item name="notification_button_6">Lanjutkan</item>
+        <item name="notification_button_7">Coba Cari</item>
+        <item name="notification_button_8">Buka Sekarang</item>
+        <item name="notification_button_9">Buka Aplikasi</item>
+        <item name="notification_button_10">Lihat Sekarang</item>
+    </string-array>
+
+    <string name="uninstall">Copot Pemasangan</string>
+    <string name="uninstall_reason_2">Terlalu banyak iklan</string>
+    <string name="uninstall_reason_3">Saya tidak lagi membutuhkan aplikasi ini</string>
+    <string name="other">Lainnya</string>
+    <string name="uninstall_reason_1">Fitur tidak berfungsi</string>
+    <string name="uninstall_reason_title">Ada masalah saat menggunakan aplikasi?</string>
+    <string name="uninstall_title">Menghapus aplikasi dapat menyebabkan %s. Apakah Anda yakin ingin melanjutkan?</string>
+    <string name="uninstall_highlight">kehilangan dokumen yang disimpan atau file terbaru</string>
+    <string name="uninstall_content">Silakan coba aktifkan kembali aplikasi dan beri tahu kami alasannya.</string>
+    <string name="uninstall_confirm">Masih ingin menghapus?</string>
+    <string name="feedback_content">Masukkan masukan Anda</string>
+
+    <string name="default_reader_uninstall_description1">Sepertinya Anda telah menetapkan aplikasi lain sebagai pembaca default.</string>
+    <string name="default_reader_uninstall_description2">Anda dapat mengklik "Reset" untuk mengubahnya.</string>
+    <string name="reset">Atur Ulang</string>
+    <string name="clear_default_reader">Hapus pembaca default</string>
+    <string name="select_set_as_default">Pilih Jadikan default</string>
+    <string name="set_default">Jadikan default</string>
+    <string name="click_clear_default">Kemudian klik Hapus default</string>
+    <string name="clear_default">Hapus default</string>
+    <string name="alway">Selalu</string>
+    <string name="set_pdf_reader_as_your_default_title">Pilih <b>%s</b> lalu klik Selalu untuk menjadikannya default</string>
+    <string name="select_pdf_reader">Pilih <b>%s</b></string>
+    <string name="click_always_to_set">Kemudian klik Selalu untuk menyetel berhasil</string>
+    <string name="click_back_to_app">Lalu tekan &lt; untuk kembali ke aplikasi</string>
+    <string name="update_desc">Ketuk Perbarui untuk menikmati versi baru. 👇</string>
+    <string name="update_desc_replace">Nikmati kinerja yang lebih baik dan stabilitas yang meningkat dengan versi terbaru kami. Ketuk untuk memperbarui sekarang. 👇</string>
+    <string name="update_title">Bergabunglah dengan lebih dari %s pengguna, rasakan performa yang lebih baik! 🚀</string>
+    <string name="new_version">🎉 Versi Baru</string>
+    <string name="update_note">Anda dapat terus menggunakan aplikasi selama pembaruan 😊</string>
+
+    <string name="update">Perbarui</string>
+    <string name="set_app_default">Atur sebagai aplikasi default</string>
+    <string name="update_available_title">✨ Versi baru %1$s siap digunakan!</string>
+    <string name="update_now">Perbarui sekarang</string>
+    <string name="update_available_description">Versi %1$s hadir dengan fitur menarik dan peningkatan kinerja. Perbarui sekarang untuk mencobanya!</string>
+    <string name="open_intro">Buka</string>
+    <string name="edit_intro">edit</string>
+    <string name="read_intro">lihat</string>
+    <string name="title_description_1">Buka, lihat, dan edit semua jenis dokumen dengan mudah</string>
+    <string name="restart">Mulai Ulang</string>
+    <string name="skip_language_activity">Lewati</string>
+    <string name="install">Pasang</string>
+    <string name="app_update_install">Pembaruan telah diunduh. Instal sekarang!</string>
+    <string name="app_update_downloaded">🎉Pembaruan telah diunduh</string>
+    <string name="app_update_critical">🔔 Pembaruan ini penting, harap perbarui untuk melanjutkan!</string>
+    <string name="are_you_satisfied">Apakah Anda puas dengan aplikasi kami?</string>
+    <string name="not_really">😞\n Tidak juga</string>
+    <string name="love_it">🥰\n Suka sekali</string>
+    <string name="thank_for_support">Terima kasih atas dukungan Anda!</string>
+    <string name="rate_us_content">Kami sangat berterima kasih jika Anda mau memberi kami penilaian</string>
+    <string name="rate">Beri Nilai</string>
+    <string name="rate_on_google">Beri Nilai di Google Play</string>
+    <string name="best_we_can">Penilaian terbaik yang bisa kami dapatkan</string>
+    <string name="we_sorry">Oh, maafkan kami...</string>
+    <string name="your_feedback_is_welcome">Masukan Anda sangat kami hargai</string>
+    <string name="much_appreciated">Sangat dihargai!</string>
+    <string name="your_support_is_motivation">Dukungan Anda adalah motivasi terbesar kami!</string>
+    <string name="thank_for_feedback">Terima kasih atas masukan Anda</string>
+    <string name="we_will_bring_better_user_ex">Kami akan berusaha memberikan pengalaman yang lebih baik</string>
+
+    <string name="done_language_activity">Selesai</string>
+    <string name="feedback_placeholder">Silakan beri tahu kami lebih banyak detail agar kami dapat menemukan dan menyelesaikan masalah Anda lebih cepat</string>
+    <string name="feedback_option6">Terlalu banyak notifikasi</string>
+
+    <string name="please_specify">Silakan tentukan alasan Anda</string>
+    <string name="please_input_reason">Silakan masukkan alasan Anda</string>
+    <string name="select_reason_first">Silakan pilih alasan sebelum menghapus</string>
+
+    <string name="uninstall_reason_4">Terlalu banyak notifikasi</string>
+    <string name="result_not_found">Hasil tidak ditemukan!!!</string>
+    <string name="search_language_hint">Cari di sini...</string>
+    <string name="user_guide_title">Selamat datang di %s</string>
+    <string name="press_button">Tekan tombol ini untuk membuat file PDF</string>
+    <string name="exit_app_content">Apakah Anda yakin ingin keluar dari aplikasi?</string>
+    <string name="exit_app">😢\nKeluar Aplikasi</string>
+    <string name="not_exit">🥰\nKembali</string>
+
+    <string name="uprange_to_premium">Upgrade ke Premium</string>
+    <string name="full_premium_features">Nikmati semua fitur premium</string>
+    <string name="see_full_offer">Lihat semua penawaran eksklusif!</string>
+
+    <string name="app_name_iap">Pembaca PDF All-in-One Terbaik</string>
+    <string name="tagline">Tingkatkan efisiensi kerja secara signifikan</string>
+    <string name="feature_title">Fitur</string>
+    <string name="feature_remove_ads">Hapus Semua Iklan</string>
+    <string name="feature_edit_pdf">Edit PDF</string>
+    <string name="feature_sign_documents">Tanda Tangan Dokumen</string>
+    <string name="feature_add_images">Tambahkan Gambar ke PDF</string>
+    <string name="feature_scan_pdf">Pindai ke PDF</string>
+    <string name="feature_mark_annotate">Tandai atau Anotasi</string>
+    <string name="feature_read_all_format">Baca Semua Format</string>
+    <string name="plan_pro">Pro</string>
+    <string name="plan_basic">Dasar</string>
+    <string name="subscribe_annually">Langganan Tahunan</string>
+    <string name="free_trial">COBA GRATIS 3 HARI</string>
+    <string name="price_annual">%s/Bulan</string>
+    <string name="price_annual_note">Ditagih Tahunan %s</string>
+    <string name="discount_label">DISKON 50%</string>
+    <string name="subscribe_monthly">Langganan Bulanan</string>
+    <string name="price_monthly">%s/Bulan</string>
+    <string name="price_month">%s bulan</string>
+    <string name="button_free_trial">Coba Gratis 3 Hari</string>
+    <string name="cancel_note">Batalkan kapan saja – 24 jam sebelum uji coba berakhir atau sebelum pembaruan</string>
+    <string name="term_of_use">Syarat Penggunaan</string>
+    <string name="restore_purchase">Pulihkan Pembelian</string>
+    <string name="restore_button">Pulihkan</string>
+    <string name="get_free_trial">Dapatkan Uji Coba Gratis 3 Hari</string>
+    <string name="_3_days_free_trial">Uji Coba Gratis 3 Hari!</string>
+    <string name="day_free_trial">3 Hari</string>
+    <string name="unlocked_premium_features">🔓 Semua fitur premium telah dibuka</string>
+    <string name="unlocked">telah dibuka</string>
+    <string name="exclusive_tools_to_enhance">👑 Alat eksklusif untuk meningkatkan pengalaman Anda</string>
+    <string name="exclusive_tools">Alat Eksklusif</string>
+    <string name="no_payment_cancel_refund">✨ Tidak perlu bayar sekarang, batalkan kapan saja, 100% uang kembali jika tidak puas!</string>
+    <string name="no_payment">Tidak perlu bayar sekarang</string>
+    <string name="refund">100% uang kembali</string>
+    <string name="trial_conditions">COBA GRATIS 3 HARI, lalu %s/Bulan (setara dengan %s/tahun), pembaruan otomatis, batalkan kapan saja</string>
+    <string name="pay_for_renewal">%s/Bulan</string>
+    <string name="start_free_trial_now">Mulai Coba Gratis Sekarang</string>
+
+    <string name="you_premium">Anda adalah pengguna Premium!</string>
+    <string name="restore_success">Pembelian Anda telah dipulihkan!</string>
+    <string name="restore_fail">Gagal memulihkan pembelian. Silakan periksa koneksi Anda dan coba lagi.</string>
+
+    <string name="payment_successful">Anda berhasil membayar paket Premium!</string>
+    <string name="please_update_store">Gagal melakukan pembelian. Harap perbarui Play Store dan masuk ke akun Google Anda</string>
+    <string name="not_confirm_purchase">Tidak dapat mengonfirmasi pembelian. Silakan buka kembali aplikasi nanti.</string>
+    <string name="reload_file_successful">File berhasil diambil</string>
+    <string name="swipe_refresh_guide">Geser ke bawah untuk memuat ulang file</string>
+    <string name="scanning_file">Memindai file</string>
+    <string name="wait_for_scanning_file">Harap tunggu saat file sedang dipindai</string>
+
+    <string name="feature_request">Permintaan fitur</string>
+    <string name="request">Permintaan</string>
+    <string name="we_add_new_feature">Kami akan menambahkan fitur baru untuk memenuhi kebutuhan Anda.</string>
+    <string name="have_any_other_feature_requests">Punya permintaan fitur lainnya?</string>
+    <string name="smart_tools">Alat pintar</string>
+    <string name="edit_files">Edit file</string>
+    <string name="merge_and_split">Gabungkan &amp; pisahkan</string>
+    <string name="convert_files">Konversi file</string>
+    <string name="compress_files">Kompres file</string>
+    <string name="view_setting">Pengaturan tampilan</string>
+    <string name="ai_tools">Alat AI</string>
+    <string name="chat_with_document">Obrolan dengan dokumen</string>
+    <string name="ai_document_summary">Ringkasan dokumen AI</string>
+    <string name="translate_document">Terjemahkan dokumen</string>
+    <string name="others">Lainnya</string>
+    <string name="submit">Kirim</string>
+    <string name="other_features_that_you_want_to_have">Fitur lain yang ingin Anda miliki</string>
+    <string name="thanks_for_feedback">Terima kasih atas masukan Anda!</string>
+    <string name="deliver_better_experience">Kami berusaha memberikan pengalaman yang lebih baik.</string>
+    <string name="account">Akun</string>
+    <string name="app">Aplikasi</string>
+    <string name="display">Tampilan</string>
+    <string name="support">Dukungan</string>
+    <string name="free_and_premium">Gratis &amp; Premium</string>
+    <string name="terms_privacy_text">Dengan melakukan pesanan ini, Anda menyetujui Ketentuan Layanan dan Kebijakan Privasi. Langganan akan diperpanjang secara otomatis kecuali perpanjangan otomatis dimatikan setidaknya 24 jam sebelum akhir periode berjalan.</string>
+    <string name="discount">Hemat 33%</string>
+    <string name="terms_and_service">Ketentuan Layanan</string>
+    <string name="price">%s/Week after FREE 3-days Trial</string>
+    <string name="start_free_trial">Start Free Trial</string>
+    <string name="start_like_a_pro">Mulai Seperti Pro</string>
+    <string name="unlock_all_features">Buka Semua Fitur</string>
+    <string name="note_free_trial">Batalkan kapan saja. Langganan akan diperpanjang otomatis</string>
+    <string name="feature_image_pdf">Gambar ke PDF</string>
+    <string name="feature_edit_doc">Edit Dokumen</string>
+    <string name="feature_add_images_doc">Tambahkan Gambar ke Dokumen</string>
+    <string name="total">Total:</string>
+    <string name="not_have_file">Ups! Kami tidak dapat menemukan file apa pun.</string>
+    <string name="check_for_more_files">Silakan periksa penyimpanan Anda atau coba lagi.</string>
+    <string name="date_created">Tanggal dibuat</string>
+    <string name="successfully">Berhasil!</string>
+    <string name="rename_success">Nama file telah berhasil diubah.</string>
+    <string name="delete_file">Hapus File</string>
+    <string name="set_pdf_reader_as_your_default_all_file_viewer">Atur <b>%s</b> sebagai penampil %s default Anda</string>
+    <string name="all_file">Semua File</string>
+    <string name="allow_for_quick_easy_access">Izinkan "%s" untuk akses cepat dan mudah!</string>
+    <string name="home_screen_shortcuts">Pintasan Layar Utama</string>
+    <string name="enable">Aktifkan</string>
+    <string name="leave_the_app">Keluar dari aplikasi?</string>
+    <string name="exit_content">Apakah Anda yakin ingin keluar dari aplikasi?</string>
+    <string name="refresh_files">Tarik ke bawah untuk menyegarkan file</string>
+    <string name="update_required">Versi ini sudah usang. Silakan perbarui aplikasi</string>
+    <string name="select_from_recent">Pilih dari Terbaru</string>
+    <string name="select_from_mark">Pilih dari Tanda</string>
+    <string name="remove_mark">Hapus Tanda</string>
+    <string name="are_you_sure">Apakah Anda yakin?</string>
+    <string name="remove_mark_content">Apakah Anda yakin ingin menghapus tanda pada file ini?</string>
+    <string name="splash_content">Baca semua dokumen Anda di satu tempat</string>
+    <string name="subscribe_weekly">Berlangganan mingguan</string>
+    <string name="price_weekly">%s/Minggu</string>
+    <string name="go_setting">Ya, buka pengaturan</string>
+    <string name="allow_access">Izinkan akses ke file Anda</string>
+
+</resources>

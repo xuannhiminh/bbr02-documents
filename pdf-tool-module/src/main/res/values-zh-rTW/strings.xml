@@ -1,0 +1,96 @@
+<resources>
+    <string-array name="fontStyles" translatable="false">
+        <item>正常</item>
+        <item>粗體</item>
+        <item>斜體</item>
+        <item>底線</item>
+        <item>刪除線</item>
+        <item>粗斜體</item>
+    </string-array>
+    <string name="merge_pdf">合併PDF</string>
+    <string name="split_pdf">分割PDF</string>
+    <string name="invert_pdf">反轉</string>
+    <string name="merge">合併</string>
+    <string name="split">分割</string>
+    <string name="invert">反轉</string>
+    <string name="remove_duplicate_page">移除重複頁面</string>
+    <string name="add_password">新增密碼</string>
+    <string name="remove_password">移除密碼</string>
+    <string name="rotate_pages">旋轉頁面</string>
+    <string name="add_watermark">新增浮水印</string>
+    <string name="add_image">新增圖片</string>
+    <string name="add_image_2">新增圖片</string>
+    <string name="text_to_pdf">文字轉PDF</string>
+    <string name="image_to_pdf">圖片轉PDF</string>
+    <string name="pdf_to_image">PDF轉圖片</string>
+    <string name="manage">管理</string>
+    <string name="delete_content">您確定要刪除此頁嗎？</string>
+    <string name="insert_page">插入頁面</string>
+    <string name="blank_page">空白頁</string>
+    <string name="image">圖片</string>
+    <string name="page_size">頁面大小</string>
+    <string name="follow_previous">跟隨上一個</string>
+    <string name="letter">信紙</string>
+    <string name="legal">法律紙</string>
+    <string name="page_placeholder">輸入頁碼...</string>
+    <string name="storage_path" translatable="false">儲存路徑</string>
+    <string name="last_view">上次檢視</string>
+    <string name="file_size">檔案大小</string>
+    <string name="insert">插入</string>
+    <string name="extract">提取</string>
+    <string name="image_to_pdf_2">圖片轉PDF</string>
+    <string name="search_file">搜尋檔案</string>
+    <string name="choose_at_least">您必須至少選擇1項</string>
+    <string name="delete">刪除</string>
+    <string name="duplicate">複製</string>
+    <string name="enter_file_name">輸入檔案名稱</string>
+    <string name="password">密碼</string>
+    <string name="enter_password">輸入密碼</string>
+    <string name="ok">確定</string>
+    <string name="invalid_value">無效值</string>
+    <string name="save">儲存</string>
+    <string name="cancel">取消</string>
+    <string name="no_repetition_found">未找到重複項</string>
+    <string name="split_suggest">PDF將被分割為多個PDF。\n 格式範例：1-5,6-7,8,9</string>
+    <string name="error_page_number">無效頁碼</string>
+    <string name="error_page_range">無效範圍輸入</string>
+    <string name="error_invalid_input">無效輸入</string>
+    <string name="enter_page_split">輸入分割頁碼</string>
+    <string name="encryption">加密</string>
+    <string name="decryption">解密</string>
+    <string name="remove">移除</string>
+    <string name="add">新增</string>
+    <string name="remove_password_error">無法移除密碼</string>
+    <string name="rotate">旋轉</string>
+    <string name="angle_90">90</string>
+    <string name="angle_180">180</string>
+    <string name="angle_270">270</string>
+    <string name="watermark">浮水印</string>
+    <string name="enter_text">輸入文字</string>
+    <string name="enter_angle">輸入角度</string>
+    <string name="choose_color">選擇顏色</string>
+    <string name="enter_font_size">輸入字體大小</string>
+    <string name="choose_font_family">選擇字體</string>
+    <string name="choose_style">選擇樣式</string>
+    <string name="add_image_step_1">1. 選擇PDF檔案</string>
+    <string name="add_image_step_2">2. 選擇圖片</string>
+    <string name="select_image">選擇圖片</string>
+    <string name="select">選擇</string>
+    <string name="please_select_pdf_file">請選擇PDF檔案。</string>
+    <string name="please_select_image">請選擇照片</string>
+    <string name="organize_pages">整理頁面</string>
+    <string name="extract_image">提取圖片</string>
+    <string name="tool_done">完成</string>
+    <string name="file_is_protected">檔案已受保護</string>
+    <string name="file_not_protected">檔案未受保護</string>
+    <string name="info_add_image">您可以按住並拖曳以重新定位圖片</string>
+    <string name="info_merge">您可以向左滑動以刪除或複製檔案</string>
+    <string name="info_organize">拖曳以整理頁面。\n點擊頁面以刪除</string>
+    <string name="info_extract">點擊頁面以選擇</string>
+    <string name="done_2">完成！</string>
+    <string name="open">打開</string>
+    <string name="close">關閉</string>
+    <string name="file_created_at">檔案建立於</string>
+    <string name="success">成功</string>
+    <string name="sort">排序</string>
+</resources> 

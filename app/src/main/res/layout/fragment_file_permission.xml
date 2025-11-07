@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#F5F9FF">
+
+    <!-- Background Card -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/white">
+
+        <!-- Card chứa tiêu đề và PDF icon -->
+        <LinearLayout
+            android:id="@+id/backgroundCard"
+            android:layout_width="350dp"
+            android:layout_height="152dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_rectangle"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="15dp">
+
+            <!-- Header với icon back và tiêu đề -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_setting_back_black"
+                    app:tint="@color/text1"
+                    android:contentDescription="Back Arrow"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_access"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <!-- PDF Icon và tiêu đề -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_main_pdf"
+                    android:contentDescription="PDF Icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/text1"
+                    android:text="@string/pdf_reader"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Toggle Switch Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backgroundCard"
+            android:layout_marginTop="-40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/allow_permission"
+                android:textSize="18sp"
+                android:textColor="@color/text1"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="32dp"
+                android:src="@drawable/toggle_switch"
+                android:contentDescription="Toggle Switch"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/content_access"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text1"/>
+
+        <Button
+            android:id="@+id/go_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_share"
+            android:elevation="0dp"
+            android:text="@string/button_permission"
+            android:letterSpacing="0"
+            android:shadowColor="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="12dp"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="53dp"
+            android:stateListAnimator="@null"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

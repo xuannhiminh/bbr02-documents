@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/layout_total_files"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textFontWeight="500"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"
+            android:textColor="@color/text1" />
+
+        <TextView
+            android:id="@+id/tv_total_files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="0 "
+            android:textSize="12sp"
+            android:textFontWeight="400"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textSecondary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file"
+            android:textSize="12sp"
+            android:textFontWeight="400"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textSecondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/img_empty"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_empty_file"
+            android:contentDescription="@string/file_not_found" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_have_file"
+            android:textFontWeight="400"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textSecondary"
+            android:textSize="13sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/check_for_more_files"
+            android:textFontWeight="400"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textSecondary"
+            android:textSize="13sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_import_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/import_file"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_import_button"
+            android:drawableLeft="@drawable/icon_import_button"
+            android:drawablePadding="@dimen/_8sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recently_added_section"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingBottom="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/layout_total_files"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_list_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_file"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_loading_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationLoadingView"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            app:lottie_rawRes="@raw/file_loading"
+            app:lottie_loop="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

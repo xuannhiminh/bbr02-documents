@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_dialog_background"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <FrameLayout
+            android:id="@+id/layout_native"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frNativeAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sort_by"
+                android:textColor="@color/text1"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/icon_close"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_date"
+                android:paddingStart="12dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:buttonTint="@drawable/radio_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_created" />
+            <RadioButton
+                android:id="@+id/radio_date_desc"
+                android:paddingStart="12dp"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:buttonTint="@drawable/radio_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_by_date_desc" />
+
+            <RadioButton
+                android:id="@+id/radio_name_asc"
+                android:layout_width="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:paddingStart="12dp"
+                android:textSize="14sp"
+                android:buttonTint="@drawable/radio_button_selector"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_by_name_asc" />
+
+            <RadioButton
+                android:id="@+id/radio_name_desc"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:paddingStart="12dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@drawable/radio_button_selector"
+                android:text="@string/sort_by_name_desc" />
+
+            <RadioButton
+                android:id="@+id/radio_size_asc"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:paddingStart="12dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@drawable/radio_button_selector"
+                android:text="@string/sort_by_size_asc" />
+
+            <RadioButton
+                android:id="@+id/radio_size_desc"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:layout_width="wrap_content"
+                android:buttonTint="@drawable/radio_button_selector"
+                android:textSize="14sp"
+                android:paddingStart="12dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_by_size_desc" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="10dp">
+
+            <Button
+                android:theme="@style/Theme.PDFReaderProNegative"
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="32dp"
+                android:textColor="@color/text1"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:stateListAnimator="@null"
+                android:elevation="0dp"
+                android:letterSpacing="0"
+                android:background="@drawable/button_cancel"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_share"
+                android:elevation="0dp"
+                android:letterSpacing="0"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/yes"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="500"
+                android:stateListAnimator="@null"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

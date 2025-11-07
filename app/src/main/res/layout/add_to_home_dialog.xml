@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomDialogContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_dialog_background"
+    android:layout_gravity="bottom"
+    android:paddingHorizontal="@dimen/_20sdp"
+    android:paddingTop="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_48sdp">
+
+    <FrameLayout
+        android:id="@+id/layout_native"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <FrameLayout
+            android:id="@+id/frNativeAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_24sdp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/icon_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_home_screen"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/text1"
+        android:textFontWeight="700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/_8sdp"
+        />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_add_or_hold_the_widget_to_add_it_to_your_home_screen_instantly_choose_an_option_below"
+        android:textSize="14sp"
+        android:textFontWeight="400"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:textColor="@color/text1" />
+
+    <!-- Mid graphic or content (included from another layout) -->
+<!--    <include-->
+<!--        android:id="@+id/includeMidGraphic"-->
+<!--        layout="@layout/mid_graphic"-->
+<!--        android:layout_marginHorizontal="@dimen/_30sdp"-->
+<!--        android:layout_marginTop="@dimen/_12sdp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp" />
+
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_24sdp"/>
+
+
+    <!-- Bottom action row -->
+    <LinearLayout
+        android:id="@+id/bottomActionRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:stateListAnimator="@null"
+            android:theme="@style/Theme.PDFReaderProNegative"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/btn_background_element"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="@color/text1"
+            android:elevation="0dp"
+            android:text="@string/cancel" />
+        <Space
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="0dp" />
+        <Button
+            android:stateListAnimator="@null"
+            android:id="@+id/btnAdd"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:background="@drawable/bg_btn_share"
+            android:textAllCaps="false"
+            android:shadowColor="@android:color/transparent"
+            android:elevation="0dp"
+            android:textColor="@color/white_app"
+            android:text="@string/add" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.devtools.ksp'
+
+}
+
+android {
+    compileSdkVersion 35
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 35
+
+        consumerProguardFiles "consumer-rules.pro"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets.main {
+        jniLibs.srcDirs = ["libs"]
+    }
+    namespace 'office.file.ui'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/OfficeSub_Library.jar')
+    implementation files('libs/WheelPicker-1.1.3.aar')
+
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+
+    implementation 'androidx.core:core-ktx:1.16.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'com.akexorcist:localization:1.2.11'
+
+//    implementation project(path: ':ads-module')
+    implementation project(path: ':base-module')
+    implementation project(path: ':base-pdf-reader')
+
+    // FragmentNav
+    def nav_version = "2.8.0"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
+    // Wheel picker
+//    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.3'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    kapt 'com.github.bumptech.glide:compiler:4.16.0'
+
+    //ssp sdp
+    implementation 'com.intuit.ssp:ssp-android:1.1.1'
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+    // Crop IMG
+//    implementation 'com.isseiaoki:simplecropview:1.1.8'
+
+    //    Rating
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.0'
+
+    // Camera
+    implementation 'com.otaliastudios:cameraview:2.7.2'
+
+    // Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // Floating Expandable Button
+    implementation 'com.github.clans:fab:1.6.4'
+
+    /*https://github.com/daimajia/AndroidViewAnimations*/
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+    /*itext-pdf*/
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.madgag.spongycastle:core:1.58.0.0'
+
+    implementation 'commons-io:commons-io:2.20.0'
+}

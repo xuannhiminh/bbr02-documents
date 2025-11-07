@@ -1,0 +1,11 @@
+include ':base-module'
+include ':app'
+//include ':ads-module'
+include ':base-pdf-reader'
+include ':pdf-tool-module'
+include ':document_lib'
+
+//include ':pdf-revolution-module'
+//include ':jni'
+project(':base-module').projectDir = new File(rootDir, 'base-module/')
+rootProject.name = "BR02 All Document Reader Pro"

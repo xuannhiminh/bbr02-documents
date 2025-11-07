@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/document_background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/document_background_color"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/sodk_editor_toolbar_title" />
+
+        <include layout="@layout/sodk_editor_document_tab_layout" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ln_top_tool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_file"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/file" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_typo"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="@string/typo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_edit"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="@string/edit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_insert"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insert" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_page"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="@string/lib_page" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_annotate"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/annotate"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_format"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/format"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_formulas"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formulas"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ln_menu_slide"
+                    style="@style/TextTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slide"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="@integer/sodk_editor_page_width_percentage"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@id/doc_inner_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:id="@id/doc_cover"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/sodk_editor_transparent"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@id/doc_note_editor"
+                        android:layout_width="@dimen/sodk_editor_note_editor_width"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sodk_editor_note_bg"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <office.file.ui.editor.SOTextView
+                            android:id="@id/doc_note_editor_author"
+                            style="@style/sodk_editor_note_editor_textview_style"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                        <office.file.ui.editor.SOTextView
+                            android:id="@id/doc_note_editor_date"
+                            style="@style/sodk_editor_note_editor_textview_style"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16.0sp" />
+
+                        <office.file.ui.editor.SOEditText
+                            android:id="@id/doc_note_editor_text"
+                            style="@style/sodk_editor_note_editor_textview_style"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:imeOptions="flagNoFullscreen"
+                            android:minLines="6"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <office.file.ui.editor.SOTextView
+                        android:id="@id/footer_page_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/r4_black"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/document_text_color"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@id/pages_container"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="@integer/sodk_editor_pagelist_width_percentage"
+                android:orientation="vertical"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bannerAd"
+            android:visibility="gone"
+            
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/document_background_color"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/footer">
+
+        <include
+            android:id="@+id/fileTab"
+            layout="@layout/sodk_editor_toolbar_file" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ln_menu_editor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/_35sdp"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/rollback_view"
+                    layout="@layout/sodk_editor_toolbar_roolback" />
+
+                <include
+                    android:id="@+id/typoTab"
+                    layout="@layout/sodk_editor_toolbar_typography" />
+
+                <include
+                    android:id="@+id/editTab"
+                    layout="@layout/sodk_editor_toolbar_edit" />
+
+                <include
+                    android:id="@+id/insertTab"
+                    layout="@layout/sodk_editor_toolbar_insert" />
+
+                <include
+                    android:id="@+id/pagesTab"
+                    layout="@layout/sodk_editor_toolbar_page" />
+
+                <include
+                    android:id="@id/searchTab"
+                    layout="@layout/sodk_editor_search_toolbar" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/ln_menu_text_color"
+            layout="@layout/sodk_editor_toolbar_text_color"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/ln_menu_text_highlight"
+            layout="@layout/sodk_editor_toolbar_text_highlight"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_keyboard"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:background="@drawable/background_button_keyboard"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_lib_keyboard" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_out_full_screen"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_lib_exit_full" />
+</androidx.constraintlayout.widget.ConstraintLayout>

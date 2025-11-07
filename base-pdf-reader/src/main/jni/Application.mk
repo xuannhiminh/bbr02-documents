@@ -1,0 +1,6 @@
+APP_PLATFORM := android-21
+LOCAL_SHORT_COMMANDS := true
+APP_SHORT_COMMANDS := true
+APP_ABI = arm64-v8a,armeabi-v7a
+# Flexible page size support (16KB)
+APP_CPPFLAGS += -DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON

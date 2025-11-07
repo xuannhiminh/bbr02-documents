@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/_10sdp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/cut_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_cut"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copy_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_copy"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paste_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_paste"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_marginTop="@dimen/lib_toolbar_button_padding"
+        android:layout_marginBottom="@dimen/lib_toolbar_button_padding"
+        android:background="@color/line"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/align_left_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_align_left"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/align_center_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_align_center"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/align_right_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_align_right"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/align_justify_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_align_full"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_marginTop="@dimen/lib_toolbar_button_padding"
+        android:layout_marginBottom="@dimen/lib_toolbar_button_padding"
+        android:background="@color/line"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/list_bullets_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_list_bullets"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_numbers_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_list_number"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/indent_increase_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_indent_increase"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/indent_decrease_button"
+        android:layout_width="@dimen/_30sdp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_height="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_lib_indent_decrease"
+            android:padding="@dimen/lib_toolbar_button_padding"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

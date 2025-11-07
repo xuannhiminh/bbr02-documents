@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/r4_bg_stroke"
+    android:padding="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/left_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Theme.OfficeSub"
+            aigestudio:wheel_atmospheric="true"
+            aigestudio:wheel_curved="false"
+            aigestudio:wheel_cyclic="true"
+            aigestudio:wheel_indicator="false"
+            aigestudio:wheel_indicator_color="#C4C4C4"
+            aigestudio:wheel_item_align="center"
+            aigestudio:wheel_item_space="@dimen/_10sdp"
+            aigestudio:wheel_item_text_color="@color/text"
+            aigestudio:wheel_item_text_size="@dimen/_12ssp"
+            aigestudio:wheel_selected_item_text_color="@color/black" />
+
+    </LinearLayout>
+</LinearLayout>

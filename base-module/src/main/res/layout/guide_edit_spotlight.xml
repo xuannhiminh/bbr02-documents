@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ezteam.baseproject.dialog.SpotlightOverlayView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spotlight_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <!-- Mũi tên chỉ -->
+    <ImageView
+        android:id="@+id/arrow_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/icon_point_hand"
+        android:layout_gravity="top|start"
+        android:visibility="invisible" />
+
+    <!-- Hộp hướng dẫn nội dung -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="100dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/content_box"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/tv_guide_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.Click double in a word in dôcument"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+            <Button
+                android:id="@+id/btn_got_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btn_background"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</com.ezteam.baseproject.dialog.SpotlightOverlayView>

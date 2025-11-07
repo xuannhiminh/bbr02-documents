@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".activity.PdfDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.ezteam.ezpdflib.widget.zoomview.ZoomLayout
+            android:id="@+id/zoomlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/page_color"
+            app:alignment="center"
+            app:animationDuration="280"
+            app:flingEnabled="false"
+            app:hasClickableChildren="true"
+            app:horizontalPanEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_toolbar"
+            app:maxZoom="3.5"
+            app:maxZoomType="zoom"
+            app:minZoom="1.0"
+            app:minZoomType="realZoom"
+            app:scrollEnabled="true"
+            app:transformation="centerInside"
+            app:transformationGravity="auto"
+            app:twoFingersScrollEnabled="true"
+            app:zoomEnabled="true">
+
+            <RelativeLayout
+                android:id="@+id/rn_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_60sdp"
+                android:background="@color/page_color"
+                android:clickable="false">
+
+                <com.ezteam.ezpdflib.widget.MyRecyclerView
+                    android:id="@+id/rcv_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/lib_item_page" />
+            </RelativeLayout>
+        </com.ezteam.ezpdflib.widget.zoomview.ZoomLayout>
+
+        <include
+            android:id="@+id/ll_toolbar"
+            layout="@layout/lib_layout_detail_toolbar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_page"
+            style="@style/textDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/lib_bg_primary_alpha10_radius"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toTopOf="@+id/crv_bottom_control"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="1224/4221" />
+
+<!--        <View-->
+<!--            android:id="@+id/view_mask_page"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="@dimen/_1sdp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintDimensionRatio="H,1:1.414"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crv_bottom_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@drawable/shadow_top" />
+
+                <SeekBar
+                    android:id="@+id/sb_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@null"
+                    android:padding="@dimen/_8sdp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_color"
+                    android:thumb="@drawable/ic_thumb_seekbar" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/navigation_detail"
+                    style="@style/textDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    app:itemIconTint="@color/text_bottomview"
+                    app:itemTextColor="@color/text_bottomview"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/menu_bottom_detail" />
+                <FrameLayout
+                    android:id="@+id/layout_native"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent">
+                    <FrameLayout
+                        android:id="@+id/frNativeAds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </FrameLayout>
+                </FrameLayout>
+                <RelativeLayout
+                    android:id="@+id/banner_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent">
+                    <include
+                        android:id="@+id/shimmer_container_banner"
+                        layout="@layout/layout_banner" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

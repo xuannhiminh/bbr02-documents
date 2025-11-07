@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id" translatable="false">1268428941718722</string>
+    <string name="facebook_client_token" translatable="false">4ae358855df86802f55e029661846c09</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-8246658225803275~2552734074</string>
+
+    <string name="native_popup_all" translatable="false"></string>
+    <string name="native_intro_1" translatable="false"></string>
+    <string name="native_intro_2" translatable="false"></string>
+    <string name="native_intro_3" translatable="false"></string>
+
+</resources>

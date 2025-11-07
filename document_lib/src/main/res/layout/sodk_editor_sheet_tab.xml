@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_2sdp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:id="@id/sheetTab"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <office.file.ui.editor.SOTextView
+                android:id="@id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sodk_editor_transparent"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Sheet 1"
+                android:textColor="@drawable/sodk_editor_sheet_tab_text"
+                android:textSize="@dimen/_12ssp" />
+
+            <Space
+                android:id="@id/spacer"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="fill_parent" />
+
+            <office.file.ui.editor.SOTextView
+                android:id="@id/button2"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@color/sodk_editor_transparent"
+                android:clickable="true"
+                android:gravity="center"
+                android:scaleY="0.9"
+                android:text="X"
+                android:textColor="@drawable/sodk_editor_sheet_tab_text"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</merge>

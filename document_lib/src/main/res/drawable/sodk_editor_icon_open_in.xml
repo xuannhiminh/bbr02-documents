@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/sodk_editor_icon_tint" android:height="50.0dip" android:width="50.0dip" android:viewportWidth="50.0" android:viewportHeight="50.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M36.801,26.869 v9.601c0,0.6-0.486,1.086-1.085,1.086H12.121c-0.599,0-1.085-0.486-1.085-1.086V12.875c0-0.6,0.486-1.086,1.085-1.086h11.286" android:strokeColor="#ff333333" android:strokeWidth="1.56" android:strokeMiterLimit="10.0" />
+    <path android:pathData="M 33.42 8.107 L 41.235 16.035 L 33.364 23.454 " android:strokeColor="#ff333333" android:strokeWidth="1.56" />
+    <path android:pathData="M40.443,15.752 c0,0-13.591-1.817-16.473,4.985" android:strokeColor="#ff333333" android:strokeWidth="1.56" />
+</vector>
