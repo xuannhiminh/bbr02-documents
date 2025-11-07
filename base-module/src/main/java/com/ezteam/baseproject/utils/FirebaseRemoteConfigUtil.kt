@@ -57,7 +57,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val DEFAULT_TYPE_ADS_DETAIL = 0
         private const val DEFAULT_ADS_CONFIG = """
             {
-              "open_splash": "ca-app-pub-3940256099942544/3419835294",
+              "open_splash": "ca-app-pub-3940256099942544/9257395921",
               "inter_splash": "ca-app-pub-3940256099942544/1033173712",
               "native_language": "ca-app-pub-3940256099942544/2247696110",
               "banner_home": "ca-app-pub-3940256099942544/6300978111",
@@ -66,7 +66,7 @@ class FirebaseRemoteConfigUtil private constructor() {
               "native_filedetail": "ca-app-pub-3940256099942544/2247696110",
               "inter_filedetail": "ca-app-pub-3940256099942544/1033173712",
               "banner_filedetail": "ca-app-pub-3940256099942544/6300978111",
-              "open_all": "ca-app-pub-3940256099942544/3419835294",
+              "open_all": "ca-app-pub-3940256099942544/9257395921",
               "native_bot_selectfiles": "ca-app-pub-3940256099942544/2247696110",
               "native_between_files_selectfiles": "ca-app-pub-3940256099942544/2247696110",
               "inter_createpdf": "ca-app-pub-3940256099942544/1033173712",

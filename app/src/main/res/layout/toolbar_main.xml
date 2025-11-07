@@ -118,7 +118,7 @@
             <ImageView
                 android:layout_width="@dimen/_59sdp"
                 android:layout_height="@dimen/_59sdp"
-                android:background="@drawable/bg_circle_all"
+                android:background="@drawable/bg_circle_pdf"
                 android:paddingVertical="@dimen/_12sdp"
                 android:paddingHorizontal="@dimen/_16sdp"
                 android:src="@drawable/icon_main_pdf"
@@ -147,7 +147,7 @@
             <ImageView
                 android:layout_width="@dimen/_59sdp"
                 android:layout_height="@dimen/_59sdp"
-                android:background="@drawable/bg_circle_all"
+                android:background="@drawable/bg_circle_word"
                 android:paddingVertical="@dimen/_12sdp"
                 android:paddingHorizontal="@dimen/_16sdp"
                 android:src="@drawable/icon_main_word"
@@ -176,7 +176,7 @@
             <ImageView
                 android:layout_width="@dimen/_59sdp"
                 android:layout_height="@dimen/_59sdp"
-                android:background="@drawable/bg_circle_all"
+                android:background="@drawable/bg_circle_excel"
                 android:paddingVertical="@dimen/_12sdp"
                 android:paddingHorizontal="@dimen/_16sdp"
                 android:src="@drawable/icon_main_excel"
@@ -205,7 +205,7 @@
             <ImageView
                 android:layout_width="@dimen/_59sdp"
                 android:layout_height="@dimen/_59sdp"
-                android:background="@drawable/bg_circle_all"
+                android:background="@drawable/bg_circle_ppt"
                 android:paddingVertical="@dimen/_12sdp"
                 android:paddingHorizontal="@dimen/_16sdp"
                 android:src="@drawable/icon_main_ppt"
@@ -234,7 +234,7 @@
             <ImageView
                 android:layout_width="@dimen/_59sdp"
                 android:layout_height="@dimen/_59sdp"
-                android:background="@drawable/bg_circle_all"
+                android:background="@drawable/bg_circle_txt"
                 android:paddingVertical="@dimen/_12sdp"
                 android:paddingHorizontal="@dimen/_16sdp"
                 android:src="@drawable/icon_main_txt"

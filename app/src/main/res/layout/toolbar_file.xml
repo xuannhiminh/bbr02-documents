@@ -65,11 +65,12 @@
     </LinearLayout>
     <!-- Menu dưới header -->
     <LinearLayout
+        android:id="@+id/choose_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/choose_type"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:weightSum="6">
 
         <LinearLayout
             android:id="@+id/tv_all_container"
@@ -95,10 +96,9 @@
 
             <View
                 android:id="@+id/underline_all"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/red"
-                android:layout_gravity="center"
                 android:visibility="gone"/>
         </LinearLayout>
 
@@ -116,19 +116,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:text="@string/pdf"
                 android:fontFamily="sans-serif"
                 android:textFontWeight="500"
-                android:text="@string/pdf"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:paddingVertical="8dp" />
 
             <View
                 android:id="@+id/underline_pdf"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/dark_gray"
-                android:layout_gravity="center"
                 android:visibility="gone"/>
         </LinearLayout>
 
@@ -146,19 +145,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:text="@string/word"
                 android:fontFamily="sans-serif"
                 android:textFontWeight="500"
-                android:text="@string/word"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:paddingVertical="8dp" />
 
             <View
                 android:id="@+id/underline_word"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/dark_gray"
-                android:layout_gravity="center"
                 android:visibility="gone"/>
         </LinearLayout>
         <LinearLayout
@@ -184,10 +182,9 @@
 
             <View
                 android:id="@+id/underline_excel"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/dark_gray"
-                android:layout_gravity="center"
                 android:visibility="gone"/>
         </LinearLayout>
         <LinearLayout
@@ -213,10 +210,9 @@
 
             <View
                 android:id="@+id/underline_ppt"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/dark_gray"
-                android:layout_gravity="center"
                 android:visibility="gone"/>
         </LinearLayout>
         <LinearLayout
@@ -242,10 +238,9 @@
 
             <View
                 android:id="@+id/underline_txt"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/dark_gray"
-                android:layout_gravity="center"
                 android:visibility="gone"/>
         </LinearLayout>
 
