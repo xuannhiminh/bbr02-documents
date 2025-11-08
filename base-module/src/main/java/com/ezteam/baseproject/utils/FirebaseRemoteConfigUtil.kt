@@ -55,6 +55,10 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val DEFAULT_NOTIFICATION_OUT_APP_INTERVAL_SECOND = 10
         private const val DEFAULT_TIME_DELAY_SHOWING_EXTEND_ADS = 30
         private const val DEFAULT_TYPE_ADS_DETAIL = 0
+        private const val DEFAULT_FREE_TRIAL_BUTTON_TEXT = "Start free trial"
+        private const val DEFAULT_IAP_BUTTON_TEXT = "Start now"
+        private const val DEFAULT_FREE_TRIAL_EXPLAIN_TEXT = "%s/Week after 3 days FREE trial"
+        private const val DEFAULT_IAP_EXPLAIN_TEXT =        "%s/week, feel FREE to cancel"
         private const val DEFAULT_ADS_CONFIG = """
             {
               "open_splash": "ca-app-pub-3940256099942544/9257395921",
@@ -128,6 +132,11 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val REMOTE_KEY_IS_SHOW_NOTIFICATION_OUT_APP = "is_show_notification_out_app"
         private const val REMOTE_KEY_ADS_CONFIG = "ads_config"
         private const val REMOTE_KEY_TIME_DELAY_SHOWING_EXTEND_ADS = "time_delay_showing_extend_ads"
+        private const val REMOTE_KEY_FREE_TRIAL_BUTON_TEXT = "free_trial_button_text"
+        private const val REMOTE_KEY_IAP_BUTON_TEXT = "iap_button_text"
+        private const val REMOTE_KEY_IAP_EXPLAIN_TEXT = "iap_explain_text"
+        private const val REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT = "free_trial_explain_text"
+
 
 
 
@@ -198,7 +207,11 @@ class FirebaseRemoteConfigUtil private constructor() {
                 REMOTE_KEY_ADS_CONFIG to DEFAULT_ADS_CONFIG,
                 REMOTE_KEY_TIME_DELAY_SHOWING_EXTEND_ADS to DEFAULT_TIME_DELAY_SHOWING_EXTEND_ADS,
                 REMOTE_KEY_NOTIFICATION_OUT_APP_INTERVAL_SECOND to DEFAULT_NOTIFICATION_OUT_APP_INTERVAL_SECOND,
-                REMOTE_KEY_IS_SHOW_NOTIFICATION_OUT_APP to DEFAULT_IS_SHOW_NOTIFICATION_OUT_APP
+                REMOTE_KEY_IS_SHOW_NOTIFICATION_OUT_APP to DEFAULT_IS_SHOW_NOTIFICATION_OUT_APP,
+                REMOTE_KEY_FREE_TRIAL_BUTON_TEXT to DEFAULT_FREE_TRIAL_BUTTON_TEXT,
+                REMOTE_KEY_IAP_BUTON_TEXT to DEFAULT_IAP_BUTTON_TEXT,
+                REMOTE_KEY_IAP_EXPLAIN_TEXT to DEFAULT_IAP_EXPLAIN_TEXT,
+                REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT to DEFAULT_FREE_TRIAL_EXPLAIN_TEXT
 
             )
         )
@@ -369,6 +382,35 @@ class FirebaseRemoteConfigUtil private constructor() {
             } catch (_: Exception) {
                 ""
             }
+        }
+    }
+    fun getFreeTrialButtonText(): String {
+        return firebaseRemoteConfig.getString(REMOTE_KEY_FREE_TRIAL_BUTON_TEXT).ifBlank { DEFAULT_FREE_TRIAL_BUTTON_TEXT}
+    }
+    fun getIapButtonText(): String {
+        return firebaseRemoteConfig.getString(REMOTE_KEY_IAP_BUTON_TEXT).ifBlank { DEFAULT_IAP_BUTTON_TEXT}
+    }
+    fun getIapExplainText(price: String): String {
+        val explainTextRaw = firebaseRemoteConfig.getString(REMOTE_KEY_IAP_EXPLAIN_TEXT)
+        val explainText = explainTextRaw.ifBlank { DEFAULT_IAP_EXPLAIN_TEXT }
+
+        return try {
+            String.format(java.util.Locale.US, explainText, price)
+        } catch (e: Exception) {
+            // Fallback: if the template contains `%s`, replace occurrences; otherwise return the template as-is
+            if (explainText.contains("%s")) explainText.replace("%s", price) else explainText
+        }
+    }
+
+    fun getFreeTrialExplainText(price: String): String {
+        val explainTextRaw = firebaseRemoteConfig.getString(REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT)
+        val explainText = explainTextRaw.ifBlank { DEFAULT_FREE_TRIAL_EXPLAIN_TEXT }
+
+        return try {
+            String.format(java.util.Locale.US, explainText, price)
+        } catch (e: Exception) {
+            // Fallback: if the template contains `%s`, replace occurrences; otherwise return the template as-is
+            if (explainText.contains("%s")) explainText.replace("%s", price) else explainText
         }
     }
 }

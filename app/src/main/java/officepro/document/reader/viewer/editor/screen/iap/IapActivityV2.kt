@@ -10,7 +10,6 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentActivity
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
 import com.ezteam.baseproject.iapLib.v3.BillingProcessor
@@ -24,14 +23,12 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.nlbn.ads.callback.AdCallback
 import com.nlbn.ads.util.Admob
-import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.databinding.ActivityIap3Binding
 import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
 import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
 import officepro.document.reader.viewer.editor.utils.AppUtils
-import java.util.Locale
 import com.google.firebase.analytics.FirebaseAnalytics.Event;
 import com.google.firebase.analytics.FirebaseAnalytics.Param;
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
@@ -103,15 +100,15 @@ class IapActivityV2 : PdfBaseActivity<ActivityIap3Binding>() {
 
             if (weeklyOffer != null) {
                 val weeklyPhase = weeklyOffer.pricingPhases.pricingPhaseList.firstOrNull { it.priceAmountMicros > 0 }
-                val monthlyPriceText = weeklyPhase?.formattedPrice ?: "-"
+                val weeklyPriceText = weeklyPhase?.formattedPrice ?: "-"
                 val hasFreeTrial = pd.subscriptionOfferDetails
                     ?.any { it.basePlanId == IAPUtils.KEY_PREMIUM_WEEKLY_PLAN && !it.offerId.isNullOrEmpty() } ?: false
                 if (hasFreeTrial) {
-                    binding.price.text = "$monthlyPriceText/Week after FREE 3-day Trial"
-                    binding.tvFreeTrial.text = getString(R.string.free_trial)
+                    binding.price.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialExplainText(weeklyPriceText)
+                    binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialButtonText()
                 } else {
-                    binding.price.text = "Just $monthlyPriceText/week"
-                    binding.tvFreeTrial.text = "Start now"
+                    binding.price.text = FirebaseRemoteConfigUtil.getInstance().getIapExplainText(weeklyPriceText)
+                    binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getIapButtonText()
                 }
 
             }
