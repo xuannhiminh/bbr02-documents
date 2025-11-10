@@ -8,11 +8,6 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.os.CountDownTimer
-import android.os.Looper
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.LayoutInflater
 import android.window.OnBackInvokedDispatcher
@@ -62,6 +57,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
+import officepro.document.reader.viewer.editor.utils.CountryDetector
 import org.koin.android.ext.android.inject
 import kotlin.coroutines.resume
 
@@ -444,19 +440,24 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
 
                         val totalParallelTime = System.currentTimeMillis() - parallelStartTime
                         Log.i(TAG, "Both billing and remote config completed in $totalParallelTime ms. Remote config success: $remoteConfigSuccess")
-
-                        when (FirebaseRemoteConfigUtil.getInstance().getTypeOfStartUp()) {
-                            FirebaseRemoteConfigUtil.Companion.StartUpType.ADS_OPEN_IAP_LANGUAGE.value -> {
-                                loadAppOpenAds()
-                            }
-                            FirebaseRemoteConfigUtil.Companion.StartUpType.IAP_ADS_INTER_LANGUAGE.value -> {
-                                TemporaryStorage.interAdPreloaded = loadInterstitialAd(FirebaseRemoteConfigUtil.getInstance().getAdsConfigValue("inter_splash"))
-                            }
-                            FirebaseRemoteConfigUtil.Companion.StartUpType.ADS_OPEN_LANGUAGE.value -> {
-                                loadAppOpenAds()
-                            }
-                            else -> {
-                                loadAppOpenAds()
+                        val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
+                        if (!isNotVn.isNullOrEmpty() && "false" == isNotVn) { // if is Vietnam
+                            Log.d(TAG, "open open ads for god")
+                            loadAppOpenAds()
+                        } else {
+                            when (FirebaseRemoteConfigUtil.getInstance().getTypeOfStartUp()) {
+                                FirebaseRemoteConfigUtil.Companion.StartUpType.ADS_OPEN_IAP_LANGUAGE.value -> {
+                                    loadAppOpenAds()
+                                }
+                                FirebaseRemoteConfigUtil.Companion.StartUpType.IAP_ADS_INTER_LANGUAGE.value -> {
+                                    TemporaryStorage.interAdPreloaded = loadInterstitialAd(FirebaseRemoteConfigUtil.getInstance().getAdsConfigValue("inter_splash"))
+                                }
+                                FirebaseRemoteConfigUtil.Companion.StartUpType.ADS_OPEN_LANGUAGE.value -> {
+                                    loadAppOpenAds()
+                                }
+                                else -> {
+                                    loadAppOpenAds()
+                                }
                             }
                         }
                     }
@@ -470,7 +471,11 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
 
                     Log.i("SplashActivity", "Splash flow completed in ${System.currentTimeMillis() - startTime} ms")
                     //showAdsInterstitial(interstitialAd)
-                    when (FirebaseRemoteConfigUtil.getInstance().getTypeOfStartUp()) {
+                    val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
+                    if (!isNotVn.isNullOrEmpty() && "false" == isNotVn) { // if is Vietnam
+                        Log.d(TAG, "open showAdsOpenAndPreLoadNativeAds for god")
+                        showAdsOpenAndPreLoadNativeAds()
+                    } else when (FirebaseRemoteConfigUtil.getInstance().getTypeOfStartUp()) {
                         FirebaseRemoteConfigUtil.Companion.StartUpType.ADS_OPEN_IAP_LANGUAGE.value -> {
                             showAdsOpenAndPreLoadNativeAds()
                         }
@@ -611,8 +616,12 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
         lifecycleScope.launch {
             val showIap = withContext(Dispatchers.IO) {
                 try {
+                    val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
                     val startUpType = FirebaseRemoteConfigUtil.getInstance().getTypeOfStartUp()
-                    if (startUpType == FirebaseRemoteConfigUtil.Companion.StartUpType.ADS_OPEN_IAP_LANGUAGE.value ||
+                    if (!isNotVn.isNullOrEmpty() && "false" == isNotVn) { // if is vn
+                        Log.d("SplashActivity", "not show IAP Activity for god")
+                        false
+                    } else if (startUpType == FirebaseRemoteConfigUtil.Companion.StartUpType.ADS_OPEN_IAP_LANGUAGE.value ||
                         startUpType == FirebaseRemoteConfigUtil.Companion.StartUpType.IAP_ADS_INTER_LANGUAGE.value) {
                         val premium = IAPUtils.isPremium()            // SharedPreferences / disk
                         val iabAvailable = BillingProcessor.isIabServiceAvailable(this@SplashActivity) // PackageManager / IPC
@@ -629,7 +638,11 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
                     putExtra("${packageName}.isFromSplash", true)
                 }
                 try {
-                    when (FirebaseRemoteConfigUtil.getInstance().getIapScreenType()) {
+                    val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
+                    if (!isNotVn.isNullOrEmpty() && "false" == isNotVn) { // if is Vietnam
+                        Log.d("SplashActivity", "Starting IAP Activity for god")
+                        IapActivity.start(this@SplashActivity)
+                    } else when (FirebaseRemoteConfigUtil.getInstance().getIapScreenType()) {
                         0 -> IapActivityV2.start(this@SplashActivity)
                         1 -> IapActivity.start(this@SplashActivity)
                         else -> IapActivityV2.start(this@SplashActivity)
@@ -837,11 +850,11 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
 //                    Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
 //                requestNotificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
 //            } else {
-//                Log.d("MainActivity", "Notification permission granted, no need to request")
+//                Log.d("SplashActivity", "Notification permission granted, no need to request")
 //                onNotificationPermissionGranted()
 //            }
 //        } else {
-//            Log.d("MainActivity", "Notification permission not required for SDK < 33")
+//            Log.d("SplashActivity", "Notification permission not required for SDK < 33")
 //            if (ContextCompat.checkSelfPermission(this,
 //                    Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
 //                onNotificationPermissionDenied()
@@ -853,7 +866,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
 
     private fun onNotificationPermissionGranted() {
         PreferencesUtils.putBoolean("NOTIFICATION", true)
-        Log.d("MainActivity", "Notification permission granted")
+        Log.d("SplashActivity", "Notification permission granted")
         try {
             startForegroundService( Intent(this, NotificationForegroundService::class.java))
         } catch (e: Exception) {
@@ -880,7 +893,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
         } catch (e: Exception) {
             Log.e("SplashActivity", "Error starting service: ${e.message}")
         }
-        Log.e("MainActivity", "Notification permission denied")
+        Log.e("SplashActivity", "Notification permission denied")
 //        loadAdsAndGoToNextScreen()
     }
 }

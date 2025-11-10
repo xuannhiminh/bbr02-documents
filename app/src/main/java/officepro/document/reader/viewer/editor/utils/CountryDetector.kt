@@ -3,6 +3,7 @@ package officepro.document.reader.viewer.editor.utils
 import android.content.Context
 import android.telephony.TelephonyManager
 import android.util.Log
+import officepro.document.reader.viewer.editor.BuildConfig
 import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
 import java.net.HttpURLConnection
 import java.net.URL
@@ -17,6 +18,11 @@ object CountryDetector {
     const val KEY_IS_NOT_VN = "is_not_vn"
 
     suspend fun checkIfNotVN(context: Context): Boolean {
+        if (BuildConfig.DEBUG) {
+            Log.d("CountryDetector", "checkIfNotVN: DEBUG build, returning true")
+            PreferencesHelper.putString(KEY_IS_NOT_VN, "true")
+            return true
+        }
         Log.d("CountryDetector", "checkIfNotVN: called")
         val isNotVN = PreferencesHelper.getString(KEY_IS_NOT_VN, null)
 

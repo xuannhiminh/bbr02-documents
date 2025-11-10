@@ -123,6 +123,7 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import com.ezteam.baseproject.utils.UrlObf
 import officepro.document.reader.viewer.editor.dialog.RequestAllFilePermissionDialog
+import officepro.document.reader.viewer.editor.utils.CountryDetector
 import org.jsoup.Jsoup
 
 
@@ -1179,7 +1180,11 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
 
         binding.toolbar.ivIap.setOnClickListener {
             logEvent("iap_press")
-            when (FirebaseRemoteConfigUtil.getInstance().getIapScreenType()) {
+            val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
+            if (!isNotVn.isNullOrEmpty() && "false" == isNotVn) { // if is Vietnam
+                Log.d(TAG, "open IapActivity for god")
+                IapActivity.start(this)
+            } else when (FirebaseRemoteConfigUtil.getInstance().getIapScreenType()) {
                 0 -> IapActivityV2.start(this)
                 1 -> IapActivity.start(this)
                 else -> IapActivityV2.start(this)
