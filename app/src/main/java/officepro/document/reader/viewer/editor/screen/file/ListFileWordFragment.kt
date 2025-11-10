@@ -60,7 +60,7 @@ open class ListFileWordFragment(private val filesLiveData: LiveData<List<FileMod
                 }
             }
         }
-        viewModel.loadTotalFiles("WORD  ").observe(this) { totalNumber ->
+        viewModel.loadTotalFiles("WORD").observe(this) { totalNumber ->
             binding.tvTotalFiles.text = "$totalNumber "
             val recentlyAddedSection = binding.recentlyAddedSection
             val params = recentlyAddedSection.layoutParams as ConstraintLayout.LayoutParams

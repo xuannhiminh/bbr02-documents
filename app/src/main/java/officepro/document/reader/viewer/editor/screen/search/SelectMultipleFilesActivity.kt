@@ -190,6 +190,7 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
             FileTab.WORD -> R.drawable.icon_main_word
             FileTab.PPT ->  R.drawable.icon_main_ppt
             FileTab.EXCEL ->  R.drawable.icon_main_excel
+            FileTab.TXT ->  R.drawable.icon_main_txt
             else ->  R.drawable.icon_main_all
         }
         val fileName = when (fileTab) {
@@ -197,6 +198,7 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
             FileTab.WORD -> R.string.word
             FileTab.PPT ->  R.string.ppt
             FileTab.EXCEL ->  R.string.excel
+            FileTab.TXT ->  R.string.txt
             else ->  R.string.all
         }
 
@@ -226,6 +228,7 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
             FileTab.WORD -> "WORD"
             FileTab.PPT ->  "PPT"
             FileTab.EXCEL ->  "EXCEL"
+            FileTab.TXT ->  "TXT"
             else ->  "ALL"
         }
         viewModel.loadTotalFiles(fileType).observe(this) { totalNumber ->

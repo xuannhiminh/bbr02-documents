@@ -361,11 +361,6 @@ class ListFileTypeActivity : PdfBaseActivity<ActivityListFileTypeBinding>() {
 
             }
         }
-        binding.btnImportFile.setOnClickListener {
-             AppOpenManager.getInstance().disableAppResume()
-                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
-            browserFile()
-        }
         binding.swipeRefresh.setOnRefreshListener {
             binding.swipeRefresh.isRefreshing = false
             TemporaryStorage.isShowedReloadGuideInThisSession = true

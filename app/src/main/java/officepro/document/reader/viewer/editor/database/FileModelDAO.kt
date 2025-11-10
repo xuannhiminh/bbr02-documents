@@ -213,6 +213,7 @@ interface FileModelDAO {
             OR (:fileType = 'PDF' AND path LIKE '%.pdf')
             OR (:fileType = 'WORD' AND (path LIKE '%.doc' OR path LIKE '%.docx'))
             OR (:fileType = 'PPT' AND (path LIKE '%.ppt' OR path LIKE '%.pptx'))
+            OR (:fileType = 'TXT' AND path LIKE '%.txt')
             OR (:fileType = 'EXCEL' AND (path LIKE '%.xls' OR path LIKE '%.xlsx' OR path LIKE '%.xlsm'))
           )
     """)
@@ -222,6 +223,7 @@ interface FileModelDAO {
         WHERE 
             :fileType = 'ALL'
             OR (:fileType = 'PDF' AND path LIKE '%.pdf')
+            OR (:fileType = 'TXT' AND path LIKE '%.txt')
             OR (:fileType = 'WORD' AND (path LIKE '%.doc' OR path LIKE '%.docx'))
             OR (:fileType = 'PPT' AND (path LIKE '%.ppt' OR path LIKE '%.pptx'))
             OR (:fileType = 'EXCEL' AND (path LIKE '%.xls' OR path LIKE '%.xlsx' OR path LIKE '%.xlsm'))

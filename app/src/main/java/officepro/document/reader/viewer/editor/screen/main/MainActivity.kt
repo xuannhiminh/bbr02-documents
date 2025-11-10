@@ -132,6 +132,7 @@ private const val PDF_FILES_FRAGMENT_INDEX = 1
 private const val WORD_FILES_FRAGMENT_INDEX = 2
 private const val PPT_FILES_FRAGMENT_INDEX = 3
 private const val EXCEL_FILES_FRAGMENT_INDEX = 4
+private const val TXT_FILES_FRAGMENT_INDEX = 5
 
 class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
     private val TAG = "MainActivity"
@@ -811,6 +812,7 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
                     val isPremium = IAPUtils.isPremium()
                     binding.toolbar.tvTitle.text =  handleAppNameSpannable(showIcon = isPremium)
                     binding.toolbar.ivIap.visibility = if (isPremium) View.GONE else View.VISIBLE
+                    binding.layoutNative.visibility = if (isPremium) View.GONE else View.VISIBLE
 
                     if (isPremium) {
                         binding.bannerContainer.visibility = View.GONE
@@ -1463,6 +1465,7 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
             WORD_FILES_FRAGMENT_INDEX -> FileTab.WORD
             EXCEL_FILES_FRAGMENT_INDEX -> FileTab.EXCEL
             PPT_FILES_FRAGMENT_INDEX -> FileTab.PPT
+            TXT_FILES_FRAGMENT_INDEX -> FileTab.TXT
             else -> FileTab.ALL_FILE
         }
 

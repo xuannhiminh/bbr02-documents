@@ -202,6 +202,7 @@ class MainViewModel(
                 FileTab.WORD -> "WORD"
                 FileTab.PPT -> "PPT"
                 FileTab.EXCEL -> "EXCEL"
+                FileTab.TXT -> "TXT"
                 else -> "ALL"
             }
             emitSource(repository.getNumberOfTodayAddedFile(condition))

@@ -93,16 +93,6 @@
             android:textSize="13sp"
             android:gravity="center"/>
 
-        <Button
-            android:id="@+id/btn_import_file"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/import_file"
-            android:textColor="@android:color/white"
-            android:background="@drawable/bg_import_button"
-            android:drawableLeft="@drawable/icon_import_button"
-            android:drawablePadding="@dimen/_8sdp"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/recently_added_section"
