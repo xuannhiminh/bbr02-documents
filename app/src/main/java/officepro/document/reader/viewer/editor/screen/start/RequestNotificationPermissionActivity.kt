@@ -22,6 +22,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
 import com.ezteam.baseproject.utils.PreferencesUtils
+import com.ezteam.baseproject.utils.TemporaryStorage
 import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.common.PresKey
@@ -184,7 +185,8 @@ class RequestNotificationPermissionActivity : PdfBaseActivity<ActivityNotificati
                     startActivity(intent)
                 }
                 waitingNotificationResult = true
-                AppOpenManager.getInstance().disableAppResume()
+                 AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
             } else {
                 requestNotificationPermissionFlow()
             }
@@ -199,7 +201,8 @@ class RequestNotificationPermissionActivity : PdfBaseActivity<ActivityNotificati
                     startActivity(intent)
                 }
                 waitingNotificationResult = true
-                AppOpenManager.getInstance().disableAppResume()
+                 AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
             } else {
                 onNotificationPermissionGranted()
             }
@@ -262,7 +265,8 @@ class RequestNotificationPermissionActivity : PdfBaseActivity<ActivityNotificati
     }
 
     private fun openMain() {
-        AppOpenManager.getInstance().disableAppResume()
+         AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
         MainActivity.start(this@RequestNotificationPermissionActivity);
         finish()
     }

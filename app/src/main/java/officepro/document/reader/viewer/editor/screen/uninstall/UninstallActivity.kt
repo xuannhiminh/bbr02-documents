@@ -62,7 +62,8 @@ class UninstallActivity : PdfBaseActivity<ActivityUninstallBinding>() {
     private lateinit var firebaseAnalytics: FirebaseAnalytics
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppOpenManager.getInstance().disableAppResume()
+         AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
         super.onCreate(savedInstanceState)
     }
 

@@ -77,7 +77,8 @@ class DefaultReaderUninstallDialog : DialogFragment() {
                     startActivity(intent)
                     listener.invoke(Unit) // Call the listener if needed
                     listener = {}
-                    AppOpenManager.getInstance().disableAppResume()
+                     AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                 } catch (e: Exception) {
                     Log.e("DefaultReaderUninstallDialog", "Error opening app settings: ${e.message}")
                     // Handle the error, e.g., show a toast

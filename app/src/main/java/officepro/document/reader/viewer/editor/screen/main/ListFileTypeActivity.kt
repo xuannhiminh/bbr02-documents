@@ -337,7 +337,8 @@ class ListFileTypeActivity : PdfBaseActivity<ActivityListFileTypeBinding>() {
             }
         }
         binding.buttonCreate.setOnClickListener {
-            AppOpenManager.getInstance().disableAppResume()
+             AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
             browserFile()
         }
         binding.toolbar.ivCheck.setOnClickListener {
@@ -361,7 +362,8 @@ class ListFileTypeActivity : PdfBaseActivity<ActivityListFileTypeBinding>() {
             }
         }
         binding.btnImportFile.setOnClickListener {
-            AppOpenManager.getInstance().disableAppResume()
+             AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
             browserFile()
         }
         binding.swipeRefresh.setOnRefreshListener {

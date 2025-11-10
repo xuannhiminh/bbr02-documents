@@ -20,6 +20,7 @@ import androidx.core.content.FileProvider
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.PreferencesUtils
+import com.ezteam.baseproject.utils.TemporaryStorage
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.messaging.RemoteMessage
 import officepro.document.reader.viewer.editor.R
@@ -616,6 +617,12 @@ class NotificationManager(private val context: Context) {
 
 
     fun showCallUseAppNotificationWhenOutApp() {
+
+        if (TemporaryStorage.temporaryTurnOffNotificationOutApp) {
+            Log.d(TAG,"Notification out app not shown temporary turn off" )
+            return
+        }
+
         if (!FirebaseRemoteConfigUtil.getInstance().isShowNotificationOutApp()) {
             Log.d(TAG,"Notification out app not shown remote config" )
             return

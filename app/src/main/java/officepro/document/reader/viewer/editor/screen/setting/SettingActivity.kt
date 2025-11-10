@@ -263,12 +263,14 @@ class SettingActivity : PdfBaseActivity<ActivitySettingsBinding>() {
     private fun onSelectedFunction(state: FunctionState) {
         when (state) {
             FunctionState.BROWSE_FILE -> {
-                AppOpenManager.getInstance().disableAppResume()
+                 AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                 browserFile()
             }
 
             FunctionState.RATE_US -> {
-                AppOpenManager.getInstance().disableAppResume()
+                 AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                 val rateUsDialog = RateUsDialog();
                 try {
                     rateUsDialog.show(this.supportFragmentManager, "RateUsDialog")
@@ -460,7 +462,8 @@ class SettingActivity : PdfBaseActivity<ActivitySettingsBinding>() {
                             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                         })
                         waitingNotificationResult = true
-                        AppOpenManager.getInstance().disableAppResume()
+                         AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                     } else {
                         requestNotificationPermissionFlow()
                     }
@@ -473,7 +476,8 @@ class SettingActivity : PdfBaseActivity<ActivitySettingsBinding>() {
                             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                         })
                         waitingNotificationResult = true
-                        AppOpenManager.getInstance().disableAppResume()
+                         AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                     } else {
                         onNotificationPermissionGranted()
                     }

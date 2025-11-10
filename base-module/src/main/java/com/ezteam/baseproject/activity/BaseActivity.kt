@@ -45,6 +45,7 @@ import com.akexorcist.localizationactivity.ui.LocalizationActivity
 import com.ezteam.baseproject.R
 import com.ezteam.baseproject.dialog.DialogLoading
 import com.ezteam.baseproject.utils.IAPUtils
+import com.ezteam.baseproject.utils.TemporaryStorage
 import com.ezteam.baseproject.utils.permisson.PermissionUtils
 import com.google.android.gms.ads.LoadAdError
 import com.nlbn.ads.callback.AdCallback
@@ -268,7 +269,8 @@ open abstract class BaseActivity<B : ViewBinding> : LocalizationActivity() {
                     intent.addCategory("android.intent.category.DEFAULT")
                     intent.data =
                         Uri.parse(String.format("package:%s", applicationContext.packageName))
-                    AppOpenManager.getInstance().disableAppResume()
+                     AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                     activityLauncher.launch(
                         intent
                     ) {

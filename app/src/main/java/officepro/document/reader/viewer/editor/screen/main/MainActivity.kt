@@ -320,7 +320,8 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
         fun showPermissionDialog() {
             dialog.setOnConfirmListener {
                 try {
-                    AppOpenManager.getInstance().disableAppResume()
+                     AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                     requestPermissionStorage { granted ->
                         if (granted) {
                             startActivity(Intent(this, MainActivity::class.java).apply {
@@ -527,7 +528,8 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
                                         AppUpdateOptions.newBuilder(if (updateDialog.forceUpdate) AppUpdateType.IMMEDIATE else AppUpdateType.FLEXIBLE)
                                             .setAllowAssetPackDeletion(true)
                                             .build())
-                                    if (updateDialog.forceUpdate) AppOpenManager.getInstance().disableAppResume()
+                                    if (updateDialog.forceUpdate){  AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp() }
                                 }
                                 try {
                                     updateDialog.show(supportFragmentManager, UpdateDialog::class.java.name)
@@ -861,7 +863,8 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
                             appUpdateInfo,
                             activityResultLauncher,
                             AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE).build())
-                        AppOpenManager.getInstance().disableAppResume()
+                         AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                     } else {
                         if (appUpdateInfo.installStatus() == InstallStatus.DOWNLOADED) {
                             showRestartDialog(appUpdateManager)
@@ -1193,7 +1196,8 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
 
         binding.buttonCreate.setOnClickListener {
             logEvent("create_pdf_press")
-            AppOpenManager.getInstance().disableAppResume()
+             AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
             startChooseImageActivity()
         }
         binding.recentlyAddedSection.setOnClickListener { toggleRecentFilesVisibility() }
@@ -1313,7 +1317,8 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             val denialCount = PreferencesUtils.getInteger("NOTIF_DENIAL_COUNT", 0)
             if (denialCount >= 2) {
-                AppOpenManager.getInstance().disableAppResume()
+                 AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                 requestPermissionNotificationGoToSetting {
                     if (it) {
                         val intent = Intent(this, MainActivity::class.java).apply {
@@ -1333,7 +1338,8 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
             Log.d("MainActivity", "Notification permission not required for SDK < 33")
             if (ContextCompat.checkSelfPermission(this,
                     Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                AppOpenManager.getInstance().disableAppResume()
+                 AppOpenManager.getInstance().disableAppResume()
+                    TemporaryStorage.setTemporaryTurnOffNotificationOutApp()
                 requestPermissionNotificationGoToSetting {
                     if(it) {
                         val intent = Intent(this, MainActivity::class.java).apply {

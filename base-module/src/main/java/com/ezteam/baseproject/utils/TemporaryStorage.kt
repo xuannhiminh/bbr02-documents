@@ -2,6 +2,10 @@ package com.ezteam.baseproject.utils
 
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.nativead.NativeAd
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 object TemporaryStorage {
     /**
@@ -21,8 +25,14 @@ object TemporaryStorage {
 
     @JvmStatic var interAdPreloaded : InterstitialAd? = null
     @JvmStatic var keepScreenOn: Boolean = false
-    @JvmStatic var enableNotification: Boolean = true
-    @JvmStatic var isShowedReloadGuideInThisSession: Boolean = false
+    @JvmStatic @Volatile var temporaryTurnOffNotificationOutApp: Boolean = false
+    @JvmStatic fun setTemporaryTurnOffNotificationOutApp(delay : Long = 1000) {
+        temporaryTurnOffNotificationOutApp = true
+        GlobalScope.launch(Dispatchers.Main) {
+            delay(delay)
+            temporaryTurnOffNotificationOutApp = false
+        }
+    }    @JvmStatic var isShowedReloadGuideInThisSession: Boolean = false
     @JvmStatic var isNightMode: Boolean = false
     @JvmStatic var isLoadAds: Boolean = false
     @JvmStatic var isRateFullStar: Boolean = false

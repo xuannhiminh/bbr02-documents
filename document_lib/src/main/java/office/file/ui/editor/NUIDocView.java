@@ -83,6 +83,7 @@ import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil;
 import com.ezteam.baseproject.utils.IAPUtils;
 import com.ezteam.baseproject.utils.PreferencesUtils;
 import com.ezteam.baseproject.utils.PresKey;
+import com.ezteam.baseproject.utils.TemporaryStorage;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.material.tabs.TabLayout;
 import com.nlbn.ads.callback.AdCallback;
@@ -3827,6 +3828,7 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
             public void run() {
                 if (NUIDocView.this.mDataLeakHandlers != null) {
                     try {
+                        TemporaryStorage.setTemporaryTurnOffNotificationOutApp(5000L);
                         NUIDocView.this.mDataLeakHandlers.insertImageHandler(NUIDocView.this);
                     } catch (UnsupportedOperationException var2) {
                         var2.printStackTrace();
@@ -3844,6 +3846,7 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
             public void run() {
                 if (NUIDocView.this.mDataLeakHandlers != null) {
                     try {
+                        TemporaryStorage.setTemporaryTurnOffNotificationOutApp(5000L);
                         NUIDocView.this.mDataLeakHandlers.insertPhotoHandler(NUIDocView.this);
                     } catch (UnsupportedOperationException var2) {
                     }
