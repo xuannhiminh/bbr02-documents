@@ -59,6 +59,8 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val DEFAULT_IAP_BUTTON_TEXT = "Start now"
         private const val DEFAULT_FREE_TRIAL_EXPLAIN_TEXT = "%s/Week after 3 days FREE trial"
         private const val DEFAULT_IAP_EXPLAIN_TEXT =        "%s/week, feel FREE to cancel"
+        private const val DEFAULT_IAP_BASE_PLAN = "release-weekly-plan"
+        private const val DEFAULT_IS_FREE_TRIAL_ENABLE = true
         private const val DEFAULT_ADS_CONFIG = """
             {
               "open_splash": "ca-app-pub-3940256099942544/9257395921",
@@ -136,7 +138,8 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val REMOTE_KEY_IAP_BUTON_TEXT = "iap_button_text"
         private const val REMOTE_KEY_IAP_EXPLAIN_TEXT = "iap_explain_text"
         private const val REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT = "free_trial_explain_text"
-
+        private const val REMOTE_KEY_IAP_BASE_PLAN= "iap_weekly_plan"
+        private const val REMOTE_KEY_IS_FREE_TRIAL_ENABLE = "is_free_trial_enable"
 
 
 
@@ -211,7 +214,9 @@ class FirebaseRemoteConfigUtil private constructor() {
                 REMOTE_KEY_FREE_TRIAL_BUTON_TEXT to DEFAULT_FREE_TRIAL_BUTTON_TEXT,
                 REMOTE_KEY_IAP_BUTON_TEXT to DEFAULT_IAP_BUTTON_TEXT,
                 REMOTE_KEY_IAP_EXPLAIN_TEXT to DEFAULT_IAP_EXPLAIN_TEXT,
-                REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT to DEFAULT_FREE_TRIAL_EXPLAIN_TEXT
+                REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT to DEFAULT_FREE_TRIAL_EXPLAIN_TEXT,
+                REMOTE_KEY_IAP_BASE_PLAN to DEFAULT_IAP_BASE_PLAN,
+                REMOTE_KEY_IS_FREE_TRIAL_ENABLE to DEFAULT_IS_FREE_TRIAL_ENABLE
 
             )
         )
@@ -412,5 +417,11 @@ class FirebaseRemoteConfigUtil private constructor() {
             // Fallback: if the template contains `%s`, replace occurrences; otherwise return the template as-is
             if (explainText.contains("%s")) explainText.replace("%s", price) else explainText
         }
+    }
+    fun getIapBasePlan(): String {
+        return firebaseRemoteConfig.getString(REMOTE_KEY_IAP_BASE_PLAN).ifBlank { DEFAULT_IAP_BASE_PLAN }
+    }
+    fun isFreeTrialEnable(): Boolean {
+        return firebaseRemoteConfig.getBoolean(REMOTE_KEY_IS_FREE_TRIAL_ENABLE)
     }
 }

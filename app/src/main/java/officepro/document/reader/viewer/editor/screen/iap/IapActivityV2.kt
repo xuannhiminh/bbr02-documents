@@ -83,6 +83,13 @@ class IapActivityV2 : PdfBaseActivity<ActivityIap3Binding>() {
             binding.btnClose.visibility = View.VISIBLE
             binding.btnClose.animate().alpha(1f).setDuration(300).start()
         }, 3000)
+
+        val hasFreeTrial = FirebaseRemoteConfigUtil.getInstance().isFreeTrialEnable()
+        if (hasFreeTrial) {
+            binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialButtonText()
+        } else {
+            binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getIapButtonText()
+        }
     }
 
     private fun updateViewBaseOnPremiumState() {
@@ -96,13 +103,13 @@ class IapActivityV2 : PdfBaseActivity<ActivityIap3Binding>() {
 
             // --- Weekly plan ---
             val weeklyOffer = pd.subscriptionOfferDetails
-                ?.find { it.basePlanId == IAPUtils.KEY_PREMIUM_WEEKLY_PLAN }
+                ?.find { it.basePlanId == FirebaseRemoteConfigUtil.getInstance().getIapBasePlan() }
 
             if (weeklyOffer != null) {
                 val weeklyPhase = weeklyOffer.pricingPhases.pricingPhaseList.firstOrNull { it.priceAmountMicros > 0 }
                 val weeklyPriceText = weeklyPhase?.formattedPrice ?: "-"
                 val hasFreeTrial = pd.subscriptionOfferDetails
-                    ?.any { it.basePlanId == IAPUtils.KEY_PREMIUM_WEEKLY_PLAN && !it.offerId.isNullOrEmpty() } ?: false
+                    ?.any { it.basePlanId == FirebaseRemoteConfigUtil.getInstance().getIapBasePlan() && !it.offerId.isNullOrEmpty() } ?: false
                 if (hasFreeTrial) {
                     binding.price.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialExplainText(weeklyPriceText)
                     binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialButtonText()
@@ -201,7 +208,7 @@ class IapActivityV2 : PdfBaseActivity<ActivityIap3Binding>() {
 //            }
 //            IapRegistrationSuccessfulActivity.start(this)
             logEvent("purchase_week_pressed")
-            IAPUtils.callSubscription(this@IapActivityV2, IAPUtils.KEY_PREMIUM, IAPUtils.KEY_PREMIUM_WEEKLY_PLAN)
+            IAPUtils.callSubscription(this@IapActivityV2, IAPUtils.KEY_PREMIUM, FirebaseRemoteConfigUtil.getInstance().getIapBasePlan())
         }
     }
 

@@ -220,7 +220,7 @@ class IapActivity : PdfBaseActivity<ActivityIapBinding>() {
 
             // --- Monthly plan ---
             val weeklyPlan = pd.subscriptionOfferDetails
-                ?.find { it.basePlanId == IAPUtils.KEY_PREMIUM_WEEKLY_PLAN }
+                ?.find { it.basePlanId == FirebaseRemoteConfigUtil.getInstance().getIapBasePlan() }
 
             if (weeklyPlan != null) {
                 val weeklyPhase = weeklyPlan.pricingPhases.pricingPhaseList.firstOrNull { it.priceAmountMicros > 0 }
@@ -450,7 +450,7 @@ class IapActivity : PdfBaseActivity<ActivityIapBinding>() {
                 IAPUtils.callSubscription(this@IapActivity, IAPUtils.KEY_PREMIUM, IAPUtils.KEY_PREMIUM_MONTHLY_PLAN)
             } else {
                 logEvent("purchase_week_pressed2")
-                IAPUtils.callSubscription(this@IapActivity, IAPUtils.KEY_PREMIUM, IAPUtils.KEY_PREMIUM_WEEKLY_PLAN)
+                IAPUtils.callSubscription(this@IapActivity, IAPUtils.KEY_PREMIUM, FirebaseRemoteConfigUtil.getInstance().getIapBasePlan())
             }
         }
     }
