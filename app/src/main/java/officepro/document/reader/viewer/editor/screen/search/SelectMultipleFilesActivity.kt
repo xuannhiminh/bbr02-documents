@@ -157,15 +157,16 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
     override fun initData() {
         lifecycleScope.launch {
             fileTab = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                intent.getSerializableExtra("FileTab", FileTab::class.java)!!
+                intent.getSerializableExtra("FileTab", FileTab::class.java)
             } else {
-                (intent.getSerializableExtra("FileTab") as? FileTab)!! // Add a safe cast for older versions
-            }
+                intent.getSerializableExtra("FileTab") as? FileTab
+            } ?: FileTab.ALL_FILE // hoặc giá trị mặc định
+
             bottomTab = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                intent.getSerializableExtra("BottomTab", BottomTab::class.java)!!
+                intent.getSerializableExtra("BottomTab", BottomTab::class.java)
             } else {
-                (intent.getSerializableExtra("BottomTab") as? BottomTab)!!
-            }
+                intent.getSerializableExtra("BottomTab") as? BottomTab
+            } ?: BottomTab.HOME
             val liveData = if (bottomTab ==  BottomTab.HOME) {
                 viewModel.getListFileBaseOnFileTab(fileTab)
             } else {
