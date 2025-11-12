@@ -1,6 +1,7 @@
 package officepro.document.reader.viewer.editor.screen.iap
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -89,6 +90,12 @@ class IapActivityV2 : PdfBaseActivity<ActivityIap3Binding>() {
             binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialButtonText()
         } else {
             binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getIapButtonText()
+        }
+        try {
+            val colorString = FirebaseRemoteConfigUtil.getInstance().getIapPriceColor()
+            binding.price.setTextColor(Color.parseColor(colorString))
+        } catch (e: Exception) {
+            //
         }
     }
 

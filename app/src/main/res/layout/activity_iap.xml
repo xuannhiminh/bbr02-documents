@@ -119,12 +119,12 @@
                 android:layout_height="@dimen/_20sdp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_vertical"
-                android:text="@string/feature_edit_pdf"
+                android:text="@string/edit_all_files"
                 android:textColor="@android:color/white"
                 android:textFontWeight="400"
                 android:textSize="14sp" />
             <TextView
-                android:text="@string/feature_sign_documents"
+                android:text="@string/signature_pdf"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_20sdp"
                 android:gravity="center_vertical"
