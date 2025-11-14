@@ -8,7 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
+import com.brian.base_iap.iap.IapActivity
+import com.brian.base_iap.iap.IapActivityV2
+import com.brian.base_iap.utils.CountryDetector
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.brian.base_iap.utils.IAPUtils
+import com.brian.base_iap.utils.PreferencesHelper
 import com.ezteam.baseproject.utils.SystemUtils
 import com.brian.base_iap.utils.TemporaryStorage
 import com.ezteam.ezpdflib.R
@@ -142,6 +147,38 @@ class BottomSheetTool(
         dialog?.setCancelable(true)
         dialog?.setCanceledOnTouchOutside(true)
     }
+    private fun openIapScreen() {
+        val remote = FirebaseRemoteConfigUtil.getInstance()
+        val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
+
+        if (!isNotVn.isNullOrEmpty() && isNotVn == "false") {
+            IapActivity.start(requireActivity())
+            return
+        }
+
+        when (remote.getIapScreenType()) {
+            0 -> IapActivityV2.start(requireActivity())
+            1 -> IapActivity.start(requireActivity())
+            else -> IapActivityV2.start(requireActivity())
+        }
+    }
+    private fun requirePremium(block: () -> Unit) {
+        val remote = FirebaseRemoteConfigUtil.getInstance()
+
+        if (!remote.saveFileNeedPremium()) {
+            block()
+            return
+        }
+
+        if (!IAPUtils.isPremium()) {
+            openIapScreen()
+            dismiss()
+            return
+        }
+
+        block()
+    }
+
     private fun initListener() {
 
         binding.funcPassword.setOnClickListener { v ->
@@ -171,13 +208,17 @@ class BottomSheetTool(
         }
 
         binding.funcWatermark.setOnClickListener {
-            listener?.invoke(BottomSheetDetailFunction.FunctionState.WATERMARK)
-            dismiss()
+            requirePremium {
+                listener?.invoke(BottomSheetDetailFunction.FunctionState.WATERMARK)
+                dismiss()
+            }
         }
 
         binding.funcExtractIamge.setOnClickListener {
-            listener?.invoke(BottomSheetDetailFunction.FunctionState.EXTRACT_IMAGE)
-            dismiss()
+            requirePremium {
+                listener?.invoke(BottomSheetDetailFunction.FunctionState.EXTRACT_IMAGE)
+                dismiss()
+            }
         }
 
         binding.funcAddImage.setOnClickListener {

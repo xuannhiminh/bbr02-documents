@@ -63,6 +63,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val DEFAULT_IAP_BASE_PLAN = "release-weekly-plan"
         private const val DEFAULT_IS_FREE_TRIAL_ENABLE = true
         private const val DEFAULT_IAP_PRICE_COLOR = "#00091D"
+        private const val DEFAULT_SAVE_FILE_NEED_PREMIUM = true
         private const val DEFAULT_ADS_CONFIG = """
             {
               "open_splash": "ca-app-pub-3940256099942544/9257395921",
@@ -143,6 +144,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val REMOTE_KEY_IAP_BASE_PLAN= "iap_weekly_plan"
         private const val REMOTE_KEY_IS_FREE_TRIAL_ENABLE = "is_free_trial_enable"
         private const val REMOTE_KEY_IAP_PRICE_COLOR = "iap_price_color"
+        private const val REMOTE_KEY_SAVE_FILE_NEED_PREMIUM = "save_file_need_premium"
 
 
 
@@ -221,8 +223,9 @@ class FirebaseRemoteConfigUtil private constructor() {
                 REMOTE_KEY_IAP_BASE_PLAN to DEFAULT_IAP_BASE_PLAN,
                 REMOTE_KEY_IS_FREE_TRIAL_ENABLE to DEFAULT_IS_FREE_TRIAL_ENABLE,
                 REMOTE_KEY_IAP_PRICE_COLOR to DEFAULT_IAP_PRICE_COLOR,
+                REMOTE_KEY_SAVE_FILE_NEED_PREMIUM to DEFAULT_SAVE_FILE_NEED_PREMIUM
 
-                )
+            )
         )
     }
 
@@ -430,5 +433,8 @@ class FirebaseRemoteConfigUtil private constructor() {
     }
     fun getIapPriceColor(): String {
         return firebaseRemoteConfig.getString(REMOTE_KEY_IAP_PRICE_COLOR).ifBlank { DEFAULT_IAP_PRICE_COLOR }
+    }
+    fun saveFileNeedPremium(): Boolean {
+        return firebaseRemoteConfig.getBoolean(REMOTE_KEY_SAVE_FILE_NEED_PREMIUM)
     }
 }

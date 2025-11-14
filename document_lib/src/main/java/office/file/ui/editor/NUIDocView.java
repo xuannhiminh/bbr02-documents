@@ -2445,23 +2445,7 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
     }
 
     public void doSave() {
-        if (!IAPUtils.INSTANCE.isPremium()) {
-            Activity activity = this.activity();
-            if (activity instanceof FragmentActivity) {
-                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
-                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
-                    IapActivity.Companion.start((FragmentActivity) activity);
-                } else {
-                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
-                    if (iapScreenType == 1) {
-                        IapActivity.Companion.start((FragmentActivity) activity);
-                    } else {
-                        IapActivityV2.Companion.start((FragmentActivity) activity);
-                    }
-                }
-            }
-            return;
-        }
+        if (!requirePremium()) return;
         if (this.mIsTemplate) {
             this.saveTemplate(false);
         } else {
@@ -2843,6 +2827,7 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
                         public void onClick(DialogInterface var1, int var2) {
 
                             var1.dismiss();
+                            if (!requirePremium()) return;
                             if (!IAPUtils.INSTANCE.isPremium()) {
                                 Activity activity = NUIDocView.this.activity();
                                 if (activity instanceof FragmentActivity) {
@@ -4303,25 +4288,37 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
         }
 
     }
+    private void openIapScreen(FragmentActivity activity) {
+        String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
 
-    public void onSaveAsButton(View var1) {
-        if (!IAPUtils.INSTANCE.isPremium()) {
-            Activity activity = this.activity();
-            if (activity instanceof FragmentActivity) {
-                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
-                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
-                    IapActivity.Companion.start((FragmentActivity) activity);
-                } else {
-                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
-                    if (iapScreenType == 1) {
-                        IapActivity.Companion.start((FragmentActivity) activity);
-                    } else {
-                        IapActivityV2.Companion.start((FragmentActivity) activity);
-                    }
-                }
-            }
+        if (isNotVn != null && isNotVn.equals("false")) {
+            IapActivity.Companion.start(activity);
             return;
         }
+
+        int type = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
+        if (type == 1) {
+            IapActivity.Companion.start(activity);
+        } else {
+            IapActivityV2.Companion.start(activity);
+        }
+    }
+    private boolean requirePremium() {
+        boolean needPremium = FirebaseRemoteConfigUtil.Companion.getInstance().saveFileNeedPremium();
+
+        if (!needPremium) return true;
+
+        if (IAPUtils.INSTANCE.isPremium()) return true;
+
+        Activity act = this.activity();
+        if (act instanceof FragmentActivity) {
+            openIapScreen((FragmentActivity) act);
+        }
+
+        return false;
+    }
+    public void onSaveAsButton(View var1) {
+        if (!requirePremium()) return;
         if (!checkStoragePermission(this.getContext())) {
             try {
                 Utilities.showMessage((Activity) NUIDocView.this.getContext(),
@@ -4341,23 +4338,7 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
     }
 
     public void onSaveButton(View var1) {
-        if (!IAPUtils.INSTANCE.isPremium()) {
-            Activity activity = this.activity();
-            if (activity instanceof FragmentActivity) {
-                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
-                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
-                    IapActivity.Companion.start((FragmentActivity) activity);
-                } else {
-                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
-                    if (iapScreenType == 1) {
-                        IapActivity.Companion.start((FragmentActivity) activity);
-                    } else {
-                        IapActivityV2.Companion.start((FragmentActivity) activity);
-                    }
-                }
-            }
-            return;
-        }
+        if (!requirePremium()) return;
         if (!checkStoragePermission(this.getContext())) {
             try {
                 Utilities.showMessage((Activity) NUIDocView.this.getContext(),
@@ -4377,23 +4358,7 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
     }
 
     public void onSavePDFButton(View var1) {
-        if (!IAPUtils.INSTANCE.isPremium()) {
-            Activity activity = this.activity();
-            if (activity instanceof FragmentActivity) {
-                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
-                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
-                    IapActivity.Companion.start((FragmentActivity) activity);
-                } else {
-                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
-                    if (iapScreenType == 1) {
-                        IapActivity.Companion.start((FragmentActivity) activity);
-                    } else {
-                        IapActivityV2.Companion.start((FragmentActivity) activity);
-                    }
-                }
-            }
-            return;
-        }
+        if (!requirePremium()) return;
         if (!checkStoragePermission(this.getContext())) {
             try {
                 Utilities.showMessage((Activity) NUIDocView.this.getContext(),

@@ -37,12 +37,16 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.blankj.utilcode.util.CleanUtils
+import com.brian.base_iap.iap.IapActivity
+import com.brian.base_iap.iap.IapActivityV2
+import com.brian.base_iap.utils.CountryDetector
 import com.ezstudio.pdftoolmodule.activity.ExtractActivity
 import com.ezstudio.pdftoolmodule.dialog.AddWatermarkDialog
 import com.ezteam.baseproject.extensions.uriToBitmap
 import com.ezteam.baseproject.photopicker.PickImageActivity
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.brian.base_iap.utils.IAPUtils
+import com.brian.base_iap.utils.PreferencesHelper
 import com.brian.base_iap.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.ezpdflib.R
@@ -1892,13 +1896,17 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
 
             R.id.menu_signature -> {
                 logEvent("func_detail_sign_pdf")
-                launchActivity<SignatureActivity>(Config.IntentResult.SELECT_SIGNATURE) {}
+                requirePremiumOrRun {
+                    launchActivity<SignatureActivity>(Config.IntentResult.SELECT_SIGNATURE) {}
+                }
             }
 
             R.id.menu_add_image -> {
                 logEvent("func_detail_add_image")
-                launchActivity<PickImageActivity>(Config.IntentResult.SELECT_IMAGE) {
-                    putExtra(PickImageActivity.KEY_PICK_ONE, true)
+                requirePremiumOrRun {
+                    launchActivity<PickImageActivity>(Config.IntentResult.SELECT_IMAGE) {
+                        putExtra(PickImageActivity.KEY_PICK_ONE, true)
+                    }
                 }
             }
 
@@ -1909,7 +1917,36 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
         }
         return false
     }
+    private fun openIapScreen() {
+        val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
 
+        if (!isNotVn.isNullOrEmpty() && isNotVn == "false") {
+            Log.d(TAG, "open IapActivity for VN")
+            IapActivity.start(this)
+            return
+        }
+
+        when (FirebaseRemoteConfigUtil.getInstance().getIapScreenType()) {
+            0 -> IapActivityV2.start(this)
+            1 -> IapActivity.start(this)
+            else -> IapActivityV2.start(this)
+        }
+    }
+    private inline fun requirePremiumOrRun(action: () -> Unit) {
+        val remote = FirebaseRemoteConfigUtil.getInstance()
+
+        if (!remote.saveFileNeedPremium()) {
+            action()
+            return
+        }
+
+        if (!IAPUtils.isPremium()) {
+            openIapScreen()
+            return
+        }
+
+        action()
+    }
     private fun saveFileBackup() {
         FileSaveManager.copyFileToBackup(this, urlFile)
     }

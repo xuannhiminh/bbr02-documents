@@ -6,7 +6,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.brian.base_iap.iap.IapActivity
+import com.brian.base_iap.iap.IapActivityV2
+import com.brian.base_iap.utils.CountryDetector
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.brian.base_iap.utils.IAPUtils
+import com.brian.base_iap.utils.PreferencesHelper
 import com.brian.base_iap.utils.PreferencesUtils
 import com.brian.base_iap.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils
@@ -153,6 +158,20 @@ class BottomSheetNote(
                 guideKey = PresKey.FIRST_TIME_STRIKEOUT
             }
             R.id.func_copy -> {
+                if(FirebaseRemoteConfigUtil.getInstance().saveFileNeedPremium()) {
+                    if (!IAPUtils.isPremium()) {
+                        val isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null)
+                        if (!isNotVn.isNullOrEmpty() && "false" == isNotVn) {
+                            IapActivity.start(requireActivity())
+                        } else when (FirebaseRemoteConfigUtil.getInstance().getIapScreenType()) {
+                            0 -> IapActivityV2.start(requireActivity())
+                            1 -> IapActivity.start(requireActivity())
+                            else -> IapActivityV2.start(requireActivity())
+                        }
+                        dismiss()
+                        return
+                    }
+                }
                 mode = Mode.CopyText
             }
             R.id.func_delete -> {
