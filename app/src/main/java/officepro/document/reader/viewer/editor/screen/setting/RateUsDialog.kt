@@ -7,7 +7,7 @@ import android.view.*
 import androidx.fragment.app.DialogFragment
 import com.ezteam.baseproject.animation.AnimationUtils
 import com.brian.base_iap.utils.PreferencesUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.google.android.play.core.review.ReviewException
 import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.android.play.core.review.model.ReviewErrorCode

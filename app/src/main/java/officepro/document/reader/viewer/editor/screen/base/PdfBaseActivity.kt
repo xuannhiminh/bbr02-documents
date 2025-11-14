@@ -20,7 +20,7 @@ import androidx.viewbinding.ViewBinding
 import com.ezteam.baseproject.activity.BaseActivity
 import com.brian.base_iap.utils.IAPUtils
 import com.brian.base_iap.utils.PreferencesUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.ezteam.ezpdflib.activity.PdfDetailActivity
 import com.google.android.gms.ads.LoadAdError
 import com.google.firebase.analytics.FirebaseAnalytics

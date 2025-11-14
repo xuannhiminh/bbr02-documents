@@ -88,7 +88,7 @@ import com.brian.base_iap.utils.FirebaseRemoteConfigUtil;
 import com.brian.base_iap.utils.IAPUtils;
 import com.brian.base_iap.utils.PreferencesUtils;
 import com.brian.base_iap.utils.PresKey;
-import com.ezteam.baseproject.utils.TemporaryStorage;
+import com.brian.base_iap.utils.TemporaryStorage;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.material.tabs.TabLayout;
 import com.nlbn.ads.callback.AdCallback;

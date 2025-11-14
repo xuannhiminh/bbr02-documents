@@ -24,7 +24,7 @@ import com.brian.base_iap.iapLib.Constants
 import com.brian.base_iap.iapLib.PurchaseInfo
 import com.brian.base_iap.utils.IAPUtils
 import com.brian.base_iap.utils.PreferencesUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.FirebaseAnalytics.Event

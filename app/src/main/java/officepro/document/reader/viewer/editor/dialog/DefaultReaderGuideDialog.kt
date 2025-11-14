@@ -21,7 +21,7 @@ import androidx.core.content.FileProvider
 import androidx.fragment.app.DialogFragment
 import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.firebase.analytics.FirebaseAnalytics

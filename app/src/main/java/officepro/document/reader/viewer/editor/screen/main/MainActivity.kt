@@ -27,7 +27,7 @@ import com.ezteam.baseproject.extensions.launchActivity
 import com.ezteam.baseproject.utils.PathUtils
 import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.SystemUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.ezteam.ezpdflib.listener.BroadcastSubmodule
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.material.navigation.NavigationBarView

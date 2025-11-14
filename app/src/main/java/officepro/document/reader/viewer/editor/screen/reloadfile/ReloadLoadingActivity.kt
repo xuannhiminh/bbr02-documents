@@ -12,7 +12,7 @@ import com.airbnb.lottie.LottieDrawable
 import com.ezteam.baseproject.activity.BaseActivity
 import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.nativead.NativeAd

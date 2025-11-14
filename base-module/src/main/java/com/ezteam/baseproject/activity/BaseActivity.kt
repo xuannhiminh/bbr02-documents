@@ -45,7 +45,7 @@ import com.akexorcist.localizationactivity.ui.LocalizationActivity
 import com.ezteam.baseproject.R
 import com.ezteam.baseproject.dialog.DialogLoading
 import com.brian.base_iap.utils.IAPUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.ezteam.baseproject.utils.permisson.PermissionUtils
 import com.google.android.gms.ads.LoadAdError
 import com.nlbn.ads.callback.AdCallback

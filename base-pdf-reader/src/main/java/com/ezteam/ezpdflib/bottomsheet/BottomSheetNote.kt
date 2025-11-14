@@ -10,7 +10,7 @@ import com.brian.base_iap.utils.IAPUtils
 import com.brian.base_iap.utils.PreferencesUtils
 import com.brian.base_iap.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.ezteam.ezpdflib.R
 import com.ezteam.ezpdflib.activity.Mode
 import com.ezteam.ezpdflib.databinding.LibBottomsheetNoteBinding

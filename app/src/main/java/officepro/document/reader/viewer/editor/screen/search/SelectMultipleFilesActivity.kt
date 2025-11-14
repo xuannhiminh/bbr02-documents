@@ -18,7 +18,7 @@ import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PDFConstants.Companion.ADS_ITEM_INDEX
 import com.ezteam.baseproject.utils.SystemUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.adapter.FileItemAdapter
 import officepro.document.reader.viewer.editor.common.FileTab

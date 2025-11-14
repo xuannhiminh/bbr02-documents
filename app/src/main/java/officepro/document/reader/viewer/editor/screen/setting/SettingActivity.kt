@@ -25,7 +25,7 @@ import com.ezteam.baseproject.extensions.launchActivity
 import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PathUtils
 import com.brian.base_iap.utils.PreferencesUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.common.FunctionState

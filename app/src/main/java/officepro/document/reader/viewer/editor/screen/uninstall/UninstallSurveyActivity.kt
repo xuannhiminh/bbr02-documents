@@ -26,7 +26,7 @@ import androidx.core.net.toUri
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import com.brian.base_iap.utils.IAPUtils
-import com.ezteam.baseproject.utils.TemporaryStorage
+import com.brian.base_iap.utils.TemporaryStorage
 import com.google.firebase.firestore.FirebaseFirestore
 import officepro.document.reader.viewer.editor.model.FeedbackData
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
