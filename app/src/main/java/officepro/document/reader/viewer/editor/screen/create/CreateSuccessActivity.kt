@@ -17,7 +17,7 @@ import officepro.document.reader.viewer.editor.screen.main.MainViewModel
 import com.ezteam.baseproject.extensions.autoRotate
 import com.ezteam.baseproject.extensions.resizeBitmapByCanvas
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView

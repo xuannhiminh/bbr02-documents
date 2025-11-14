@@ -17,7 +17,7 @@ import com.ezstudio.pdftoolmodule.model.PdfPageModel
 import com.ezstudio.pdftoolmodule.utils.pdftool.Thumbnail
 import com.ezteam.baseproject.utils.FileSaveManager
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.baseproject.utils.ViewUtils
 import com.google.android.gms.ads.nativead.NativeAd

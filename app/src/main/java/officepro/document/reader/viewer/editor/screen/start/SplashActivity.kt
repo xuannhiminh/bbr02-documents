@@ -18,10 +18,10 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
 import com.brian.base_iap.iap.IapActivity
 import com.brian.base_iap.iap.IapActivityV2
-import com.ezteam.baseproject.iapLib.v3.BillingProcessor
-import com.ezteam.baseproject.iapLib.v3.PurchaseInfo
+import com.brian.base_iap.iapLib.BillingProcessor
+import com.brian.base_iap.iapLib.PurchaseInfo
 import com.ezteam.baseproject.activity.BaseActivity
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.baseproject.utils.TemporaryStorage

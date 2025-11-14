@@ -42,7 +42,7 @@ import com.ezstudio.pdftoolmodule.dialog.AddWatermarkDialog
 import com.ezteam.baseproject.extensions.uriToBitmap
 import com.ezteam.baseproject.photopicker.PickImageActivity
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.ezpdflib.R

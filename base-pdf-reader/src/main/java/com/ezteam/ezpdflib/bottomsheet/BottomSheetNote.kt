@@ -6,7 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils

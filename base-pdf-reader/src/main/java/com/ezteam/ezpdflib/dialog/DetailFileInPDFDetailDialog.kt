@@ -9,7 +9,7 @@ import android.util.Log
 import android.view.*
 import androidx.fragment.app.DialogFragment
 import com.ezteam.baseproject.utils.DateUtils
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.baseproject.utils.TemporaryStorage
 import com.ezteam.ezpdflib.R

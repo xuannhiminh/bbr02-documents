@@ -3,7 +3,7 @@ package officepro.document.reader.viewer.editor.utils
 import android.content.Context
 import android.icu.util.TimeZone
 import android.util.Log
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.google.firebase.messaging.FirebaseMessaging
 import officepro.document.reader.viewer.editor.BuildConfig
 import com.brian.base_iap.utils.PreferencesHelper

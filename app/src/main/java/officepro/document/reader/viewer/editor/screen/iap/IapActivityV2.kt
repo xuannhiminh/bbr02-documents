@@ -13,11 +13,11 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentActivity
 import com.brian.base_iap.iap.IapRegistrationSuccessfulActivity
+import com.brian.base_iap.iapLib.BillingProcessor
+import com.brian.base_iap.iapLib.Constants
+import com.brian.base_iap.iapLib.PurchaseInfo
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
-import com.ezteam.baseproject.iapLib.v3.BillingProcessor
-import com.ezteam.baseproject.iapLib.v3.Constants
-import com.ezteam.baseproject.iapLib.v3.PurchaseInfo
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.PresKey
 import com.ezteam.baseproject.utils.TemporaryStorage

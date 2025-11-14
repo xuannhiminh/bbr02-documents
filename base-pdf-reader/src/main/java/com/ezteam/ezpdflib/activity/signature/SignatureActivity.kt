@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.ezpdflib.R
 import com.ezteam.ezpdflib.activity.BasePdfViewerActivity

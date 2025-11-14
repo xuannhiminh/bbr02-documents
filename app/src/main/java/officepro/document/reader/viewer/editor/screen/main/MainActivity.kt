@@ -70,9 +70,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
-import com.ezteam.baseproject.iapLib.v3.BillingProcessor
-import com.ezteam.baseproject.iapLib.v3.PurchaseInfo
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.iapLib.BillingProcessor
+import com.brian.base_iap.iapLib.PurchaseInfo
+import com.brian.base_iap.utils.IAPUtils
 import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
 import com.google.android.play.core.appupdate.AppUpdateOptions

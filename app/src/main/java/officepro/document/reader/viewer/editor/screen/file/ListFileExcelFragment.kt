@@ -12,7 +12,7 @@ import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.lifecycleScope
-import com.ezteam.baseproject.utils.IAPUtils
+import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PDFConstants.Companion.ADS_ITEM_INDEX
 import com.google.android.gms.ads.nativead.NativeAd
 import officepro.document.reader.viewer.editor.R
