@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.WindowCompat;
 
 import com.brian.base_iap.utils.PreferencesUtils;
-import com.ezteam.baseproject.utils.PresKey;
+import com.brian.base_iap.utils.PresKey;
 
 public class OpenFileActivity extends BaseOpenFileActivity {
 

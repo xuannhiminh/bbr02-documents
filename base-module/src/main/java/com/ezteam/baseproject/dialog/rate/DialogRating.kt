@@ -12,7 +12,7 @@ import com.ezteam.baseproject.dialog.BaseDialog
 import com.ezteam.baseproject.dialog.BuilderDialog
 import com.ezteam.baseproject.listener.EzItemListener
 import com.brian.base_iap.utils.PreferencesUtils
-import com.ezteam.baseproject.utils.PresKey
+import com.brian.base_iap.utils.PresKey
 import com.ezteam.baseproject.utils.ViewUtils.showViewBase
 import java.util.*
 

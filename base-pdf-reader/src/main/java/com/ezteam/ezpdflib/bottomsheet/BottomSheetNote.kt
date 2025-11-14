@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.brian.base_iap.utils.IAPUtils
 import com.brian.base_iap.utils.PreferencesUtils
-import com.ezteam.baseproject.utils.PresKey
+import com.brian.base_iap.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.baseproject.utils.TemporaryStorage
 import com.ezteam.ezpdflib.R
