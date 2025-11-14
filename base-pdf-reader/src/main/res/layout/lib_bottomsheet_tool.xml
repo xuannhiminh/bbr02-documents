@@ -51,12 +51,43 @@
                 app:fvIcon="@drawable/lib_ic_set_password"
                 app:fvTitle="@string/set_password" />
 
-            <com.ezteam.ezpdflib.widget.ItemFuncView
+            <FrameLayout
                 android:id="@+id/func_watermark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fvIcon="@drawable/lib_ic_watermark"
-                app:fvTitle="@string/add_watermark" />
+                android:background="?attr/selectableItemBackground"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/icon_color"
+                        app:srcCompat="@drawable/lib_ic_watermark"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/add_watermark"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp"
+                        style="@style/textDefault" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_add_watermark_premium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        app:srcCompat="@drawable/ic_premium_small"/>
+                </LinearLayout>
+            </FrameLayout>
 
             <com.ezteam.ezpdflib.widget.ItemFuncView
                 android:visibility="gone"
@@ -66,12 +97,43 @@
                 app:fvIcon="@drawable/lib_ic_watermark"
                 app:fvTitle="@string/add_image" />
 
-            <com.ezteam.ezpdflib.widget.ItemFuncView
+            <FrameLayout
                 android:id="@+id/func_extract_iamge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fvIcon="@drawable/lib_ic_extract_images"
-                app:fvTitle="@string/extract_image" />
+                android:background="?attr/selectableItemBackground"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/icon_color"
+                        app:srcCompat="@drawable/lib_ic_extract_images"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/extract_image"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp"
+                        style="@style/textDefault" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_extract_image_premium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        app:srcCompat="@drawable/ic_premium_small"/>
+                </LinearLayout>
+            </FrameLayout>
 
             <com.ezteam.ezpdflib.widget.ItemFuncView
                 android:id="@+id/func_delete"

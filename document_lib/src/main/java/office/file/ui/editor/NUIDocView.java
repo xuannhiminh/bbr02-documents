@@ -64,6 +64,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
+import androidx.fragment.app.FragmentActivity;
 
 import com.aigestudio.wheelpicker.WheelPicker;
 import com.artifex.solib.ConfigOptions;
@@ -75,6 +76,10 @@ import com.artifex.solib.SOSelectionLimits;
 import com.artifex.solib.j;
 import com.artifex.solib.k;
 import com.artifex.solib.p;
+import com.brian.base_iap.iap.IapActivity;
+import com.brian.base_iap.iap.IapActivityV2;
+import com.brian.base_iap.utils.CountryDetector;
+import com.brian.base_iap.utils.PreferencesHelper;
 import com.ezteam.baseproject.dialog.GuideEditDialog;
 import com.ezteam.baseproject.dialog.GuideStep;
 import com.ezteam.baseproject.print.PdfDocumentAdapter;
@@ -2440,6 +2445,23 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
     }
 
     public void doSave() {
+        if (!IAPUtils.INSTANCE.isPremium()) {
+            Activity activity = this.activity();
+            if (activity instanceof FragmentActivity) {
+                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
+                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
+                    IapActivity.Companion.start((FragmentActivity) activity);
+                } else {
+                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
+                    if (iapScreenType == 1) {
+                        IapActivity.Companion.start((FragmentActivity) activity);
+                    } else {
+                        IapActivityV2.Companion.start((FragmentActivity) activity);
+                    }
+                }
+            }
+            return;
+        }
         if (this.mIsTemplate) {
             this.saveTemplate(false);
         } else {
@@ -2821,6 +2843,23 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
                         public void onClick(DialogInterface var1, int var2) {
 
                             var1.dismiss();
+                            if (!IAPUtils.INSTANCE.isPremium()) {
+                                Activity activity = NUIDocView.this.activity();
+                                if (activity instanceof FragmentActivity) {
+                                    String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
+                                    if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
+                                        IapActivity.Companion.start((FragmentActivity) activity);
+                                    } else {
+                                        int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
+                                        if (iapScreenType == 1) {
+                                            IapActivity.Companion.start((FragmentActivity) activity);
+                                        } else {
+                                            IapActivityV2.Companion.start((FragmentActivity) activity);
+                                        }
+                                    }
+                                }
+                                return;
+                            }
                             NUIDocView.this.preSaveQuestion(new Runnable() {
                                 public void run() {
                                     if (NUIDocView.this.mCustomDocdata != null) {
@@ -4266,6 +4305,23 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
     }
 
     public void onSaveAsButton(View var1) {
+        if (!IAPUtils.INSTANCE.isPremium()) {
+            Activity activity = this.activity();
+            if (activity instanceof FragmentActivity) {
+                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
+                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
+                    IapActivity.Companion.start((FragmentActivity) activity);
+                } else {
+                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
+                    if (iapScreenType == 1) {
+                        IapActivity.Companion.start((FragmentActivity) activity);
+                    } else {
+                        IapActivityV2.Companion.start((FragmentActivity) activity);
+                    }
+                }
+            }
+            return;
+        }
         if (!checkStoragePermission(this.getContext())) {
             try {
                 Utilities.showMessage((Activity) NUIDocView.this.getContext(),
@@ -4285,6 +4341,23 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
     }
 
     public void onSaveButton(View var1) {
+        if (!IAPUtils.INSTANCE.isPremium()) {
+            Activity activity = this.activity();
+            if (activity instanceof FragmentActivity) {
+                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
+                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
+                    IapActivity.Companion.start((FragmentActivity) activity);
+                } else {
+                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
+                    if (iapScreenType == 1) {
+                        IapActivity.Companion.start((FragmentActivity) activity);
+                    } else {
+                        IapActivityV2.Companion.start((FragmentActivity) activity);
+                    }
+                }
+            }
+            return;
+        }
         if (!checkStoragePermission(this.getContext())) {
             try {
                 Utilities.showMessage((Activity) NUIDocView.this.getContext(),
@@ -4304,6 +4377,23 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
     }
 
     public void onSavePDFButton(View var1) {
+        if (!IAPUtils.INSTANCE.isPremium()) {
+            Activity activity = this.activity();
+            if (activity instanceof FragmentActivity) {
+                String isNotVn = PreferencesHelper.getString(CountryDetector.KEY_IS_NOT_VN, null);
+                if (isNotVn != null && isNotVn.equals("false")) { // nếu là Vietnam
+                    IapActivity.Companion.start((FragmentActivity) activity);
+                } else {
+                    int iapScreenType = FirebaseRemoteConfigUtil.Companion.getInstance().getIapScreenType();
+                    if (iapScreenType == 1) {
+                        IapActivity.Companion.start((FragmentActivity) activity);
+                    } else {
+                        IapActivityV2.Companion.start((FragmentActivity) activity);
+                    }
+                }
+            }
+            return;
+        }
         if (!checkStoragePermission(this.getContext())) {
             try {
                 Utilities.showMessage((Activity) NUIDocView.this.getContext(),

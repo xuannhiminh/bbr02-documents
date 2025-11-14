@@ -55,12 +55,43 @@
                 app:fvIcon="@drawable/lib_ic_strickethought_note"
                 app:fvTitle="@string/strike_throught" />
 
-            <com.ezteam.ezpdflib.widget.ItemFuncView
+            <FrameLayout
                 android:id="@+id/func_copy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fvIcon="@drawable/lib_ic_copy_note"
-                app:fvTitle="@string/copy" />
+                android:background="?attr/selectableItemBackground"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/icon_color"
+                        app:srcCompat="@drawable/lib_ic_copy_note"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/copy"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp"
+                        style="@style/textDefault" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_copy_premium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        app:srcCompat="@drawable/ic_premium_small"/>
+                </LinearLayout>
+            </FrameLayout>
 
             <com.ezteam.ezpdflib.widget.ItemFuncView
                 android:id="@+id/func_delete"
