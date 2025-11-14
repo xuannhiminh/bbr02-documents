@@ -91,7 +91,7 @@ import officepro.document.reader.viewer.editor.dialog.UpdateDownloadedDialog
 import officepro.document.reader.viewer.editor.notification.NotificationManager
 import officepro.document.reader.viewer.editor.screen.overlay.ClearDefaultReaderOverlayActivity
 import officepro.document.reader.viewer.editor.service.NotificationForegroundService
-import officepro.document.reader.viewer.editor.utils.AppUtils
+import com.brian.base_iap.utils.AppUtils
 import officepro.document.reader.viewer.editor.utils.FileSaveManager
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import officepro.document.reader.viewer.editor.utils.createPdf.OnPDFCreatedInterface

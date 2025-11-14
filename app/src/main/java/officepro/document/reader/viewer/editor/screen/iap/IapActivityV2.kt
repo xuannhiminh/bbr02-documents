@@ -30,7 +30,7 @@ import officepro.document.reader.viewer.editor.databinding.ActivityIap3Binding
 import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
 import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
-import officepro.document.reader.viewer.editor.utils.AppUtils
+import com.brian.base_iap.utils.AppUtils
 import com.google.firebase.analytics.FirebaseAnalytics.Event;
 import com.google.firebase.analytics.FirebaseAnalytics.Param;
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil

@@ -28,7 +28,7 @@ import officepro.document.reader.viewer.editor.notification.FileObserverWrapper
 import officepro.document.reader.viewer.editor.notification.NotificationManager
 import officepro.document.reader.viewer.editor.receiver.HomeButtonReceiver
 import officepro.document.reader.viewer.editor.receiver.UnlockReceiver
-import officepro.document.reader.viewer.editor.utils.AppUtils
+import com.brian.base_iap.utils.AppUtils
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_DESCRIPTION_FOREGROUND
 import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_ID_FOREGROUND

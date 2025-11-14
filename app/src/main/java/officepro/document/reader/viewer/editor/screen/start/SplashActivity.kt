@@ -43,7 +43,7 @@ import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
 import officepro.document.reader.viewer.editor.screen.main.MainViewModel
 import officepro.document.reader.viewer.editor.service.NotificationForegroundService
-import officepro.document.reader.viewer.editor.utils.AppUtils
+import com.brian.base_iap.utils.AppUtils
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import kotlinx.coroutines.CancellationException
 import com.brian.base_iap.utils.PreferencesHelper

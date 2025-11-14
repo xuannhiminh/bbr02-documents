@@ -17,6 +17,7 @@ import android.widget.Toast
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.FragmentActivity
 import com.brian.base_iap.iap.IapRegistrationSuccessfulActivity
+import com.brian.base_iap.utils.AppUtils
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
 import com.ezteam.baseproject.iapLib.v3.BillingProcessor
 import com.ezteam.baseproject.iapLib.v3.Constants
@@ -34,7 +35,6 @@ import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
 import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
-import officepro.document.reader.viewer.editor.utils.AppUtils
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.common.PresKey

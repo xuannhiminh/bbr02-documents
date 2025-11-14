@@ -40,7 +40,7 @@ import officepro.document.reader.viewer.editor.notification.NotificationManager
 import officepro.document.reader.viewer.editor.screen.main.MainViewModel
 import officepro.document.reader.viewer.editor.screen.rate.DialogRating
 import officepro.document.reader.viewer.editor.screen.rate.DialogRatingState
-import officepro.document.reader.viewer.editor.utils.AppUtils.Companion.PDF_DETAIL_EZLIB
+import com.brian.base_iap.utils.AppUtils.Companion.PDF_DETAIL_EZLIB
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import officepro.document.reader.viewer.editor.dialog.DefaultReaderRequestDialog
 import officepro.document.reader.viewer.editor.dialog.DefaultReaderUninstallDialog

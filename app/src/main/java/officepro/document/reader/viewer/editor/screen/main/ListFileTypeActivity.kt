@@ -44,7 +44,7 @@ import officepro.document.reader.viewer.editor.screen.main.MainActivity.Companio
 import officepro.document.reader.viewer.editor.screen.reloadfile.ReloadLoadingActivity
 import officepro.document.reader.viewer.editor.screen.search.SelectMultipleFilesActivity
 import officepro.document.reader.viewer.editor.service.NotificationForegroundService
-import officepro.document.reader.viewer.editor.utils.AppUtils
+import com.brian.base_iap.utils.AppUtils
 import officepro.document.reader.viewer.editor.utils.FileSaveManager
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import com.google.firebase.analytics.FirebaseAnalytics
