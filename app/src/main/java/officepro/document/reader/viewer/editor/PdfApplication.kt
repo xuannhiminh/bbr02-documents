@@ -39,7 +39,7 @@ import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.common.LocaleManager
 import officepro.document.reader.viewer.editor.di.appModule
 import officepro.document.reader.viewer.editor.notification.NotificationManager
-import officepro.document.reader.viewer.editor.screen.iap.IapActivity
+import com.brian.base_iap.iap.IapActivity
 import officepro.document.reader.viewer.editor.screen.start.SplashActivity
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import office.file.ui.MyLibApplication
@@ -48,7 +48,7 @@ import org.koin.core.context.startKoin
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.RequestConfiguration
 import com.google.firebase.analytics.FirebaseAnalytics
-import officepro.document.reader.viewer.editor.screen.iap.IapActivityV2
+import com.brian.base_iap.iap.IapActivityV2
 import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
 

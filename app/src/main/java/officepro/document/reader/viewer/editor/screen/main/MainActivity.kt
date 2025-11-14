@@ -115,8 +115,8 @@ import com.nlbn.ads.util.Helper
 import kotlinx.coroutines.withContext
 import officepro.document.reader.viewer.editor.dialog.AddToHomeRequestDialog
 import officepro.document.reader.viewer.editor.dialog.ExitAppDialog
-import officepro.document.reader.viewer.editor.screen.iap.IapActivity
-import officepro.document.reader.viewer.editor.screen.iap.IapActivityV2
+import com.brian.base_iap.iap.IapActivity
+import com.brian.base_iap.iap.IapActivityV2
 import com.brian.base_iap.utils.PreferencesHelper
 import com.brian.base_iap.utils.FCMTopicHandler
 import okhttp3.OkHttpClient

@@ -40,8 +40,8 @@ import officepro.document.reader.viewer.editor.screen.TermAndConditionsActivity
 import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
 import officepro.document.reader.viewer.editor.screen.create.BottomSheetCreatePdf
 import officepro.document.reader.viewer.editor.screen.create.CreateSuccessActivity
-import officepro.document.reader.viewer.editor.screen.iap.IapActivity
-import officepro.document.reader.viewer.editor.screen.iap.IapActivityV2
+import com.brian.base_iap.iap.IapActivity
+import com.brian.base_iap.iap.IapActivityV2
 import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity.Companion.CODE_ACTION_OPEN_DOCUMENT_FILE
 import officepro.document.reader.viewer.editor.screen.main.MainActivity.Companion.CODE_CHOOSE_IMAGE
