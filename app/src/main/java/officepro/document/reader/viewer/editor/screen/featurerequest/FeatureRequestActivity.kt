@@ -11,7 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.firestore.FirebaseFirestore
 import officepro.document.reader.viewer.editor.R

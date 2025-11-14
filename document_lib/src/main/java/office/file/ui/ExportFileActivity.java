@@ -19,7 +19,7 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 
-import com.ezteam.baseproject.utils.PreferencesUtils;
+import com.brian.base_iap.utils.PreferencesUtils;
 import com.ezteam.baseproject.utils.PresKey;
 
 import java.io.File;

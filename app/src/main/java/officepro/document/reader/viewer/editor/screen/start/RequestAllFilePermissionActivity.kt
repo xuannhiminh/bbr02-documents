@@ -17,7 +17,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.common.PresKey

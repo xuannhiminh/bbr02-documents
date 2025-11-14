@@ -22,7 +22,7 @@ import com.brian.base_iap.iapLib.BillingProcessor
 import com.brian.base_iap.iapLib.PurchaseInfo
 import com.ezteam.baseproject.activity.BaseActivity
 import com.brian.base_iap.utils.IAPUtils
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.baseproject.utils.TemporaryStorage
 import com.google.android.gms.ads.LoadAdError

@@ -19,7 +19,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView

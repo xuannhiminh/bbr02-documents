@@ -27,7 +27,7 @@ import com.ezstudio.pdftoolmodule.di.toolModule
 import com.ezteam.baseproject.BuildConfig
 import com.ezteam.baseproject.di.baseModule
 import com.brian.base_iap.utils.IAPUtils
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.facebook.ads.AdSettings
 import com.google.firebase.FirebaseApp
 import com.google.firebase.appcheck.FirebaseAppCheck

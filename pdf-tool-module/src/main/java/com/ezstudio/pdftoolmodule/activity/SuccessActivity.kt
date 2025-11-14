@@ -18,7 +18,7 @@ import com.ezteam.baseproject.extensions.share
 import com.ezteam.baseproject.utils.DateUtils
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.brian.base_iap.utils.IAPUtils
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils
 import com.google.android.gms.ads.LoadAdError

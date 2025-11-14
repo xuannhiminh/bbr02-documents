@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import androidx.fragment.app.DialogFragment
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.ezpdflib.R
 import com.ezteam.ezpdflib.databinding.BottomSheetDetailFuncBinding
 

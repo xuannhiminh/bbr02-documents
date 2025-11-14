@@ -24,7 +24,7 @@ import officepro.document.reader.viewer.editor.utils.RenameStatus
 import com.ezteam.baseproject.EzListener
 import com.ezteam.baseproject.utils.DateUtils
 import com.ezteam.baseproject.utils.PathUtils
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.TemporaryStorage
 import com.ezteam.baseproject.utils.permisson.PermissionUtils
 import com.ezteam.baseproject.viewmodel.BaseViewModel

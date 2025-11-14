@@ -12,7 +12,7 @@ import officepro.document.reader.viewer.editor.databinding.DialogRateAppBinding
 import com.ezteam.baseproject.dialog.BaseDialog
 import com.ezteam.baseproject.dialog.BuilderDialog
 import com.ezteam.baseproject.listener.EzItemListener
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.ViewUtils.showViewBase
 import java.util.*
 

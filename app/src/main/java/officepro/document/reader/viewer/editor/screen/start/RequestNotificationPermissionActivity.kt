@@ -21,7 +21,7 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.TemporaryStorage
 import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.R

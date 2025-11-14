@@ -25,7 +25,7 @@ import com.ezteam.baseproject.adapter.BasePagerAdapter
 import com.ezteam.baseproject.extensions.calculateTime
 import com.ezteam.baseproject.extensions.launchActivity
 import com.ezteam.baseproject.utils.PathUtils
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.baseproject.utils.TemporaryStorage
 import com.ezteam.ezpdflib.listener.BroadcastSubmodule

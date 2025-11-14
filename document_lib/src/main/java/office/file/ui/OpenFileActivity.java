@@ -12,7 +12,7 @@ import androidx.annotation.ColorRes;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.WindowCompat;
 
-import com.ezteam.baseproject.utils.PreferencesUtils;
+import com.brian.base_iap.utils.PreferencesUtils;
 import com.ezteam.baseproject.utils.PresKey;
 
 public class OpenFileActivity extends BaseOpenFileActivity {

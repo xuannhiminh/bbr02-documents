@@ -86,7 +86,7 @@ import com.ezteam.baseproject.print.PdfDocumentAdapter;
 import com.ezteam.baseproject.utils.FileUtil;
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil;
 import com.brian.base_iap.utils.IAPUtils;
-import com.ezteam.baseproject.utils.PreferencesUtils;
+import com.brian.base_iap.utils.PreferencesUtils;
 import com.ezteam.baseproject.utils.PresKey;
 import com.ezteam.baseproject.utils.TemporaryStorage;
 import com.google.android.gms.ads.LoadAdError;

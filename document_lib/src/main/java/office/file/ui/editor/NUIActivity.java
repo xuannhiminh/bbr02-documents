@@ -15,7 +15,7 @@ import com.artifex.solib.ConfigOptions;
 import com.artifex.solib.k;
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil;
 import com.brian.base_iap.utils.IAPUtils;
-import com.ezteam.baseproject.utils.PreferencesUtils;
+import com.brian.base_iap.utils.PreferencesUtils;
 import com.ezteam.baseproject.utils.PresKey;
 import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeAdView;

@@ -13,7 +13,7 @@ import officepro.document.reader.viewer.editor.databinding.BottomSheetDetailsFun
 import officepro.document.reader.viewer.editor.model.FileModel
 import com.ezteam.baseproject.listener.EzItemListener
 import com.ezteam.baseproject.utils.DateUtils
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class BottomSheetDetailFunction(

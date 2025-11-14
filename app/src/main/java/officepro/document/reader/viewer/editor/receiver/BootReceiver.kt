@@ -5,7 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import androidx.core.content.ContextCompat
-import com.ezteam.baseproject.utils.PreferencesUtils
+import com.brian.base_iap.utils.PreferencesUtils
 import officepro.document.reader.viewer.editor.common.PresKey
 import officepro.document.reader.viewer.editor.service.NotificationForegroundService
 
