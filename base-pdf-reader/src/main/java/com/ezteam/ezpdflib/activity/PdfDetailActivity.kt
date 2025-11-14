@@ -41,7 +41,7 @@ import com.ezstudio.pdftoolmodule.activity.ExtractActivity
 import com.ezstudio.pdftoolmodule.dialog.AddWatermarkDialog
 import com.ezteam.baseproject.extensions.uriToBitmap
 import com.ezteam.baseproject.photopicker.PickImageActivity
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.PresKey
 import com.ezteam.baseproject.utils.SystemUtils

@@ -41,7 +41,7 @@ import officepro.document.reader.viewer.editor.di.appModule
 import officepro.document.reader.viewer.editor.notification.NotificationManager
 import officepro.document.reader.viewer.editor.screen.iap.IapActivity
 import officepro.document.reader.viewer.editor.screen.start.SplashActivity
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import office.file.ui.MyLibApplication
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin

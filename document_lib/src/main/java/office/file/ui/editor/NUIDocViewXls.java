@@ -27,7 +27,7 @@ import android.widget.PopupWindow.OnDismissListener;
 import com.artifex.solib.SODoc;
 import com.artifex.solib.SOSelectionLimits;
 import com.artifex.solib.SOSelectionTableRange;
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil;
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil;
 
 import office.file.ui.editor.R.color;
 import office.file.ui.editor.R.drawable;

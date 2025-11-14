@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import android.view.Window
 import androidx.fragment.app.DialogFragment
 import com.ezteam.baseproject.animation.AnimationUtils
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
 import com.ezteam.baseproject.utils.TemporaryStorage

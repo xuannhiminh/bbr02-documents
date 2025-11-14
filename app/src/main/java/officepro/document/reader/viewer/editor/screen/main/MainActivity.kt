@@ -93,7 +93,7 @@ import officepro.document.reader.viewer.editor.screen.overlay.ClearDefaultReader
 import officepro.document.reader.viewer.editor.service.NotificationForegroundService
 import com.brian.base_iap.utils.AppUtils
 import officepro.document.reader.viewer.editor.utils.FileSaveManager
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import officepro.document.reader.viewer.editor.utils.createPdf.OnPDFCreatedInterface
 import officepro.document.reader.viewer.editor.widgets.Widget1
 import officepro.document.reader.viewer.editor.widgets.Widget2

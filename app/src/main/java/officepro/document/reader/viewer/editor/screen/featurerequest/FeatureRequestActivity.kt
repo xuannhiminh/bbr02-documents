@@ -19,7 +19,7 @@ import officepro.document.reader.viewer.editor.databinding.ActivityFeatureReques
 import officepro.document.reader.viewer.editor.model.FeedbackData
 import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
 import officepro.document.reader.viewer.editor.screen.featurerequest.FeatureRequestSuccessDialog
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 
 class FeatureRequestActivity : PdfBaseActivity<ActivityFeatureRequestBinding>() {
 

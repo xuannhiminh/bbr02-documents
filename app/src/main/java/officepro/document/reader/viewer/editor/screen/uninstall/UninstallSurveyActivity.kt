@@ -29,7 +29,7 @@ import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.TemporaryStorage
 import com.google.firebase.firestore.FirebaseFirestore
 import officepro.document.reader.viewer.editor.model.FeedbackData
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 
 class UninstallSurveyActivity : PdfBaseActivity<ActivityUninstallReasonBinding>() {
     private lateinit var adapter: IssueOptionAdapter

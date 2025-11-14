@@ -14,7 +14,7 @@ import android.widget.Toast
 import androidx.core.content.FileProvider
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.PathUtils
 import com.ezteam.baseproject.utils.SystemUtils

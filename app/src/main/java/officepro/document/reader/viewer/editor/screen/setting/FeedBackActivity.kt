@@ -22,7 +22,7 @@ import officepro.document.reader.viewer.editor.model.FeedbackData
 import officepro.document.reader.viewer.editor.screen.PolicyActivity
 import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
 import officepro.document.reader.viewer.editor.screen.setting.FeedBackSucessDialog
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.SystemUtils
 
 class FeedBackActivity : PdfBaseActivity<ActivityFeedbackBinding>() {

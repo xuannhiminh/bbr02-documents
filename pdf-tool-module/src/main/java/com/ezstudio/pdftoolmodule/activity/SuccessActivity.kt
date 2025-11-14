@@ -16,7 +16,7 @@ import com.ezteam.baseproject.extensions.launchActivity
 import com.ezteam.baseproject.extensions.openFile
 import com.ezteam.baseproject.extensions.share
 import com.ezteam.baseproject.utils.DateUtils
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.PreferencesUtils
 import com.ezteam.baseproject.utils.PresKey

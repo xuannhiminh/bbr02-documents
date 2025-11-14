@@ -46,7 +46,7 @@ import officepro.document.reader.viewer.editor.screen.search.SelectMultipleFiles
 import officepro.document.reader.viewer.editor.service.NotificationForegroundService
 import com.brian.base_iap.utils.AppUtils
 import officepro.document.reader.viewer.editor.utils.FileSaveManager
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.google.firebase.analytics.FirebaseAnalytics
 import officepro.document.reader.viewer.editor.screen.file.ListFileAllFragment
 import officepro.document.reader.viewer.editor.screen.file.ListFileExcelFragment

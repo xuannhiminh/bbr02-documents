@@ -9,7 +9,7 @@ import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.databinding.ActivityPolicyBinding
 import com.ezteam.baseproject.activity.BaseActivity
 import officepro.document.reader.viewer.editor.screen.main.ListFileTypeActivity
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 //import com.google.android.gms.ads.ez.EzAdControl
 import java.io.IOException
 

@@ -35,7 +35,7 @@ import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
 import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.common.PresKey
 import officepro.document.reader.viewer.editor.databinding.ActivityIapBinding

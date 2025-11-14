@@ -29,7 +29,7 @@ import org.apache.commons.io.FilenameUtils
 import org.koin.android.ext.android.inject
 import java.util.Locale
 import androidx.core.widget.addTextChangedListener
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import officepro.document.reader.viewer.editor.adapter.SearchFileAdapter
 
 class SearchFileActivity : PdfBaseActivity<ActivitySearchFileBinding>() {

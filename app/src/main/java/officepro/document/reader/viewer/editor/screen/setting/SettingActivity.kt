@@ -49,7 +49,7 @@ import officepro.document.reader.viewer.editor.screen.main.MainViewModel
 import officepro.document.reader.viewer.editor.screen.overlay.ClearDefaultReaderOverlayActivity
 import officepro.document.reader.viewer.editor.screen.reloadfile.FeatureRequestActivity
 import officepro.document.reader.viewer.editor.utils.FileSaveManager
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import officepro.document.reader.viewer.editor.utils.createPdf.OnPDFCreatedInterface
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -14,7 +14,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.graphics.ColorUtils
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.PDFConstants.Companion.ADS_ITEM_INDEX
 import com.ezteam.baseproject.utils.SystemUtils

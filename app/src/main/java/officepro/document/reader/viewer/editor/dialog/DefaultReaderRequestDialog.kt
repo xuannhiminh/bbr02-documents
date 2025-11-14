@@ -19,7 +19,7 @@ import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
 import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.databinding.DefaultReaderRequestDialogBinding
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.brian.base_iap.utils.PreferencesHelper
 import okio.Closeable
 

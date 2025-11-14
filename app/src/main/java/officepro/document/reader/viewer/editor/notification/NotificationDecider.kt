@@ -5,7 +5,7 @@ import android.os.Build
 import android.os.Environment
 import android.util.Log
 import com.ezteam.baseproject.utils.IAPUtils
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import java.util.Calendar
 import java.util.concurrent.TimeUnit
 

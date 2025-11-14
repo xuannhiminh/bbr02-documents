@@ -44,7 +44,7 @@ import officepro.document.reader.viewer.editor.screen.main.MainActivity
 import officepro.document.reader.viewer.editor.screen.main.MainViewModel
 import officepro.document.reader.viewer.editor.service.NotificationForegroundService
 import com.brian.base_iap.utils.AppUtils
-import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import kotlinx.coroutines.CancellationException
 import com.brian.base_iap.utils.PreferencesHelper
 import com.brian.base_iap.utils.FCMTopicHandler

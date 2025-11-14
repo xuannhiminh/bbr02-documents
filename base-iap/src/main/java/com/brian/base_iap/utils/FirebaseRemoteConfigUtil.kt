@@ -23,7 +23,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val DEFAULT_VERSION_CODE_REVIEWING = 0
         private const val DEFAULT_FEEDBACK_TYPE = 0
         private const val DEFAULT_NOTIFICATION_FREQUENCY_MINUTES = 60L
-        private const val DEFAULT_PDF_DETAIL_TYPE = 0
+        private const val DEFAULT_PDF_DETAIL_TYPE = 1
         private const val DEFAULT_REQUEST_FEATURE_SETTING_ON_OFF = false
         private const val DEFAULT_FEEDBACK_SETTING_ON_OFF = false
         private const val DEFAULT_REQUEST_NOTI_ACTIVITY_ON_OFF = false
@@ -47,7 +47,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val DEFAULT_TIME_BLOCK_DEFAULT_READER = 1L
         private const val DEFAULT_TURN_OFF_NOTI_SERVICE_IF_PREMIUM = false
         private const val DEFAULT_ALWAYS_ASK_NOTI_WHEN_ENTER_APP = false
-        private const val DEFAULT_IAP_SCREEN_TYPE = 0
+        private const val DEFAULT_IAP_SCREEN_TYPE = 1
         private const val DEFAULT_LANGUAGE_ADAPTER_TYPE = 0
         private const val DEFAULT_SHOW_ADS_MAIN = false
         private const val DEFAULT_ALLOW_SAVE_EXCEL_TO_PDF = false
@@ -58,37 +58,37 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val DEFAULT_TYPE_ADS_DETAIL = 0
         private const val DEFAULT_FREE_TRIAL_BUTTON_TEXT = "Start free trial"
         private const val DEFAULT_IAP_BUTTON_TEXT = "Start now"
-        private const val DEFAULT_FREE_TRIAL_EXPLAIN_TEXT = "%s/Week after FREE 3-day Trial"
-        private const val DEFAULT_IAP_EXPLAIN_TEXT =        "%s/week, feel FREE to cancel anytime"
+        private const val DEFAULT_FREE_TRIAL_EXPLAIN_TEXT = "%s/Week after 3 days FREE trial"
+        private const val DEFAULT_IAP_EXPLAIN_TEXT =        "%s/week, feel FREE to cancel"
         private const val DEFAULT_IAP_BASE_PLAN = "release-weekly-plan"
         private const val DEFAULT_IS_FREE_TRIAL_ENABLE = true
-        private const val DEFAULT_SAVE_FILE_NEED_PREMIUM = true
+        private const val DEFAULT_IAP_PRICE_COLOR = "#00091D"
         private const val DEFAULT_ADS_CONFIG = """
             {
-              "open_splash": "ca-app-pub-5904408074441373/2634978210",
-              "inter_splash": "ca-app-pub-5904408074441373/7567740697",
-              "native_language": "ca-app-pub-5904408074441373/4829896712",
-              "banner_home": "ca-app-pub-5904408074441373/6771294653",
-              "native_middle": "ca-app-pub-5904408074441373/6254659026",
-              "native_home": "ca-app-pub-5904408074441373/1598859025",
-              "native_filedetail": "ca-app-pub-5904408074441373/7972695689",
-              "inter_filedetail": "ca-app-pub-5904408074441373/6659614019",
-              "banner_filedetail": "ca-app-pub-5904408074441373/6778817919",
-              "open_all": "ca-app-pub-5904408074441373/9890651709",
-              "native_bot_selectfiles": "ca-app-pub-5904408074441373/9288194083",
-              "native_between_files_selectfiles": "ca-app-pub-5904408074441373/5763704432",
-              "inter_createpdf": "ca-app-pub-5904408074441373/6382651538",
-              "native_bot_createpdf": "ca-app-pub-5904408074441373/4450622765",
-              "native_keep_user": "ca-app-pub-5904408074441373/7264488364",
-              "native_survey_user": "ca-app-pub-5904408074441373/2832049645",
-              "inter_setting": "ca-app-pub-5904408074441373/6490462743",
-              "inter_file_type": "ca-app-pub-5904408074441373/3756488199",
-              "native_file_type": "ca-app-pub-5904408074441373/8765272293",
-              "banner_file_type": "ca-app-pub-5904408074441373/7975112410",
-              "inter_reload_file_success": "ca-app-pub-5904408074441373/2527344616",
-              "native_reload_file_success": "ca-app-pub-5904408074441373/6662030740",
-              "native_exit_app": "ca-app-pub-5904408074441373/5837965863",
-              "inter_home": "ca-app-pub-5904408074441373/4783726883"
+              "open_splash": "ca-app-pub-3940256099942544/9257395921",
+              "inter_splash": "ca-app-pub-3940256099942544/1033173712",
+              "native_language": "ca-app-pub-3940256099942544/2247696110",
+              "banner_home": "ca-app-pub-3940256099942544/6300978111",
+              "native_middle": "ca-app-pub-3940256099942544/2247696110",
+              "native_home": "ca-app-pub-3940256099942544/2247696110",
+              "native_filedetail": "ca-app-pub-3940256099942544/2247696110",
+              "inter_filedetail": "ca-app-pub-3940256099942544/1033173712",
+              "banner_filedetail": "ca-app-pub-3940256099942544/6300978111",
+              "open_all": "ca-app-pub-3940256099942544/9257395921",
+              "native_bot_selectfiles": "ca-app-pub-3940256099942544/2247696110",
+              "native_between_files_selectfiles": "ca-app-pub-3940256099942544/2247696110",
+              "inter_createpdf": "ca-app-pub-3940256099942544/1033173712",
+              "native_bot_createpdf": "ca-app-pub-3940256099942544/2247696110",
+              "native_keep_user": "ca-app-pub-3940256099942544/2247696110",
+              "native_survey_user": "ca-app-pub-3940256099942544/2247696110",
+              "inter_setting": "ca-app-pub-3940256099942544/1033173712",
+              "inter_file_type": "ca-app-pub-3940256099942544/1033173712",
+              "native_file_type": "ca-app-pub-3940256099942544/2247696110",
+              "banner_file_type": "ca-app-pub-3940256099942544/6300978111",
+              "inter_reload_file_success": "ca-app-pub-3940256099942544/1033173712",
+              "native_reload_file_success": "ca-app-pub-3940256099942544/2247696110",
+              "native_exit_app": "ca-app-pub-3940256099942544/2247696110",
+              "inter_home": "ca-app-pub-3940256099942544/1033173712"
             }
         """
 
@@ -142,7 +142,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         private const val REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT = "free_trial_explain_text"
         private const val REMOTE_KEY_IAP_BASE_PLAN= "iap_weekly_plan"
         private const val REMOTE_KEY_IS_FREE_TRIAL_ENABLE = "is_free_trial_enable"
-        private const val REMOTE_KEY_SAVE_FILE_NEED_PREMIUM = "save_file_need_premium"
+        private const val REMOTE_KEY_IAP_PRICE_COLOR = "iap_price_color"
 
 
 
@@ -220,9 +220,9 @@ class FirebaseRemoteConfigUtil private constructor() {
                 REMOTE_KEY_FREE_TRIAL_EXPLAIN_TEXT to DEFAULT_FREE_TRIAL_EXPLAIN_TEXT,
                 REMOTE_KEY_IAP_BASE_PLAN to DEFAULT_IAP_BASE_PLAN,
                 REMOTE_KEY_IS_FREE_TRIAL_ENABLE to DEFAULT_IS_FREE_TRIAL_ENABLE,
-                REMOTE_KEY_SAVE_FILE_NEED_PREMIUM to DEFAULT_SAVE_FILE_NEED_PREMIUM
+                REMOTE_KEY_IAP_PRICE_COLOR to DEFAULT_IAP_PRICE_COLOR,
 
-            )
+                )
         )
     }
 
@@ -404,7 +404,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         val explainText = explainTextRaw.ifBlank { DEFAULT_IAP_EXPLAIN_TEXT }
 
         return try {
-            String.format(Locale.US, explainText, price)
+            String.format(java.util.Locale.US, explainText, price)
         } catch (e: Exception) {
             // Fallback: if the template contains `%s`, replace occurrences; otherwise return the template as-is
             if (explainText.contains("%s")) explainText.replace("%s", price) else explainText
@@ -416,7 +416,7 @@ class FirebaseRemoteConfigUtil private constructor() {
         val explainText = explainTextRaw.ifBlank { DEFAULT_FREE_TRIAL_EXPLAIN_TEXT }
 
         return try {
-            String.format(Locale.US, explainText, price)
+            String.format(java.util.Locale.US, explainText, price)
         } catch (e: Exception) {
             // Fallback: if the template contains `%s`, replace occurrences; otherwise return the template as-is
             if (explainText.contains("%s")) explainText.replace("%s", price) else explainText
@@ -428,7 +428,7 @@ class FirebaseRemoteConfigUtil private constructor() {
     fun isFreeTrialEnable(): Boolean {
         return firebaseRemoteConfig.getBoolean(REMOTE_KEY_IS_FREE_TRIAL_ENABLE)
     }
-    fun saveFileNeedPremium(): Boolean {
-        return firebaseRemoteConfig.getBoolean(REMOTE_KEY_SAVE_FILE_NEED_PREMIUM)
+    fun getIapPriceColor(): String {
+        return firebaseRemoteConfig.getString(REMOTE_KEY_IAP_PRICE_COLOR).ifBlank { DEFAULT_IAP_PRICE_COLOR }
     }
 }
