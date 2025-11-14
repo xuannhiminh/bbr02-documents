@@ -130,54 +130,72 @@ class FileItemAdapter(
         this.isCheckMode = isCheckMode
 //        notifyDataSetChanged()
     }
-    private val chosenPositions = mutableSetOf<Int>()
+    private val selectedFilePaths = mutableSetOf<String>()
 
-override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-    val file = list[position]
+    // Override setList to update selection when list changes
+    override fun setList(list: List<FileModel>) {
+        // Remove selected paths that no longer exist in the new list
+        val newListPaths = list.map { it.path }.toSet()
+        selectedFilePaths.removeAll { it !in newListPaths }
 
-    holder.bindData(file)
-    holder.binding.selectCheckbox.visibility = if (isCheckMode) View.VISIBLE else View.GONE
+        super.setList(list)
+        onSelectedCountChangeListener?.invoke(selectedFilePaths.size)
 
-    // Cập nhật trạng thái checkbox dựa trên danh sách chọn
-    holder.binding.selectCheckbox.isChecked  = chosenPositions.contains(position)
-    holder.binding.selectCheckbox.setOnCheckedChangeListener { _, isChecked ->
-        if (isChecked) {
-            chosenPositions.add(position)
-        } else {
-            chosenPositions.remove(position)
-        }
-        onSelectedCountChangeListener?.invoke(chosenPositions.size)
+        notifyDataSetChanged()
     }
-    holder.bindData(list[position])
 
-}
-    fun getSelectedFiles(): List<FileModel> {
-        val selected = mutableListOf<FileModel>()
-        for (pos in chosenPositions.toList()) { // Iterate on a copy to prevent ConcurrentModificationException if chosenPositions is modified during iteration
-            if (pos >= 0 && pos < list.size) {
-                selected.add(list[pos])
-            } else {
-                // This indicates a logical error where chosenPositions contains invalid indices
-                // Log this for debugging to understand how an invalid index got there.
-                Log.e("FileItemAdapter", "Attempted to access invalid index $pos. Current list size: ${list.size}. Chosen positions: $chosenPositions")
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val file = list[position]
+
+        holder.bindData(file)
+        holder.binding.selectCheckbox.visibility = if (isCheckMode) View.VISIBLE else View.GONE
+
+        // Cập nhật trạng thái checkbox dựa trên danh sách chọn (skip ads)
+        val isSelected = !file.isAds && selectedFilePaths.contains(file.path)
+        holder.binding.selectCheckbox.isSelected = isSelected
+
+        holder.binding.selectCheckbox.setOnClickListener {
+            // Don't allow selection of ads
+            if (file.isAds) {
+                return@setOnClickListener
             }
+
+            it.isSelected = !it.isSelected
+            if (it.isSelected) {
+                selectedFilePaths.add(file.path)
+            } else {
+                selectedFilePaths.remove(file.path)
+            }
+            onSelectedCountChangeListener?.invoke(selectedFilePaths.size)
         }
-        return selected
+
+
+    }
+    fun getSelectedFiles(): List<FileModel> {
+        return list.filter { selectedFilePaths.contains(it.path) }
     }
     // Hàm chọn tất cả
     fun selectAll() {
-        chosenPositions.clear()
-        for (i in list.indices) {
-            chosenPositions.add(i)
+        selectedFilePaths.clear()
+        // Only select non-ads files
+        list.forEach { file ->
+            if (!file.isAds) {
+                selectedFilePaths.add(file.path)
+            }
         }
-        onSelectedCountChangeListener?.invoke(chosenPositions.size)
+        onSelectedCountChangeListener?.invoke(selectedFilePaths.size)
         notifyDataSetChanged()
     }
 
     // Hàm bỏ chọn tất cả
     fun deselectAll() {
-        chosenPositions.clear()
-        onSelectedCountChangeListener?.invoke(chosenPositions.size)
+        selectedFilePaths.clear()
+        onSelectedCountChangeListener?.invoke(selectedFilePaths.size)
         notifyDataSetChanged()
+    }
+
+    // Get count of selectable items (non-ads files)
+    fun getSelectableItemCount(): Int {
+        return list.count { !it.isAds }
     }
 }

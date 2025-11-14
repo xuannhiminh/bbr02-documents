@@ -35,6 +35,7 @@ import officepro.document.reader.viewer.editor.common.BottomTab
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import java.util.Locale
+import kotlin.compareTo
 
 class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() {
     private val viewModel by inject<MainViewModel>()
@@ -143,7 +144,7 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
 
             val enabled = count > 0
             updateNavMenuState(enabled)
-            binding.toolbar.checkboxAll.isSelected = count == adapter.itemCount
+            binding.toolbar.checkboxAll.isSelected = count == adapter.getSelectableItemCount() && count > 0
         }
         if (Locale.getDefault().language == "ar") {
             binding.toolbar.ivBack.rotationY = 180f
@@ -174,7 +175,6 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
             }
             liveData.observe(this@SelectMultipleFilesActivity) {
                 adapter.setList(it)
-                adapter.notifyDataSetChanged()
 
                 if (it.isEmpty()) {
                     binding.layoutEmpty.visibility = View.VISIBLE
