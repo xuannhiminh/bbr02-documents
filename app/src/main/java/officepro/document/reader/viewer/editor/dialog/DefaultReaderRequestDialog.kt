@@ -62,7 +62,6 @@ class DefaultReaderRequestDialog : DialogFragment() {
             dialog.setCancelable(allowCancelOutside)
             dialog.setCanceledOnTouchOutside(allowCancelOutside)
         }
-        PreferencesHelper.putInt("DefaultReaderRequestDialogShowTime", defaultReaderRequestDialogShowTime + 1)
         return dialog
     }
 
@@ -81,7 +80,13 @@ class DefaultReaderRequestDialog : DialogFragment() {
         isViewDestroyed = false
 
         val closeable = arguments?.getBoolean(ARG_SHOW_CLOSE, false) ?: false
-        binding.ivClose.visibility = if (closeable) View.VISIBLE else View.GONE
+        val defaultReaderRequestDialogShowTime = PreferencesHelper.getInt("DefaultReaderRequestDialogShowTime", 0)
+        val needShowClose = defaultReaderRequestDialogShowTime < FirebaseRemoteConfigUtil.getInstance().getTimeBlockDefaultReader()
+        binding.ivClose.visibility = if (closeable && needShowClose) {
+            View.VISIBLE
+        } else {
+            View.GONE
+        }
 
         val fileType = arguments?.getString(ARG_FILE_TYPE, getString(R.string.all_file)) ?: getString(R.string.all_file)
         setupTitle(fileType)
@@ -100,6 +105,7 @@ class DefaultReaderRequestDialog : DialogFragment() {
             }
         }
         binding.ivClose.setOnClickListener { dismiss() }
+        PreferencesHelper.putInt("DefaultReaderRequestDialogShowTime", defaultReaderRequestDialogShowTime + 1)
     }
     private fun setupTitle(fileType: String) {
         val appName = getString(R.string.app_name)

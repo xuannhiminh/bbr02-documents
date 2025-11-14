@@ -408,35 +408,8 @@ class SettingActivity : PdfBaseActivity<ActivitySettingsBinding>() {
             }
         }
         binding.funcSetDefault.setOnClickListener {
-            val defaultPdfViewerResolveInfo = getDefaultPdfViewerClass()
-            Log.i("DefaultReader", "defaultPdfViewer: $defaultPdfViewerResolveInfo")
-            if (defaultPdfViewerResolveInfo?.activityInfo == null || defaultPdfViewerResolveInfo.activityInfo.name.contains("internal.app.ResolverActivity")) { // default reader isn't set => show dialog to set default
-                val dialog = DefaultReaderRequestDialog();
-                try {
-                    dialog.show(this.supportFragmentManager, "RequestDefaultReaderDialog")
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                    Log.e("SettingActivity", "Error showing RequestDefaultReaderDialog: ${e.message}", e)
-                }
-            } else if(!defaultPdfViewerResolveInfo.activityInfo.name.contains(packageName) ) { // default reader is set but not our app => show dialog to clear default
-                val fragmentManager = supportFragmentManager
-                val existingDialog = fragmentManager.findFragmentByTag("DefaultReaderUninstallDialog")
-                if (existingDialog == null) {
-                    val dialog = DefaultReaderUninstallDialog()
-                    dialog.defaultViewer = defaultPdfViewerResolveInfo
-                    dialog.listener = {
-                        isGoingToSettingToClearDefault = true
-                    }
-                    try {
-                        dialog.show(fragmentManager, "DefaultReaderUninstallDialog")
-                    } catch (e: Exception) {
-                        e.printStackTrace()
-                        Log.e("SettingActivity", "Error showing DefaultReaderUninstallDialog: ${e.message}", e)
-                    }
-                }
-            } else { // default reader is our app => do nothing
-                Log.d("DefaultReader", "defaultPdfViewer: $defaultPdfViewerResolveInfo")
-            }
+            currentFileTypeIndex = 0
+            showNextDefaultReaderDialog()
         }
 
         binding.switchKeepScreen.setOnCheckedChangeListener { _, isChecked ->

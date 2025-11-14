@@ -925,7 +925,7 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
             Log.d(TAG, "time enter app = $timeEnterApp")
             if (timeEnterApp == 1 || timeEnterApp % 3 == 0 || BuildConfig.DEBUG) {
                 currentFileTypeIndex = 0
-                showNextDefaultReaderDialog()
+                showNextDefaultReaderDialog(true)
             }
         }
     }
