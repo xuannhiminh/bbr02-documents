@@ -76,7 +76,7 @@
             android:id="@+id/navigation_detail"
             style="@style/textDefault"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@color/white"
             android:paddingTop="@dimen/_3sdp"

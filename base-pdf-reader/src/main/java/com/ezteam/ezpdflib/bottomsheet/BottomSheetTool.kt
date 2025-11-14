@@ -81,6 +81,13 @@ class BottomSheetTool(
             )
         binding.funcPassword.iconResId =
             if (hasPassword) R.drawable.lib_ic_remove_password else R.drawable.lib_ic_set_password
+        if (IAPUtils.isPremium()) {
+            binding.icAddWatermarkPremium.visibility = View.GONE
+            binding.icExtractImagePremium.visibility = View.GONE
+        } else {
+            binding.icAddWatermarkPremium.visibility = View.VISIBLE
+            binding.icExtractImagePremium.visibility = View.VISIBLE
+        }
     }
     private fun loadNativeNomedia() {
         if (IAPUtils.isPremium()) {

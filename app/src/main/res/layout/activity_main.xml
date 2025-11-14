@@ -204,7 +204,7 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/nav_view"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:elevation="0dp"
                 android:translationZ="0dp"
                 app:itemTextAppearanceActive="@style/BottomNavigationViewText"

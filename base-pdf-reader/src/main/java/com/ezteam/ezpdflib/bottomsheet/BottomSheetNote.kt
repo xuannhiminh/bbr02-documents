@@ -64,7 +64,11 @@ class BottomSheetNote(
 
     private fun initViews() {
         binding.funcDelete.visibility = View.GONE
-
+        if (IAPUtils.isPremium()) {
+            binding.icCopyPremium.visibility = View.GONE
+        } else {
+            binding.icCopyPremium.visibility = View.VISIBLE
+        }
     }
     private fun loadNativeNomedia() {
         if (IAPUtils.isPremium()) {
