@@ -118,7 +118,7 @@ import officepro.document.reader.viewer.editor.dialog.ExitAppDialog
 import officepro.document.reader.viewer.editor.screen.iap.IapActivity
 import officepro.document.reader.viewer.editor.screen.iap.IapActivityV2
 import com.brian.base_iap.utils.PreferencesHelper
-import officepro.document.reader.viewer.editor.utils.FCMTopicHandler
+import com.brian.base_iap.utils.FCMTopicHandler
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import com.ezteam.baseproject.utils.UrlObf

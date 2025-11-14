@@ -47,7 +47,7 @@ import com.brian.base_iap.utils.AppUtils
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import kotlinx.coroutines.CancellationException
 import com.brian.base_iap.utils.PreferencesHelper
-import officepro.document.reader.viewer.editor.utils.FCMTopicHandler
+import com.brian.base_iap.utils.FCMTopicHandler
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.async

@@ -34,7 +34,7 @@ import com.brian.base_iap.utils.AppUtils
 import com.google.firebase.analytics.FirebaseAnalytics.Event;
 import com.google.firebase.analytics.FirebaseAnalytics.Param;
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
-import officepro.document.reader.viewer.editor.utils.FCMTopicHandler
+import com.brian.base_iap.utils.FCMTopicHandler
 
 class IapActivityV2 : PdfBaseActivity<ActivityIap3Binding>() {
 

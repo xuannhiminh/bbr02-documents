@@ -33,7 +33,7 @@ import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_DESCRIPTION_FOREGROUND
 import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_ID_FOREGROUND
 import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_NAME_SERVICE
-import officepro.document.reader.viewer.editor.utils.FCMTopicHandler
+import com.brian.base_iap.utils.FCMTopicHandler
 
 class NotificationForegroundService: Service() {
 

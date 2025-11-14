@@ -42,7 +42,7 @@ import officepro.document.reader.viewer.editor.databinding.ActivityIapBinding
 import officepro.document.reader.viewer.editor.screen.PolicyActivity
 import officepro.document.reader.viewer.editor.screen.TermAndConditionsActivity
 import officepro.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity
-import officepro.document.reader.viewer.editor.utils.FCMTopicHandler
+import com.brian.base_iap.utils.FCMTopicHandler
 import setSelectedCard
 import java.util.Locale
 
