@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ellipsis">&#8230;</string>
+    <string name="no_app_response">No application to perform this action</string>
+    <string name="share">Share</string>
+    <string name="app_name">All Document</string>
+
+    <string name="just_now_time">just now</string>
+    <string name="minute_ago">%s minutes ago</string>
+    <string name="hour_ago">%s hours ago</string>
+    <string name="day_ago">%s days ago</string>
+    <string name="cant_open_file">Can\'t open this file</string>
+    <string name="rate_us">Rate us</string>
+    <string name="rate_us_message">Do you want to rate this application?Your support will help us to improve it.</string>
+    <string name="rate_now">Rate now</string>
+    <string name="remind_later">Remind me later</string>
+
+    <string name="app_update_success">New app is ready</string>
+    <string name="install">Install now</string>
+    <string name="late">Late</string>
+    <string name="app_update_fail">App Update failed, please try again on the next app launch.</string>
+    <string name="app_being_download">Application is being downloaded</string>
+    <string name="all_image">All image</string>
+    <string name="images">Images</string>
+    <string name="done">Done</string>
+    <string name="limit_image">Limit image</string>
+    <string name="min_photo">Min photo</string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="crop_image_activity_title">Crop</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="reset_all">Reset All</string>
+    <string name="free">Free</string>
+    <string name="custom">Custom</string>
+    <string name="crop_11">1:1</string>
+    <string name="crop_45">4:5</string>
+    <string name="crop_916">9:16</string>
+    <string name="crop_43">4:3</string>
+    <string name="crop_54">5:4</string>
+    <string name="crop_74">7:4</string>
+    <string name="crop_31">3:1</string>
+    <string name="crop_21">2:1</string>
+    <string name="crop_32">3:2</string>
+    <string name="crop_23">2:3</string>
+    <string name="crop_a4">A4</string>
+    <string name="crop_34">3:4</string>
+
+    <string name="discard_edit">Do you want to discard the changes?</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard">Discard</string>
+    <string name="app_error">An error occurred. Please try again</string>
+    <string name="select_this_pdf_reader_icon_in_the_app_list">Select this <b>%s</b> icon in the app list.</string>
+    <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default">Select <b>%s</b> icon and click <b>%s</b> to set it as default!</string>
+    <string name="always">Always</string>
+    <string name="ok">Ok</string>
+    <string name="click_always_to_set_it_as_the_default_reader">Click <b>%s</b> to set it as the default reader.</string>
+    <string name="set_pdf_reader_as_your_default_all_file_viewer">Set <b>%s</b> as your default %s Viewer</string>
+    <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">Pick this option to open files fast and make reading super easy and fun!</string>
+    <string name="set_as_default">Set as Default</string>
+    <string name="all_file">All File</string>
+    <string name="set_pdf_reader_as_your_default_pdf_file_viewer">Set <b>%s</b> as your default PDF File Viewer</string>
+    <string name="default_reader_uninstall_description1">It seems that you have set another app as your default reader.</string>
+    <string name="default_reader_uninstall_description2">You can click "Reset" to change it.</string>
+    <string name="reset">Reset</string>
+    <string name="later">Later</string>
+    <string name="update_required">This version is outdated. Please update the app</string>
+
+    <string name="start_free_trial">Start Free Trial</string>
+    <string name="restore_success">Your purchases have been restored!</string>
+    <string name="please_update_store">Purchase failed. Please update the Play Store and sign in to your Google account</string>
+    <string name="not_confirm_purchase">Can\'t confirm the purchase. Please reopen app later.</string>
+    <string name="congrats">Congrats!</string>
+    <string name="congrats_subtext">Welcome to Premium,\n enjoy the benefits</string>
+    <string name="ok_great">Ok, Great!</string>
+    <string name="get_free_trial">Get 3-days Free Trial</string>
+    <string name="_3_days_free_trial">3-Days Free Trial!</string>
+    <string name="day_free_trial">3-days</string>
+    <string name="unlocked_premium_features">🔓 Unlocked all premium features</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="exclusive_tools_to_enhance">👑 Exclusive tools to enhance your experience</string>
+    <string name="exclusive_tools">Exclusive tools</string>
+    <string name="no_payment_cancel_refund">✨ No payment now, cancel anytime, 100% refund if unsatisfied!</string>
+    <string name="no_payment">No payment now</string>
+    <string name="refund">100% refund</string>
+    <string name="trial_conditions">3-DAY FREE TRIAL, then %s/Month (equivalent to %s/Year), auto-renewal, cancel anytime</string>
+    <string name="pay_for_renewal">%s/Month</string>
+    <string name="start_free_trial_now">Start Free Trial Now</string>
+    <string name="price_annual_note">Billed Yearly %s</string>
+    <string name="price_monthly">%s/Month</string>
+    <string name="price_weekly">%s/Week</string>
+    <string name="restore_fail">Failed to restore purchases. Please check your connection and try again.</string>
+    <string name="continuee">Continue</string>
+</resources>

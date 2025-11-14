@@ -6,7 +6,7 @@ import com.ezteam.baseproject.utils.IAPUtils
 import com.ezteam.baseproject.utils.PreferencesUtils
 import officepro.document.reader.viewer.editor.BuildConfig
 import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
+import com.brian.base_iap.utils.PreferencesHelper
 import java.util.Locale
 
 @Keep

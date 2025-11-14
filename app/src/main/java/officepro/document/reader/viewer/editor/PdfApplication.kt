@@ -12,11 +12,17 @@ import android.util.Log
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
 import com.akexorcist.localizationactivity.core.LocalizationApplicationDelegate
+import com.brian.base_iap.iap.IapRouter
+import com.brian.base_iap.utils.FCMTopicHandler
+import com.brian.base_iap.iap.IapNavigationHandler
+import com.brian.base_iap.utils.PreferencesHelper
+import com.brian.base_iap.utils.PresKey
 import com.ezstudio.pdftoolmodule.di.toolModule
 import com.ezteam.baseproject.BuildConfig
 import com.ezteam.baseproject.di.baseModule
@@ -33,7 +39,6 @@ import com.nlbn.ads.util.AppOpenManager
 import officepro.document.reader.viewer.editor.common.LocaleManager
 import officepro.document.reader.viewer.editor.di.appModule
 import officepro.document.reader.viewer.editor.notification.NotificationManager
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
 import officepro.document.reader.viewer.editor.screen.iap.IapActivity
 import officepro.document.reader.viewer.editor.screen.start.SplashActivity
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
@@ -44,6 +49,8 @@ import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.RequestConfiguration
 import com.google.firebase.analytics.FirebaseAnalytics
 import officepro.document.reader.viewer.editor.screen.iap.IapActivityV2
+import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
+import officepro.document.reader.viewer.editor.screen.main.MainActivity
 
 class PdfApplication: MyLibApplication(), DefaultLifecycleObserver {
     companion object {
@@ -53,6 +60,7 @@ class PdfApplication: MyLibApplication(), DefaultLifecycleObserver {
     private val delegate = LocalizationApplicationDelegate()
 
     override fun onCreate() {
+        FCMTopicHandler.isDebug = BuildConfig.DEBUG
         super<MyLibApplication>.onCreate()
         AppOpenManager.getInstance().disableAppResumeWithActivity(SplashActivity::class.java)
         AppOpenManager.getInstance().disableAppResumeWithActivity(IapActivity::class.java)
@@ -111,6 +119,18 @@ class PdfApplication: MyLibApplication(), DefaultLifecycleObserver {
         applyAdMobAPI35WorkaroundIfNeeded(this)
         AdSettings.addTestDevice("5ea02202-adb6-4eaa-8761-d4b29ad58851")
         RequestConfiguration.Builder().setTestDeviceIds(listTestDeviceId)
+        IapRouter.navigationHandler = object : IapNavigationHandler {
+            override fun goToNextScreen(activity: AppCompatActivity) {
+
+                val isFirstStart = PreferencesHelper.getBoolean(PresKey.GET_START, true)
+
+                if (isFirstStart) {
+                    LanguageActivity.start(activity)
+                } else {
+                    MainActivity.start(activity)
+                }
+            }
+        }
     }
 
     override fun enableAdsResume(): Boolean {

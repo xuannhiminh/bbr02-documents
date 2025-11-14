@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentActivity
+import com.brian.base_iap.iap.IapRegistrationSuccessfulActivity
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
 import com.ezteam.baseproject.iapLib.v3.BillingProcessor
 import com.ezteam.baseproject.iapLib.v3.Constants

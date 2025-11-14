@@ -20,7 +20,7 @@ import com.nlbn.ads.util.Admob
 import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.databinding.DefaultReaderRequestDialogBinding
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
+import com.brian.base_iap.utils.PreferencesHelper
 import okio.Closeable
 
 class DefaultReaderRequestDialog : DialogFragment() {

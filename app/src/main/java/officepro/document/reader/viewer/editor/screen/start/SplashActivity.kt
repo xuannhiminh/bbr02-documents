@@ -16,6 +16,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
+import com.brian.base_iap.iap.IapActivity
+import com.brian.base_iap.iap.IapActivityV2
 import com.ezteam.baseproject.iapLib.v3.BillingProcessor
 import com.ezteam.baseproject.iapLib.v3.PurchaseInfo
 import com.ezteam.baseproject.activity.BaseActivity
@@ -37,8 +39,6 @@ import officepro.document.reader.viewer.editor.common.PresKey
 import officepro.document.reader.viewer.editor.databinding.ActivitySplashBinding
 import officepro.document.reader.viewer.editor.notification.NotificationDecider
 import officepro.document.reader.viewer.editor.notification.NotificationManager
-import officepro.document.reader.viewer.editor.screen.iap.IapActivity
-import officepro.document.reader.viewer.editor.screen.iap.IapActivityV2
 import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
 import officepro.document.reader.viewer.editor.screen.main.MainViewModel
@@ -46,7 +46,7 @@ import officepro.document.reader.viewer.editor.service.NotificationForegroundSer
 import officepro.document.reader.viewer.editor.utils.AppUtils
 import com.ezteam.baseproject.utils.FirebaseRemoteConfigUtil
 import kotlinx.coroutines.CancellationException
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
+import com.brian.base_iap.utils.PreferencesHelper
 import officepro.document.reader.viewer.editor.utils.FCMTopicHandler
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

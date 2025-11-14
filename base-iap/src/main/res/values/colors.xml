@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#0073fc</color>
+    <color name="iapColor">#0594fa</color>
+    <color name="text1">#00091D</color>
+    <color name="text2">#8C8DAF</color>
+    <color name="textSecondary">#6F767E</color>
+    <color name="textInput">#99A2B3</color>
+    <color name="element">#EAF4FC</color>
+    <color name="negative">#f1f2f6</color>
+    <color name="negative2">#EEEEEE</color>
+    <color name="transparent">#00000000</color>
+
+    <!--Black-->
+    <color name="tokenBlack08">#ebebeb</color>
+    <color name="tokenBlack05">#0D000000</color>
+    <color name="tokenBlack10">#1A000000</color>
+    <color name="tokenBlack20">#33000000</color>
+    <color name="tokenBlack30">#4D000000</color>
+    <color name="tokenBlack40">#66000000</color>
+    <color name="tokenBlack50">#80000000</color>
+    <color name="tokenBlack60">#99000000</color>
+    <color name="tokenBlack70">#B3000000</color>
+    <color name="tokenBlack80">#CC000000</color>
+    <color name="tokenBlack90">#E6000000</color>
+    <color name="tokenBlack100">#FF000000</color>
+
+    <!--White-->
+    <color name="tokenWhite10">#1AFFFFFF</color>
+    <color name="tokenWhite20">#33FFFFFF</color>
+    <color name="tokenWhite30">#4DFFFFFF</color>
+    <color name="tokenWhite40">#66FFFFFF</color>
+    <color name="tokenWhite50">#80FFFFFF</color>
+    <color name="tokenWhite60">#99FFFFFF</color>
+    <color name="tokenWhite70">#B3FFFFFF</color>
+    <color name="tokenWhite80">#CCFFFFFF</color>
+    <color name="tokenWhite90">#E6FFFFFF</color>
+    <color name="tokenWhite100">#FFFFFFFF</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="background_color">#FFFFFF</color>
+    <color name="color_1B1B1B">#1B1B1B</color>
+    <color name="color_FBB418">#FBB418</color>
+    <color name="text_color">#1B1B1B</color>
+    <color name="text_title_color">#252525</color>
+    <color name="color_252525">#252525</color>
+    <color name="ads_background">#F6F8FB</color>
+
+    <color name="stroke_selected">#2196F3</color>
+    <color name="bg_selected">#E3F2FD</color>
+    <color name="stroke_unselected">#F3F4F6</color>
+    <color name="bg_unselected">#FFFFFF</color>
+    <color name="input2">#99A2B3</color>
+    <color name="input3">#EAF4FC</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="button">#235FED</color>
+    <color name="button_note">#99A2B3</color>
+    <color name="brand_blue">#397FF8</color>
+    <color name="cancel">#EDF0F7</color>
+    <color name="word">#1176FC</color>
+    <color name="pdf">#F7392D</color>
+    <color name="excel">#01C059</color>
+    <color name="ppt">#FE682D</color>
+    <color name="error">#EF4949</color>
+    <color name="error_cancel">#F3C2C2</color>
+</resources>

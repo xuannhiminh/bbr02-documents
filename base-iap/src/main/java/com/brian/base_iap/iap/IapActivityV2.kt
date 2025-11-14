@@ -1,0 +1,346 @@
+package com.brian.base_iap.iap
+
+import android.content.Intent
+import android.os.Build
+import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
+import androidx.core.view.updatePadding
+import androidx.fragment.app.FragmentActivity
+import com.brian.base_iap.R
+import com.brian.base_iap.databinding.ActivityIap3Binding
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.nlbn.ads.callback.AdCallback
+import com.nlbn.ads.util.Admob
+import com.google.firebase.analytics.FirebaseAnalytics.Event;
+import com.google.firebase.analytics.FirebaseAnalytics.Param;
+import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
+import com.brian.base_iap.iapLib.BillingProcessor
+import com.brian.base_iap.iapLib.Constants
+import com.brian.base_iap.iapLib.PurchaseInfo
+import com.brian.base_iap.utils.AppUtils
+import com.brian.base_iap.utils.FCMTopicHandler
+import com.brian.base_iap.utils.IAPUtils
+import com.brian.base_iap.utils.PreferencesUtils
+import com.brian.base_iap.utils.PresKey
+import com.brian.base_iap.utils.TemporaryStorage
+
+class IapActivityV2 : AppCompatActivity() {
+
+    private lateinit var binding: ActivityIap3Binding
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
+    protected var isFromSplash = false
+
+    companion object {
+        fun hasExtraKeyContaining(intent: Intent, substring: String): Boolean {
+            val extras = intent.extras ?: return false
+            return extras.keySet().any { key -> substring in key }
+        }
+        fun start(activity: FragmentActivity) {
+            val pkg = activity.packageName
+
+            activity.intent.data?.let {
+                activity.intent.apply {
+                    setClass(activity, IapActivity::class.java)
+                }
+                activity.startActivity(activity.intent)
+            } ?: hasExtraKeyContaining(activity.intent, pkg).let { hasKey ->
+                if (hasKey) {
+                    activity.intent.apply {
+                        setClass(activity, IapActivity::class.java)
+                        flags = 0
+                    }
+                    activity.startActivity(activity.intent)
+                } else {
+                    val intent = Intent(activity, IapActivity::class.java)
+                    activity.startActivity(intent)
+                }
+            }
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        binding = ActivityIap3Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+        configSystemUI()
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        isFromSplash = intent.getBooleanExtra("${packageName}.isFromSplash", false)
+
+        // Hiển thị navigation bars nếu cần
+        val windowInsetsController = WindowCompat.getInsetsController(window, window.decorView)
+        windowInsetsController.show(WindowInsetsCompat.Type.navigationBars())
+
+        initView()
+        initData()
+        initListener()
+    }
+    private fun configSystemUI() {
+        val windowInsetsController = WindowCompat.getInsetsController(window, window.decorView)
+        windowInsetsController.hide(WindowInsetsCompat.Type.navigationBars())
+        windowInsetsController.systemBarsBehavior =
+            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.updatePadding(
+                top = insets.top,
+                bottom = insets.bottom
+            )
+            WindowInsetsCompat.CONSUMED
+        }
+    }
+    private fun initView() {
+        initIAP()
+
+        // Ẩn btnClose ban đầu
+        binding.btnClose.visibility = View.INVISIBLE
+        binding.btnClose.alpha = 0f
+        binding.btnClose.postDelayed({
+            binding.btnClose.visibility = View.VISIBLE
+            binding.btnClose.animate().alpha(1f).setDuration(300).start()
+        }, 3000)
+
+        val hasFreeTrial = FirebaseRemoteConfigUtil.getInstance().isFreeTrialEnable()
+        if (hasFreeTrial) {
+            binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialButtonText()
+        } else {
+            binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getIapButtonText()
+        }
+    }
+
+    private fun updateViewBaseOnPremiumState() {
+        IAPUtils.getSubscriptionListingDetails(IAPUtils.KEY_PREMIUM) { productDetails ->
+            if (productDetails.isNullOrEmpty()) {
+                // No details returned
+                Log.e("IapActivity", "No subscription details")
+                return@getSubscriptionListingDetails
+            }
+            val pd = productDetails[0] ?: return@getSubscriptionListingDetails
+
+            // --- Weekly plan ---
+            val weeklyOffer = pd.subscriptionOfferDetails
+                ?.find { it.basePlanId == FirebaseRemoteConfigUtil.getInstance().getIapBasePlan() }
+
+            if (weeklyOffer != null) {
+                val weeklyPhase = weeklyOffer.pricingPhases.pricingPhaseList.firstOrNull { it.priceAmountMicros > 0 }
+                val weeklyPriceText = weeklyPhase?.formattedPrice ?: "-"
+                val hasFreeTrial = pd.subscriptionOfferDetails
+                    ?.any { it.basePlanId == FirebaseRemoteConfigUtil.getInstance().getIapBasePlan() && !it.offerId.isNullOrEmpty() } ?: false
+                if (hasFreeTrial) {
+                    binding.price.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialExplainText(weeklyPriceText)
+                    binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getFreeTrialButtonText()
+                } else {
+                    binding.price.text = FirebaseRemoteConfigUtil.getInstance().getIapExplainText(weeklyPriceText)
+                    binding.tvFreeTrial.text = FirebaseRemoteConfigUtil.getInstance().getIapButtonText()
+                }
+
+            }
+            val isSubscribed = IAPUtils.isSubscribed(pd.productId)
+            // finish
+            if (isSubscribed) {
+                navigateToNextScreen()
+            }
+        }
+
+    }
+
+    private fun showLoadedAdsInterstitial(interstitialAd: InterstitialAd?, complete: () -> Unit) {
+        Log.i("IapActivity3", "showAdsInterstitial called with ad: $interstitialAd")
+        Admob.getInstance().showInterAds(this, interstitialAd, object : AdCallback() {
+            override fun onNextAction() {
+                complete.invoke()
+            }
+        })
+    }
+
+    private fun navigateToNextScreen() {
+        if (IAPUtils.isPremium()) {
+            TemporaryStorage.interAdPreloaded = null
+        }
+        if (IAPUtils.isPremium()) {
+            proceedToNextSucess()     // đăng kí IAP thành công
+        } else {
+            showLoadedAdsInterstitial(TemporaryStorage.interAdPreloaded) {
+                // dăng kí thất bại thì ko vao màn thành công
+                proceedToNext()
+            }
+        }
+    }
+    private fun proceedToNextSucess() {
+        IapRegistrationSuccessfulActivity.start(this)
+        finish()
+    }
+    protected fun proceedToNext() {
+        if (!isFromSplash) {
+            finish()
+            return
+        }
+
+        IapRouter.navigationHandler?.goToNextScreen(this as AppCompatActivity)
+
+        finish()
+    }
+
+
+    private fun initListener() {
+
+        binding.btnClose.setOnClickListener {
+            navigateToNextScreen()
+            logEvent("iap_close_pressed")
+        }
+
+//        binding.btnRestore.setOnClickListener {
+//            IAPUtils.loadOwnedPurchasesFromGoogleAsync {
+//                if (it) {
+//                    Toast.makeText(this, getString(R.string.restore_success), Toast.LENGTH_SHORT).show()
+//                } else {
+//                    Toast.makeText(this, getString(R.string.restore_fail), Toast.LENGTH_SHORT).show()
+//                }
+//                updateViewBaseOnPremiumState()
+//            }
+//        }
+
+
+        binding.btnFreeTrial.setOnClickListener {
+//            if (isAnnualSelected) {
+//                showFreeTrialDialog()
+//            } else {
+//                logEvent("purchase_month_pressed")
+//                IAPUtils.callSubscription(this@IapActivity3, IAPUtils.KEY_PREMIUM, IAPUtils.KEY_PREMIUM_MONTHLY_PLAN)
+//            }
+//            IapRegistrationSuccessfulActivity.start(this)
+            logEvent("purchase_week_pressed")
+            IAPUtils.callSubscription(this@IapActivityV2, IAPUtils.KEY_PREMIUM, FirebaseRemoteConfigUtil.getInstance().getIapBasePlan())
+        }
+    }
+
+    private fun initData() {
+//        binding.termOfUse.paintFlags = binding.termOfUse.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+//        binding.privacyPolicy.paintFlags = binding.privacyPolicy.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+//        binding.btnRestore.paintFlags = binding.btnRestore.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        checkNightModeState()
+    }
+    private fun checkNightModeState() {
+        findViewById<ImageView>(R.id.btnClose).setImageResource(R.drawable.icon_close_insert)
+        //replaceIcons(binding.featureSection, R.drawable.icon_check_pro_night, R.drawable.icon_close_basic)
+    }
+
+    private fun replaceIcons(container: ViewGroup, checkIcon: Int, closeIcon: Int) {
+        for (i in 0 until container.childCount) {
+            val child = container.getChildAt(i)
+            if (child is ViewGroup) {
+                replaceIcons(child, checkIcon, closeIcon)
+            } else if (child is ImageView) {
+                val tag = child.tag
+                if (tag == "check") {
+                    child.setImageResource(checkIcon)
+                } else if (tag == "close") {
+                    child.setImageResource(closeIcon)
+                }
+            }
+        }
+    }
+
+    override fun onStop() {
+        super.onStop()
+    }
+
+    override fun onBackPressed() {
+        navigateToNextScreen()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        IAPUtils.unregisterListener(iBillingHandler)
+        //AppOpenManager.getInstance().enableAppResume()
+        TemporaryStorage.interAdPreloaded = null
+    }
+
+    private fun logEvent(event: String) {
+        firebaseAnalytics.logEvent(event, Bundle())
+    }
+
+    var  iBillingHandler  = object : BillingProcessor.IBillingHandler {
+        override fun onProductPurchased(
+            productId: String,
+            details: PurchaseInfo?
+        ) {
+            logEvent("purchase_success_$productId")
+            if (FirebaseRemoteConfigUtil.getInstance().isLogPurchaseEvent()) {
+                val params = Bundle()
+                params.putString(Param.TRANSACTION_ID, details?.purchaseData?.orderId )
+                firebaseAnalytics.logEvent(Event.PURCHASE, params)
+            }
+            FCMTopicHandler.resetFCMTopic(this@IapActivityV2)
+            updateViewBaseOnPremiumState()
+        }
+
+        override fun onPurchaseHistoryRestored() {
+            // Handle restored purchases here
+            Toast.makeText(this@IapActivityV2, getString(R.string.restore_success), Toast.LENGTH_SHORT).show()
+            updateViewBaseOnPremiumState()
+        }
+
+        override fun onBillingError(errorCode: Int, error: Throwable?) {
+            Log.d("IapActivity", "Billing error: $errorCode, ${error?.message}")
+            // Log or handle errors here
+            if (errorCode == 1) { // user cancel
+                if (PreferencesUtils.getBoolean(PresKey.GET_START, true)) {
+                    logEvent("purchase_cancelled_start")
+                    //startRequestAllFilePermission()
+                } else {
+                    logEvent("purchase_cancelled")
+                }
+                return
+            } else if (errorCode == 3) { // Billing service unavailable
+                Toast.makeText(this@IapActivityV2, R.string.please_update_store, Toast.LENGTH_LONG).show()
+                if (PreferencesUtils.getBoolean(PresKey.GET_START, true)) {
+                    navigateToNextScreen()
+                }
+                return
+            } else if (errorCode == 7) { // Items already owned
+                return
+            } else if (errorCode == Constants.BILLING_ERROR_FAILED_TO_ACKNOWLEDGE_PURCHASE) { // Items already owned
+                Toast.makeText(this@IapActivityV2, getString(R.string.not_confirm_purchase), Toast.LENGTH_LONG).show()
+                return
+            } else {
+                Toast.makeText(this@IapActivityV2, "Billing error code: $errorCode", Toast.LENGTH_LONG).show()
+            }
+        }
+
+        override fun onBillingInitialized() {
+            // Billing service is initialized, you can query products or subscriptions here
+            // Toast.makeText(this@IapActivity3, "Billing initialized", Toast.LENGTH_SHORT).show()
+            IAPUtils.loadOwnedPurchasesFromGoogleAsync {
+                FCMTopicHandler.resetFCMTopic(this@IapActivityV2)
+                updateViewBaseOnPremiumState()
+            }
+        }
+
+    }
+
+    private fun initIAP() {
+        IAPUtils.initAndRegister(this, AppUtils.PUBLIC_LICENSE_KEY, iBillingHandler)
+    }
+}

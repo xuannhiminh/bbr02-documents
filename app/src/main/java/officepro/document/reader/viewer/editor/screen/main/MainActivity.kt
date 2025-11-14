@@ -117,7 +117,7 @@ import officepro.document.reader.viewer.editor.dialog.AddToHomeRequestDialog
 import officepro.document.reader.viewer.editor.dialog.ExitAppDialog
 import officepro.document.reader.viewer.editor.screen.iap.IapActivity
 import officepro.document.reader.viewer.editor.screen.iap.IapActivityV2
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
+import com.brian.base_iap.utils.PreferencesHelper
 import officepro.document.reader.viewer.editor.utils.FCMTopicHandler
 import okhttp3.OkHttpClient
 import okhttp3.Request

@@ -59,6 +59,7 @@ dependencies {
 //    implementation project(path: ':ads-module')
     implementation project(path: ':base-module')
     implementation project(path: ':base-pdf-reader')
+    implementation project(path: ':base-iap')
 
     // FragmentNav
     def nav_version = "2.8.0"

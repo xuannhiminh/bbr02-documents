@@ -1321,7 +1321,7 @@
             android:name="officepro.document.reader.viewer.editor.screen.iap.IapActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.iap.IapRegistrationSuccessfulActivity"
+            android:name="officepro.document.reader.viewer.editor.com.brian.base_iap.iap.IapRegistrationSuccessfulActivity"
             android:exported="true" />
         <activity
             android:name="officepro.document.reader.viewer.editor.screen.search.FeedBackActivity"

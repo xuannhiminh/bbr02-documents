@@ -6,7 +6,7 @@ import android.util.Log
 import com.ezteam.baseproject.utils.IAPUtils
 import com.google.firebase.messaging.FirebaseMessaging
 import officepro.document.reader.viewer.editor.BuildConfig
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
+import com.brian.base_iap.utils.PreferencesHelper
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 

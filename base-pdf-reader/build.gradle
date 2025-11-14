@@ -63,6 +63,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     implementation project(path: ':pdf-tool-module')
     implementation project(path: ':base-module')
+    implementation project(path: ':base-iap')
 //    implementation project(path: ':ads-module')
     kapt 'com.github.bumptech.glide:compiler:4.16.0'
 

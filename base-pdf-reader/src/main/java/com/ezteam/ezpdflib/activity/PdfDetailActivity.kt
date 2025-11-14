@@ -21,6 +21,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.inputmethod.EditorInfo
+import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.SeekBar
 import androidx.annotation.Keep
 import androidx.appcompat.app.AppCompatActivity
@@ -391,6 +393,56 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
         }
         initData()
         initListener()
+        val bottomNav = findViewById<BottomNavigationView>(R.id.navigation_detail)
+
+        bottomNav.post {
+            if (IAPUtils.isPremium()) return@post
+
+            val menuView = bottomNav.getChildAt(0) as? ViewGroup ?: return@post
+
+            for (i in 0 until menuView.childCount) {
+                val itemView = menuView.getChildAt(i)
+                val menuItem = bottomNav.menu.getItem(i)
+
+                // chỉ thêm cho 2 item cần gắn premium
+                if (menuItem.itemId == R.id.menu_signature || menuItem.itemId == R.id.menu_add_image) {
+
+                    val iconView = findImageView(itemView) ?: continue
+                    val parent = iconView.parent as? ViewGroup ?: continue
+
+                    if (parent.findViewWithTag<View>("premium_frame") != null) continue
+
+                    val frame = FrameLayout(bottomNav.context).apply { tag = "premium_frame" }
+                    frame.layoutParams = iconView.layoutParams
+
+                    val oldIndex = parent.indexOfChild(iconView)
+                    parent.removeView(iconView)
+                    frame.addView(iconView)
+
+                    // tạo icon premium nhỏ
+                    val premiumIcon = ImageView(bottomNav.context).apply {
+                        setImageResource(R.drawable.ic_premium_small)
+                        val size = resources.getDimensionPixelSize(R.dimen._12sdp)
+                        layoutParams = FrameLayout.LayoutParams(size, size).apply {
+                            marginStart = size/9*11
+                            topMargin  = -size/9*2
+                        }
+                    }
+                    frame.addView(premiumIcon)
+                    parent.addView(frame, oldIndex)
+                }
+            }
+        }
+    }
+    fun findImageView(view: View): ImageView? {
+        if (view is ImageView) return view
+        if (view is ViewGroup) {
+            for (i in 0 until view.childCount) {
+                val result = findImageView(view.getChildAt(i))
+                if (result != null) return result
+            }
+        }
+        return null
     }
 
     private fun initData() {

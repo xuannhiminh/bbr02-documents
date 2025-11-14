@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewTreeObserver
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.brian.base_iap.utils.PreferencesHelper
 import officepro.document.reader.viewer.editor.databinding.ActivityLanguageBinding
 import officepro.document.reader.viewer.editor.screen.main.MainActivity
 import com.ezteam.baseproject.activity.BaseActivity

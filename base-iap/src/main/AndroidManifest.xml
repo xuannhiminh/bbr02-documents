@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:name="com.brian.base_iap.iap.IapActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.brian.base_iap.iap.IapActivityV2"
+            android:exported="true" />
+
+    </application>
+</manifest>

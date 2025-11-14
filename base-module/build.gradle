@@ -101,6 +101,7 @@ dependencies {
     /*https://insert-koin.io/docs/quickstart/kotlin#setup*/
     implementation "io.insert-koin:koin-core:$koin_version"  // Cập nhật lên phiên bản mới hơn
     implementation "io.insert-koin:koin-android:$koin_version"
+    implementation project(path: ':base-iap')
 //    implementation "io.insert-koin:koin-androidx-viewmodel:2.2.3"
 //    implementation "io.insert-koin:koin-androidx-fragment:2.2.3"
 }

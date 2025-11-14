@@ -4,7 +4,7 @@ import android.content.Context
 import android.telephony.TelephonyManager
 import android.util.Log
 import officepro.document.reader.viewer.editor.BuildConfig
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper
+import com.brian.base_iap.utils.PreferencesHelper
 import java.net.HttpURLConnection
 import java.net.URL
 import java.util.*

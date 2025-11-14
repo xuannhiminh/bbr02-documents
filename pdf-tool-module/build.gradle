@@ -44,6 +44,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.material:material:1.12.0'
     implementation project(path: ':base-module')
+    implementation project(path: ':base-iap')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
 

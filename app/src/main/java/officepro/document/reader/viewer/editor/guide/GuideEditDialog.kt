@@ -19,7 +19,7 @@ import officepro.document.reader.viewer.editor.R
 import officepro.document.reader.viewer.editor.databinding.GuideEditSpotlightBinding
 import officepro.document.reader.viewer.editor.databinding.GuideSpotlightBinding
 import officepro.document.reader.viewer.editor.dialog.GuideStep
-import officepro.document.reader.viewer.editor.screen.language.PreferencesHelper.getString
+import com.brian.base_iap.utils.PreferencesHelper.getString
 
 class GuideEditDialog(
     context: Context,
