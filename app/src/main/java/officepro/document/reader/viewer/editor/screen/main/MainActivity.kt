@@ -123,7 +123,7 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import com.ezteam.baseproject.utils.UrlObf
 import officepro.document.reader.viewer.editor.dialog.RequestAllFilePermissionDialog
-import officepro.document.reader.viewer.editor.utils.CountryDetector
+import com.brian.base_iap.utils.CountryDetector
 import org.jsoup.Jsoup
 
 

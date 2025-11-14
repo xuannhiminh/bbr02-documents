@@ -57,7 +57,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
-import officepro.document.reader.viewer.editor.utils.CountryDetector
+import com.brian.base_iap.utils.CountryDetector
 import org.koin.android.ext.android.inject
 import kotlin.coroutines.resume
 
