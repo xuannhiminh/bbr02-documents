@@ -460,7 +460,7 @@
                     android:id="@+id/btn_FreeTrial"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/primaryColor"
+                    android:background="#0073fc"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingHorizontal="@dimen/_16sdp"
