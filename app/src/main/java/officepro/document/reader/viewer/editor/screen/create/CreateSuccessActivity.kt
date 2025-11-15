@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.create
+package office.pdf.document.reader.viewer.editor.screen.create
 
 import android.content.Intent
 import android.net.Uri
@@ -9,11 +9,11 @@ import android.view.View
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityCreateSuccessBinding
-import officepro.document.reader.viewer.editor.model.FileModel
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityCreateSuccessBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
 import com.ezteam.baseproject.extensions.autoRotate
 import com.ezteam.baseproject.extensions.resizeBitmapByCanvas
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil

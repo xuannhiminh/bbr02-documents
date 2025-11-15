@@ -1,11 +1,11 @@
-package officepro.document.reader.viewer.editor.utils
+package office.pdf.document.reader.viewer.editor.utils
 
 import android.content.Context
 import android.icu.util.TimeZone
 import android.util.Log
 import com.brian.base_iap.utils.IAPUtils
 import com.google.firebase.messaging.FirebaseMessaging
-import officepro.document.reader.viewer.editor.BuildConfig
+import office.pdf.document.reader.viewer.editor.BuildConfig
 import com.brian.base_iap.utils.PreferencesHelper
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

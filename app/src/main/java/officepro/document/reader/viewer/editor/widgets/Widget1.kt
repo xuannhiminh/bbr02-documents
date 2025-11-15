@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.widgets
+package office.pdf.document.reader.viewer.editor.widgets
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -8,9 +8,9 @@ import android.content.Intent
 import android.util.Log
 import android.widget.RemoteViews
 import com.ezteam.baseproject.utils.DateUtils
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.database.repository.FileModelRepository
-import officepro.document.reader.viewer.editor.screen.start.SplashActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.database.repository.FileModelRepository
+import office.pdf.document.reader.viewer.editor.screen.start.SplashActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

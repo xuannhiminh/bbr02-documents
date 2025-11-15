@@ -1,11 +1,11 @@
-package officepro.document.reader.viewer.editor.screen.setting
+package office.pdf.document.reader.viewer.editor.screen.setting
 
 import android.app.Dialog
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.databinding.FeedbackSucessDialogBinding
-import officepro.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.FeedbackSucessDialogBinding
+import office.pdf.document.reader.viewer.editor.R
 
 class FeedBackSucessDialog : DialogFragment() {
     private var _binding: FeedbackSucessDialogBinding? = null

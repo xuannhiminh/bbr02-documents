@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.func
+package office.pdf.document.reader.viewer.editor.screen.func
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.databinding.BottomSheetDetailsFuncBinding
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.databinding.BottomSheetDetailsFuncBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
 import com.ezteam.baseproject.listener.EzItemListener
 import com.ezteam.baseproject.utils.DateUtils
 import com.brian.base_iap.utils.PreferencesUtils

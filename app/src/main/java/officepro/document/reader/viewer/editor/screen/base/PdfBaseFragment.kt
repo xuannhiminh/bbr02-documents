@@ -1,8 +1,8 @@
-package officepro.document.reader.viewer.editor.screen.base
+package office.pdf.document.reader.viewer.editor.screen.base
 
 import android.net.Uri
 import androidx.viewbinding.ViewBinding
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.model.FileModel
 import com.ezteam.baseproject.fragment.BaseFragment
 
 abstract class PdfBaseFragment<B: ViewBinding> : BaseFragment<B>(), IControl {

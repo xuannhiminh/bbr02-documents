@@ -22,7 +22,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:name="officepro.document.reader.viewer.editor.PdfApplication"
+        android:name="office.pdf.document.reader.viewer.editor.PdfApplication"
         android:allowBackup="true"
         android:exported="true"
         android:icon="@mipmap/ic_launcher"
@@ -33,18 +33,18 @@
         android:theme="@style/Theme.PDFReaderPro"
         tools:replace="android:theme">
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity"
             android:screenOrientation="portrait"
             android:exported="true"
             tools:node="merge" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.start.RequestNotificationPermissionActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.start.RequestNotificationPermissionActivity"
             android:screenOrientation="portrait"
             android:exported="true"
             tools:node="merge" />
 
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTask"
             android:exported="true">
@@ -218,21 +218,21 @@
 
 
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.start.IntroActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.start.IntroActivity"
             android:launchMode="singleTop"
             android:exported="true">
         </activity>
 
 
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.overlay.ClearDefaultReaderOverlayActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.overlay.ClearDefaultReaderOverlayActivity"
             android:theme="@style/Theme.App.TransparentOverlay"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"/>
 
         <activity-alias
             android:name=".PdfAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
@@ -363,7 +363,7 @@
 
         <activity-alias
             android:name=".PdfReaderAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_reader">
 
@@ -496,7 +496,7 @@
 
         <activity-alias
             android:name=".EditPdfAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_editor">
             <intent-filter>
@@ -514,7 +514,7 @@
         <!-- DOC related -->
         <activity-alias
             android:name=".DocReaderAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_doc_reader">
             <intent-filter android:label="@string/intent_label_doc_reader" tools:ignore="AppLinkUrlError">
@@ -557,7 +557,7 @@
 
         <activity-alias
             android:name=".DocPdfAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_doc_pdf">
             <intent-filter android:label="@string/intent_label_doc_pdf" tools:ignore="AppLinkUrlError">
@@ -599,7 +599,7 @@
 
         <activity-alias
             android:name=".PdfDocAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_doc">
             <intent-filter android:label="@string/intent_label_pdf_doc" tools:ignore="AppLinkUrlError">
@@ -641,7 +641,7 @@
 
         <activity-alias
             android:name=".DocSmartEditorAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_doc_smart_editor">
             <intent-filter android:label="@string/intent_label_doc_smart_editor" tools:ignore="AppLinkUrlError">
@@ -683,7 +683,7 @@
 
 <!--        <activity-alias-->
 <!--            android:name=".DocPrintAlias"-->
-<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"-->
 <!--            android:exported="true"-->
 <!--            android:label="@string/intent_label_doc_print">-->
 <!--            <intent-filter android:label="@string/intent_label_doc_print" tools:ignore="AppLinkUrlError">-->
@@ -747,7 +747,7 @@
         </activity-alias>
         <activity-alias
             android:name=".ExcelReaderAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_excel_reader">
             <intent-filter android:label="@string/intent_label_excel_reader" tools:ignore="AppLinkUrlError">
@@ -796,7 +796,7 @@
 
 <!--        <activity-alias-->
 <!--            android:name=".ExcelPdfAlias"-->
-<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"-->
 <!--            android:exported="true"-->
 <!--            android:label="@string/intent_label_excel_pdf">-->
 <!--            <intent-filter android:label="@string/intent_label_excel_pdf" tools:ignore="AppLinkUrlError">-->
@@ -845,7 +845,7 @@
 
         <activity-alias
             android:name=".PdfExcelAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_excel">
             <intent-filter android:label="@string/intent_label_pdf_excel" tools:ignore="AppLinkUrlError">
@@ -893,7 +893,7 @@
 
         <activity-alias
             android:name=".ExcelSmartEditorAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_excel_smart_editor">
             <intent-filter android:label="@string/intent_label_excel_smart_editor" tools:ignore="AppLinkUrlError">
@@ -941,7 +941,7 @@
 
 <!--        <activity-alias-->
 <!--            android:name=".ExcelPrintAlias"-->
-<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"-->
 <!--            android:exported="true"-->
 <!--            android:label="@string/intent_label_excel_print">-->
 <!--            <intent-filter android:label="@string/intent_label_excel_print" tools:ignore="AppLinkUrlError">-->
@@ -991,7 +991,7 @@
         <!-- PPT related -->
         <activity-alias
             android:name=".PptReaderAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_ppt_reader">
             <intent-filter android:label="@string/intent_label_ppt_reader" tools:ignore="AppLinkUrlError">
@@ -1039,7 +1039,7 @@
 
         <activity-alias
             android:name=".PptPdfAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_ppt_pdf">
             <intent-filter android:label="@string/intent_label_ppt_pdf" tools:ignore="AppLinkUrlError">
@@ -1086,7 +1086,7 @@
 
         <activity-alias
             android:name=".PdfPptAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_ppt">
             <intent-filter android:label="@string/intent_label_pdf_ppt" tools:ignore="AppLinkUrlError">
@@ -1133,7 +1133,7 @@
 
         <activity-alias
             android:name=".PptSmartEditorAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_ppt_smart_editor">
             <intent-filter android:label="@string/intent_label_ppt_smart_editor" tools:ignore="AppLinkUrlError">
@@ -1180,7 +1180,7 @@
 
 <!--        <activity-alias-->
 <!--            android:name=".PptPrintAlias"-->
-<!--            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"-->
+<!--            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"-->
 <!--            android:exported="true"-->
 <!--            android:label="@string/intent_label_ppt_print">-->
 <!--            <intent-filter android:label="@string/intent_label_ppt_print" tools:ignore="AppLinkUrlError">-->
@@ -1232,7 +1232,7 @@
 
         <activity-alias
             android:name=".PdfToImagesAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_convert_to_images">
             <intent-filter>
@@ -1248,7 +1248,7 @@
 
         <activity-alias
             android:name=".PdfToLongImages"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_long_image">
             <intent-filter>
@@ -1264,7 +1264,7 @@
 
         <activity-alias
             android:name=".PdfToWordAlias"
-            android:targetActivity="officepro.document.reader.viewer.editor.screen.start.SplashActivity"
+            android:targetActivity="office.pdf.document.reader.viewer.editor.screen.start.SplashActivity"
             android:exported="true"
             android:label="@string/intent_label_pdf_word">
             <intent-filter>
@@ -1279,70 +1279,70 @@
         </activity-alias>
 
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.main.MainActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.main.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.main.ListFileTypeActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.main.ListFileTypeActivity"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.uninstall.UninstallActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.uninstall.UninstallActivity"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.reloadfile.ReloadFileSuccessActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.reloadfile.ReloadFileSuccessActivity"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.reloadfile.FeatureRequestActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.reloadfile.FeatureRequestActivity"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.reloadfile.ReloadLoadingActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.reloadfile.ReloadLoadingActivity"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.uninstall.UninstallSurveyActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.uninstall.UninstallSurveyActivity"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.search.SearchFileActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.search.SearchFileActivity"
             android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.search.SettingActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.search.SettingActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.iap.IapActivityV2"
+            android:name="office.pdf.document.reader.viewer.editor.screen.iap.IapActivityV2"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.iap.IapActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.iap.IapActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.com.brian.base_iap.iap.IapRegistrationSuccessfulActivity"
+            android:name="office.pdf.document.reader.viewer.editor.com.brian.base_iap.iap.IapRegistrationSuccessfulActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.search.FeedBackActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.search.FeedBackActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.search.SelectMultipleFilesActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.search.SelectMultipleFilesActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.image.ImageActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.image.ImageActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.PolicyActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.PolicyActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.TermAndConditionsActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.TermAndConditionsActivity"
             android:exported="true" />
         <activity
-            android:name="officepro.document.reader.viewer.editor.screen.create.CreateSuccessActivity"
+            android:name="office.pdf.document.reader.viewer.editor.screen.create.CreateSuccessActivity"
             android:exported="true" />
 
-        <activity android:name="officepro.document.reader.viewer.editor.screen.language.LanguageActivity" />
+        <activity android:name="office.pdf.document.reader.viewer.editor.screen.language.LanguageActivity" />
 
         <activity
             android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:theme="@style/AdInspectorActivityTheme"
@@ -1382,7 +1382,7 @@
 
 
         <receiver
-            android:name="officepro.document.reader.viewer.editor.widgets.Widget1"
+            android:name="office.pdf.document.reader.viewer.editor.widgets.Widget1"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -1395,7 +1395,7 @@
 
         <receiver
             android:exported="false"
-        android:name="officepro.document.reader.viewer.editor.widgets.Widget2">
+        android:name="office.pdf.document.reader.viewer.editor.widgets.Widget2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -1406,7 +1406,7 @@
 
         <receiver
             android:exported="false"
-            android:name="officepro.document.reader.viewer.editor.widgets.Widget3">
+            android:name="office.pdf.document.reader.viewer.editor.widgets.Widget3">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -1430,16 +1430,16 @@
             android:value="@string/facebook_client_token" />
 
         <receiver
-            android:name="officepro.document.reader.viewer.editor.notification.NotificationReceiver"
+            android:name="office.pdf.document.reader.viewer.editor.notification.NotificationReceiver"
             android:enabled="false"
             android:exported="false" />
         <receiver
-            android:name="officepro.document.reader.viewer.editor.notification.NotificationDismissReceiver"
+            android:name="office.pdf.document.reader.viewer.editor.notification.NotificationDismissReceiver"
             android:enabled="true"
             android:exported="false" />
 
         <receiver
-            android:name="officepro.document.reader.viewer.editor.receiver.BootReceiver"
+            android:name="office.pdf.document.reader.viewer.editor.receiver.BootReceiver"
             android:enabled="true"
             android:exported="true">
         <intent-filter>
@@ -1449,7 +1449,7 @@
     </receiver>
 
         <service
-            android:name="officepro.document.reader.viewer.editor.service.NotificationForegroundService"
+            android:name="office.pdf.document.reader.viewer.editor.service.NotificationForegroundService"
             android:foregroundServiceType="specialUse"
             android:exported="false" />
 

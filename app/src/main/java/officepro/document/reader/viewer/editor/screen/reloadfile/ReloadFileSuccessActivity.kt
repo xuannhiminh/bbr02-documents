@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.reloadfile
+package office.pdf.document.reader.viewer.editor.screen.reloadfile
 
 //import com.google.android.gms.ads.ez.EzAdControl
 //import com.google.android.gms.ads.ez.listenner.ShowAdCallback
@@ -16,10 +16,10 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityReloadFileBinding
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityReloadFileBinding
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
 import java.util.concurrent.TimeUnit
 import nl.dionsegijn.konfetti.core.Party
 import nl.dionsegijn.konfetti.core.Position

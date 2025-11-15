@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.language;
+package office.pdf.document.reader.viewer.editor.screen.language;
 
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;

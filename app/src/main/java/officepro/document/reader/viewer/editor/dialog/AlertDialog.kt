@@ -1,11 +1,11 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
 import androidx.core.view.isVisible
-import officepro.document.reader.viewer.editor.databinding.DialogAlertBinding
+import office.pdf.document.reader.viewer.editor.databinding.DialogAlertBinding
 import com.ezteam.baseproject.dialog.BaseDialog
 import com.ezteam.baseproject.dialog.BuilderDialog
 

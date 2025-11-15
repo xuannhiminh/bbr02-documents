@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.app.Dialog
 import android.os.Bundle
@@ -10,10 +10,10 @@ import android.view.ViewGroup
 import android.view.Window
 import androidx.fragment.app.DialogFragment
 import com.google.firebase.analytics.FirebaseAnalytics
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.SatisfactionDialogBinding
-import officepro.document.reader.viewer.editor.screen.search.FeedBackActivity
-import officepro.document.reader.viewer.editor.screen.setting.RateUsDialog
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.SatisfactionDialogBinding
+import office.pdf.document.reader.viewer.editor.screen.search.FeedBackActivity
+import office.pdf.document.reader.viewer.editor.screen.setting.RateUsDialog
 
 class SatisfactionDialog : DialogFragment() {
     override fun getTheme(): Int {

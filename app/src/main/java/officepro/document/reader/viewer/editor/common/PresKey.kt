@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.common
+package office.pdf.document.reader.viewer.editor.common
 
 object PresKey {
     const val TIME_ENTER_APP = "time_enter_app"

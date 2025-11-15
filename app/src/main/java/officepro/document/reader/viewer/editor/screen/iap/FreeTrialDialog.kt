@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.iap
+package office.pdf.document.reader.viewer.editor.screen.iap
 
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
@@ -18,8 +18,8 @@ import android.view.ViewGroup
 import android.view.Window
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.FreeTrialDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.FreeTrialDialogBinding
 
 class FreeTrialDialog : DialogFragment() {
     private var _binding: FreeTrialDialogBinding? = null

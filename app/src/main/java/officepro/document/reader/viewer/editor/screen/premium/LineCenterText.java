@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.premium;
+package office.pdf.document.reader.viewer.editor.screen.premium;
 
 import android.content.Context;
 import android.graphics.Canvas;

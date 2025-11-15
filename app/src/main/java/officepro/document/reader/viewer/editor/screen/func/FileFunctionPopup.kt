@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.func
+package office.pdf.document.reader.viewer.editor.screen.func
 
 import android.graphics.Color
 import android.content.Context
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.PopupWindow
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.model.FileModel
 import androidx.core.graphics.drawable.toDrawable
 import com.ezteam.baseproject.listener.EzItemListener
 

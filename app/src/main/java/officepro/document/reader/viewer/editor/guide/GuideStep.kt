@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.view.View
 

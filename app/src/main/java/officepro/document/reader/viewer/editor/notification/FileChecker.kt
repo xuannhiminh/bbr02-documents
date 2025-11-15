@@ -1,8 +1,8 @@
-package officepro.document.reader.viewer.editor.notification
+package office.pdf.document.reader.viewer.editor.notification
 
 import android.content.Context
 import android.util.Log
-import officepro.document.reader.viewer.editor.database.AppDatabase
+import office.pdf.document.reader.viewer.editor.database.AppDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

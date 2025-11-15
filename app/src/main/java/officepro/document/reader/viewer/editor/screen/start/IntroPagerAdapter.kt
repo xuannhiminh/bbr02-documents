@@ -1,10 +1,10 @@
-package officepro.document.reader.viewer.editor.screen.start
+package office.pdf.document.reader.viewer.editor.screen.start
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import officepro.document.reader.viewer.editor.databinding.ItemIntroPageBinding
+import office.pdf.document.reader.viewer.editor.databinding.ItemIntroPageBinding
 
 // Data class chứa dữ liệu cho từng trang
 data class IntroPage(

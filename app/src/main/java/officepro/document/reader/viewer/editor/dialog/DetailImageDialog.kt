@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -6,8 +6,8 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.DetailPageDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.DetailPageDialogBinding
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.attribute.BasicFileAttributes

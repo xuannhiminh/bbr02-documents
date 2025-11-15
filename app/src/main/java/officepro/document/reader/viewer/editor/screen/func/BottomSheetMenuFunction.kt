@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.func
+package office.pdf.document.reader.viewer.editor.screen.func
 
 import android.app.Dialog
 import android.content.DialogInterface
@@ -10,8 +10,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.databinding.BottomSheetMenuFuncBinding
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.databinding.BottomSheetMenuFuncBinding
 import com.ezteam.baseproject.listener.EzItemListener
 import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.SystemUtils
@@ -20,7 +20,7 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.R
 
 
 class BottomSheetMenuFunction(

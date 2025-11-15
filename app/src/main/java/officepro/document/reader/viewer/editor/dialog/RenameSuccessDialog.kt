@@ -1,12 +1,12 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.app.Dialog
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.databinding.FeedbackSucessDialogBinding
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.RenameSucessDialogBinding
+import office.pdf.document.reader.viewer.editor.databinding.FeedbackSucessDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.RenameSucessDialogBinding
 
 class RenameSuccessDialog : DialogFragment() {
     private var _binding: RenameSucessDialogBinding? = null

@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.app.Dialog
 import android.content.DialogInterface
@@ -19,8 +19,8 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.DefaultReaderUninstallDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.DefaultReaderUninstallDialogBinding
 import com.nlbn.ads.util.AppOpenManager
 
 class DefaultReaderUninstallDialog : DialogFragment() {

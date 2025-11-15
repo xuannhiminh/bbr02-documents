@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.adapter
+package office.pdf.document.reader.viewer.editor.adapter
 
 import android.content.Context
 import android.util.Log
@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
-import officepro.document.reader.viewer.editor.databinding.ItemFileBinding
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.databinding.ItemFileBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
 import com.ezteam.baseproject.adapter.BaseRecyclerAdapter
 import com.ezteam.baseproject.listener.EzItemListener
 import com.ezteam.baseproject.utils.DateUtils
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.screen.func.FileFunctionPopup
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.screen.func.FileFunctionPopup
 import java.util.Locale
 
 class RecentFileAdapter(
@@ -31,12 +31,12 @@ class RecentFileAdapter(
 
         fun bindData(model: FileModel) {
             val fileIconRes = when {
-                model.path.lowercase().endsWith(".pdf") -> officepro.document.reader.viewer.editor.R.drawable.icon_main_pdf
-                model.path.lowercase().endsWith(".txt") -> officepro.document.reader.viewer.editor.R.drawable.icon_main_txt
-                model.path.lowercase().endsWith(".ppt") || model.path.lowercase().endsWith(".pptx") -> officepro.document.reader.viewer.editor.R.drawable.icon_main_ppt
-                model.path.lowercase().endsWith(".doc") || model.path.lowercase().endsWith(".docx") -> officepro.document.reader.viewer.editor.R.drawable.icon_main_word
-                model.path.lowercase().endsWith(".xls") || model.path.lowercase().endsWith(".xlsx") || model.path.lowercase().endsWith(".xlsm") -> officepro.document.reader.viewer.editor.R.drawable.icon_main_excel
-                else -> officepro.document.reader.viewer.editor.R.drawable.icon_main_pdf
+                model.path.lowercase().endsWith(".pdf") -> office.pdf.document.reader.viewer.editor.R.drawable.icon_main_pdf
+                model.path.lowercase().endsWith(".txt") -> office.pdf.document.reader.viewer.editor.R.drawable.icon_main_txt
+                model.path.lowercase().endsWith(".ppt") || model.path.lowercase().endsWith(".pptx") -> office.pdf.document.reader.viewer.editor.R.drawable.icon_main_ppt
+                model.path.lowercase().endsWith(".doc") || model.path.lowercase().endsWith(".docx") -> office.pdf.document.reader.viewer.editor.R.drawable.icon_main_word
+                model.path.lowercase().endsWith(".xls") || model.path.lowercase().endsWith(".xlsx") || model.path.lowercase().endsWith(".xlsm") -> office.pdf.document.reader.viewer.editor.R.drawable.icon_main_excel
+                else -> office.pdf.document.reader.viewer.editor.R.drawable.icon_main_pdf
             }
             binding.selectCheckbox.visibility = View.GONE
             binding.fileIcon.setImageResource(fileIconRes)

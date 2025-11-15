@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -16,11 +16,11 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.databinding.DetailPageDialogBinding
-import officepro.document.reader.viewer.editor.model.FileModel
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.databinding.DetailPageDialogBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
 import org.apache.commons.io.FilenameUtils
 import java.io.File
 import java.util.Date

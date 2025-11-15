@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.iap
+package office.pdf.document.reader.viewer.editor.screen.iap
 
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
@@ -31,17 +31,17 @@ import com.google.firebase.analytics.FirebaseAnalytics.Event
 import com.google.firebase.analytics.FirebaseAnalytics.Param
 import com.nlbn.ads.callback.AdCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.language.LanguageActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.nlbn.ads.util.AppOpenManager
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.databinding.ActivityIapBinding
-import officepro.document.reader.viewer.editor.screen.PolicyActivity
-import officepro.document.reader.viewer.editor.screen.TermAndConditionsActivity
-import officepro.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.databinding.ActivityIapBinding
+import office.pdf.document.reader.viewer.editor.screen.PolicyActivity
+import office.pdf.document.reader.viewer.editor.screen.TermAndConditionsActivity
+import office.pdf.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity
 import com.brian.base_iap.utils.FCMTopicHandler
 import setSelectedCard
 import java.util.Locale

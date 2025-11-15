@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.app.Dialog
 import android.os.Bundle
@@ -20,8 +20,8 @@ import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ExitAppDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ExitAppDialogBinding
 
 class ExitAppDialog : DialogFragment() {
     override fun getTheme(): Int {

@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
-import officepro.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.R
 import android.graphics.Typeface
 import android.graphics.Color
 import android.widget.LinearLayout

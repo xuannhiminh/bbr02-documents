@@ -1,9 +1,9 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.widget.TextView
-import officepro.document.reader.viewer.editor.databinding.DialogInputNameBinding
+import office.pdf.document.reader.viewer.editor.databinding.DialogInputNameBinding
 import com.ezteam.baseproject.dialog.BaseDialog
 import com.ezteam.baseproject.dialog.BuilderDialog
 

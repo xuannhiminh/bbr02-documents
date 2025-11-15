@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.setting
+package office.pdf.document.reader.viewer.editor.screen.setting
 
 import android.app.Dialog
 import android.os.Bundle
@@ -12,9 +12,9 @@ import com.google.android.play.core.review.ReviewException
 import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.android.play.core.review.model.ReviewErrorCode
 import com.google.firebase.analytics.FirebaseAnalytics
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.RateUsDialogBinding
-import officepro.document.reader.viewer.editor.screen.search.FeedBackActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.RateUsDialogBinding
+import office.pdf.document.reader.viewer.editor.screen.search.FeedBackActivity
 
 class RateUsDialog : DialogFragment() {
     override fun getTheme(): Int {

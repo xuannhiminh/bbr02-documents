@@ -7,7 +7,7 @@
         android:shortcutLongLabel="@string/uninstall">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="officepro.document.reader.viewer.editor"
-            android:targetClass="officepro.document.reader.viewer.editor.screen.uninstall.UninstallActivity" />
+            android:targetPackage="office.pdf.document.reader.viewer.editor"
+            android:targetClass="office.pdf.document.reader.viewer.editor.screen.uninstall.UninstallActivity" />
     </shortcut>
 </shortcuts>

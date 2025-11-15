@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.utils;
+package office.pdf.document.reader.viewer.editor.utils;
 
 import android.Manifest;
 import android.content.Context;
@@ -15,7 +15,7 @@ import android.util.Log;
 
 import androidx.core.content.ContextCompat;
 
-import officepro.document.reader.viewer.editor.model.FileModel;
+import office.pdf.document.reader.viewer.editor.model.FileModel;
 import com.ezteam.baseproject.EzListener;
 import com.ezteam.baseproject.listener.EzItemListener;
 import com.ezteam.baseproject.utils.permisson.PermissionUtils;

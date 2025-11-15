@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content" />
         </FrameLayout>
 
-        <officepro.document.reader.viewer.editor.view.NonSwipeViewPager
+        <office.pdf.document.reader.viewer.editor.view.NonSwipeViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="0dp"

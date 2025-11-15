@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.base
+package office.pdf.document.reader.viewer.editor.screen.base
 
 import com.google.android.gms.ads.nativead.NativeAd
 

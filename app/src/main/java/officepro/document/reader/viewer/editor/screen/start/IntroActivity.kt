@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.start
+package office.pdf.document.reader.viewer.editor.screen.start
 
 import android.content.Context
 import android.content.Intent
@@ -26,13 +26,13 @@ import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.databinding.ActivityIntroBinding
-import officepro.document.reader.viewer.editor.databinding.ItemIntroPageBinding
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.databinding.ActivityIntroBinding
+import office.pdf.document.reader.viewer.editor.databinding.ItemIntroPageBinding
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 

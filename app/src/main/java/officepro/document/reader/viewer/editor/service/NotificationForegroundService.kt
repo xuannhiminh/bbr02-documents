@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.service
+package office.pdf.document.reader.viewer.editor.service
 
 import android.annotation.SuppressLint
 import android.app.ForegroundServiceStartNotAllowedException
@@ -24,15 +24,15 @@ import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
 import com.google.android.play.core.install.InstallStateUpdatedListener
 import com.google.android.play.core.install.model.InstallStatus
-import officepro.document.reader.viewer.editor.notification.FileObserverWrapper
-import officepro.document.reader.viewer.editor.notification.NotificationManager
-import officepro.document.reader.viewer.editor.receiver.HomeButtonReceiver
-import officepro.document.reader.viewer.editor.receiver.UnlockReceiver
+import office.pdf.document.reader.viewer.editor.notification.FileObserverWrapper
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager
+import office.pdf.document.reader.viewer.editor.receiver.HomeButtonReceiver
+import office.pdf.document.reader.viewer.editor.receiver.UnlockReceiver
 import com.brian.base_iap.utils.AppUtils
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
-import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_DESCRIPTION_FOREGROUND
-import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_ID_FOREGROUND
-import officepro.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_NAME_SERVICE
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_DESCRIPTION_FOREGROUND
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_ID_FOREGROUND
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager.Companion.CHANNEL_NAME_SERVICE
 import com.brian.base_iap.utils.FCMTopicHandler
 
 class NotificationForegroundService: Service() {

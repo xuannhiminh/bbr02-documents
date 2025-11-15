@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.view
+package office.pdf.document.reader.viewer.editor.view
 
 import android.content.Context
 import android.util.AttributeSet

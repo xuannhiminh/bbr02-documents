@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.uninstall
+package office.pdf.document.reader.viewer.editor.screen.uninstall
 
 //import com.google.android.gms.ads.ez.EzAdControl
 //import com.google.android.gms.ads.ez.listenner.ShowAdCallback
@@ -18,17 +18,17 @@ import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityUninstallReasonBinding
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.start.SplashActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityUninstallReasonBinding
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.start.SplashActivity
 import androidx.core.net.toUri
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import com.brian.base_iap.utils.IAPUtils
 import com.brian.base_iap.utils.TemporaryStorage
 import com.google.firebase.firestore.FirebaseFirestore
-import officepro.document.reader.viewer.editor.model.FeedbackData
+import office.pdf.document.reader.viewer.editor.model.FeedbackData
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 
 class UninstallSurveyActivity : PdfBaseActivity<ActivityUninstallReasonBinding>() {

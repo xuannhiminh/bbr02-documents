@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.language
+package office.pdf.document.reader.viewer.editor.screen.language
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,8 +11,8 @@ import android.view.ViewTreeObserver
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.brian.base_iap.utils.PreferencesHelper
-import officepro.document.reader.viewer.editor.databinding.ActivityLanguageBinding
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.databinding.ActivityLanguageBinding
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
 import com.ezteam.baseproject.activity.BaseActivity
 import com.ezteam.baseproject.animation.AnimationUtils
 import com.ezteam.baseproject.extensions.hasExtraKeyContaining
@@ -24,13 +24,13 @@ import com.brian.base_iap.utils.TemporaryStorage
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.firebase.analytics.FirebaseAnalytics
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.screen.start.IntroActivity
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.screen.start.IntroActivity
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.R
 import com.brian.base_iap.iap.IapActivityV2
-import officepro.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity
+import office.pdf.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity
 
 class LanguageActivity : BaseActivity<ActivityLanguageBinding>() {
 

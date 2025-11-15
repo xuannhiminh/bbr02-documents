@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.search
+package office.pdf.document.reader.viewer.editor.screen.search
 
 import android.content.Intent
 import android.graphics.Color
@@ -19,19 +19,19 @@ import com.brian.base_iap.utils.IAPUtils
 import com.ezteam.baseproject.utils.PDFConstants.Companion.ADS_ITEM_INDEX
 import com.ezteam.baseproject.utils.SystemUtils
 import com.brian.base_iap.utils.TemporaryStorage
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.adapter.FileItemAdapter
-import officepro.document.reader.viewer.editor.common.FileTab
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.databinding.ActivityCheckFileBinding
-import officepro.document.reader.viewer.editor.model.FileModel
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.adapter.FileItemAdapter
+import office.pdf.document.reader.viewer.editor.common.FileTab
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.databinding.ActivityCheckFileBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.common.BottomTab
+import office.pdf.document.reader.viewer.editor.common.BottomTab
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import java.util.Locale

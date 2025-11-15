@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.app.Dialog
 import android.content.DialogInterface
@@ -13,8 +13,8 @@ import android.util.TypedValue
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.RequestAllFilePermissionDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.RequestAllFilePermissionDialogBinding
 
 class RequestAllFilePermissionDialog : DialogFragment() {
     override fun getTheme(): Int {

@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.utils
+package office.pdf.document.reader.viewer.editor.utils
 
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName

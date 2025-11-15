@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.start
+package office.pdf.document.reader.viewer.editor.screen.start
 
 
 import android.Manifest
@@ -34,15 +34,15 @@ import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
 import com.nlbn.ads.util.AppOpenManager
 import com.nlbn.ads.util.ConsentHelper
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.databinding.ActivitySplashBinding
-import officepro.document.reader.viewer.editor.notification.NotificationDecider
-import officepro.document.reader.viewer.editor.notification.NotificationManager
-import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
-import officepro.document.reader.viewer.editor.service.NotificationForegroundService
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.databinding.ActivitySplashBinding
+import office.pdf.document.reader.viewer.editor.notification.NotificationDecider
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager
+import office.pdf.document.reader.viewer.editor.screen.language.LanguageActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.service.NotificationForegroundService
 import com.brian.base_iap.utils.AppUtils
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import kotlinx.coroutines.CancellationException

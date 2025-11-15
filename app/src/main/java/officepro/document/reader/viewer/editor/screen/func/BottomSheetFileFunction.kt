@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.func
+package office.pdf.document.reader.viewer.editor.screen.func
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -14,11 +14,11 @@ import android.view.ViewGroup
 import android.view.Window
 import androidx.core.view.isVisible
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.FileTab
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.databinding.SelectFileDialogBinding
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.FileTab
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.databinding.SelectFileDialogBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
 import com.ezteam.baseproject.listener.EzItemListener
 import com.ezteam.baseproject.utils.DateUtils
 import com.brian.base_iap.utils.IAPUtils

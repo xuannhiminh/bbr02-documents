@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.view
+package office.pdf.document.reader.viewer.editor.view
 
 import android.content.Context
 import android.graphics.Color
@@ -8,8 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.annotation.StyleableRes
 import androidx.constraintlayout.widget.ConstraintLayout
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ItemFuncBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ItemFuncBinding
 
 class ItemFunctionView @JvmOverloads constructor(
     context: Context,

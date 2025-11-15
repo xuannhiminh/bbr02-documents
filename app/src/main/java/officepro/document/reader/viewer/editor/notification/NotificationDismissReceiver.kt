@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.notification
+package office.pdf.document.reader.viewer.editor.notification
 
 import android.content.BroadcastReceiver
 import android.content.Context

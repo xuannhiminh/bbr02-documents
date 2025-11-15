@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.adapter
+package office.pdf.document.reader.viewer.editor.adapter
 
 import android.content.Context
 import android.util.Log
@@ -6,17 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import officepro.document.reader.viewer.editor.databinding.ItemFileBinding
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.databinding.ItemFileBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
 import com.ezteam.baseproject.adapter.BaseRecyclerAdapter
 import com.ezteam.baseproject.listener.EzItemListener
 import com.ezteam.baseproject.utils.DateUtils
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.FunctionState
 import java.util.Locale
-import officepro.document.reader.viewer.editor.screen.func.FileFunctionPopup
+import office.pdf.document.reader.viewer.editor.screen.func.FileFunctionPopup
 
 class FileItemAdapter(
     context: Context,

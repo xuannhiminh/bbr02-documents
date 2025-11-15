@@ -1,8 +1,8 @@
-package officepro.document.reader.viewer.editor.database.repository
+package office.pdf.document.reader.viewer.editor.database.repository
 
 import androidx.lifecycle.LiveData
-import officepro.document.reader.viewer.editor.common.SortState
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.common.SortState
+import office.pdf.document.reader.viewer.editor.model.FileModel
 
 interface FileModelRepository {
     suspend fun insert(fileModel: FileModel)

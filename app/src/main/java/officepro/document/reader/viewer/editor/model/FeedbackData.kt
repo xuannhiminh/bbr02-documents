@@ -1,11 +1,11 @@
-package officepro.document.reader.viewer.editor.model
+package office.pdf.document.reader.viewer.editor.model
 
 import android.os.Build
 import androidx.annotation.Keep
 import com.brian.base_iap.utils.IAPUtils
 import com.brian.base_iap.utils.PreferencesUtils
-import officepro.document.reader.viewer.editor.BuildConfig
-import officepro.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.BuildConfig
+import office.pdf.document.reader.viewer.editor.common.PresKey
 import com.brian.base_iap.utils.PreferencesHelper
 import java.util.Locale
 

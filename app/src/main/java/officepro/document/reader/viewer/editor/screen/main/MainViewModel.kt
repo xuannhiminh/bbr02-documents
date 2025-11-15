@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.main
+package office.pdf.document.reader.viewer.editor.screen.main
 
 import android.Manifest
 import android.app.Application
@@ -14,13 +14,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.liveData
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
-import officepro.document.reader.viewer.editor.common.LoadingState
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.common.SortState
-import officepro.document.reader.viewer.editor.database.repository.FileModelRepository
-import officepro.document.reader.viewer.editor.model.FileModel
-import officepro.document.reader.viewer.editor.utils.FileUtils
-import officepro.document.reader.viewer.editor.utils.RenameStatus
+import office.pdf.document.reader.viewer.editor.common.LoadingState
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.common.SortState
+import office.pdf.document.reader.viewer.editor.database.repository.FileModelRepository
+import office.pdf.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.utils.FileUtils
+import office.pdf.document.reader.viewer.editor.utils.RenameStatus
 import com.ezteam.baseproject.EzListener
 import com.ezteam.baseproject.utils.DateUtils
 import com.ezteam.baseproject.utils.PathUtils
@@ -28,10 +28,10 @@ import com.brian.base_iap.utils.PreferencesUtils
 import com.brian.base_iap.utils.TemporaryStorage
 import com.ezteam.baseproject.utils.permisson.PermissionUtils
 import com.ezteam.baseproject.viewmodel.BaseViewModel
-import officepro.document.reader.viewer.editor.common.BottomTab
-import officepro.document.reader.viewer.editor.common.FileTab
-import officepro.document.reader.viewer.editor.screen.base.CurrentStatusAdsFiles
-import officepro.document.reader.viewer.editor.utils.FileSaveManager
+import office.pdf.document.reader.viewer.editor.common.BottomTab
+import office.pdf.document.reader.viewer.editor.common.FileTab
+import office.pdf.document.reader.viewer.editor.screen.base.CurrentStatusAdsFiles
+import office.pdf.document.reader.viewer.editor.utils.FileSaveManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

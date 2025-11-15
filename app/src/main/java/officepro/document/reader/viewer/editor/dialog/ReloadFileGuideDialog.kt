@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.app.Dialog
 import android.content.Context
@@ -12,7 +12,7 @@ import android.view.WindowManager
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.view.animation.TranslateAnimation
-import officepro.document.reader.viewer.editor.databinding.GuideSpotlightBinding
+import office.pdf.document.reader.viewer.editor.databinding.GuideSpotlightBinding
 
 class ReloadFileGuideDialog(
     context: Context,

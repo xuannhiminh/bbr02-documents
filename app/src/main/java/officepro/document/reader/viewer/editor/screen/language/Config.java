@@ -1,7 +1,7 @@
-package officepro.document.reader.viewer.editor.screen.language;
+package office.pdf.document.reader.viewer.editor.screen.language;
 
 
-import officepro.document.reader.viewer.editor.R;
+import office.pdf.document.reader.viewer.editor.R;
 
 public class Config {
     public static final ItemSelected[] itemsLanguage = {

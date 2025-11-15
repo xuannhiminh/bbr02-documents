@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.search
+package office.pdf.document.reader.viewer.editor.screen.search
 import android.content.Intent
 import android.text.Editable
 import android.text.TextWatcher
@@ -16,12 +16,12 @@ import androidx.fragment.app.FragmentActivity
 import com.brian.base_iap.utils.IAPUtils
 import com.brian.base_iap.utils.PreferencesUtils
 import com.google.firebase.firestore.FirebaseFirestore
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityFeedbackBinding
-import officepro.document.reader.viewer.editor.model.FeedbackData
-import officepro.document.reader.viewer.editor.screen.PolicyActivity
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.setting.FeedBackSucessDialog
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityFeedbackBinding
+import office.pdf.document.reader.viewer.editor.model.FeedbackData
+import office.pdf.document.reader.viewer.editor.screen.PolicyActivity
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.setting.FeedBackSucessDialog
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import com.ezteam.baseproject.utils.SystemUtils
 

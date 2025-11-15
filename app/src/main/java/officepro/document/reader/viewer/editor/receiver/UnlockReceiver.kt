@@ -1,10 +1,10 @@
-package officepro.document.reader.viewer.editor.receiver
+package office.pdf.document.reader.viewer.editor.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import officepro.document.reader.viewer.editor.notification.NotificationManager
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager
 
 class UnlockReceiver : BroadcastReceiver() {
 

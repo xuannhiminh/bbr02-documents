@@ -1,9 +1,9 @@
-package officepro.document.reader.viewer.editor.di
+package office.pdf.document.reader.viewer.editor.di
 
-import officepro.document.reader.viewer.editor.database.AppDatabase
-import officepro.document.reader.viewer.editor.database.repository.FileModelRepository
-import officepro.document.reader.viewer.editor.database.repository.FileModelRepositoryImpl
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.database.AppDatabase
+import office.pdf.document.reader.viewer.editor.database.repository.FileModelRepository
+import office.pdf.document.reader.viewer.editor.database.repository.FileModelRepositoryImpl
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
 import org.koin.android.ext.koin.androidApplication
 import org.koin.dsl.module
 

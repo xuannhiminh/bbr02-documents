@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.guide
+package office.pdf.document.reader.viewer.editor.guide
 
 import android.content.Context
 import android.graphics.Canvas

@@ -20,17 +20,17 @@ android {
 //    compileSdkVersion 33
     compileSdkVersion 35
     defaultConfig {
-        applicationId "officepro.document.reader.viewer.editor"
+        applicationId "office.pdf.document.reader.viewer.editor"
         minSdkVersion 28
         targetSdkVersion 35
-        versionCode 104
-        versionName "1.0.4"
+        versionCode 100
+        versionName "1.0.0"
 
         vectorDrawables.useSupportLibrary = true
 //        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
         def formattedDate = new Date().format('MMM.dd.yyyy')
-        archivesBaseName = "BR02_Document_v${versionName}(${versionCode})_${formattedDate}"
+        archivesBaseName = "BR03_Document_v${versionName}(${versionCode})_${formattedDate}"
     }
 
 //    signingConfigs {
@@ -85,7 +85,7 @@ android {
     lintOptions {
         checkReleaseBuilds false
     }
-    namespace 'officepro.document.reader.viewer.editor'
+    namespace 'office.pdf.document.reader.viewer.editor'
 
     // This disables creating test APKs
 //    testVariants.all { it.enabled = false }

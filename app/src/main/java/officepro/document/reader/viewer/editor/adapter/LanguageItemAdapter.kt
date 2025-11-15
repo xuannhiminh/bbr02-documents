@@ -1,11 +1,11 @@
-package officepro.document.reader.viewer.editor.adapter
+package office.pdf.document.reader.viewer.editor.adapter
 
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import officepro.document.reader.viewer.editor.common.LocaleManager
-import officepro.document.reader.viewer.editor.databinding.ItemLanguageBinding
-import officepro.document.reader.viewer.editor.model.LanguageModel
+import office.pdf.document.reader.viewer.editor.common.LocaleManager
+import office.pdf.document.reader.viewer.editor.databinding.ItemLanguageBinding
+import office.pdf.document.reader.viewer.editor.model.LanguageModel
 import com.ezteam.baseproject.adapter.BaseRecyclerAdapter
 
 class LanguageItemAdapter(

@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.common
+package office.pdf.document.reader.viewer.editor.common
 
 import android.annotation.SuppressLint
 import android.content.Context

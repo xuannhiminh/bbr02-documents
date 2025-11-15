@@ -15,10 +15,10 @@ import android.widget.TextView
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.GuideEditSpotlightBinding
-import officepro.document.reader.viewer.editor.databinding.GuideSpotlightBinding
-import officepro.document.reader.viewer.editor.dialog.GuideStep
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.GuideEditSpotlightBinding
+import office.pdf.document.reader.viewer.editor.databinding.GuideSpotlightBinding
+import office.pdf.document.reader.viewer.editor.dialog.GuideStep
 import com.brian.base_iap.utils.PreferencesHelper.getString
 
 class GuideEditDialog(

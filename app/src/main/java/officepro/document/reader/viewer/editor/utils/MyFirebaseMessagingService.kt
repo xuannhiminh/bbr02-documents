@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.utils
+package office.pdf.document.reader.viewer.editor.utils
 
 import android.content.Intent
 import android.net.Uri
@@ -11,10 +11,10 @@ import com.google.android.play.core.install.model.UpdateAvailability
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import com.nlbn.ads.util.AppOpenManager
-import officepro.document.reader.viewer.editor.BuildConfig
-import officepro.document.reader.viewer.editor.dialog.UpdateDialog
-import officepro.document.reader.viewer.editor.notification.NotificationManager
-import officepro.document.reader.viewer.editor.service.NotificationForegroundService
+import office.pdf.document.reader.viewer.editor.BuildConfig
+import office.pdf.document.reader.viewer.editor.dialog.UpdateDialog
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager
+import office.pdf.document.reader.viewer.editor.service.NotificationForegroundService
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 

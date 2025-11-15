@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.iap
+package office.pdf.document.reader.viewer.editor.screen.iap
 
 import android.content.Intent
 import android.graphics.Color
@@ -25,11 +25,11 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.nlbn.ads.callback.AdCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityIap3Binding
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityIap3Binding
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.language.LanguageActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
 import com.brian.base_iap.utils.AppUtils
 import com.google.firebase.analytics.FirebaseAnalytics.Event;
 import com.google.firebase.analytics.FirebaseAnalytics.Param;

@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.reloadfile
+package office.pdf.document.reader.viewer.editor.screen.reloadfile
 
 
 import android.animation.ValueAnimator
@@ -19,9 +19,9 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.nlbn.ads.callback.AdCallback
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityReloadingBinding
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityReloadingBinding
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay

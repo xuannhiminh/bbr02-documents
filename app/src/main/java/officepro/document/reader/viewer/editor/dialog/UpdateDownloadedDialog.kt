@@ -1,11 +1,11 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.app.Dialog
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.DialogFragment
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.UpdateDownloadedDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.UpdateDownloadedDialogBinding
 
 class UpdateDownloadedDialog : DialogFragment() {
     override fun getTheme(): Int {

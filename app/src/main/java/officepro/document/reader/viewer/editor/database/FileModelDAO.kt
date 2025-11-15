@@ -1,8 +1,8 @@
-package officepro.document.reader.viewer.editor.database
+package office.pdf.document.reader.viewer.editor.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.model.FileModel
 
 @Dao
 interface FileModelDAO {

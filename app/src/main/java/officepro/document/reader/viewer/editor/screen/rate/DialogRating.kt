@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.rate
+package office.pdf.document.reader.viewer.editor.screen.rate
 
 import android.content.Context
 import android.os.Handler
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import com.daimajia.androidanimations.library.Techniques
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.databinding.DialogRateAppBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.databinding.DialogRateAppBinding
 import com.ezteam.baseproject.dialog.BaseDialog
 import com.ezteam.baseproject.dialog.BuilderDialog
 import com.ezteam.baseproject.listener.EzItemListener

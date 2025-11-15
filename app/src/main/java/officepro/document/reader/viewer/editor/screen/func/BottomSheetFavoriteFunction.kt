@@ -1,11 +1,11 @@
-package officepro.document.reader.viewer.editor.screen.func
+package office.pdf.document.reader.viewer.editor.screen.func
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.databinding.BottomSheetFavoriteFuncBinding
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.databinding.BottomSheetFavoriteFuncBinding
 import com.ezteam.baseproject.listener.EzItemListener
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 

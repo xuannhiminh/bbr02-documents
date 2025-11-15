@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.reloadfile
+package office.pdf.document.reader.viewer.editor.screen.reloadfile
 
 import android.content.Intent
 import android.graphics.Color
@@ -14,11 +14,11 @@ import androidx.fragment.app.FragmentActivity
 import com.brian.base_iap.utils.PreferencesUtils
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.firestore.FirebaseFirestore
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityFeatureRequestBinding
-import officepro.document.reader.viewer.editor.model.FeedbackData
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.featurerequest.FeatureRequestSuccessDialog
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityFeatureRequestBinding
+import office.pdf.document.reader.viewer.editor.model.FeedbackData
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.featurerequest.FeatureRequestSuccessDialog
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 
 class FeatureRequestActivity : PdfBaseActivity<ActivityFeatureRequestBinding>() {

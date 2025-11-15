@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.language;
+package office.pdf.document.reader.viewer.editor.screen.language;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

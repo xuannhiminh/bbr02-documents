@@ -1,9 +1,9 @@
-package officepro.document.reader.viewer.editor.utils
+package office.pdf.document.reader.viewer.editor.utils
 
 import android.content.Context
 import android.telephony.TelephonyManager
 import android.util.Log
-import officepro.document.reader.viewer.editor.BuildConfig
+import office.pdf.document.reader.viewer.editor.BuildConfig
 import com.brian.base_iap.utils.PreferencesHelper
 import java.net.HttpURLConnection
 import java.net.URL

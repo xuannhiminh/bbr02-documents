@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.create
+package office.pdf.document.reader.viewer.editor.screen.create
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -14,8 +14,8 @@ import com.brian.base_iap.utils.TemporaryStorage
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.BottomSheetCreatePdfBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.BottomSheetCreatePdfBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob

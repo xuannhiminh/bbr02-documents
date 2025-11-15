@@ -1,10 +1,10 @@
-package officepro.document.reader.viewer.editor.dialog
+package office.pdf.document.reader.viewer.editor.dialog
 
 import android.content.Context
 import android.view.LayoutInflater
-import officepro.document.reader.viewer.editor.adapter.LanguageItemAdapter
-import officepro.document.reader.viewer.editor.databinding.DialogChangeLanguageBinding
-import officepro.document.reader.viewer.editor.model.LanguageModel
+import office.pdf.document.reader.viewer.editor.adapter.LanguageItemAdapter
+import office.pdf.document.reader.viewer.editor.databinding.DialogChangeLanguageBinding
+import office.pdf.document.reader.viewer.editor.model.LanguageModel
 import com.ezteam.baseproject.dialog.BaseDialog
 import com.ezteam.baseproject.dialog.BuilderDialog
 

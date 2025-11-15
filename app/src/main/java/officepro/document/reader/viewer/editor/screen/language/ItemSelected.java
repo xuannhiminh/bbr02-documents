@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.language;
+package office.pdf.document.reader.viewer.editor.screen.language;
 
 public class ItemSelected {
     private int entry;

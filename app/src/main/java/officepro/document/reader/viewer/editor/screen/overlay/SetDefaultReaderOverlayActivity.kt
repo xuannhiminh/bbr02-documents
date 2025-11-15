@@ -1,8 +1,8 @@
-package officepro.document.reader.viewer.editor.screen.overlay;
+package office.pdf.document.reader.viewer.editor.screen.overlay;
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import officepro.document.reader.viewer.editor.databinding.DefaultReaderUninstallInstructDialogBinding
+import office.pdf.document.reader.viewer.editor.databinding.DefaultReaderUninstallInstructDialogBinding
 
 class SetDefaultReaderOverlayActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.uninstall
+package office.pdf.document.reader.viewer.editor.screen.uninstall
 
 //import com.google.android.gms.ads.ez.EzAdControl
 //import com.google.android.gms.ads.ez.listenner.ShowAdCallback
@@ -29,11 +29,11 @@ import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
 import com.nlbn.ads.util.AppOpenManager
 import com.nlbn.ads.util.ConsentHelper
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityUninstallBinding
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
-import officepro.document.reader.viewer.editor.screen.start.SplashActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityUninstallBinding
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.screen.start.SplashActivity
 import org.koin.android.ext.android.inject
 
 class UninstallActivity : PdfBaseActivity<ActivityUninstallBinding>() {

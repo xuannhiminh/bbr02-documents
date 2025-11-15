@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.common
+package office.pdf.document.reader.viewer.editor.common
 
 enum class FunctionState {
     CONTINUOUS_PAGE, PAGE_BY_PAGE, NIGHT_MODE, GO_PAGE, FAVORITE, RENAME, PRINT, DELETE, BROWSE_FILE,

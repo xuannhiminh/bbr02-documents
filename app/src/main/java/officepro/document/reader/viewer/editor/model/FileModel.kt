@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.model
+package office.pdf.document.reader.viewer.editor.model
 
 import android.util.Log
 import androidx.annotation.Keep

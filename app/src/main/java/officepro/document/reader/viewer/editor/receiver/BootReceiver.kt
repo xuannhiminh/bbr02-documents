@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.receiver
+package office.pdf.document.reader.viewer.editor.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -6,8 +6,8 @@ import android.content.Intent
 import android.util.Log
 import androidx.core.content.ContextCompat
 import com.brian.base_iap.utils.PreferencesUtils
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.service.NotificationForegroundService
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.service.NotificationForegroundService
 
 class BootReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

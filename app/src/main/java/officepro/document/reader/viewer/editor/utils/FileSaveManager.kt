@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.utils
+package office.pdf.document.reader.viewer.editor.utils
 
 import android.content.ContentValues
 import android.content.Context
@@ -10,7 +10,7 @@ import android.os.Environment
 import android.os.ParcelFileDescriptor
 import android.provider.MediaStore
 import android.util.Log
-import officepro.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.R
 import com.ezteam.baseproject.EzListener
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import org.apache.commons.io.FilenameUtils

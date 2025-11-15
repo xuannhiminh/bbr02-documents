@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.file
+package office.pdf.document.reader.viewer.editor.screen.file
 
 import android.content.Intent
 import android.os.Handler
@@ -13,18 +13,18 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.lifecycleScope
 import com.ezteam.baseproject.utils.PDFConstants.Companion.ADS_ITEM_INDEX
 import com.google.android.gms.ads.nativead.NativeAd
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.adapter.FileItemAdapter
-import officepro.document.reader.viewer.editor.common.FileTab
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.common.LoadingState
-import officepro.document.reader.viewer.editor.databinding.FragmentListFileBinding
-import officepro.document.reader.viewer.editor.model.FileModel
-import officepro.document.reader.viewer.editor.screen.base.IAdsControl
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseFragment
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
-import officepro.document.reader.viewer.editor.screen.start.SplashActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.adapter.FileItemAdapter
+import office.pdf.document.reader.viewer.editor.common.FileTab
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.common.LoadingState
+import office.pdf.document.reader.viewer.editor.databinding.FragmentListFileBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.screen.base.IAdsControl
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseFragment
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.screen.start.SplashActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.apache.commons.io.FilenameUtils

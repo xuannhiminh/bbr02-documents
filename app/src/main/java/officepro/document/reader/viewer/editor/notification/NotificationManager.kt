@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.notification
+package office.pdf.document.reader.viewer.editor.notification
 
 import android.Manifest
 import android.app.Notification
@@ -23,8 +23,8 @@ import com.brian.base_iap.utils.PreferencesUtils
 import com.brian.base_iap.utils.TemporaryStorage
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.messaging.RemoteMessage
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.screen.start.SplashActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.screen.start.SplashActivity
 import java.io.File
 import android.app.NotificationManager as AndroidNotificationManager
 

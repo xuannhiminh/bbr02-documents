@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:704385456519:android:5c8ce79cdafc0c81b81b22",
         "android_client_info": {
-          "package_name": "officepro.document.reader.viewer.editor"
+          "package_name": "office.pdf.document.reader.viewer.editor"
         }
       },
       "oauth_client": [],

@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.search
+package office.pdf.document.reader.viewer.editor.screen.search
 
 //import com.google.android.gms.ads.ez.EzAdControl
 import android.content.Intent
@@ -15,22 +15,22 @@ import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.FileTab
-import officepro.document.reader.viewer.editor.common.FunctionState
-import officepro.document.reader.viewer.editor.databinding.ActivitySearchFileBinding
-import officepro.document.reader.viewer.editor.model.FileModel
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.func.BottomSheetFileFunction
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
-import officepro.document.reader.viewer.editor.screen.start.SplashActivity
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.FileTab
+import office.pdf.document.reader.viewer.editor.common.FunctionState
+import office.pdf.document.reader.viewer.editor.databinding.ActivitySearchFileBinding
+import office.pdf.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.func.BottomSheetFileFunction
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.screen.start.SplashActivity
 import kotlinx.coroutines.launch
 import org.apache.commons.io.FilenameUtils
 import org.koin.android.ext.android.inject
 import java.util.Locale
 import androidx.core.widget.addTextChangedListener
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
-import officepro.document.reader.viewer.editor.adapter.SearchFileAdapter
+import office.pdf.document.reader.viewer.editor.adapter.SearchFileAdapter
 
 class SearchFileActivity : PdfBaseActivity<ActivitySearchFileBinding>() {
     private val viewModel by inject<MainViewModel>()

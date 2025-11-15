@@ -106,7 +106,7 @@
             android:paddingTop="8dp"
             app:layout_constraintTop_toBottomOf="@id/view">
 
-            <officepro.document.reader.viewer.editor.view.ItemFunctionView
+            <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                 android:id="@+id/func_rename"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                 app:fvTextColor="@color/text1"
                 app:fvIcon="@drawable/file_func_edit"
                 app:fvTitle="@string/rename" />
-            <officepro.document.reader.viewer.editor.view.ItemFunctionView
+            <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                 android:id="@+id/func_detail_file"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
                 android:textSize="14sp"
                 app:fvIcon="@drawable/icon_detail"
                 app:fvTitle="@string/detail" />
-            <officepro.document.reader.viewer.editor.view.ItemFunctionView
+            <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                 android:id="@+id/func_share"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
                 app:fvIcon="@drawable/file_func_share"
                 app:fvTitle="@string/share" />
 
-            <officepro.document.reader.viewer.editor.view.ItemFunctionView
+            <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                 android:id="@+id/func_delete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

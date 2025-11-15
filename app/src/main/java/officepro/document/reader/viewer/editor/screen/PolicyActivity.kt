@@ -1,14 +1,14 @@
-package officepro.document.reader.viewer.editor.screen
+package office.pdf.document.reader.viewer.editor.screen
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.Html
 import android.view.LayoutInflater
 import androidx.fragment.app.FragmentActivity
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.ActivityPolicyBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.ActivityPolicyBinding
 import com.ezteam.baseproject.activity.BaseActivity
-import officepro.document.reader.viewer.editor.screen.main.ListFileTypeActivity
+import office.pdf.document.reader.viewer.editor.screen.main.ListFileTypeActivity
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 //import com.google.android.gms.ads.ez.EzAdControl
 import java.io.IOException

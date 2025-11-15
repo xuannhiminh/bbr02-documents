@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.language;
+package office.pdf.document.reader.viewer.editor.screen.language;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import officepro.document.reader.viewer.editor.databinding.ItemLanguage2Binding;
-import officepro.document.reader.viewer.editor.databinding.ItemLanguageChildBinding;
-import officepro.document.reader.viewer.editor.databinding.ItemLanguageGroupBinding;
+import office.pdf.document.reader.viewer.editor.databinding.ItemLanguage2Binding;
+import office.pdf.document.reader.viewer.editor.databinding.ItemLanguageChildBinding;
+import office.pdf.document.reader.viewer.editor.databinding.ItemLanguageGroupBinding;
 
 import java.util.ArrayList;
 import java.util.List;

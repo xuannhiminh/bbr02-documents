@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.overlay;
+package office.pdf.document.reader.viewer.editor.screen.overlay;
 
 import android.app.Activity
 import android.os.Build
@@ -8,8 +8,8 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.databinding.DefaultReaderUninstallInstructDialogBinding
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.databinding.DefaultReaderUninstallInstructDialogBinding
 
 class ClearDefaultReaderOverlayActivity : AppCompatActivity() {
 

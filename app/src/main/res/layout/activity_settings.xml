@@ -171,7 +171,7 @@
                     android:paddingVertical="@dimen/_8sdp"
                     android:background="@drawable/bg_setting_item">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:id="@+id/text_change_language"
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -200,7 +200,7 @@
                     android:paddingVertical="@dimen/_8sdp"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -229,7 +229,7 @@
                     android:paddingVertical="@dimen/_8sdp"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -274,7 +274,7 @@
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -306,7 +306,7 @@
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -337,7 +337,7 @@
                     android:paddingVertical="@dimen/_8sdp"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -364,7 +364,7 @@
                     android:paddingVertical="@dimen/_8sdp"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -409,7 +409,7 @@
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -436,7 +436,7 @@
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -467,7 +467,7 @@
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -511,7 +511,7 @@
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -538,7 +538,7 @@
                     android:paddingVertical="@dimen/_8sdp"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"
@@ -565,7 +565,7 @@
                     android:paddingVertical="@dimen/_8sdp"
                     android:background="?attr/selectableItemBackground">
 
-                    <officepro.document.reader.viewer.editor.view.ItemFunctionView
+                    <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:textSize="16sp"

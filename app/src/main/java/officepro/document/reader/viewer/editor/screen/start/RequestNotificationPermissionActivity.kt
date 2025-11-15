@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor.screen.start
+package office.pdf.document.reader.viewer.editor.screen.start
 
 //import com.google.android.gms.ads.ez.EzAdControl
 //import com.google.android.gms.ads.ez.listenner.ShowAdCallback
@@ -24,13 +24,13 @@ import com.ezteam.baseproject.extensions.hasExtraKeyContaining
 import com.brian.base_iap.utils.PreferencesUtils
 import com.brian.base_iap.utils.TemporaryStorage
 import com.nlbn.ads.util.AppOpenManager
-import officepro.document.reader.viewer.editor.R
-import officepro.document.reader.viewer.editor.common.PresKey
-import officepro.document.reader.viewer.editor.databinding.ActivityNotificationBinding
-import officepro.document.reader.viewer.editor.screen.base.PdfBaseActivity
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
-import officepro.document.reader.viewer.editor.screen.main.MainViewModel
-import officepro.document.reader.viewer.editor.service.NotificationForegroundService
+import office.pdf.document.reader.viewer.editor.R
+import office.pdf.document.reader.viewer.editor.common.PresKey
+import office.pdf.document.reader.viewer.editor.databinding.ActivityNotificationBinding
+import office.pdf.document.reader.viewer.editor.screen.base.PdfBaseActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainViewModel
+import office.pdf.document.reader.viewer.editor.service.NotificationForegroundService
 import org.koin.android.ext.android.inject
 
 class RequestNotificationPermissionActivity : PdfBaseActivity<ActivityNotificationBinding>() {

@@ -67,14 +67,14 @@
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/item_view">
 
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_continuous_page"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:fvIcon="@drawable/ic_continuous_page"
             app:fvTitle="@string/cont_pages" />
 
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_page_by_page"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
         <include
             android:id="@+id/night_move_view"
             layout="@layout/item_func_night_mode"/>
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_go_to_page"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,35 +102,35 @@
             android:layout_height="@dimen/_1sdp"
             android:background="@color/line_color" />
 
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_add_favorite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:fvIcon="@drawable/ic_add_favorite"
             app:fvTitle="@string/add_in_fav" />
 
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_rename"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:fvIcon="@drawable/ic_rename"
             app:fvTitle="@string/rename" />
 
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_print"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:fvIcon="@drawable/ic_print"
             app:fvTitle="@string/print" />
 
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:fvIcon="@drawable/ic_delete"
             app:fvTitle="@string/delete" />
 
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -1,4 +1,4 @@
-package officepro.document.reader.viewer.editor
+package office.pdf.document.reader.viewer.editor
 
 import android.app.Activity
 import android.app.Application
@@ -36,11 +36,11 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.messaging.FirebaseMessaging
 import com.nlbn.ads.util.AppFlyer
 import com.nlbn.ads.util.AppOpenManager
-import officepro.document.reader.viewer.editor.common.LocaleManager
-import officepro.document.reader.viewer.editor.di.appModule
-import officepro.document.reader.viewer.editor.notification.NotificationManager
+import office.pdf.document.reader.viewer.editor.common.LocaleManager
+import office.pdf.document.reader.viewer.editor.di.appModule
+import office.pdf.document.reader.viewer.editor.notification.NotificationManager
 import com.brian.base_iap.iap.IapActivity
-import officepro.document.reader.viewer.editor.screen.start.SplashActivity
+import office.pdf.document.reader.viewer.editor.screen.start.SplashActivity
 import com.brian.base_iap.utils.FirebaseRemoteConfigUtil
 import office.file.ui.MyLibApplication
 import org.koin.android.ext.koin.androidContext
@@ -49,8 +49,8 @@ import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.RequestConfiguration
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.brian.base_iap.iap.IapActivityV2
-import officepro.document.reader.viewer.editor.screen.language.LanguageActivity
-import officepro.document.reader.viewer.editor.screen.main.MainActivity
+import office.pdf.document.reader.viewer.editor.screen.language.LanguageActivity
+import office.pdf.document.reader.viewer.editor.screen.main.MainActivity
 
 class PdfApplication: MyLibApplication(), DefaultLifecycleObserver {
     companion object {
@@ -165,11 +165,11 @@ class PdfApplication: MyLibApplication(), DefaultLifecycleObserver {
 
     private fun initLanguage() {
         if (TextUtils.isEmpty(PreferencesHelper.getString(PreferencesHelper.KEY_LANGUAGE))) {
-            officepro.document.reader.viewer.editor.screen.language.LocaleManager.getInstance(this).prefLanguage =
-                officepro.document.reader.viewer.editor.screen.language.LocaleManager.LANGUAGE_DEFAULT
+            office.pdf.document.reader.viewer.editor.screen.language.LocaleManager.getInstance(this).prefLanguage =
+                office.pdf.document.reader.viewer.editor.screen.language.LocaleManager.LANGUAGE_DEFAULT
             val currentLanguage = resources.configuration.locales.get(0).language
-            for (i in officepro.document.reader.viewer.editor.screen.language.LocaleManager.lstCodeLanguage.indices) {
-                if (currentLanguage == officepro.document.reader.viewer.editor.screen.language.LocaleManager.lstCodeLanguage[i]) {
+            for (i in office.pdf.document.reader.viewer.editor.screen.language.LocaleManager.lstCodeLanguage.indices) {
+                if (currentLanguage == office.pdf.document.reader.viewer.editor.screen.language.LocaleManager.lstCodeLanguage[i]) {
                     PreferencesHelper.putString(PreferencesHelper.KEY_LANGUAGE, currentLanguage)
                     delegate.setDefaultLanguage(this, resources.configuration.locales.get(0))
                     return

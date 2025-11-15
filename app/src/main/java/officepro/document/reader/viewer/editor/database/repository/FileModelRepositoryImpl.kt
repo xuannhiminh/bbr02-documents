@@ -1,9 +1,9 @@
-package officepro.document.reader.viewer.editor.database.repository
+package office.pdf.document.reader.viewer.editor.database.repository
 
 import androidx.lifecycle.LiveData
-import officepro.document.reader.viewer.editor.common.SortState
-import officepro.document.reader.viewer.editor.database.AppDatabase
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.common.SortState
+import office.pdf.document.reader.viewer.editor.database.AppDatabase
+import office.pdf.document.reader.viewer.editor.model.FileModel
 
 class FileModelRepositoryImpl(
     private var appDatabase: AppDatabase

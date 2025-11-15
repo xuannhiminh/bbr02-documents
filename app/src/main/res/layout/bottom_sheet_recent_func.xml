@@ -13,7 +13,7 @@
         android:paddingBottom="@dimen/_5sdp"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-        <officepro.document.reader.viewer.editor.view.ItemFunctionView
+        <office.pdf.document.reader.viewer.editor.view.ItemFunctionView
             android:id="@+id/func_clear_recent"
             android:layout_width="match_parent"
             app:fvIcon="@drawable/ic_remove_recent"

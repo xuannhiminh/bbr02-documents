@@ -27,7 +27,7 @@
             app:layout_constraintTop_toBottomOf="@id/recently_added_section">
 
 
-            <officepro.document.reader.viewer.editor.view.NonSwipeViewPager
+            <office.pdf.document.reader.viewer.editor.view.NonSwipeViewPager
                 android:id="@+id/view_pager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

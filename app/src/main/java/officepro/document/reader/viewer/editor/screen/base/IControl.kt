@@ -1,8 +1,8 @@
-package officepro.document.reader.viewer.editor.screen.base
+package office.pdf.document.reader.viewer.editor.screen.base
 
 import android.net.Uri
 import com.google.android.gms.ads.nativead.NativeAd
-import officepro.document.reader.viewer.editor.model.FileModel
+import office.pdf.document.reader.viewer.editor.model.FileModel
 
 interface IControl {
     fun shareFile(fileModel: FileModel)
