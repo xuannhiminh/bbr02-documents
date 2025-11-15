@@ -1,3 +1,5 @@
+package officepro.document.reader.viewer.editor.screen.iap
+
 import android.content.Context
 import android.graphics.Color
 import android.graphics.LinearGradient

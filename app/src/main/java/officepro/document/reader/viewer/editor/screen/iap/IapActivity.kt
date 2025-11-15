@@ -43,7 +43,7 @@ import office.pdf.document.reader.viewer.editor.screen.PolicyActivity
 import office.pdf.document.reader.viewer.editor.screen.TermAndConditionsActivity
 import office.pdf.document.reader.viewer.editor.screen.start.RequestAllFilePermissionActivity
 import com.brian.base_iap.utils.FCMTopicHandler
-import setSelectedCard
+import officepro.document.reader.viewer.editor.screen.iap.setSelectedCard
 import java.util.Locale
 
 class IapActivity : PdfBaseActivity<ActivityIapBinding>() {

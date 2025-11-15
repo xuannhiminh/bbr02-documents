@@ -1,3 +1,5 @@
+package com.brian.base_iap.iap
+
 import android.content.Context
 import android.graphics.Color
 import android.graphics.LinearGradient
@@ -106,6 +108,3 @@ fun setSelectedCard(
 }
 
 // Extension function: convert dp to px
-fun Float.dpToPx(context: Context): Float {
-    return this * context.resources.displayMetrics.density
-}

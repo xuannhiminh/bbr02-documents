@@ -43,7 +43,6 @@ import com.google.firebase.analytics.FirebaseAnalytics.Param
 import com.nlbn.ads.callback.AdCallback
 import com.nlbn.ads.util.Admob
 import com.nlbn.ads.util.AppOpenManager
-import setSelectedCard
 import java.util.Locale
 
 class IapActivity : AppCompatActivity() {
