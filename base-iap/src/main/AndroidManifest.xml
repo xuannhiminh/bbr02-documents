@@ -17,6 +17,9 @@
         <activity
             android:name="com.brian.base_iap.iap.IapActivityV2"
             android:exported="true" />
+        <activity
+            android:name="com.brian.base_iap.iap.IapRegistrationSuccessfulActivity"
+            android:exported="true" />
 
     </application>
 </manifest>
